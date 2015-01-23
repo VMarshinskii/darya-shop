@@ -12,5 +12,5 @@ class ProductAdmin(admin.ModelAdmin):
         mass = {'result_content': html}
         return super(ProductAdmin, self).changelist_view(request, extra_context=mass)
 
-    
+
 admin.site.register(Product, ProductAdmin)
