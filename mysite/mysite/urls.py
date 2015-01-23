@@ -11,5 +11,5 @@ urlpatterns = patterns('',
     url(r'^catalog/', include('catalog.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'start$', 'catalog.views.start', name="start"),
-    url(r'ajax-upload$', reverse('catalog.views.import_uploader'), name="my_ajax_upload"),
+    url(r'ajax-upload$', 'catalog.views.import_uploader', name="my_ajax_upload"),
 )
