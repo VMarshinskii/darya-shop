@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'catalog',
+    'ajaxuploader',
 )
 
 MIDDLEWARE_CLASSES = (
