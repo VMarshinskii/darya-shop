@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="CatalogProductBox">
+    <div class="CatalogGalleryBox">
+        <img src="{% static "images/catalog-galery.png" %}" alt=""/>
+    </div>
+    <h1>Пальто Green Flash зелёное</h1>
+    <div class="CatalogPriceBox">
+        <p>Цена: <span>1 300 руб.</span></p>
+        <p class="CatalogPriceOld">1 900 руб.</p>
+        <a href="#">Купить</a>
+    </div>
+</div>
+{% endblock %}
