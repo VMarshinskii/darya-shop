@@ -419,11 +419,49 @@ body {
 
 
 .CatalogProductBox {
-
+    background: #ffffff;
+    border: 1px solid #974d68;
+    padding: 10px;
+}
+.CatalogProductBox h1 {
+    font-family: inherit;
+    font-size: 26px;
+    margin-left: 5px;
+    float: left;
 }
 .CatalogGalleryBox {
-
+    background: #eeeeee;
+    width: 230px;
+    height: 330px;
+    float: left;
 }
 .CatalogPriceBox {
-
+    float: left;
+    margin-left: 6px;
+    margin-top: 11px;
+    padding: 10px;
+    background: #e9e9e9;
+    width: 422px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.33);
+}
+.CatalogPriceBoxPrice {
+    float: left;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.CatalogPriceBoxPrice span {
+    color: #CF0748;
+    font-size: 16px;
+    font-weight: bold;
+}
+.CatalogPriceBox a {
+    float: right;
+    padding: 8px 35px;
+    background: #F72F71;
+    color: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.54);
+    border: 1px solid #CF0748;
+    text-decoration: none;
 }
