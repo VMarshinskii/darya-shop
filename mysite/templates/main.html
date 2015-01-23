@@ -1,10 +1,218 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    <link href="{% static "css/sliderkit-core.css" %}" rel="stylesheet">
+    <link href="{% static "css/sliderkit-demos.css" %}" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <title>Document</title>
 </head>
 <body>
-ыввамы
+<div id="all-content">
+    <div id="header">
+        <div class="logo">Darya-A-Shop</div>
+        <div class="header-info">
+            <span class="header-info-one">Магазин модной, молодежной одежды, обуви и акссеусуаров.</span>
+            <span class="motto"><img src="images/motto.png" alt="С нами быть модной легко!"/></span>
+        </div>
+        <div class="contact-info">
+            <p>Пишите, звоните. Мы рады Вам помочь!</p>
+            <div class="number">8(968)0137182</div>
+            <div class="mail"><a href="mailto:darya-a-shop@yandex.ru">darya-a-shop@yandex.ru</a></div>
+            <div class="button"><a href="#">Заказать звонок</a></div>
+        </div>
+    </div>
+    <div id="main-menu">
+        <ul>
+            <li class="first-li"><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Look book</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+        </ul>
+    </div>
+    <div id="main-content">
+        <div id="left-block">
+            <div class="banner">
+                <img src="images/banner1.jpg" alt="Баннер"/>
+            </div>
+            <div class="categories">
+                <div class="header-of-block">Разделы каталога:</div>
+                <div class="categ-list">По категориям:</div>
+                <div class="cat-menu">
+                    <ul>
+                        <li>
+                            <a href="">Одежда:</a>
+                            <ul>
+                                <li><a href="#">Толстовки (свитшоты)</a></li>
+                                <li><a href="#">Футболки и рубашки</a></li>
+                                <li><a href="#">Свитеры и джемперы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Аксессуары:</a>
+                            <ul>
+                                <li><a href="#">Сумки и клатчи</a></li>
+                                <li><a href="#">Украшения</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="center-block">
+            <div class="main-slider">
+                <div class="sliderkit photoslider-bullets">
+                    <div class="sliderkit-nav">
+                        <div class="sliderkit-nav-clip">
+                            <ul>
+                                <li><a href="#" title="Photo sample 01"></a></li>
+                                <li><a href="#" title="Photo sample 02"></a></li>
+                                <li><a href="#" title="Photo sample 03"></a></li>
+                                <li><a href="#" title="Photo sample 04"></a></li>
+                                <li><a href="#" title="Photo sample 05"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sliderkit-panels">
+                        <div class="sliderkit-panel">
+                            <img src="images/mban1.jpg" alt="[Alternative text]" />
+                        </div>
+                        <div class="sliderkit-panel">
+                            <img src="images/photos/sample-02.jpg" alt="[Alternative text]" />
+                        </div>
+                        <div class="sliderkit-panel">
+                            <img src="images/photos/sample-03.jpg" alt="[Alternative text]" />
+                        </div>
+                        <div class="sliderkit-panel">
+                            <img src="images/photos/sample-04.jpg" alt="[Alternative text]" />
+                        </div>
+                        <div class="sliderkit-panel">
+                            <img src="images/photos/sample-05.jpg" alt="[Alternative text]" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="goodss">
+                <div class="good">
+                    <div class="goods-img">
+                        <img src="images/img1.jpg" alt="img"/>
+                    </div>
+                    <div class="about-goods">
+                        <a href="#">Пальто шерстянное с мехом лань</a>
+                    </div>
+                    <div class="price">6 700 Руб.</div>
+                    <div class="good-c">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="good">
+                    <div class="goods-img">
+                        <img src="images/img2.jpg" alt="img"/>
+                    </div>
+                    <div class="about-goods">
+                        <a href="#">Пальто шерстянное с мехом лань</a>
+                    </div>
+                    <div class="price">6 700 Руб.</div>
+                    <div class="good-c">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="good mar0">
+                    <div class="goods-img">
+                        <img src="images/img1.jpg" alt="img"/>
+                    </div>
+                    <div class="about-goods">
+                        <a href="#">Пальто шерстянное с мехом лань</a>
+                    </div>
+                    <div class="price">6 700 Руб.</div>
+                    <div class="good-c">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="good">
+                    <div class="goods-img">
+                        <img src="images/img2.jpg" alt="img"/>
+                    </div>
+                    <div class="about-goods">
+                        <a href="#">Пальто шерстянное с мехом лань</a>
+                    </div>
+                    <div class="price">6 700 Руб.</div>
+                    <div class="good-c">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="good">
+                    <div class="goods-img">
+                        <img src="images/img1.jpg" alt="img"/>
+                    </div>
+                    <div class="about-goods">
+                        <a href="#">Пальто шерстянное с мехом лань</a>
+                    </div>
+                    <div class="price">6 700 Руб.</div>
+                    <div class="good-c">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+                <div class="good mar0">
+                    <div class="goods-img">
+                        <img src="images/img2.jpg" alt="img"/>
+                    </div>
+                    <div class="about-goods">
+                        <a href="#">Пальто шерстянное с мехом лань</a>
+                    </div>
+                    <div class="price">6 700 Руб.</div>
+                    <div class="good-c">
+                        <a href="#">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right-block">
+            <div class="header-of-right-block"><p>Будь в курсе! Подпишись на нас в соц. сетях!</p></div>
+            <div class="block-vk">
+                <div class="r-header-block">Мы в вконтакте:</div>
+                <img src="images/vk.jpg" alt="Вконтакте"/>
+            </div>
+            <div class="block-instr">
+                <div class="r-header-block">Мы в инстаграм:</div>
+                <div class="instr">
+                    <a href="@lux_style_darya"><img src="images/instgr.png" alt=""/><p>@lux_style_darya</p></a>
+                </div>
+            </div>
+            <div class="banners-r">
+                <a href="#"><img src="images/banner2.jpg" alt="Реклама"/></a>
+                <a href="#"><img src="images/banner3.jpg" alt="Реклама"/></a>
+                <a href="#"><img src="images/banner4.jpg" alt="Реклама"/></a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="all-content">
+        <div class="all-right">
+            <span class="copyr">©</span><span class="namer">Darya-A-Shop</span>все права защищены.
+        </div>
+        <div class="contact-info cifooter">
+            <div class="number">8(968)0137182</div>
+            <div class="mail"><a href="mailto:darya-a-shop@yandex.ru">darya-a-shop@yandex.ru</a></div>
+            <div class="button"><a href="#">Заказать звонок</a></div>
+        </div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="{% static "js/jquery.easing.1.3.min.js" %}"></script>
+<script src="{% static "js/jquery.mousewheel.min.js" %}"></script>
+<script src="{% static "js/jquery.sliderkit.1.4.min.js" %}"></script>
+<script src="{% static "js/common.js" %}"></script>
 </body>
 </html>
