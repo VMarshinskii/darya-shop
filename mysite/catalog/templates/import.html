@@ -7,7 +7,7 @@
         <script>
             $(function(){
             var uploader = new qq.FileUploader({
-                action: "{% url my_ajax_upload %}",
+                action: "/ajax-upload",
                 element: $('#file-uploader')[0],
                 multiple: true,
                 onComplete: function(id, fileName, responseJSON) {
