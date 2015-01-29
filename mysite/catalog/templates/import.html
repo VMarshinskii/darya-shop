@@ -43,186 +43,104 @@
         </noscript>
     </div>
 
+    <ul class="breadcrumb">
+        <li>
+            <a href="/admin/">Начало</a>
+            <span class="divider">»</span>
+        </li>
+        <li>
+            <a href="/admin/catalog/">Catalog</a>
+            <span class="divider">»</span>
+        </li>
+        <li>
+            <a href="/admin/catalog/product/">
+            Products</a>
+            <span class="divider">»</span>
+        </li>
+        <li class="active">
+            Добавить product
+        </li>
+    </ul>
+
     <div id="content" class="colM row-fluid">
-
-
-                <h2 class="content-title">Добавить product</h2>
-
-
-  <div id="content-main" class="inner-two-columns">
-
-  аспываптывлатпылвоатплывалптлываполтывалптыловатполд
-
-    <form enctype="multipart/form-data" action="" method="post" id="product_form" class="form-horizontal">
-
-      <div class="inner-right-column">
-
-        <div class="box save-box">
-
-
-<div class="submit-row clearfix">
-  <button type="submit" class="btn btn-high btn-info" name="_save">Сохранить</button>
-  <button type="submit" name="_continue" class=" btn btn-high">Сохранить и продолжить редактирование</button>
-
-  <button type="submit" name="_addanother" class="btn">Сохранить и добавить другой объект</button>
-
-
-</div>
-
-
-        </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="inner-center-column">
-        <input type="hidden" name="csrfmiddlewaretoken" value="DfE94BndkJxJAcAQFAcvJkd45J5u92GK">
-
-
-
-        <div class="tab-content tab-content-main">
-
-
-
-
-
-
-
-
-
-
-<fieldset class="module aligned first ">
-
-
-
-      <div class="control-group form-row field-name ">
-
-          <div><div class="control-label"><label class="required" for="id_name">Название:</label></div><div class="controls"><input class="vTextField" id="id_name" maxlength="200" name="name" type="text"></div></div>
-
-
-      </div>
-
-
-
-      <div class="control-group form-row field-price ">
-
-          <div><div class="control-label"><label class="required" for="id_price">Цена:</label></div><div class="controls"><input class="vIntegerField" id="id_price" name="price" type="text"></div></div>
-
-
-      </div>
-
-
-
-      <div class="control-group form-row field-sale ">
-
-          <div><div class="control-label"><label class="required" for="id_sale">Скидка, %:</label></div><div class="controls"><input class="vIntegerField" id="id_sale" name="sale" type="text"></div></div>
-
-
-      </div>
-
-
-
-      <div class="control-group form-row field-sale_status ">
-
-          <div><div class="control-label"><label class="required" for="id_sale_status">Сделать скидку:</label></div><div class="controls"><input class="vIntegerField" id="id_sale_status" name="sale_status" type="text"></div></div>
-
-
-      </div>
-
-
-
-      <div class="control-group form-row field-count ">
-
-          <div><div class="control-label"><label class="required" for="id_count">Товар в наличии:</label></div><div class="controls"><input class="vIntegerField" id="id_count" name="count" type="text"></div></div>
-
-
-      </div>
-
-
-
-      <div class="control-group form-row field-status ">
-
-          <div><div class="control-label"><label class="required" for="id_status">Рекламные метки:</label></div><div class="controls"><input class="vIntegerField" id="id_status" name="status" type="text"></div></div>
-
-
-      </div>
-
-
-
-      <div class="control-group form-row field-text ">
-
-          <div><div class="control-label"><label class="required" for="id_text">Описание:</label></div><div class="controls"><textarea class="vLargeTextField" cols="40" id="id_text" name="text" rows="10"></textarea></div></div>
-
-
-      </div>
-
-
-
-      <div class="control-group form-row field-keywords ">
-
-          <div><div class="control-label"><label class="required" for="id_keywords">Ключевые слова:</label></div><div class="controls"><input class="vTextField" id="id_keywords" maxlength="200" name="keywords" type="text"></div></div>
-
-
-      </div>
-
-
-
-      <div class="control-group form-row field-description ">
-
-          <div><div class="control-label"><label class="required" for="id_description">Description:</label></div><div class="controls"><input class="vTextField" id="id_description" maxlength="200" name="description" type="text"></div></div>
-
-
-      </div>
-
-
-</fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-          <script type="text/javascript">document.getElementById("").focus();</script>
-
-
-
-
-<script type="text/javascript">
-(function($) {
-    var field;
-
-
-})(django.jQuery);
-</script>
-
-
-      </div>
-    </form>
-  </div>
-
-
-            </div>
+       <h2 class="content-title">Добавить product</h2>
+       <div id="content-main" class="inner-two-columns">
+          <form enctype="multipart/form-data" action="" method="post" id="product_form" class="form-horizontal">
+             <div class="inner-right-column">
+                <div class="box save-box">
+                   <div class="submit-row clearfix">
+                      <button type="submit" class="btn btn-high btn-info" name="_save">Сохранить</button>
+                      <button type="submit" name="_continue" class=" btn btn-high">Сохранить и продолжить редактирование</button>
+                      <button type="submit" name="_addanother" class="btn">Сохранить и добавить другой объект</button>
+                   </div>
+                </div>
+             </div>
+             <div class="inner-center-column">
+                <input type="hidden" name="csrfmiddlewaretoken" value="DfE94BndkJxJAcAQFAcvJkd45J5u92GK">
+                <div class="tab-content tab-content-main">
+                   <fieldset class="module aligned first ">
+                      <div class="control-group form-row field-name ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_name">Название:</label></div>
+                            <div class="controls"><input class="vTextField" id="id_name" maxlength="200" name="name" type="text"></div>
+                         </div>
+                      </div>
+                      <div class="control-group form-row field-price ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_price">Цена:</label></div>
+                            <div class="controls"><input class="vIntegerField" id="id_price" name="price" type="text"></div>
+                         </div>
+                      </div>
+                      <div class="control-group form-row field-sale ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_sale">Скидка, %:</label></div>
+                            <div class="controls">
+                                <input class="vIntegerField" id="id_sale" name="sale" type="text">
+                                <input type="checkbox"/>
+                                <label for="">Сделать скидку</label>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="control-group form-row field-sale_status ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_sale_status">Сделать скидку:</label></div>
+                            <div class="controls"><input class="vIntegerField" id="id_sale_status" name="sale_status" type="text"></div>
+                         </div>
+                      </div>
+                      <div class="control-group form-row field-count ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_count">Товар в наличии:</label></div>
+                            <div class="controls"><input class="vIntegerField" id="id_count" name="count" type="text"></div>
+                         </div>
+                      </div>
+                      <div class="control-group form-row field-status ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_status">Рекламные метки:</label></div>
+                            <div class="controls"><input class="vIntegerField" id="id_status" name="status" type="text"></div>
+                         </div>
+                      </div>
+                      <div class="control-group form-row field-text ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_text">Описание:</label></div>
+                            <div class="controls"><textarea class="vLargeTextField" cols="40" id="id_text" name="text" rows="10"></textarea></div>
+                         </div>
+                      </div>
+                      <div class="control-group form-row field-keywords ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_keywords">Ключевые слова:</label></div>
+                            <div class="controls"><input class="vTextField" id="id_keywords" maxlength="200" name="keywords" type="text"></div>
+                         </div>
+                      </div>
+                      <div class="control-group form-row field-description ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_description">Description:</label></div>
+                            <div class="controls"><input class="vTextField" id="id_description" maxlength="200" name="description" type="text"></div>
+                         </div>
+                      </div>
+                   </fieldset>
+                </div>
+             </div>
+          </form>
+       </div>
+    </div>
 {% endblock %}
