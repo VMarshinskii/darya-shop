@@ -87,6 +87,50 @@
                             <div class="controls"><input class="vTextField" id="id_name" maxlength="200" name="name" type="text"></div>
                          </div>
                       </div>
+
+                       <div class="control-group form-row field-text ">
+                        <div>
+                            <div class="control-label"><label class="required" for="id_text">Текст:</label></div>
+                            <div class="controls">
+                                <div class="redactor-box">
+                                    <ul class="redactor-toolbar" id="redactor-toolbar-0" style="position: relative; width: auto; top: 0px; left: 0px; visibility: visible;">
+                                        <li><a href="#" class="re-icon re-html" rel="html" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-formatting" rel="formatting" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-bold" rel="bold" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-italic" rel="italic" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-deleted" rel="deleted" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-unorderedlist" rel="unorderedlist" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-orderedlist" rel="orderedlist" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-outdent" rel="outdent" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-indent" rel="indent" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-image" rel="image" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-file" rel="file" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-link" rel="link" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-alignment" rel="alignment" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-horizontalrule" rel="horizontalrule" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-fontcolor redactor-btn-image" rel="fontcolor" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-backcolor redactor-btn-image" rel="backcolor" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-fontsize redactor-btn-image" rel="fontsize" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-fontfamily redactor-btn-image" rel="fontfamily" tabindex="-1"></a></li>
+                                        <li><a href="#" class="re-icon re-textdirection redactor-btn-image" rel="textdirection" tabindex="-1"></a></li>
+                                    </ul>
+                                    <div class="redactor-editor" contenteditable="true" dir="ltr">
+                                    <textarea cols="40" id="id_text" name="text" rows="10" dir="ltr" style="display: none;"></textarea>
+                                </div>
+                                <script type="text/javascript">
+                                    jQuery(document).ready(function(jQuery){
+                                        var $field = jQuery("#id_text");
+                                        options = {"lang": "ru", "fileUpload": "/redactor/upload/file/", "plugins": ["fontcolor", "fontsize", "fontfamily", "textdirection"], "imageUpload": "/redactor/upload/image/", "buttonSource": "true"};
+                                        options.imageUploadErrorCallback = function(json){
+                                            alert(json.error);
+                                        };
+                                        $field.redactor(options);
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
                       <div class="control-group form-row field-price ">
                          <div>
                             <div class="control-label"><label class="required" for="id_price">Цена:</label></div>
