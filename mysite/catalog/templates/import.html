@@ -42,4 +42,67 @@
             <p>Please enable JavaScript to use file uploader.</p>
         </noscript>
     </div>
+
+    <div class="tab-content tab-content-main">
+            <fieldset class="module aligned first ">
+
+            <div class="control-group form-row field-name ">
+            <div>
+            <div class="control-label">
+            <label class="required" for="id_name">Название:</label>
+            </div>
+            <div class="controls">
+            <input class="vTextField" id="id_name" maxlength="200" name="name" type="text">
+            </div>
+            </div>
+            </div>
+
+            <div class="control-group form-row field-price ">
+                <div>
+                    <div class="control-label">
+                        <label class="required" for="id_price">Цена:</label>
+                    </div>
+                    <div class="controls">
+                        <input class="vIntegerField" id="id_price" name="price" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group form-row field-sale ">
+                <div>
+                    <div class="control-label">
+                        <label class="required" for="id_sale">Скидка, %:</label>
+                    </div>
+                    <div class="controls">
+                        <input class="vIntegerField" id="id_sale" name="sale" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group form-row field-sale_status ">
+                <div>
+                    <div class="control-label">
+                        <label class="required" for="id_sale_status">Сделать скидку:</label>
+                    </div>
+                    <div class="controls">
+                        <input class="vIntegerField" id="id_sale_status" name="sale_status" type="text">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="control-group form-row field-count ">
+                <div>
+                    <div class="control-label">
+                        <label class="required" for="id_count">Товар в наличии:</label>
+                    </div>
+                    <div class="controls">
+                        <input class="vIntegerField" id="id_count" name="count" type="text">
+                    </div>
+                </div>
+            </div>
+
+        </fieldset>
+    </div>
 {% endblock %}
