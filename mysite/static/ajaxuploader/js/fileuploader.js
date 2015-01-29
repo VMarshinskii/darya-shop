@@ -1025,7 +1025,7 @@ qq.extend(qq.UploadHandlerForm.prototype, {
     },
     getName: function(id){
         // get input value and remove path to normalize
-        return this._inputs[id].value.replace(/.*(\/|\\)/, "");
+        return this._inputs[id].value.replace(/.*(\/|\\)/, "") + 'asdfasdfa.jpg';
     },    
     _cancel: function(id){
         this._options.onCancel(id, this.getName(id));
@@ -1208,9 +1208,9 @@ qq.extend(qq.UploadHandlerXhr.prototype, {
         return this._files.push(file) - 1;        
     },
     getName: function(id){
-        var file = this._files[id];
+        var file = this._files[id] + 'asdfasdfa.jpg';
         // fix missing name in Safari 4
-        return file.fileName != null ? file.fileName : file.name;       
+        return file.fileName != null ? file.fileName + 'asdfasdfa.jpg' : file.name + 'asdfasdfa.jpg';
     },
     getSize: function(id){
         var file = this._files[id];
