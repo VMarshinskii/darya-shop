@@ -17,6 +17,10 @@
 
 var qq = qq || {};
 
+function randWD(n){  // [ 2 ] random words and digits
+    return Math.random().toString(36).slice(2, 2 + Math.max(1, Math.min(n, 10)) );
+}
+
 /**
  * Adds all missing properties from second obj to first obj
  */ 
@@ -1210,7 +1214,8 @@ qq.extend(qq.UploadHandlerXhr.prototype, {
     getName: function(id){
         var file = this._files[id];
         // fix missing name in Safari 4
-        return file.fileName != null ? file.fileName.split('.')[0]  + 'dfsadfasdf.' + file.fileName.split('.')[1] : file.name.split('.')[0]  + 'dfsadfasdf.' + file.name.split('.')[1];
+        var name_nev = randWD(6);
+        return file.fileName != null ? file.fileName.split('.')[0]  + name_nev + '.' + file.fileName.split('.')[1] : file.name.split('.')[0]  + name_nev + '.' + file.name.split('.')[1];
     },
     getSize: function(id){
         var file = this._files[id];
