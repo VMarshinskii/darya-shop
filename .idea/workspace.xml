@@ -52,9 +52,14 @@
       <file leaf-file-name="import.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56348073" vertical-offset="1288" max-vertical-offset="2567">
-              <caret line="99" column="60" selection-start-line="99" selection-start-column="60" selection-end-line="99" selection-end-column="60" />
-              <folding />
+            <state vertical-scroll-proportion="0.660485" vertical-offset="1390" max-vertical-offset="2533">
+              <caret line="109" column="88" selection-start-line="109" selection-start-column="88" selection-end-line="109" selection-end-column="88" />
+              <folding>
+                <element signature="e#4435#4487#0#HTML" expanded="true" />
+                <element signature="e#4545#4575#0#HTML" expanded="true" />
+                <element signature="e#5114#5166#0#HTML" expanded="true" />
+                <element signature="e#5224#5254#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -573,9 +578,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56348073" vertical-offset="1288" max-vertical-offset="2567">
-          <caret line="99" column="60" selection-start-line="99" selection-start-column="60" selection-end-line="99" selection-end-column="60" />
-          <folding />
+        <state vertical-scroll-proportion="0.660485" vertical-offset="1390" max-vertical-offset="2533">
+          <caret line="109" column="88" selection-start-line="109" selection-start-column="88" selection-end-line="109" selection-end-column="88" />
+          <folding>
+            <element signature="e#4435#4487#0#HTML" expanded="true" />
+            <element signature="e#4545#4575#0#HTML" expanded="true" />
+            <element signature="e#5114#5166#0#HTML" expanded="true" />
+            <element signature="e#5224#5254#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
