@@ -63,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.14265734" vertical-offset="0" max-vertical-offset="715">
-              <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+              <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
               <folding>
                 <element signature="e#24#52#0" expanded="true" />
               </folding>
@@ -118,8 +118,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.92" vertical-offset="816" max-vertical-offset="2499">
-              <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+            <state vertical-scroll-proportion="-13.6" vertical-offset="1224" max-vertical-offset="2499">
+              <caret line="92" column="25" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -775,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.92" vertical-offset="816" max-vertical-offset="2499">
-          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+        <state vertical-scroll-proportion="-13.6" vertical-offset="1224" max-vertical-offset="2499">
+          <caret line="92" column="25" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -784,7 +784,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14265734" vertical-offset="0" max-vertical-offset="715">
-          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
           <folding>
             <element signature="e#24#52#0" expanded="true" />
           </folding>
