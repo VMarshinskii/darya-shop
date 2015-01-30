@@ -97,25 +97,23 @@
                          </div>
                       </div>
 
-                       <div class="control-group form-row field-text ">
-                        <div>
-                            <div class="control-label"><label class="required" for="id_text">Текст:</label></div>
-                            <div class="controls">
-                                <div class="redactor-box">
-                                    <textarea cols="40" id="id_text" name="text" rows="10" dir="ltr" style="display: none;"></textarea>
-                                </div>
-                                <script type="text/javascript">
-                                    jQuery(document).ready(function(jQuery){
-                                        var $field = jQuery("#id_text");
-                                        options = {"lang": "ru", "fileUpload": "/redactor/upload/file/", "plugins": ["fontcolor", "fontsize", "fontfamily", "textdirection"], "imageUpload": "/redactor/upload/image/", "buttonSource": "true"};
-                                        options.imageUploadErrorCallback = function(json){
-                                            alert(json.error);
-                                        };
-                                        $field.redactor(options);
-                                    });
-                                </script>
-                            </div>
-                        </div>
+                      <div class="control-group form-row field-text ">
+                       <div>
+                          <div class="control-label"><label class="required" for="id_text">Текст:</label></div>
+                          <div class="controls">
+                             <textarea cols="40" id="id_text" name="text" rows="10"></textarea>
+                             <script type="text/javascript">
+                                jQuery(document).ready(function(jQuery){
+                                    var $field = jQuery("#id_text");
+                                    options = {"lang": "ru", "fileUpload": "/redactor/upload/file/", "plugins": ["fontcolor", "fontsize", "fontfamily", "textdirection"], "imageUpload": "/redactor/upload/image/", "buttonSource": "true"};
+                                    options.imageUploadErrorCallback = function(json){
+                                        alert(json.error);
+                                    };
+                                    $field.redactor(options);
+                                });
+                             </script>
+                          </div>
+                       </div>
                     </div>
 
                       <div class="control-group form-row field-price ">
