@@ -90,7 +90,7 @@ USE_TZ = True
 
 
 REDACTOR_OPTIONS = {'lang': 'ru'}
-REDACTOR_UPLOAD = 'static/'
+REDACTOR_UPLOAD = '/static'
 
 
 # Static files (CSS, JavaScript, Images)
