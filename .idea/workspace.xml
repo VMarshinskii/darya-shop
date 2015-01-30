@@ -53,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.50927246" vertical-offset="1462" max-vertical-offset="3060">
-              <caret line="107" column="77" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
+              <caret line="107" column="180" selection-start-line="107" selection-start-column="180" selection-end-line="107" selection-end-column="180" />
               <folding />
             </state>
           </provider>
@@ -811,7 +811,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50927246" vertical-offset="1462" max-vertical-offset="3060">
-          <caret line="107" column="77" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
+          <caret line="107" column="180" selection-start-line="107" selection-start-column="180" selection-end-line="107" selection-end-column="180" />
           <folding />
         </state>
       </provider>
