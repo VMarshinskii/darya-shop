@@ -1,5 +1,5 @@
 from django.contrib import admin
-from catalog.models import Product
+from catalog.models import Product, Entry
 from django.shortcuts import render_to_response
 
 
@@ -14,3 +14,4 @@ from django.shortcuts import render_to_response
 
 
 admin.site.register(Product)
+admin.site.register(Entry)

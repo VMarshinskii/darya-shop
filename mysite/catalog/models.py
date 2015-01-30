@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 from django.db import models
+from redactor.fields import RedactorField
+
+class Entry(models.Model):
+    title = models.CharField(max_length=250, verbose_name=u'Title')
+    short_text = RedactorField(verbose_name=u'Text')
 
 
 # Create your models here.
