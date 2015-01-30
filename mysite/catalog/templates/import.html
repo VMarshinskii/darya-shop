@@ -2,18 +2,21 @@
 {% load static %}
 
 {% block extrahead %}{{ block.super }}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" ></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.js"></script>
     <script src="{% static "ajaxuploader/js/fileuploader.js" %}" ></script>
     <link href="{% static "ajaxuploader/css/fileuploader.css" %}" media="screen" rel="stylesheet" type="text/css" />
-      <link href="/static/redactor/css/redactor.css" type="text/css" media="all" rel="stylesheet" />
+    <link href="/static/redactor/css/redactor.css" type="text/css" media="all" rel="stylesheet" />
     <link href="/static/redactor/css/django_admin.css" type="text/css" media="all" rel="stylesheet" />
-    <script type="text/javascript" src="/static/redactor/jquery.redactor.init.js"></script>
-    <script type="text/javascript" src="/static/redactor/redactor.js"></script>
-    <script type="text/javascript" src="/static/redactor/langs/ru.js"></script>
-    <script type="text/javascript" src="/static/redactor/plugins/fontcolor.js"></script>
-    <script type="text/javascript" src="/static/redactor/plugins/fontsize.js"></script>
-    <script type="text/javascript" src="/static/redactor/plugins/fontfamily.js"></script>
-    <script type="text/javascript" src="/static/redactor/plugins/textdirection.js"></script>
+
+      <link href="/static/redactor/css/redactor.css" type="text/css" media="all" rel="stylesheet" />
+<link href="/static/redactor/css/django_admin.css" type="text/css" media="all" rel="stylesheet" />
+<script type="text/javascript" src="/static/admin/js/core.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="/static/admin/js/actions.js"></script>
+<script type="text/javascript" src="/static/redactor/jquery.redactor.init.js"></script>
+<script type="text/javascript" src="/static/redactor/redactor.js"></script>
+<script type="text/javascript" src="/static/redactor/langs/ru.js"></script>
     <script>
         $(function(){
         var uploader = new qq.FileUploader({
@@ -97,24 +100,15 @@
                          </div>
                       </div>
 
-                      <div class="control-group form-row field-text ">
-                       <div>
-                          <div class="control-label"><label class="required" for="id_text">Текст:</label></div>
-                          <div class="controls">
-                             <textarea cols="40" id="id_text" name="text" rows="10"></textarea>
-                             <script type="text/javascript">
-                                jQuery(document).ready(function(jQuery){
-                                    var $field = jQuery("#id_text");
-                                    options = {"lang": "ru", "fileUpload": "/static/", "plugins": ["fontcolor", "fontsize", "fontfamily", "textdirection"], "imageUpload": "/static/", "buttonSource": "true"};
-                                    options.imageUploadErrorCallback = function(json){
-                                        alert(json.error);
-                                    };
-                                    $field.redactor(options);
-                                });
-                             </script>
-                          </div>
-                       </div>
-                    </div>
+                        <div class="control-group form-row field-short_text ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_short_text">Text:</label></div>
+                                <div class="controls">
+                                    <textarea cols="40" id="id_short_text" name="short_text" rows="10"></textarea>
+                                    <script>jQuery(document).ready(function(){jQuery("#id_short_text").redactor(jQuery.extend({}, redactor_default_options, {"lang": "ru", "fileUpload": "/redactor/upload/file/", "imageUpload": "/redactor/upload/image/"}));});</script>
+                                </div>
+                            </div>
+                        </div>
 
                       <div class="control-group form-row field-price ">
                          <div>
