@@ -4,7 +4,7 @@ from redactor.fields import RedactorField
 
 class Entry(models.Model):
     title = models.CharField(max_length=250, verbose_name=u'Title')
-    short_text = RedactorField(verbose_name=u'Text', upload_to='/static/',)
+    short_text = RedactorField(verbose_name=u'Text')
 
 
 # Create your models here.
