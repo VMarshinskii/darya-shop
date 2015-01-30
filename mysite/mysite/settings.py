@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'catalog',
-    #'ajaxuploader',
+    'ajaxuploader',
     'redactor',
 )
 
@@ -90,7 +90,7 @@ USE_TZ = True
 
 
 REDACTOR_OPTIONS = {'lang': 'ru'}
-REDACTOR_UPLOAD = '/static'
+REDACTOR_UPLOAD = 'static'
 
 
 # Static files (CSS, JavaScript, Images)
