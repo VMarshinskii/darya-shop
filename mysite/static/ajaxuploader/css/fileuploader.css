@@ -11,8 +11,7 @@
     opacity: 0.2;
     background: url("/static/images/icon_plus.png") no-repeat center;
 }
-.qq-upload-button input {height: 100px}
-.qq-upload-button-hover {}
+.qq-upload-button-hover {background:none;}
 .qq-upload-button-focus {outline:1px dotted black;}
 
 .qq-upload-drop-area {
