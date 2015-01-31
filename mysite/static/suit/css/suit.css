@@ -312,3 +312,22 @@ a.append-icon i{margin-left:5px}
 
 
 .table td, .table th{vertical-align: middle}
+
+.adminBoxImg {
+    width: 130px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.adminBoxImgClose {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 0 0 0 3px;
+    opacity: 0.8;
+}
