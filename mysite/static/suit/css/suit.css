@@ -339,3 +339,15 @@ a.append-icon i{margin-left:5px}
     opacity: 0.2;
     cursor: pointer;
 }
+.adminCatalogSearchProduct {
+    height: 100px;
+    width: 512px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.21);
+    z-index: 100;
+}
+.adminCatalogSearchProductItem {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #b5b5b5;
+}
