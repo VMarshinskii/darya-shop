@@ -37,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="import.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="import.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7332382" vertical-offset="2988" max-vertical-offset="4080">
+            <state vertical-scroll-proportion="-19.76923" vertical-offset="2988" max-vertical-offset="4080">
               <caret line="237" column="46" selection-start-line="237" selection-start-column="46" selection-end-line="237" selection-end-column="46" />
               <folding>
                 <element signature="e#1368#1504#0#HTML" expanded="false" />
@@ -57,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="suit.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="suit.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/suit/css/suit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5427" max-vertical-offset="6222">
-              <caret line="352" column="36" selection-start-line="352" selection-start-column="36" selection-end-line="352" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.7895461" vertical-offset="5427" max-vertical-offset="6256">
+              <caret line="353" column="16" selection-start-line="353" selection-start-column="16" selection-end-line="353" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -160,8 +160,8 @@
         <option value="$PROJECT_DIR$/mysite/catalog/models.py" />
         <option value="$PROJECT_DIR$/mysite/static/ajaxuploader/css/fileuploader.css" />
         <option value="$PROJECT_DIR$/mysite/static/ajaxuploader/js/fileuploader.js" />
-        <option value="$PROJECT_DIR$/mysite/static/suit/css/suit.css" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/import.html" />
+        <option value="$PROJECT_DIR$/mysite/static/suit/css/suit.css" />
       </list>
     </option>
   </component>
@@ -1010,17 +1010,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/suit/css/suit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5427" max-vertical-offset="6222">
-          <caret line="352" column="36" selection-start-line="352" selection-start-column="36" selection-end-line="352" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7332382" vertical-offset="2988" max-vertical-offset="4080">
+        <state vertical-scroll-proportion="-19.76923" vertical-offset="2988" max-vertical-offset="4080">
           <caret line="237" column="46" selection-start-line="237" selection-start-column="46" selection-end-line="237" selection-end-column="46" />
           <folding>
             <element signature="e#1368#1504#0#HTML" expanded="false" />
@@ -1033,6 +1025,14 @@
             <element signature="e#8203#8233#0#HTML" expanded="true" />
             <element signature="e#11777#11797#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/suit/css/suit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7895461" vertical-offset="5427" max-vertical-offset="6256">
+          <caret line="353" column="16" selection-start-line="353" selection-start-column="16" selection-end-line="353" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
