@@ -191,6 +191,25 @@
                             </div>
                         </div>
                     </fieldset>
+                    <script type="text/javascript">
+                        (function($) {
+                            var field;
+
+                            field = {
+                                id: '#id_url',
+                                dependency_ids: [],
+                                dependency_list: [],
+                                maxLength: 200
+                            };
+
+                            field['dependency_ids'].push('#id_title');
+                            field['dependency_list'].push('title');
+
+                            $('.empty-form .form-row .field-url, .empty-form.form-row .field-url').addClass('prepopulated_field');
+                            $(field.id).data('dependency_list', field['dependency_list']).prepopulate(field['dependency_ids'], field.maxLength);
+
+                        })(django.jQuery);
+                    </script>
 
                 </div>
              </div>

@@ -40,8 +40,8 @@
       <file leaf-file-name="import.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50927246" vertical-offset="0" max-vertical-offset="3485">
-              <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.6119829" vertical-offset="3107" max-vertical-offset="3808">
+              <caret line="208" column="89" selection-start-line="208" selection-start-column="89" selection-end-line="208" selection-end-column="89" />
               <folding>
                 <element signature="e#5673#5725#0#HTML" expanded="true" />
                 <element signature="e#5783#5813#0#HTML" expanded="true" />
@@ -961,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50927246" vertical-offset="0" max-vertical-offset="3485">
-          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.6119829" vertical-offset="3107" max-vertical-offset="3808">
+          <caret line="208" column="89" selection-start-line="208" selection-start-column="89" selection-end-line="208" selection-end-column="89" />
           <folding>
             <element signature="e#5673#5725#0#HTML" expanded="true" />
             <element signature="e#5783#5813#0#HTML" expanded="true" />
