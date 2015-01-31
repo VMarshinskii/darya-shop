@@ -1231,6 +1231,8 @@ qq.extend(qq.UploadHandlerXhr.prototype, {
         var file = this._files[id],
             name = this.getName(id).split('.')[0]  + params.name_nev + '.' + this.getName(id).split('.')[1],
             size = this.getSize(id);
+        alert("ok");
+        alert(params);
                 
         this._loaded[id] = 0;
                                 
