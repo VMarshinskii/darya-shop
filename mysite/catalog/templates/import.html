@@ -129,14 +129,28 @@
 
                         <div class="control-group form-row field-short_text ">
                             <div>
-                                <div class="control-label"><label class="required" for="id_short_text">Text:</label></div>
+                                <div class="control-label"><label class="required" for="id_text">Описание:</label></div>
                                 <div class="controls">
-                                    <textarea cols="40" id="id_short_text" name="short_text" rows="10"></textarea>
+                                    <textarea cols="40" id="id_text" name="text" rows="10"></textarea>
                                     <script>jQuery(document).ready(function(){jQuery("#id_short_text").redactor(jQuery.extend({}, redactor_default_options, {"lang": "ru", "fileUpload": "/redactor/upload/file/", "imageUpload": "/redactor/upload/image/"}));});</script>
                                 </div>
                             </div>
                         </div>
 
+                       <div class="control-group form-row field-short_text ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_images">Изображения:</label></div>
+                                <div class="controls">
+                                    <div class="adminBoxImg">
+                                        <img src="{% static "images/img1.jpg" %}" alt=""/>
+                                        <img src="{% static "images/close_icon.png" %}" alt=""/>
+                                    </div>
+                                    <div class="adminBoxImg">
+                                        <img src="{% static "images/icon_plus.png" %}" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                       <div class="control-group form-row field-status ">
                          <div>
