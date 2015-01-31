@@ -540,10 +540,10 @@ qq.FileUploader = function(o){
         
         classes: {
             // used to get elements from templates
-            button: 'qq-upload-button',
+            button: 'adminBoxImgAdd',
             drop: 'qq-upload-drop-area',
             dropActive: 'qq-upload-drop-area-active',
-            list: 'qq-upload-list',
+            list: 'adminBoxImgList',
                         
             file: 'qq-upload-file',
             spinner: 'qq-upload-spinner',

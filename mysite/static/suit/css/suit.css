@@ -330,6 +330,7 @@ a.append-icon i{margin-left:5px}
     background: #fff;
     border-radius: 0 0 0 3px;
     opacity: 0.8;
+    cursor: pointer;
 }
 .adminBoxImgAdd {
     width: 60px;
