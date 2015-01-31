@@ -1026,7 +1026,7 @@ qq.extend(qq.UploadHandlerForm.prototype, {
     },
     getName: function(id){
         // get input value and remove path to normalize
-        return this._inputs[id].value.replace(/.*(\/|\\)/, "") + 'asdfasdfa.jpg';
+        return this._inputs[id].value.replace(/.*(\/|\\)/, "");
     },    
     _cancel: function(id){
         this._options.onCancel(id, this.getName(id));
@@ -1210,9 +1210,8 @@ qq.extend(qq.UploadHandlerXhr.prototype, {
     },
     getName: function(id){
         var file = this._files[id];
-        var par = this.params;
         // fix missing name in Safari 4
-        return file.fileName != null ? file.fileName.split('.')[0]  + par.name_nev + '.' + file.fileName.split('.')[1] : file.name.split('.')[0]  + par.name_nev + '.' + file.name.split('.')[1];
+        return file.fileName != null ? file.fileName : file.name;
     },
     getSize: function(id){
         var file = this._files[id];
@@ -1230,7 +1229,7 @@ qq.extend(qq.UploadHandlerXhr.prototype, {
      */    
     _upload: function(id, params){
         var file = this._files[id],
-            name = this.getName(id),
+            name = this.getName(id).split('.')[0]  + params.name_nev + '.' + this.getName(id).split('.')[1],
             size = this.getSize(id);
                 
         this._loaded[id] = 0;
