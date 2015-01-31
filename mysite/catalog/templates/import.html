@@ -67,7 +67,7 @@
                 onComplete: function(id, fileName, responseJSON) {
                     if(responseJSON.success) {
                         var wer = '.' + fileName.split('.')[1];
-                        $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + name + wer +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
+                        $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + get_cookie("filename") + wer +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
                         var expires = new Date(); // получаем текущую дату
                         expires.setTime(expires.getTime() + (1000 * 86400 * 365));
                         set_cookie("filename", randWD(8), expires);
