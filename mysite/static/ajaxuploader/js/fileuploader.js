@@ -530,7 +530,13 @@ qq.FileUploader = function(o){
              '</div>',
 
         // template for one item in file list
-    fileTemplate: '',
+    fileTemplate: '<li>' +
+                '<span class="qq-upload-file"></span>' +
+                '<span class="qq-upload-spinner"></span>' +
+                '<span class="qq-upload-size"></span>' +
+                '<a class="qq-upload-cancel" href="#">Cancel</a>' +
+                '<span class="qq-upload-failed-text">Failed</span>' +
+            '</li>',
         
         classes: {
             // used to get elements from templates
