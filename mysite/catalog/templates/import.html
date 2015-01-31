@@ -29,7 +29,8 @@
                 multiple: true,
                 onComplete: function(id, fileName, responseJSON) {
                     if(responseJSON.success) {
-                        $(".adminBoxImg").after('<div class="adminBoxImg"><img src="/static/' + name +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
+                        var wer = '.' + fileName.split('.')[1];
+                        $(".adminBoxImg").after('<div class="adminBoxImg"><img src="/static/' + name + wer +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
                     } else {
                         alert("upload failed!");
                     }
