@@ -132,7 +132,7 @@
                                 <div class="control-label"><label class="required" for="id_text">Описание:</label></div>
                                 <div class="controls">
                                     <textarea cols="40" id="id_text" name="text" rows="10"></textarea>
-                                    <script>jQuery(document).ready(function(){jQuery("#id_short_text").redactor(jQuery.extend({}, redactor_default_options, {"lang": "ru", "fileUpload": "/redactor/upload/file/", "imageUpload": "/redactor/upload/image/"}));});</script>
+                                    <script>jQuery(document).ready(function(){jQuery("#id_text").redactor(jQuery.extend({}, redactor_default_options, {"lang": "ru", "fileUpload": "/redactor/upload/file/", "imageUpload": "/redactor/upload/image/"}));});</script>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                                         <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
                                     </div>
                                     <div class="adminBoxImg">
-                                        <img src="{% static "images/icon_plus.png" %}" alt=""/>
+                                        <img class="adminBoxImgAdd" src="{% static "images/icon_plus.png" %}" alt="Загрузить"/>
                                     </div>
                                 </div>
                             </div>
@@ -169,25 +169,26 @@
                             </div>
                          </div>
                       </div>
-                      <div class="control-group form-row field-text ">
-                         <div>
-                            <div class="control-label"><label class="required" for="id_text">Описание:</label></div>
-                            <div class="controls"><textarea class="vLargeTextField" cols="40" id="id_text" name="text" rows="10"></textarea></div>
-                         </div>
-                      </div>
-                      <div class="control-group form-row field-keywords ">
-                         <div>
-                            <div class="control-label"><label class="required" for="id_keywords">Ключевые слова:</label></div>
-                            <div class="controls"><input class="vTextField" id="id_keywords" maxlength="200" name="keywords" type="text"></div>
-                         </div>
-                      </div>
-                      <div class="control-group form-row field-description ">
-                         <div>
-                            <div class="control-label"><label class="required" for="id_description">Description:</label></div>
-                            <div class="controls"><input class="vTextField" id="id_description" maxlength="200" name="description" type="text"></div>
-                         </div>
-                      </div>
                    </fieldset>
+
+                    <fieldset class="module aligned with-legend collapse collapsed">
+                        <h2 class="legend">SEO
+                            (<a id="fieldsetcollapser0" class="collapse-toggle" href="#">Показать</a>)
+                        </h2>
+                        <div class="control-group form-row field-keywords ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_keywords">Ключевые слова:</label></div>
+                                <div class="controls"><input class="vTextField" id="id_keywords" maxlength="200" name="keywords" type="text"></div>
+                            </div>
+                        </div>
+                        <div class="control-group form-row field-description ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_description">Description:</label></div>
+                                <div class="controls"><input class="vTextField" id="id_description" maxlength="200" name="description" type="text"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+
                 </div>
              </div>
           </form>
