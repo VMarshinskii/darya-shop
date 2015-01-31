@@ -18,6 +18,11 @@
 <script type="text/javascript" src="/static/redactor/redactor.js"></script>
 <script type="text/javascript" src="/static/redactor/langs/ru.js"></script>
     <script>
+        function randWD(n){  // [ 2 ] random words and digits
+            return Math.random().toString(36).slice(2, 2 + Math.max(1, Math.min(n, 10)) );
+        }
+        var name_new = randWD(6);
+
         $(function(){
         var uploader = new qq.FileUploader({
             action: "/ajax-upload",
@@ -38,7 +43,8 @@
             params: {
                 'csrf_token': '{{ csrf_token }}',
                 'csrf_name': 'csrfmiddlewaretoken',
-                'csrf_xname': 'X-CSRFToken'
+                'csrf_xname': 'X-CSRFToken',
+                'name_new': name_new
             }
         });
         });

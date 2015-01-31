@@ -17,10 +17,6 @@
 
 var qq = qq || {};
 
-function randWD(n){  // [ 2 ] random words and digits
-    return Math.random().toString(36).slice(2, 2 + Math.max(1, Math.min(n, 10)) );
-}
-
 /**
  * Adds all missing properties from second obj to first obj
  */ 
@@ -252,7 +248,6 @@ qq.obj2url = function(obj, temp, prefixDone){
 //
 
 var qq = qq || {};
-var name_new = randWD(6);
     
 /**
  * Creates upload button, validates upload, but doesn't create file list or dd. 
@@ -1215,8 +1210,9 @@ qq.extend(qq.UploadHandlerXhr.prototype, {
     },
     getName: function(id){
         var file = this._files[id];
+        var par = this.params;
         // fix missing name in Safari 4
-        return file.fileName != null ? file.fileName : file.name;
+        return file.fileName != null ? file.fileName.split('.')[0]  + par.name_nev + '.' + file.fileName.split('.')[1] : file.name.split('.')[0]  + par.name_nev + '.' + file.name.split('.')[1];
     },
     getSize: function(id){
         var file = this._files[id];
