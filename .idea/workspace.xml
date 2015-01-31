@@ -37,18 +37,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="import.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="import.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7546362" vertical-offset="253" max-vertical-offset="3638">
-              <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+            <state vertical-scroll-proportion="-20.346153" vertical-offset="253" max-vertical-offset="3655">
+              <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="47" selection-end-column="36" />
               <folding>
-                <element signature="e#4704#4724#0#HTML" expanded="true" />
-                <element signature="e#5660#5712#0#HTML" expanded="true" />
-                <element signature="e#5770#5800#0#HTML" expanded="true" />
-                <element signature="e#6339#6391#0#HTML" expanded="true" />
-                <element signature="e#6449#6479#0#HTML" expanded="true" />
-                <element signature="e#10007#10027#0#HTML" expanded="true" />
+                <element signature="e#4741#4761#0#HTML" expanded="true" />
+                <element signature="e#5697#5749#0#HTML" expanded="true" />
+                <element signature="e#5807#5837#0#HTML" expanded="true" />
+                <element signature="e#6376#6428#0#HTML" expanded="true" />
+                <element signature="e#6486#6516#0#HTML" expanded="true" />
+                <element signature="e#10044#10064#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fileuploader.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fileuploader.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/ajaxuploader/js/fileuploader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.620689" vertical-offset="19165" max-vertical-offset="22525">
-              <caret line="1154" column="41" selection-start-line="1154" selection-start-column="41" selection-end-line="1154" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.42979944" vertical-offset="20338" max-vertical-offset="22542">
+              <caret line="1214" column="130" selection-start-line="1214" selection-start-column="130" selection-end-line="1214" selection-end-column="192" />
               <folding />
             </state>
           </provider>
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/mysite/catalog/models.py" />
         <option value="$PROJECT_DIR$/mysite/static/suit/css/suit.css" />
         <option value="$PROJECT_DIR$/mysite/static/ajaxuploader/css/fileuploader.css" />
-        <option value="$PROJECT_DIR$/mysite/static/ajaxuploader/js/fileuploader.js" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/import.html" />
+        <option value="$PROJECT_DIR$/mysite/static/ajaxuploader/js/fileuploader.js" />
       </list>
     </option>
   </component>
@@ -681,12 +681,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3315">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4704#4724#0#HTML" expanded="true" />
-            <element signature="e#5660#5712#0#HTML" expanded="true" />
-            <element signature="e#5770#5800#0#HTML" expanded="true" />
-            <element signature="e#6339#6391#0#HTML" expanded="true" />
-            <element signature="e#6449#6479#0#HTML" expanded="true" />
-            <element signature="e#10007#10027#0#HTML" expanded="true" />
+            <element signature="e#4741#4761#0#HTML" expanded="true" />
+            <element signature="e#5697#5749#0#HTML" expanded="true" />
+            <element signature="e#5807#5837#0#HTML" expanded="true" />
+            <element signature="e#6376#6428#0#HTML" expanded="true" />
+            <element signature="e#6486#6516#0#HTML" expanded="true" />
+            <element signature="e#10044#10064#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -780,12 +780,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3094">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4704#4724#0#HTML" expanded="true" />
-            <element signature="e#5660#5712#0#HTML" expanded="true" />
-            <element signature="e#5770#5800#0#HTML" expanded="true" />
-            <element signature="e#6339#6391#0#HTML" expanded="true" />
-            <element signature="e#6449#6479#0#HTML" expanded="true" />
-            <element signature="e#10007#10027#0#HTML" expanded="true" />
+            <element signature="e#4741#4761#0#HTML" expanded="true" />
+            <element signature="e#5697#5749#0#HTML" expanded="true" />
+            <element signature="e#5807#5837#0#HTML" expanded="true" />
+            <element signature="e#6376#6428#0#HTML" expanded="true" />
+            <element signature="e#6486#6516#0#HTML" expanded="true" />
+            <element signature="e#10044#10064#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -866,12 +866,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3655">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4704#4724#0#HTML" expanded="true" />
-            <element signature="e#5660#5712#0#HTML" expanded="true" />
-            <element signature="e#5770#5800#0#HTML" expanded="true" />
-            <element signature="e#6339#6391#0#HTML" expanded="true" />
-            <element signature="e#6449#6479#0#HTML" expanded="true" />
-            <element signature="e#10007#10027#0#HTML" expanded="true" />
+            <element signature="e#4741#4761#0#HTML" expanded="true" />
+            <element signature="e#5697#5749#0#HTML" expanded="true" />
+            <element signature="e#5807#5837#0#HTML" expanded="true" />
+            <element signature="e#6376#6428#0#HTML" expanded="true" />
+            <element signature="e#6486#6516#0#HTML" expanded="true" />
+            <element signature="e#10044#10064#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1018,26 +1018,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/ajaxuploader/js/fileuploader.js">
+    <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.620689" vertical-offset="19165" max-vertical-offset="22525">
-          <caret line="1154" column="41" selection-start-line="1154" selection-start-column="41" selection-end-line="1154" selection-end-column="41" />
-          <folding />
+        <state vertical-scroll-proportion="-20.346153" vertical-offset="253" max-vertical-offset="3655">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="47" selection-end-column="36" />
+          <folding>
+            <element signature="e#4741#4761#0#HTML" expanded="true" />
+            <element signature="e#5697#5749#0#HTML" expanded="true" />
+            <element signature="e#5807#5837#0#HTML" expanded="true" />
+            <element signature="e#6376#6428#0#HTML" expanded="true" />
+            <element signature="e#6486#6516#0#HTML" expanded="true" />
+            <element signature="e#10044#10064#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/import.html">
+    <entry file="file://$PROJECT_DIR$/mysite/static/ajaxuploader/js/fileuploader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7546362" vertical-offset="253" max-vertical-offset="3638">
-          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-          <folding>
-            <element signature="e#4704#4724#0#HTML" expanded="true" />
-            <element signature="e#5660#5712#0#HTML" expanded="true" />
-            <element signature="e#5770#5800#0#HTML" expanded="true" />
-            <element signature="e#6339#6391#0#HTML" expanded="true" />
-            <element signature="e#6449#6479#0#HTML" expanded="true" />
-            <element signature="e#10007#10027#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.42979944" vertical-offset="20338" max-vertical-offset="22542">
+          <caret line="1214" column="130" selection-start-line="1214" selection-start-column="130" selection-end-line="1214" selection-end-column="192" />
+          <folding />
         </state>
       </provider>
     </entry>
