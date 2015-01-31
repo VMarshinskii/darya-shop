@@ -22,14 +22,14 @@
             return Math.random().toString(36).slice(2, 2 + Math.max(1, Math.min(n, 10)) );
         }
         $(function(){
+            var name = randWD(8);
             var uploader = new qq.FileUploader({
                 action: "/ajax-upload",
                 element: $('#file-uploader')[0],
                 multiple: true,
                 onComplete: function(id, fileName, responseJSON) {
                     if(responseJSON.success) {
-                        $(".adminBoxImg").after('<div class="adminBoxImg"><img src="/static/' + fileName +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
-                        alert(name_new);
+                        $(".adminBoxImg").after('<div class="adminBoxImg"><img src="/static/' + name +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
                     } else {
                         alert("upload failed!");
                     }
@@ -43,7 +43,7 @@
                     'csrf_token': '{{ csrf_token }}',
                     'csrf_name': 'csrfmiddlewaretoken',
                     'csrf_xname': 'X-CSRFToken',
-                    'name_new': randWD(8)
+                    'name_new': name
                 }
             });
         });
