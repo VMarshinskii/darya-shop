@@ -60,12 +60,6 @@
         set_cookie("filename", randWD(8), expires);
 
         $(function(){
-            var name = get_cookie("filename");
-
-            var expires = new Date(); // получаем текущую дату
-            expires.setTime(expires.getTime() + (1000 * 86400 * 365));
-            set_cookie("filename", randWD(8), expires);
-            
             var uploader = new qq.FileUploader({
                 action: "/ajax-upload",
                 element: $('#file-uploader')[0],
@@ -74,6 +68,9 @@
                     if(responseJSON.success) {
                         var wer = '.' + fileName.split('.')[1];
                         $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + name + wer +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
+                        var expires = new Date(); // получаем текущую дату
+                        expires.setTime(expires.getTime() + (1000 * 86400 * 365));
+                        set_cookie("filename", randWD(8), expires);
                     } else {
                         alert("upload failed!");
                     }
@@ -87,7 +84,7 @@
                     'csrf_token': '{{ csrf_token }}',
                     'csrf_name': 'csrfmiddlewaretoken',
                     'csrf_xname': 'X-CSRFToken',
-                    'name_new': name
+                    'name_new': get_cookie("filename")
                 }
             });
         });
