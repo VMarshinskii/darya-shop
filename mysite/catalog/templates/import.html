@@ -51,12 +51,6 @@
 {% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
 
 {% block content %}
-    <div id="file-uploader">
-        <noscript>
-            <p>Please enable JavaScript to use file uploader.</p>
-        </noscript>
-    </div>
-
     <ul class="breadcrumb">
         <li>
             <a href="/admin/">Начало</a>
@@ -146,7 +140,12 @@
                                         <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
                                     </div>
                                     <div class="adminBoxImg">
-                                        <img class="adminBoxImgAdd" src="{% static "images/icon_plus.png" %}" alt="Загрузить"/>
+                                        <div id="file-uploader">
+                                            <noscript>
+                                                <p>Please enable JavaScript to use file uploader.</p>
+                                            </noscript>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
