@@ -14,12 +14,9 @@
 <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
 <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
 <script type="text/javascript" src="/static/admin/js/actions.js"></script>
-<script type="text/javascript" src="/static/admin/js/urlify.js"></script>
-<script type="text/javascript" src="/static/admin/js/prepopulate.js"></script>
 <script type="text/javascript" src="/static/redactor/jquery.redactor.init.js"></script>
 <script type="text/javascript" src="/static/redactor/redactor.js"></script>
 <script type="text/javascript" src="/static/redactor/langs/ru.js"></script>
-<script type="text/javascript" src="/static/admin/js/collapse.js"></script>
     <script>
         $(function(){
         var uploader = new qq.FileUploader({
@@ -174,7 +171,7 @@
                       </div>
                    </fieldset>
 
-                    <fieldset class="module aligned with-legend collapse collapsed">
+                    <fieldset class="module aligned with-legend collapse">
                         <h2 class="legend">SEO
                             (<a id="fieldsetcollapser0" class="collapse-toggle" href="#">Показать</a>)
                         </h2>
@@ -191,25 +188,6 @@
                             </div>
                         </div>
                     </fieldset>
-                    <script type="text/javascript">
-                        (function($) {
-                            var field;
-
-                            field = {
-                                id: '#id_url',
-                                dependency_ids: [],
-                                dependency_list: [],
-                                maxLength: 200
-                            };
-
-                            field['dependency_ids'].push('#id_title');
-                            field['dependency_list'].push('title');
-
-                            $('.empty-form .form-row .field-url, .empty-form.form-row .field-url').addClass('prepopulated_field');
-                            $(field.id).data('dependency_list', field['dependency_list']).prepopulate(field['dependency_ids'], field.maxLength);
-
-                        })(django.jQuery);
-                    </script>
 
                 </div>
              </div>
