@@ -91,8 +91,8 @@
       <file leaf-file-name="fileuploader.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/ajaxuploader/js/fileuploader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53782666" vertical-offset="8823" max-vertical-offset="22593">
-              <caret line="542" column="35" selection-start-line="542" selection-start-column="35" selection-end-line="542" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.18707015" vertical-offset="8823" max-vertical-offset="22593">
+              <caret line="527" column="17" selection-start-line="527" selection-start-column="17" selection-end-line="527" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -1024,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/ajaxuploader/js/fileuploader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53782666" vertical-offset="8823" max-vertical-offset="22593">
-          <caret line="542" column="35" selection-start-line="542" selection-start-column="35" selection-end-line="542" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.18707015" vertical-offset="8823" max-vertical-offset="22593">
+          <caret line="527" column="17" selection-start-line="527" selection-start-column="17" selection-end-line="527" selection-end-column="66" />
           <folding />
         </state>
       </provider>
