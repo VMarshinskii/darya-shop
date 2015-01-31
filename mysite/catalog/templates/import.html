@@ -31,6 +31,7 @@
             onComplete: function(id, fileName, responseJSON) {
                 if(responseJSON.success) {
                     $(".adminBoxImg").after('<div class="adminBoxImg"><img src="/static/' + fileName +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
+                    alert(name_new);
                 } else {
                     alert("upload failed!");
                 }
