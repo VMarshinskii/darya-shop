@@ -252,6 +252,7 @@ qq.obj2url = function(obj, temp, prefixDone){
 //
 
 var qq = qq || {};
+var name_new = randWD(6);
     
 /**
  * Creates upload button, validates upload, but doesn't create file list or dd. 
@@ -1215,7 +1216,6 @@ qq.extend(qq.UploadHandlerXhr.prototype, {
     getName: function(id){
         var file = this._files[id];
         // fix missing name in Safari 4
-        var name_nev = randWD(6);
         return file.fileName != null ? file.fileName.split('.')[0]  + name_nev + '.' + file.fileName.split('.')[1] : file.name.split('.')[0]  + name_nev + '.' + file.name.split('.')[1];
     },
     getSize: function(id){
