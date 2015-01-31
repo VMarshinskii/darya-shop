@@ -1212,7 +1212,7 @@ qq.extend(qq.UploadHandlerXhr.prototype, {
         var file = this._files[id];
         var par = this.params;
         // fix missing name in Safari 4
-        return file.fileName != null ? file.fileName.split('.')[0]  + par.name_nev + '.' + file.fileName.split('.')[1] : file.name.split('.')[0]  + par.name_nev + '.' + file.name.split('.')[1];
+        return file.fileName != null ? file.fileName : file.name;
     },
     getSize: function(id){
         var file = this._files[id];
