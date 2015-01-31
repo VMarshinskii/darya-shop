@@ -60,8 +60,8 @@
       <file leaf-file-name="suit.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/suit/css/suit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7895461" vertical-offset="5427" max-vertical-offset="6256">
-              <caret line="353" column="16" selection-start-line="353" selection-start-column="16" selection-end-line="353" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.74277854" vertical-offset="5512" max-vertical-offset="6290">
+              <caret line="356" column="20" selection-start-line="356" selection-start-column="20" selection-end-line="356" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -1030,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/suit/css/suit.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7895461" vertical-offset="5427" max-vertical-offset="6256">
-          <caret line="353" column="16" selection-start-line="353" selection-start-column="16" selection-end-line="353" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.74277854" vertical-offset="5512" max-vertical-offset="6290">
+          <caret line="356" column="20" selection-start-line="356" selection-start-column="20" selection-end-line="356" selection-end-column="20" />
           <folding />
         </state>
       </provider>
