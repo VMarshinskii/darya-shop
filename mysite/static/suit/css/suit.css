@@ -322,9 +322,9 @@ a.append-icon i{margin-left:5px}
 }
 .adminBoxImgClose {
     position: absolute;
-    width: 16px;
-    height: 16px;
-    padding: 2px;
+    width: 11px;
+    height: 11px;
+    padding: 3px;
     top: 0;
     right: 0;
     background: #fff;

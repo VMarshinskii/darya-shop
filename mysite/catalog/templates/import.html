@@ -83,7 +83,7 @@
                 params: {
                     'csrf_token': '{{ csrf_token }}',
                     'csrf_name': 'csrfmiddlewaretoken',
-                    'csrf_xname': 'X-CSRFToken',
+                    'csrf_xname': 'X-CSRFToken'
                 }
             });
         });
@@ -219,6 +219,7 @@
                                 <div class="control-label"><label class="required" for="id_keywords">Товары:</label></div>
                                 <div class="controls">
                                     <input style="width: 500px" class="vTextField" id="id_keywords" maxlength="200" name="keywords" type="text">
+                                    <div class="adminCatalogSearchProduct"></div>
                                 </div>
                             </div>
                         </div>
