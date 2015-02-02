@@ -168,7 +168,7 @@
                             <div>
                                 <div class="control-label"><label class="required" for="id_text">Описание:</label></div>
                                 <div class="controls">
-                                    <textarea cols="40" id="id_text" name="text" rows="10">{{ model.text }}</textarea>
+                                    <textarea cols="40" id="id_text" name="text" rows="10" required>{{ model.text }}</textarea>
                                     <script>jQuery(document).ready(function(){jQuery("#id_text").redactor(jQuery.extend({}, redactor_default_options, {"lang": "ru", "fileUpload": "/redactor/upload/file/", "imageUpload": "/redactor/upload/image/"}));});</script>
                                 </div>
                             </div>

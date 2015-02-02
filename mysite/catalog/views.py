@@ -34,18 +34,30 @@ def product_form(request):
 def product_edit(request, id=-1):
     if id != -1:
         model = Product.objects.get(id=id)
-        if request.method == 'POST' and model.is_valid():
+        if request.method == 'POST':
             model.name = request.POST['name']
             model.price = int(request.POST['price'])
-            model.sale = int(request.POST['sale'])
+
+            if 'sale' in request.POST:
+                model.sale = int(request.POST['sale'])
+            else: model.sale = 0
+
             if 'sale_status' in request.POST:
-                model.sale_status = request.POST['sale_status']
+                model.sale_status = int(request.POST['sale_status'])
             else: model.sale_status = 0
+
             if 'count_status' in request.POST:
-                model.sale_status = request.POST['count_status']
-            else: model.sale_status = 0
-            model.count = int(request.POST['count'])
-            model.status = int(request.POST['status'])
+                model.count_status = int(request.POST['count_status'])
+            else: model.count_status = 0
+
+            if 'count' in request.POST:
+                model.count = int(request.POST['count'])
+            else: model.count = 0
+
+            if 'status' in request.POST:
+                model.status = int(request.POST['status'])
+            else: model.status = 0
+
             model.text = request.POST['text']
             model.images = request.POST['images']
             model.related_products = request.POST['related_products']
