@@ -19,7 +19,7 @@ class Product(models.Model):
     text = models.TextField("Описание")
     keywords = models.CharField("Ключевые слова", max_length=200)
     description = models.CharField("Description", max_length=200)
-    images = models.TextField()
+    images = models.TextField(blank=True)
     related_products = models.CharField(max_length=200)
 
     def __unicode__(self):
