@@ -133,19 +133,19 @@
                       <div class="control-group form-row field-name ">
                          <div>
                             <div class="control-label"><label class="required" for="id_name">Название:</label></div>
-                            <div class="controls"><input class="vTextField" style="width: 500px" id="id_name" value="{{ model.name }}" maxlength="200" name="name" type="text"></div>
+                            <div class="controls"><input class="vTextField" style="width: 500px" id="id_name" value="{{ model.name }}" maxlength="200" name="name" type="text" required></div>
                          </div>
                       </div>
 
                        <div class="control-group form-row field-price ">
                          <div>
                             <div class="control-label"><label class="required" for="id_price">Цена:</label></div>
-                            <div class="controls"><input class="vIntegerField" id="id_price" value="{{ model.price }}" name="price" type="text"></div>
+                            <div class="controls"><input class="vIntegerField" id="id_price" value="{{ model.price }}" name="price" type="text" required></div>
                          </div>
                       </div>
                       <div class="control-group form-row field-sale ">
                          <div>
-                            <div class="control-label"><label class="required" for="id_sale">Скидка, %:</label></div>
+                            <div class="control-label"><label for="id_sale">Скидка, %:</label></div>
                             <div class="controls">
                                 <input class="vIntegerField" id="id_sale" value="{{ model.sale }}" name="sale" type="text"/>
                                 <input {% if model.sale_status == '1' %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="sale_status" value="1" type="checkbox"/>
@@ -155,7 +155,7 @@
                       </div>
                       <div class="control-group form-row field-count ">
                          <div>
-                            <div class="control-label"><label class="required" for="id_count">Товар в наличии:</label></div>
+                            <div class="control-label"><label for="id_count">Товар в наличии:</label></div>
                             <div class="controls">
                                 <input class="vIntegerField" id="id_count" value="{{ model.count }}" name="count" type="text">
                                 <input {% if model.count_status == '1' %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="count_status" value="1" type="checkbox"/>
@@ -176,7 +176,7 @@
 
                        <div class="control-group form-row field-short_text ">
                             <div>
-                                <div class="control-label"><label class="required" for="id_images">Изображения:</label></div>
+                                <div class="control-label"><label for="id_images">Изображения:</label></div>
                                 <div class="controls">
                                     <input style="" id="hidden_images" name="images" type="text"/>
                                     <div class="adminBoxImg">
@@ -196,7 +196,7 @@
 
                       <div class="control-group form-row field-status ">
                          <div>
-                            <div class="control-label"><label class="required" for="id_status">Рекламные метки:</label></div>
+                            <div class="control-label"><label for="id_status">Рекламные метки:</label></div>
                             <div class="controls">
                                 <select id="id_status" name="status">
                                     <option value="0">нет</option>
@@ -217,7 +217,7 @@
                         <h2 class="legend">С этим товаром покупают</h2>
                         <div class="control-group form-row field-keywords ">
                             <div>
-                                <div class="control-label"><label class="required" for="id_keywords">Товары:</label></div>
+                                <div class="control-label"><label for="id_keywords">Товары:</label></div>
                                 <div class="controls">
                                     <input style="" id="id_related_products" maxlength="200" name="related_products" type="text">
                                     <input style="width: 500px" class="vTextField" id="id_search_products" maxlength="200" name="search_products" type="text">
@@ -248,13 +248,13 @@
                         <h2 class="legend">SEO</h2>
                         <div class="control-group form-row field-keywords ">
                             <div>
-                                <div class="control-label"><label class="required" for="id_keywords">Ключевые слова:</label></div>
+                                <div class="control-label"><label for="id_keywords">Ключевые слова:</label></div>
                                 <div class="controls"><input class="vTextField" id="id_keywords" maxlength="200" value="{{ model.keywords }}" name="keywords" type="text"></div>
                             </div>
                         </div>
                         <div class="control-group form-row field-description ">
                             <div>
-                                <div class="control-label"><label class="required" for="id_description">Description:</label></div>
+                                <div class="control-label"><label for="id_description">Description:</label></div>
                                 <div class="controls"><input class="vTextField" id="id_description" maxlength="200" value="{{ model.description }}" name="description" type="text"></div>
                             </div>
                         </div>
