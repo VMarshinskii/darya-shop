@@ -147,8 +147,8 @@
                          <div>
                             <div class="control-label"><label class="required" for="id_sale">Скидка, %:</label></div>
                             <div class="controls">
-                                <input class="vIntegerField" id="id_sale" name="sale" type="text">
-                                <input style="display: inline-block; margin: 0 3px 0 10px;" type="checkbox"/>
+                                <input class="vIntegerField" id="id_sale" name="sale" type="text"/>
+                                <input style="display: inline-block; margin: 0 3px 0 10px;" name="sale_status" type="checkbox"/>
                                 <label style="display: inline-block;">Сделать скидку</label>
                             </div>
                          </div>
@@ -158,7 +158,7 @@
                             <div class="control-label"><label class="required" for="id_count">Товар в наличии:</label></div>
                             <div class="controls">
                                 <input class="vIntegerField" id="id_count" name="count" type="text">
-                                <input style="display: inline-block; margin: 0 3px 0 10px;" type="checkbox"/>
+                                <input style="display: inline-block; margin: 0 3px 0 10px;" name="count_status" type="checkbox"/>
                                 <label style="display: inline-block;">Поставка под заказ</label>
                             </div>
                          </div>
@@ -178,6 +178,7 @@
                             <div>
                                 <div class="control-label"><label class="required" for="id_images">Изображения:</label></div>
                                 <div class="controls">
+                                    <input style="display: none" id="hidden_images" name="images" type="text"/>
                                     <div class="adminBoxImg">
                                         <img src="{% static "images/img1.jpg" %}" alt=""/>
                                         <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>

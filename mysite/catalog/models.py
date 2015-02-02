@@ -13,6 +13,7 @@ class Product(models.Model):
     price = models.IntegerField("Цена")
     sale = models.IntegerField("Скидка, %")
     sale_status = models.IntegerField("Сделать скидку")
+    #count_status = models.IntegerField("Под заказ")
     count = models.IntegerField("Товар в наличии")
     status = models.IntegerField("Рекламные метки")
     text = models.TextField("Описание")
