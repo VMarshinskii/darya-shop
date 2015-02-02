@@ -40,7 +40,7 @@ def product_edit(request, id=-1):
             model.sale = int(request.POST['sale'])
             if 'sale_status' in request.POST:
                 model.sale_status = request.POST['sale_status']
-            else: model.sale_status = ''
+            else: model.sale_status = 0
             model.count = int(request.POST['count'])
             model.status = int(request.POST['status'])
             model.text = request.POST['text']
