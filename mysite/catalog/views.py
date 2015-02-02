@@ -20,11 +20,11 @@ def product_form(request):
     if request.method == 'POST':
         model = Product()
         model.name = request.POST['name']
-        model.price = request.POST['price']
-        model.sale = request.POST['sale']
-        model.sale_status = request.POST['sale_status']
-        model.count = request.POST['count']
-        model.status = request.POST['status']
+        model.price = int(request.POST['price'])
+        model.sale = int(request.POST['sale'])
+        model.sale_status = int(request.POST['sale_status'])
+        model.count = int(request.POST['count'])
+        model.status = int(request.POST['status'])
         model.text = request.POST['text']
         model.keywords = request.POST['keywords']
         model.description = request.POST['description']
