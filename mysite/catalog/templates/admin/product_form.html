@@ -133,21 +133,21 @@
                       <div class="control-group form-row field-name ">
                          <div>
                             <div class="control-label"><label class="required" for="id_name">Название:</label></div>
-                            <div class="controls"><input class="vTextField" style="width: 500px" id="id_name" maxlength="200" name="name" type="text"></div>
+                            <div class="controls"><input class="vTextField" style="width: 500px" id="id_name" value="{{ model.name }}" maxlength="200" name="name" type="text"></div>
                          </div>
                       </div>
 
                        <div class="control-group form-row field-price ">
                          <div>
                             <div class="control-label"><label class="required" for="id_price">Цена:</label></div>
-                            <div class="controls"><input class="vIntegerField" id="id_price" name="price" type="text"></div>
+                            <div class="controls"><input class="vIntegerField" id="id_price" value="{{ model.price }}" name="price" type="text"></div>
                          </div>
                       </div>
                       <div class="control-group form-row field-sale ">
                          <div>
                             <div class="control-label"><label class="required" for="id_sale">Скидка, %:</label></div>
                             <div class="controls">
-                                <input class="vIntegerField" id="id_sale" name="sale" type="text"/>
+                                <input class="vIntegerField" id="id_sale" value="{{ model.sale }}" name="sale" type="text"/>
                                 <input style="display: inline-block; margin: 0 3px 0 10px;" name="sale_status" type="checkbox"/>
                                 <label style="display: inline-block;">Сделать скидку</label>
                             </div>
@@ -157,7 +157,7 @@
                          <div>
                             <div class="control-label"><label class="required" for="id_count">Товар в наличии:</label></div>
                             <div class="controls">
-                                <input class="vIntegerField" id="id_count" name="count" type="text">
+                                <input class="vIntegerField" id="id_count" value="{{ model.count }}" name="count" type="text">
                                 <input style="display: inline-block; margin: 0 3px 0 10px;" name="count_status" type="checkbox"/>
                                 <label style="display: inline-block;">Поставка под заказ</label>
                             </div>
@@ -168,7 +168,7 @@
                             <div>
                                 <div class="control-label"><label class="required" for="id_text">Описание:</label></div>
                                 <div class="controls">
-                                    <textarea cols="40" id="id_text" name="text" rows="10"></textarea>
+                                    <textarea cols="40" id="id_text" name="text" rows="10">{{ model.text }}</textarea>
                                     <script>jQuery(document).ready(function(){jQuery("#id_text").redactor(jQuery.extend({}, redactor_default_options, {"lang": "ru", "fileUpload": "/redactor/upload/file/", "imageUpload": "/redactor/upload/image/"}));});</script>
                                 </div>
                             </div>
@@ -248,13 +248,13 @@
                         <div class="control-group form-row field-keywords ">
                             <div>
                                 <div class="control-label"><label class="required" for="id_keywords">Ключевые слова:</label></div>
-                                <div class="controls"><input class="vTextField" id="id_keywords" maxlength="200" name="keywords" type="text"></div>
+                                <div class="controls"><input class="vTextField" id="id_keywords" maxlength="200" value="{{ model.keywords }}" name="keywords" type="text"></div>
                             </div>
                         </div>
                         <div class="control-group form-row field-description ">
                             <div>
                                 <div class="control-label"><label class="required" for="id_description">Description:</label></div>
-                                <div class="controls"><input class="vTextField" id="id_description" maxlength="200" name="description" type="text"></div>
+                                <div class="controls"><input class="vTextField" id="id_description" maxlength="200" value="{{ model.description }}" name="description" type="text"></div>
                             </div>
                         </div>
                     </fieldset>
