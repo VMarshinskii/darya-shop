@@ -9,8 +9,8 @@ urlpatterns = patterns('',
 
     url(r'^$', 'catalog.views.home'),
     url(r'^catalog/', include('catalog.urls')),
+    url(r'^admin/catalog/product/add/$', 'catalog.views.product_form', name="start"),
     url(r'^admin/', include(admin.site.urls)),
     url(r'ajax-upload$', 'catalog.views.import_uploader', name="my_ajax_upload"),
     url(r'^redactor/', include('redactor.urls')),
-    url(r'/admin/catalog/product/add/$', 'catalog.views.product_form', name="start"),
 )
