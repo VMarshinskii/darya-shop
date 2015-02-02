@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="product_form.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product_form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7332382" vertical-offset="2036" max-vertical-offset="4624">
+            <state vertical-scroll-proportion="-19.76923" vertical-offset="2036" max-vertical-offset="4624">
               <caret line="150" column="88" selection-start-line="150" selection-start-column="88" selection-end-line="150" selection-end-column="88" />
               <folding>
                 <element signature="e#7536#7588#0#HTML" expanded="true" />
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.4" vertical-offset="237" max-vertical-offset="986">
-              <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.55840456" vertical-offset="237" max-vertical-offset="986">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -157,8 +157,8 @@
         <option value="$PROJECT_DIR$/mysite/catalog/models.py" />
         <option value="$PROJECT_DIR$/mysite/catalog/admin.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/mysite/catalog/views.py" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html" />
+        <option value="$PROJECT_DIR$/mysite/catalog/views.py" />
       </list>
     </option>
   </component>
@@ -1133,16 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/catalog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.4" vertical-offset="237" max-vertical-offset="986">
-          <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/admin/result_content_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="740">
@@ -1153,11 +1143,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7332382" vertical-offset="2036" max-vertical-offset="4624">
+        <state vertical-scroll-proportion="-19.76923" vertical-offset="2036" max-vertical-offset="4624">
           <caret line="150" column="88" selection-start-line="150" selection-start-column="88" selection-end-line="150" selection-end-column="88" />
           <folding>
             <element signature="e#7536#7588#0#HTML" expanded="true" />
             <element signature="e#7675#7705#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/catalog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55840456" vertical-offset="237" max-vertical-offset="986">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
