@@ -35,10 +35,11 @@ def product_edit(request, id=-1):
     if id != -1:
         model = Product.objects.get(id=id)
         if request.method == 'POST':
-            model.name = request.POST['sale_status']
+            model.name = request.POST['name']
             model.price = int(request.POST['price'])
             model.sale = int(request.POST['sale'])
-            model.sale_status = 1
+            if 'sale_status' in request.POST:
+                model.sale_status = request.POST['sale_status']
             model.count = int(request.POST['count'])
             model.status = int(request.POST['status'])
             model.text = request.POST['text']
