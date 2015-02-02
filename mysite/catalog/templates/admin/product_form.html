@@ -158,7 +158,7 @@
                             <div class="control-label"><label class="required" for="id_count">Товар в наличии:</label></div>
                             <div class="controls">
                                 <input class="vIntegerField" id="id_count" value="{{ model.count }}" name="count" type="text">
-                                <input style="display: inline-block; margin: 0 3px 0 10px;" name="count_status" type="checkbox"/>
+                                <input {% if model.count_status == '1' %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="count_status" value="1" type="checkbox"/>
                                 <label style="display: inline-block;">Поставка под заказ</label>
                             </div>
                          </div>
@@ -178,7 +178,7 @@
                             <div>
                                 <div class="control-label"><label class="required" for="id_images">Изображения:</label></div>
                                 <div class="controls">
-                                    <input style="display: none" id="hidden_images" name="images" type="text"/>
+                                    <input style="" id="hidden_images" name="images" type="text"/>
                                     <div class="adminBoxImg">
                                         <img src="{% static "images/img1.jpg" %}" alt=""/>
                                         <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
@@ -219,7 +219,8 @@
                             <div>
                                 <div class="control-label"><label class="required" for="id_keywords">Товары:</label></div>
                                 <div class="controls">
-                                    <input style="width: 500px" class="vTextField" id="id_keywords" maxlength="200" name="keywords" type="text">
+                                    <input style="" id="id_related_products" maxlength="200" name="related_products" type="text">
+                                    <input style="width: 500px" class="vTextField" id="id_search_products" maxlength="200" name="search_products" type="text">
                                     <div class="adminCatalogSearchProduct">
                                         <div class="adminCatalogSearchProductItem">
                                             <img src="/static/images/img1.jpg" alt=""/>

@@ -13,12 +13,14 @@ class Product(models.Model):
     price = models.IntegerField("Цена")
     sale = models.IntegerField("Скидка, %")
     sale_status = models.IntegerField("Сделать скидку", default=0)
-    #count_status = models.IntegerField("Под заказ")
+    count_status = models.IntegerField("Под заказ")
     count = models.IntegerField("Товар в наличии")
     status = models.IntegerField("Рекламные метки", default=0)
     text = models.TextField("Описание")
     keywords = models.CharField("Ключевые слова", max_length=200)
     description = models.CharField("Description", max_length=200)
+    images = models.TextField()
+    related_products = models.CharField(max_length=200)
 
     def __unicode__(self):
         return self.name

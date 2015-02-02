@@ -28,11 +28,12 @@
       <file leaf-file-name="product_form.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7332382" vertical-offset="2036" max-vertical-offset="4624">
-              <caret line="150" column="69" selection-start-line="150" selection-start-column="69" selection-end-line="150" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.41797432" vertical-offset="3464" max-vertical-offset="4641">
+              <caret line="221" column="50" selection-start-line="221" selection-start-column="50" selection-end-line="221" selection-end-column="50" />
               <folding>
                 <element signature="e#7543#7595#0#HTML" expanded="true" />
                 <element signature="e#7682#7712#0#HTML" expanded="true" />
+                <element signature="e#12369#12389#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,8 +96,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="510">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state vertical-scroll-proportion="-14.96" vertical-offset="0" max-vertical-offset="544">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="20" />
               <folding>
                 <element signature="e#24#52#0" expanded="true" />
               </folding>
@@ -154,10 +155,10 @@
         <option value="$PROJECT_DIR$/mysite/catalog/urls.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/product_form.html" />
-        <option value="$PROJECT_DIR$/mysite/catalog/models.py" />
         <option value="$PROJECT_DIR$/mysite/catalog/admin.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/mysite/catalog/views.py" />
+        <option value="$PROJECT_DIR$/mysite/catalog/models.py" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html" />
       </list>
     </option>
@@ -723,6 +724,7 @@
           <folding>
             <element signature="e#7543#7595#0#HTML" expanded="true" />
             <element signature="e#7682#7712#0#HTML" expanded="true" />
+            <element signature="e#12369#12389#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -822,6 +824,7 @@
           <folding>
             <element signature="e#7543#7595#0#HTML" expanded="true" />
             <element signature="e#7682#7712#0#HTML" expanded="true" />
+            <element signature="e#12369#12389#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -913,6 +916,7 @@
           <folding>
             <element signature="e#7543#7595#0#HTML" expanded="true" />
             <element signature="e#7682#7712#0#HTML" expanded="true" />
+            <element signature="e#12369#12389#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -994,6 +998,7 @@
           <folding>
             <element signature="e#7543#7595#0#HTML" expanded="true" />
             <element signature="e#7682#7712#0#HTML" expanded="true" />
+            <element signature="e#12369#12389#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1103,16 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="510">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#24#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="374">
@@ -1151,13 +1146,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.96" vertical-offset="0" max-vertical-offset="544">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="e#24#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7332382" vertical-offset="2036" max-vertical-offset="4624">
-          <caret line="150" column="69" selection-start-line="150" selection-start-column="69" selection-end-line="150" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.41797432" vertical-offset="3464" max-vertical-offset="4641">
+          <caret line="221" column="50" selection-start-line="221" selection-start-column="50" selection-end-line="221" selection-end-column="50" />
           <folding>
             <element signature="e#7543#7595#0#HTML" expanded="true" />
             <element signature="e#7682#7712#0#HTML" expanded="true" />
+            <element signature="e#12369#12389#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
