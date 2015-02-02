@@ -22,7 +22,7 @@ def product_form(request):
         model.name = request.POST['name']
         model.price = int(request.POST['price'])
         model.sale = int(request.POST['sale'])
-        #model.sale_status = int(request.POST['sale_status'])
+        model.sale_status = 1
         model.count = int(request.POST['count'])
         model.status = int(request.POST['status'])
         model.text = request.POST['text']
