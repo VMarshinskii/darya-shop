@@ -58,6 +58,26 @@ def product_edit(request, id=-1):
                 model.status = int(request.POST['status'])
             else: model.status = 0
 
+            if 'text' in request.POST:
+                model.text = request.POST['text']
+            else: model.text = ''
+
+            if 'images' in request.POST:
+                model.images = request.POST['images']
+            else: model.images = ''
+
+            if 'related_products' in request.POST:
+                model.related_products = request.POST['related_products']
+            else: model.related_products = ''
+
+            if 'keywords' in request.POST:
+                model.keywords = request.POST['keywords']
+            else: model.keywords = ''
+
+            if 'description' in request.POST:
+                model.description = request.POST['description']
+            else: model.description = ''
+
             model.save()
         csrf_token = get_token(request)
         return render_to_response('admin/product_form.html', {'csrf_token': csrf_token, 'model': model}, context_instance=RequestContext(request))
