@@ -105,6 +105,15 @@
                 $("#hidden_images").val(images.replace(';' + img, ''));
                 parent.parent("div").remove();
             });
+
+            $(".adminBoxImgClose").click(function(){
+                var parent = $(this).parent("div");
+                var img = parent.attr("data-image");
+                $("#hidden_image").val(img);
+                $(".hidden_image_active").removeClass("hidden_image_active");
+                $(this).addClass("hidden_image_active");
+                $(this).css('opacity', '1');
+            });
         });
     </script>
 {% endblock %}
@@ -197,13 +206,14 @@
                             <div>
                                 <div class="control-label"><label for="id_images">Изображения:</label></div>
                                 <div class="controls">
+                                    <input style="" id="hidden_image" name="image" value="{{ model.image }}" type="text"/>
                                     <input style="" id="hidden_images" name="images" value="{{ model.images }}" type="text"/>
                                     {% for image in img %}
                                     <div class="adminBoxImg">
                                         <img src="/static/uploads/{{ image }}" alt=""/>
                                         <div class="adminBoxSettingsImages" data-image="{{ image }}">
                                             <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
-                                            <img class="adminBoxImgHead" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
+                                            <img class="adminBoxImgHead {%  if img == model.image %}hidden_image_active{% endif %}" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
                                         </div>
                                     </div>
                                     {% endfor %}
