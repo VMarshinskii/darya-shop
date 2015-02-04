@@ -88,10 +88,10 @@
 
                         if($(".adminBoxImg").size() == 2)
                         {
-                            var img2 = $(".adminBoxImg").children(".adminBoxSettingsImages").attr("data-image");
+                            var img2 = $(".adminBoxImg").eq(0).children(".adminBoxSettingsImages").attr("data-image");
                             $("#hidden_image").val(img2);
 
-                            var icon = $(".adminBoxImg").children(".adminBoxImgHead");
+                            var icon = $(".adminBoxImg").eq(0).children(".adminBoxImgHead");
                             icon.addClass("hidden_image_active");
                             icon.css('opacity', '1');
                         }
