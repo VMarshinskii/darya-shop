@@ -33,23 +33,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29928058" vertical-offset="455" max-vertical-offset="1428">
-              <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="969">
+              <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product_form.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="product_form.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231" vertical-offset="2244" max-vertical-offset="4658">
-              <caret line="150" column="66" selection-start-line="150" selection-start-column="66" selection-end-line="150" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.7515244" vertical-offset="2244" max-vertical-offset="4658">
+              <caret line="161" column="68" selection-start-line="161" selection-start-column="68" selection-end-line="161" selection-end-column="68" />
               <folding>
                 <element signature="e#7556#7608#0#HTML" expanded="true" />
+                <element signature="e#8405#8457#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,8 +139,8 @@
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/catalog/templates/import.html" />
-        <option value="$PROJECT_DIR$/catalog/templates/admin/product_form.html" />
         <option value="$PROJECT_DIR$/catalog/views.py" />
+        <option value="$PROJECT_DIR$/catalog/templates/admin/product_form.html" />
       </list>
     </option>
   </component>
@@ -917,21 +918,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
+    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/-1442825926/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="2244" max-vertical-offset="4658">
-          <caret line="150" column="66" selection-start-line="150" selection-start-column="66" selection-end-line="150" selection-end-column="66" />
-          <folding>
-            <element signature="e#7556#7608#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.3323741" vertical-offset="18112" max-vertical-offset="99331">
+          <caret line="1079" column="8" selection-start-line="1079" selection-start-column="8" selection-end-line="1079" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29928058" vertical-offset="455" max-vertical-offset="1428">
-          <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="969">
+          <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7515244" vertical-offset="2244" max-vertical-offset="4658">
+          <caret line="161" column="68" selection-start-line="161" selection-start-column="68" selection-end-line="161" selection-end-column="68" />
+          <folding>
+            <element signature="e#7556#7608#0#HTML" expanded="true" />
+            <element signature="e#8405#8457#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

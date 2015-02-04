@@ -35,46 +35,19 @@ def product_edit(request, id=-1):
     if id != -1:
         model = Product.objects.get(id=id)
         if request.method == 'POST':
-            model.name = request.POST['name']
-            model.price = int(request.POST['price'])
-
-            if 'sale' in request.POST:
-                model.sale = int(request.POST['sale'])
-            else: model.sale = 0
-
+            model.name = request.POST.get('name', '')
+            model.price = int(request.POST.get('price', 0))
+            model.sale = int(request.POST.get('sale', 0))
             model.sale_status = int(request.POST.get('sale_status', 0))
+            model.count = int(request.POST.get('count', 0))
+            model.count_status = int(request.POST.get('count_status', 0))
+            model.status = int(request.POST.get('status', 0))
 
-            if 'count_status' in request.POST:
-                model.count_status = int(request.POST['count_status'])
-            else: model.count_status = 0
-
-            if 'count' in request.POST:
-                model.count = int(request.POST['count'])
-            else: model.count = 0
-
-            if 'status' in request.POST:
-                model.status = int(request.POST['status'])
-            else: model.status = 0
-
-            if 'text' in request.POST:
-                model.text = request.POST['text']
-            else: model.text = ''
-
-            if 'images' in request.POST:
-                model.images = request.POST['images']
-            else: model.images = ''
-
-            if 'related_products' in request.POST:
-                model.related_products = request.POST['related_products']
-            else: model.related_products = ''
-
-            if 'keywords' in request.POST:
-                model.keywords = request.POST['keywords']
-            else: model.keywords = ''
-
-            if 'description' in request.POST:
-                model.description = request.POST['description']
-            else: model.description = ''
+            model.text = request.POST.get('text', '')
+            model.images = request.POST.get('images', '')
+            model.related_products = request.POST.get('related_products', '')
+            model.keywords = request.POST.get('keywords', '')
+            model.description = request.POST.get('description', '')
 
             model.save()
         csrf_token = get_token(request)
