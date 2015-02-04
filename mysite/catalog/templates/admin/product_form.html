@@ -90,7 +90,8 @@
 
         $(document).ready(function(){
             $("#id_search_products_ajax").keypress(function(){
-               alert("ok");
+               var key = $("#id_search_products_ajax").val();
+               $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
             });
         });
     </script>
@@ -230,22 +231,7 @@
                                     <input style="" id="id_related_products" maxlength="200" name="related_products" value="{{ model.related_products }}" type="text">
                                     <input style="width: 500px" class="vTextField" id="id_search_products_ajax" maxlength="200" name="search_products_ajax" type="text">
                                     <div class="adminCatalogSearchProduct">
-                                        <div class="adminCatalogSearchProductItem">
-                                            <img src="/static/images/img1.jpg" alt=""/>
-                                            <h3>Платье бла бла бла</h3>
-                                        </div>
-                                        <div class="adminCatalogSearchProductItem">
-                                            <img src="/static/images/img1.jpg" alt=""/>
-                                            <h3>Платье бла бла бла</h3>
-                                        </div>
-                                        <div class="adminCatalogSearchProductItem">
-                                            <img src="/static/images/img1.jpg" alt=""/>
-                                            <h3>Платье бла бла бла</h3>
-                                        </div>
-                                        <div class="adminCatalogSearchProductItem">
-                                            <img src="/static/images/img1.jpg" alt=""/>
-                                            <h3>Платье бла бла бла</h3>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
