@@ -10,7 +10,7 @@ class Category(models.Model):
 class Product(models.Model):
     name = models.CharField("Название", max_length=200)
     price = models.IntegerField("Цена")
-    category = models.ForeignKey(Category, verbose_name="Категория", blank=True)
+    category = models.ForeignKey(Category, verbose_name="Категория", blank=True, null=True)
     sale = models.IntegerField("Скидка, %")
     sale_status = models.IntegerField("Сделать скидку", default=0)
     count_status = models.IntegerField("Под заказ", default=0)
