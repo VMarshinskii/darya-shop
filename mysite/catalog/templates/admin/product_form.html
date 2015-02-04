@@ -89,7 +89,11 @@
         });
 
         $(document).ready(function(){
-            $("#id_search_products_ajax").keypress(function(){
+            $("#id_search_products_ajax").textchange(function(){
+               var key = $("#id_search_products_ajax").val();
+               $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
+            });
+            $("#id_search_products_ajax").change(function(){
                var key = $("#id_search_products_ajax").val();
                $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
             });
