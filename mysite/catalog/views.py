@@ -49,6 +49,9 @@ def product_edit(request, id=-1):
             model.description = request.POST.get('description', '')
             model.save()
         images = str(model.images).split(';')
+        for img in images:
+            if img == '':
+                images.remove(img)
         csrf_token = get_token(request)
         return render_to_response('admin/product_form.html', {'csrf_token': csrf_token, 'model': model, 'img': images}, context_instance=RequestContext(request))
 
