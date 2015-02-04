@@ -328,8 +328,8 @@ a.append-icon i{margin-left:5px}
     top: 0;
     right: 0;
     z-index: 10;
-    width: 37px;
-    height: 18px;
+    width: 36px;
+    height: 17px;
     border-radius: 0 0 0 3px;
 }
 .adminBoxImgClose {
@@ -339,7 +339,7 @@ a.append-icon i{margin-left:5px}
     padding: 3px;
     top: 0;
     right: 0;
-    opacity: 0.7;
+    opacity: 0.5;
     cursor: pointer;
 }
 .adminBoxImgClose:hover {
@@ -352,7 +352,7 @@ a.append-icon i{margin-left:5px}
     padding: 2px 3px;
     top: 0;
     right: 17px;
-    opacity: 0.7;
+    opacity: 0.5;
     cursor: pointer;
 }
 .adminBoxImgHead:hover {
