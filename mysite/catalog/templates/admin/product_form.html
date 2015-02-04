@@ -56,6 +56,16 @@
             return null;
         }
 
+        var click_head_img = function(){
+            var parent = $(this).parent("div");
+            var img = parent.attr("data-image");
+            $("#hidden_image").val(img);
+            $(".hidden_image_active").css('opacity', '0.3');
+            $(".hidden_image_active").removeClass("hidden_image_active");
+            $(this).addClass("hidden_image_active");
+            $(this).css('opacity', '1');
+        }
+
         var expires = new Date(); // получаем текущую дату
         expires.setTime(expires.getTime() + (1000 * 86400 * 365));
         set_cookie("filename", randWD(8), expires);
@@ -106,14 +116,7 @@
                 parent.parent("div").remove();
             });
 
-            $(".adminBoxImgHead").click(function(){
-                var parent = $(this).parent("div");
-                var img = parent.attr("data-image");
-                $("#hidden_image").val(img);
-                $(".hidden_image_active").removeClass("hidden_image_active");
-                $(this).addClass("hidden_image_active");
-                $(this).css('opacity', '1');
-            });
+            $(".adminBoxImgHead").live('click', click_head_img);
         });
     </script>
 {% endblock %}
