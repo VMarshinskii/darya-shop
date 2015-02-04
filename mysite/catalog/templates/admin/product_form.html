@@ -68,7 +68,7 @@
                 onComplete: function(id, fileName, responseJSON) {
                     if(responseJSON.success) {
                         var wer = get_cookie("filename") + '.' + fileName.split('.')[1];
-                        $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + wer +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/><img class="adminBoxImgHead" src="/static/images/close_icon.png" alt="Главная"/></div>');
+                        $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + wer + '" alt=""/><div data-image="' + wer + '" class="adminBoxSettingsImages"><img class="adminBoxImgClose" src="/images/close_icon.png" alt="Удалить"/><img class="adminBoxImgHead" src="/images/icon_writing.png" alt="Главная"/></div></div>');
                         var expires = new Date(); // получаем текущую дату
                         expires.setTime(expires.getTime() + (1000 * 86400 * 365));
                         set_cookie("filename", randWD(8), expires);
@@ -96,6 +96,11 @@
             $("#id_search_products_ajax").change(function(){
                var key = $("#id_search_products_ajax").val();
                $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
+            });
+
+            $(".adminBoxImgClose").click(function(){
+                var parent = $(this).parent("div");
+                alert(parent.attr("data-image"));
             });
         });
     </script>
@@ -193,7 +198,7 @@
                                     {% for image in img %}
                                     <div class="adminBoxImg">
                                         <img src="/static/uploads/{{ image }}" alt=""/>
-                                        <div class="adminBoxSettingsImages">
+                                        <div class="adminBoxSettingsImages" data-image="{{ image }}">
                                             <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
                                             <img class="adminBoxImgHead" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
                                         </div>
