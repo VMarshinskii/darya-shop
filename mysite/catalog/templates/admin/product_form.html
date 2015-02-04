@@ -102,7 +102,8 @@
                 var parent = $(this).parent("div");
                 var img = parent.attr("data-image");
                 var images = $("#hidden_images").val();
-                $("#hidden_images").val(images.replace(img, ''));
+                $("#hidden_images").val(images.replace(';' + img, ''));
+                parent.remove();
             });
         });
     </script>
