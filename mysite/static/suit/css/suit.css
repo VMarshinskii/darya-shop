@@ -320,6 +320,11 @@ a.append-icon i{margin-left:5px}
     position: relative;
     overflow: hidden;
 }
+.adminBoxSettingsImages
+{
+    background: #fff;
+    opacity: 0.9;
+}
 .adminBoxImgClose {
     position: absolute;
     width: 11px;
@@ -327,22 +332,25 @@ a.append-icon i{margin-left:5px}
     padding: 3px;
     top: 0;
     right: 0;
-    background: #fff;
-    border-radius: 0 0 0 3px;
-    opacity: 0.8;
+    opacity: 0.9;
     cursor: pointer;
+    border-radius: 0 0 0 3px;
+}
+.adminBoxImgClose:hover {
+    opacity: 1;
 }
 .adminBoxImgHead {
     position: absolute;
-    width: 11px;
-    height: 11px;
-    padding: 3px;
+    width: 13px;
+    height: 13px;
+    padding: 2px 3px;
     top: 0;
-    right: 13px;
-    background: #fff;
-    border-radius: 0 0 0 3px;
-    opacity: 0.8;
+    right: 17px;
+    opacity: 0.7;
     cursor: pointer;
+}
+.adminBoxImgHead:hover {
+    opacity: 1;
 }
 .adminBoxImgAdd {
     width: 60px;

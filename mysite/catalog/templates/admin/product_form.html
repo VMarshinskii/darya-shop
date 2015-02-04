@@ -193,8 +193,10 @@
                                     {% for image in img %}
                                     <div class="adminBoxImg">
                                         <img src="/static/uploads/{{ image }}" alt=""/>
-                                        <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
-                                        <img class="adminBoxImgHead" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
+                                        <div class="adminBoxSettingsImages">
+                                            <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
+                                            <img class="adminBoxImgHead" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
+                                        </div>
                                     </div>
                                     {% endfor %}
                                     <div class="adminBoxImg adminBoxImgLast">
