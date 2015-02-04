@@ -89,7 +89,7 @@
         });
 
         $(document).ready(function(){
-            $("#id_search_products").change(function(){
+            $("#id_search_products_ajax").input(function(){
                alert("ok");
             });
         });
@@ -228,7 +228,7 @@
                                 <div class="control-label"><label for="id_keywords">Товары:</label></div>
                                 <div class="controls">
                                     <input style="" id="id_related_products" maxlength="200" name="related_products" value="{{ model.related_products }}" type="text">
-                                    <input style="width: 500px" class="vTextField" id="id_search_products" maxlength="200" name="search_products" type="text">
+                                    <input style="width: 500px" class="vTextField" id="id_search_products_ajax" maxlength="200" name="search_products_ajax" type="text">
                                     <div class="adminCatalogSearchProduct">
                                         <div class="adminCatalogSearchProductItem">
                                             <img src="/static/images/img1.jpg" alt=""/>
