@@ -71,14 +71,13 @@
                         var expires = new Date(); // получаем текущую дату
                         expires.setTime(expires.getTime() + (1000 * 86400 * 365));
                         set_cookie("filename", randWD(8), expires);
+
+                        var img = $('#hidden_images').val();
+                        var str = img + ';' + fileName;
+                        $('#hidden_images').val(str);
                     } else {
                         alert("upload failed!");
                     }
-                },
-                onAllComplete: function(uploads) {
-                    // uploads is an array of maps
-                    // the maps look like this: {file: FileObject, response: JSONServerResponse}
-                    alert("All complete!");
                 },
                 params: {
                     'csrf_token': '{{ csrf_token }}',
