@@ -82,10 +82,19 @@
                         var expires = new Date(); // получаем текущую дату
                         expires.setTime(expires.getTime() + (1000 * 86400 * 365));
                         set_cookie("filename", randWD(8), expires);
-
                         var img = $('#hidden_images').val();
                         var str = img + ';' + wer;
                         $('#hidden_images').val(str);
+
+                        if($(".adminBoxImg").size() == 1)
+                        {
+                            var img2 = $(".adminBoxImg").attr("data-image");
+                            $("#hidden_image").val(img2);
+
+                            var icon = $(".adminBoxImg").children(".adminBoxImgHead")
+                            icon.addClass("hidden_image_active");
+                            icon.css('opacity', '1');
+                        }
                     } else {
                         alert("upload failed!");
                     }
