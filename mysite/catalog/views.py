@@ -42,7 +42,7 @@ def product_edit(request, id=-1):
                 model.sale = int(request.POST['sale'])
             else: model.sale = 0
 
-            model.sale_status = int(request.POST.get('is_private', 0))
+            model.sale_status = int(request.POST.get('sale_status', 0))
 
             if 'count_status' in request.POST:
                 model.count_status = int(request.POST['count_status'])
