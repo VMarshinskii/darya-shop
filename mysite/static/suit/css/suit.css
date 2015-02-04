@@ -332,6 +332,18 @@ a.append-icon i{margin-left:5px}
     opacity: 0.8;
     cursor: pointer;
 }
+.adminBoxImgHead {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    padding: 3px;
+    top: 0;
+    right: 13px;
+    background: #fff;
+    border-radius: 0 0 0 3px;
+    opacity: 0.8;
+    cursor: pointer;
+}
 .adminBoxImgAdd {
     width: 60px;
     height: 60px;

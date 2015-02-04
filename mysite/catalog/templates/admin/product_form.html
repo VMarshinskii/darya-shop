@@ -68,7 +68,7 @@
                 onComplete: function(id, fileName, responseJSON) {
                     if(responseJSON.success) {
                         var wer = get_cookie("filename") + '.' + fileName.split('.')[1];
-                        $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + wer +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
+                        $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + wer +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/><img class="adminBoxImgHead" src="/static/images/close_icon.png" alt="Главная"/></div>');
                         var expires = new Date(); // получаем текущую дату
                         expires.setTime(expires.getTime() + (1000 * 86400 * 365));
                         set_cookie("filename", randWD(8), expires);
@@ -194,6 +194,7 @@
                                     <div class="adminBoxImg">
                                         <img src="/static/uploads/{{ image }}" alt=""/>
                                         <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
+                                        <img class="adminBoxImgHead" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
                                     </div>
                                     {% endfor %}
                                     <div class="adminBoxImg adminBoxImgLast">
