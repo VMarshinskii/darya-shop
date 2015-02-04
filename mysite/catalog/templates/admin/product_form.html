@@ -149,6 +149,7 @@
                             <div class="controls">
                                 <input class="vIntegerField" id="id_sale" value="{{ model.sale }}" name="sale" type="text"/>
                                 <input {% if model.sale_status == '1' %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="sale_status" value="1" type="checkbox"/>
+                                <input type="" value="{{ model.sale_status }}"/>
                                 <label style="display: inline-block;">Сделать скидку</label>
                             </div>
                          </div>
