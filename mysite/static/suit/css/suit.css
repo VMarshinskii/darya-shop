@@ -324,6 +324,13 @@ a.append-icon i{margin-left:5px}
 {
     background: #fff;
     opacity: 0.9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 37px;
+    height: 18px;
+    border-radius: 0 0 0 3px;
 }
 .adminBoxImgClose {
     position: absolute;
@@ -332,9 +339,8 @@ a.append-icon i{margin-left:5px}
     padding: 3px;
     top: 0;
     right: 0;
-    opacity: 0.9;
+    opacity: 0.7;
     cursor: pointer;
-    border-radius: 0 0 0 3px;
 }
 .adminBoxImgClose:hover {
     opacity: 1;
