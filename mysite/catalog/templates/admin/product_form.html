@@ -8,15 +8,15 @@
     <link href="/static/redactor/css/redactor.css" type="text/css" media="all" rel="stylesheet" />
     <link href="/static/redactor/css/django_admin.css" type="text/css" media="all" rel="stylesheet" />
 
-      <link href="/static/redactor/css/redactor.css" type="text/css" media="all" rel="stylesheet" />
-<link href="/static/redactor/css/django_admin.css" type="text/css" media="all" rel="stylesheet" />
-<script type="text/javascript" src="/static/admin/js/core.js"></script>
-<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
-<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
-<script type="text/javascript" src="/static/admin/js/actions.js"></script>
-<script type="text/javascript" src="/static/redactor/jquery.redactor.init.js"></script>
-<script type="text/javascript" src="/static/redactor/redactor.js"></script>
-<script type="text/javascript" src="/static/redactor/langs/ru.js"></script>
+    <link href="/static/redactor/css/redactor.css" type="text/css" media="all" rel="stylesheet" />
+    <link href="/static/redactor/css/django_admin.css" type="text/css" media="all" rel="stylesheet" />
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/redactor/jquery.redactor.init.js"></script>
+    <script type="text/javascript" src="/static/redactor/redactor.js"></script>
+    <script type="text/javascript" src="/static/redactor/langs/ru.js"></script>
     <script>
         function randWD(n){  // [ 2 ] random words and digits
             return Math.random().toString(36).slice(2, 2 + Math.max(1, Math.min(n, 10)) );
@@ -127,7 +127,7 @@
                 </div>
              </div>
              <div class="inner-center-column">
-                <input type="hidden" name="csrfmiddlewaretoken" value="DfE94BndkJxJAcAQFAcvJkd45J5u92GK">
+                {{ csrf_token }}
                 <div class="tab-content tab-content-main">
                    <fieldset class="module aligned first ">
                       <div class="control-group form-row field-name ">
