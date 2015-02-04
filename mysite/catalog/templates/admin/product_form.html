@@ -66,14 +66,14 @@
                 multiple: true,
                 onComplete: function(id, fileName, responseJSON) {
                     if(responseJSON.success) {
-                        var wer = '.' + fileName.split('.')[1];
-                        $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + get_cookie("filename") + wer +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
+                        var wer = get_cookie("filename") + '.' + fileName.split('.')[1];
+                        $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + wer +'" alt=""/><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/></div>');
                         var expires = new Date(); // получаем текущую дату
                         expires.setTime(expires.getTime() + (1000 * 86400 * 365));
                         set_cookie("filename", randWD(8), expires);
 
                         var img = $('#hidden_images').val();
-                        var str = img + ';' + fileName;
+                        var str = img + ';' + wer;
                         $('#hidden_images').val(str);
                     } else {
                         alert("upload failed!");
@@ -178,10 +178,12 @@
                                 <div class="control-label"><label for="id_images">Изображения:</label></div>
                                 <div class="controls">
                                     <input style="" id="hidden_images" name="images" value="{{ model.images }}" type="text"/>
+                                    {% for image in img %}
                                     <div class="adminBoxImg">
-                                        <img src="{% static "images/img1.jpg" %}" alt=""/>
+                                        <img src="/static/uploads/{{ image }}" alt=""/>
                                         <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
                                     </div>
+                                    {% endfor %}
                                     <div class="adminBoxImg adminBoxImgLast">
                                         <div id="file-uploader">
                                             <noscript>
