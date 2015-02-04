@@ -127,7 +127,7 @@
                 </div>
              </div>
              <div class="inner-center-column">
-                {{ csrf_token }}
+                <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
                 <div class="tab-content tab-content-main">
                    <fieldset class="module aligned first ">
                       <div class="control-group form-row field-name ">
