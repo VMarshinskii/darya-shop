@@ -178,7 +178,7 @@
                             <div>
                                 <div class="control-label"><label for="id_images">Изображения:</label></div>
                                 <div class="controls">
-                                    <input style="" id="hidden_images" name="images" type="text"/>
+                                    <input style="" id="hidden_images" name="images" value="{{ model.images }}" type="text"/>
                                     <div class="adminBoxImg">
                                         <img src="{% static "images/img1.jpg" %}" alt=""/>
                                         <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
@@ -219,7 +219,7 @@
                             <div>
                                 <div class="control-label"><label for="id_keywords">Товары:</label></div>
                                 <div class="controls">
-                                    <input style="" id="id_related_products" maxlength="200" name="related_products" type="text">
+                                    <input style="" id="id_related_products" maxlength="200" name="related_products" value="{{ model.related_products }}" type="text">
                                     <input style="width: 500px" class="vTextField" id="id_search_products" maxlength="200" name="search_products" type="text">
                                     <div class="adminCatalogSearchProduct">
                                         <div class="adminCatalogSearchProductItem">
