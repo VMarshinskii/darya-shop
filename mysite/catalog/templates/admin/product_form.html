@@ -87,6 +87,12 @@
                 }
             });
         });
+
+        $(document).ready(function(){
+            $("#id_search_products").change(function(){
+               alert("ok");
+            });
+        });
     </script>
 {% endblock %}
 {% block extrastyle %}{{ block.super }}
