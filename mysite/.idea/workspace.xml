@@ -33,20 +33,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="710" max-vertical-offset="1462">
-              <caret line="82" column="73" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.42158273" vertical-offset="455" max-vertical-offset="1462">
+              <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product_form.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="product_form.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3887195" vertical-offset="1938" max-vertical-offset="4641">
+            <state vertical-scroll-proportion="37.26923" vertical-offset="3162" max-vertical-offset="4641">
               <caret line="129" column="84" selection-start-line="129" selection-start-column="84" selection-end-line="129" selection-end-column="84" />
               <folding />
             </state>
@@ -136,8 +136,8 @@
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/catalog/templates/import.html" />
-        <option value="$PROJECT_DIR$/catalog/views.py" />
         <option value="$PROJECT_DIR$/catalog/templates/admin/product_form.html" />
+        <option value="$PROJECT_DIR$/catalog/views.py" />
       </list>
     </option>
   </component>
@@ -915,18 +915,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/views.py">
+    <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="710" max-vertical-offset="1462">
-          <caret line="82" column="73" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="73" />
+        <state vertical-scroll-proportion="37.26923" vertical-offset="3162" max-vertical-offset="4641">
+          <caret line="129" column="84" selection-start-line="129" selection-start-column="84" selection-end-line="129" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
+    <entry file="file://$PROJECT_DIR$/catalog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3887195" vertical-offset="1938" max-vertical-offset="4641">
-          <caret line="129" column="84" selection-start-line="129" selection-start-column="84" selection-end-line="129" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.42158273" vertical-offset="455" max-vertical-offset="1462">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
           <folding />
         </state>
       </provider>
