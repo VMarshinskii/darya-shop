@@ -5,6 +5,7 @@ from django.middleware.csrf import get_token
 from django.template import RequestContext
 from catalog.models import Product
 from ajaxuploader.views import AjaxFileUploader
+from django.utils.encoding import smart_str
 
 
 # Create your views here.
@@ -49,7 +50,7 @@ def product_edit(request, id=-1):
             model.keywords = request.POST.get('keywords', '')
             model.description = request.POST.get('description', '')
             model.save()
-        images = str(model.images).split(';')
+        images = smart_str(model.images).split(';')
         for img in images:
             if img == '':
                 images.remove(img)
