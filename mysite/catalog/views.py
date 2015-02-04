@@ -18,20 +18,25 @@ def product(request):
 
 
 def product_form(request):
+    model = Product()
     if request.method == 'POST':
-        model = Product()
-        model.name = request.POST['name']
-        model.price = int(request.POST['price'])
-        model.sale = int(request.POST['sale'])
-        model.sale_status = 1
-        model.count = int(request.POST['count'])
-        model.status = int(request.POST['status'])
-        model.text = request.POST['text']
-        model.keywords = request.POST['keywords']
-        model.description = request.POST['description']
+        model.name = request.POST.get('name', '')
+        model.price = int(request.POST.get('price', 0))
+        model.sale = int(request.POST.get('sale', 0))
+        model.sale_status = int(request.POST.get('sale_status', 0))
+        model.count = int(request.POST.get('count', 0))
+        model.count_status = int(request.POST.get('count_status', 0))
+        model.status = int(request.POST.get('status', 0))
+        model.text = request.POST.get('text', '')
+        model.images = request.POST.get('images', '')
+        model.related_products = request.POST.get('related_products', '')
+        model.keywords = request.POST.get('keywords', '')
+        model.description = request.POST.get('description', '')
         model.save()
     csrf_token = get_token(request)
-    return render_to_response('admin/product_form.html', {'csrf_token': csrf_token}, context_instance=RequestContext(request))
+    images = []
+    return render_to_response('admin/product_form.html', {'csrf_token': csrf_token, 'model': model, 'img': images}, context_instance=RequestContext(request))
+
 
 def product_edit(request, id=-1):
     if id != -1:
@@ -57,5 +62,10 @@ def product_edit(request, id=-1):
         csrf_token = get_token(request)
         return render_to_response('admin/product_form.html', {'csrf_token': csrf_token, 'model': model, 'img': images}, context_instance=RequestContext(request))
 
+
+def product_edit_afax_related(request):
+    key = smart_str(request.GET.get('key'))
+    models = Product.objects.filter(name__contains=key)[:7]
+    return render_to_response('admin/edit_ajax_related.html', {'models': models})
 
 import_uploader = AjaxFileUploader()
