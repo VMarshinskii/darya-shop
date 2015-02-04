@@ -100,7 +100,9 @@
 
             $(".adminBoxImgClose").click(function(){
                 var parent = $(this).parent("div");
-                alert(parent.attr("data-image"));
+                var img = parent.attr("data-image");
+                var images = $("#hidden_images").val();
+                $("#hidden_images").val(images.replace(img, ''));
             });
         });
     </script>
