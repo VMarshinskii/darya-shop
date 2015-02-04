@@ -88,7 +88,12 @@
 
                         if($(".adminBoxImg").size() == 2)
                         {
-                            alert("ok");
+                            var img2 = $(".adminBoxImg").children(".adminBoxSettingsImages").attr("data-image");
+                            $("#hidden_image").val(img2);
+
+                            var icon = $(".adminBoxImg").children(".adminBoxImgHead");
+                            icon.addClass("hidden_image_active");
+                            icon.css('opacity', '1');
                         }
                     } else {
                         alert("upload failed!");
