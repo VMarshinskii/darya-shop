@@ -112,10 +112,6 @@
                var key = $("#id_search_products_ajax").val();
                $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
             });
-            $("#id_search_products_ajax").change(function(){
-               var key = $("#id_search_products_ajax").val();
-               $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
-            });
 
             $(".adminBoxImgClose").live("click", function(){
                 var parent = $(this).parent("div");
