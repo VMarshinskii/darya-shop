@@ -373,6 +373,7 @@ a.append-icon i{margin-left:5px}
     z-index: 100;
     overflow-x: hidden;
     overflow-y: scroll;
+    position: absolute;
 }
 .adminCatalogSearchProductItem {
     width: 100%;
