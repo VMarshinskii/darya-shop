@@ -424,6 +424,6 @@ a.append-icon i{margin-left:5px}
     color: #7B7777;
 }
 
-div.field-step {
+.control-group .field-step {
     display: none;
 }
