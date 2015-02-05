@@ -16,6 +16,7 @@ from django.utils.encoding import smart_unicode
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    prepopulated_fields = {"url": ("title",)}
     def changelist_view(self, request, extra_context=None):
         list_category = sort_list()
         select_res(list_category)
