@@ -218,14 +218,14 @@
                             <div>
                                 <div class="control-label"><label for="id_images">Изображения:</label></div>
                                 <div class="controls">
-                                    <input style="" id="hidden_image" name="image" value="{{ model.image }}" type="text"/>
-                                    <input style="" id="hidden_images" name="images" value="{{ model.images }}" type="text"/>
+                                    <input style="display: none" id="hidden_image" name="image" value="{{ model.image }}" type="text"/>
+                                    <input style="display: none" id="hidden_images" name="images" value="{{ model.images }}" type="text"/>
                                     {% for image in img %}
                                     <div class="adminBoxImg">
                                         <img src="/static/uploads/{{ image }}" alt=""/>
                                         <div class="adminBoxSettingsImages" data-image="{{ image }}">
                                             <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
-                                            <img class="adminBoxImgHead {%  if img == model.image %}hidden_image_active{% endif %}" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
+                                            <img class="adminBoxImgHead {%  if image == model.image %}hidden_image_active{% endif %}" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
                                         </div>
                                     </div>
                                     {% endfor %}
