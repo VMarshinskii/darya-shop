@@ -288,14 +288,16 @@
                                 <div class="controls">
                                     <input style="" id="id_related_products" maxlength="200" name="related_products" value="{{ model.related_products }}" type="text">
                                     <input style="width: 500px" class="vTextField" id="id_search_products_ajax" maxlength="200" name="search_products_ajax" type="text">
-                                    <div class="adminCatalogSearchProduct">
-
-                                    </div>
+                                    <div class="adminCatalogSearchProduct"></div>
                                     <div class="adminCatalogResearchProducts">
                                         <div class="adminCatalogResearchProductsItem">
+                                            <div class="adminBoxSettingsImages" data-image="{{ image }}">
+                                                <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
+                                                <img class="adminBoxImgHead {%  if image == model.image %}hidden_image_active{% endif %}" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
+                                            </div>
                                             <img src="/static/uploads/{{ model.image }}" alt=""/>
                                             <h3>{{ model.name }}</h3>
-                                            <p>{{ model.price }} р.</p>
+                                            <p>{{ model.price }} руб.</p>
                                         </div>
                                     </div>
                                 </div>

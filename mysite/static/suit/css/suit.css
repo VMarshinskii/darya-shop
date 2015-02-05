@@ -393,19 +393,26 @@ a.append-icon i{margin-left:5px}
 .hidden_image_active {
     opacity: 1;
 }
-
+.adminCatalogResearchProducts {
+    margin-top: 30px;
+    position: relative;
+}
 .adminCatalogResearchProductsItem {
     display: inline-block;
     margin: 0 10px 10px 0;
     overflow: hidden;
+    width: 170px;
 }
 .adminCatalogResearchProductsItem img {
-    height: 100px;
+    height: 125px;
     margin-bottom: 5px;
 }
 .adminCatalogResearchProductsItem h2 {
-    
+    font: 16px/16pt sans-serif;
+    text-align: left;
+    padding: 0;
 }
 .adminCatalogResearchProductsItem p {
-
+    font: 14px/14pt sans-serif;
+    color: #7B7777;
 }
