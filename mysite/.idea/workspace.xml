@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="suit.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="suit.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/suit/css/suit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90029323" vertical-offset="6050" max-vertical-offset="6783">
+            <state vertical-scroll-proportion="0.0" vertical-offset="6050" max-vertical-offset="6783">
               <caret line="392" column="14" selection-start-line="392" selection-start-column="14" selection-end-line="392" selection-end-column="14" />
               <folding />
             </state>
@@ -83,14 +83,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product_form.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="product_form.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="3468" max-vertical-offset="5168">
-              <caret line="221" column="63" selection-start-line="221" selection-start-column="63" selection-end-line="221" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.777439" vertical-offset="1683" max-vertical-offset="5270">
+              <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
               <folding>
-                <element signature="e#11728#11749#0#HTML" expanded="true" />
-                <element signature="e#11864#11885#0#HTML" expanded="true" />
+                <element signature="e#11921#11942#0#HTML" expanded="true" />
+                <element signature="e#12057#12078#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,8 +153,8 @@
         <option value="$PROJECT_DIR$/catalog/admin.py" />
         <option value="$PROJECT_DIR$/catalog/models.py" />
         <option value="$PROJECT_DIR$/catalog/views.py" />
-        <option value="$PROJECT_DIR$/catalog/templates/admin/product_form.html" />
         <option value="$PROJECT_DIR$/static/suit/css/suit.css" />
+        <option value="$PROJECT_DIR$/catalog/templates/admin/product_form.html" />
       </list>
     </option>
   </component>
@@ -679,8 +679,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="5168">
           <caret line="93" column="62" selection-start-line="93" selection-start-column="62" selection-end-line="93" selection-end-column="62" />
           <folding>
-            <element signature="e#11728#11749#0#HTML" expanded="true" />
-            <element signature="e#11864#11885#0#HTML" expanded="true" />
+            <element signature="e#11921#11942#0#HTML" expanded="true" />
+            <element signature="e#12057#12078#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1021,22 +1021,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
+    <entry file="file://$PROJECT_DIR$/static/suit/css/suit.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="3468" max-vertical-offset="5168">
-          <caret line="221" column="63" selection-start-line="221" selection-start-column="63" selection-end-line="221" selection-end-column="63" />
-          <folding>
-            <element signature="e#11728#11749#0#HTML" expanded="true" />
-            <element signature="e#11864#11885#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="6050" max-vertical-offset="6783">
+          <caret line="392" column="14" selection-start-line="392" selection-start-column="14" selection-end-line="392" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/suit/css/suit.css">
+    <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90029323" vertical-offset="6050" max-vertical-offset="6783">
-          <caret line="392" column="14" selection-start-line="392" selection-start-column="14" selection-end-line="392" selection-end-column="14" />
-          <folding />
+        <state vertical-scroll-proportion="0.777439" vertical-offset="1683" max-vertical-offset="5270">
+          <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+          <folding>
+            <element signature="e#11921#11942#0#HTML" expanded="true" />
+            <element signature="e#12057#12078#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
