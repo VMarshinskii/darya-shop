@@ -59,4 +59,4 @@ def select_res(categoryes):
     return str_res
 
 admin.site.register(Product)
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)
