@@ -91,7 +91,7 @@
                             var img2 = $(".adminBoxImg").eq(0).children(".adminBoxSettingsImages").attr("data-image");
                             $("#hidden_image").val(img2);
 
-                            var icon = $(".adminBoxImg").eq(0).children(".adminBoxImgHead");
+                            var icon = $(".adminBoxImg").children(".adminBoxSettingsImages").children(".adminBoxImgHead");
                             icon.addClass("hidden_image_active");
                             icon.css('background', '#000');
                             alert(icon.attr('src'));
