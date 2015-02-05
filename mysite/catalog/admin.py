@@ -2,7 +2,7 @@
 from django.contrib import admin
 from catalog.models import Product, Category
 from django.shortcuts import render_to_response
-from django.utils.encoding import smart_unicode
+from django.utils.encoding import smart_str
 
 
 # Register your models here.
@@ -39,7 +39,7 @@ def sort_list():
     roots = Category.objects.filter(parent=None)
 
     def rec_list(obj):
-        obj.title = smart_unicode("— "*obj.step + obj.title)
+        obj.title = smart_str("— "*obj.step + obj.title)
         mass_object.append(obj)
         children = Category.objects.filter(parent=obj)
 
