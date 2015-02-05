@@ -8,7 +8,7 @@ class Category(models.Model):
     url = models.CharField("Url", max_length=200, blank=True)
     description = models.CharField("Description", max_length=200, blank=True)
     keywords = models.CharField("Ключевые слова", max_length=200, blank=True)
-    step = models.IntegerField("Вложенность", blank=True, editable=False)
+    step = models.IntegerField("Вложенность", blank=True)
 
     class Meta:
         verbose_name_plural = u"Категории"

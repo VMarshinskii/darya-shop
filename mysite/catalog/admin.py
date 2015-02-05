@@ -7,6 +7,7 @@ from django.utils.encoding import smart_str
 
 class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {"url": ("title",)}
+    exclude = ["step"]
 
     def changelist_view(self, request, extra_context=None):
         list_category = sort_list()
