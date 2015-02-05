@@ -114,17 +114,17 @@
                 $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
                 $(".adminCatalogSearchProduct").show(400);
 
-                $(".adminCatalogSearchProductItem").live("click", function(){
-                    var val = $("#id_related_products").val();
-                    val = val + ";" + $(this).attr("data-id");
-                    $("#id_related_products").val(val);
-                    alert("ok");
-                    $(".adminCatalogSearchProduct").hide(300);
-                });
-
                 $(".controls").click(function(){
                     $(".adminCatalogSearchProduct").hide(300);
                 });
+            });
+
+            $(".adminCatalogSearchProductItem").live("click", function(){
+                var val = $("#id_related_products").val();
+                val = val + ";" + $(this).attr("data-id");
+                $("#id_related_products").val(val);
+                alert("ok");
+                $(".adminCatalogSearchProduct").hide(300);
             });
 
             $(".adminBoxImgClose").live("click", function(){
