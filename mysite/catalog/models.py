@@ -15,7 +15,7 @@ class Category(models.Model):
         verbose_name_plural = "Категории"
 
     def __unicode__(self):
-        return self.title
+        return u'%s' % self.title
 
     def get_all_product(self):
         mass_product = []
@@ -39,8 +39,6 @@ class Category(models.Model):
                 rec_path(obj)
         rec_path(self)
         return mass_pass
-
-
 
 
 class Product(models.Model):
