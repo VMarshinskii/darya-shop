@@ -108,10 +108,15 @@
         });
 
         $(document).ready(function(){
-            $("#id_search_products_ajax").oninput = function(){
-               var key = $("#id_search_products_ajax").val();
-               $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
+
+            var input = document.body.getElementById("id_search_products_ajax");
+
+            input.oninput = function() {
+                alert("ok");
             }
+
+
+            
 
             $(".adminBoxImgClose").live("click", function(){
                 var parent = $(this).parent("div");
