@@ -4,7 +4,7 @@ from django.db import models
 
 class Category(models.Model):
     title = models.CharField(max_length=250, verbose_name="Название")
-    parent = models.ForeignKey("self", verbose_name="Родительская категория", blank=True)
+    parent = models.ForeignKey("self", verbose_name="Родительская категория", blank=True, null=True)
     url = models.CharField("Url", max_length=200, blank=True)
     description = models.CharField("Description", max_length=200, blank=True)
     keywords = models.CharField("Ключевые слова", max_length=200, blank=True)
