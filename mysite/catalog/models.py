@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 from django.db import models
 from django.utils.encoding import smart_str
 
@@ -13,7 +13,8 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = "Категории"
-        verbose_name = "Категорияы"
+        verbose_name = "Категория"
+        unique_together = ("url",)
 
     def __unicode__(self):
         return self.title
