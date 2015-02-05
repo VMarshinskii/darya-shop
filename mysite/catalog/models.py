@@ -11,12 +11,9 @@ class Category(models.Model):
     keywords = models.CharField("Ключевые слова", max_length=200, blank=True)
     step = models.IntegerField("Вложенность", blank=True, editable=False, default=0)
 
-    class Meta:
-        verbose_name = smart_str("Категория")
-        verbose_name_plural = smart_str("Категории")
 
     def __unicode__(self):
-        return smart_str(self.title)
+        return self.title
 
     def get_all_product(self):
         mass_product = []
