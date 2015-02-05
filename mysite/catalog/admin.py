@@ -36,12 +36,12 @@ class CategoryAdmin(admin.ModelAdmin):
 
 def sort_list():
     mass_object = []
-    roots = Category.objects.filter(patent=None)
+    roots = Category.objects.filter(parent=None)
 
     def rec_list(obj):
         obj.title = smart_unicode("— "*obj.step + obj.title)
         mass_object.append(obj)
-        children = Category.objects.filter(patent=obj)
+        children = Category.objects.filter(parent=obj)
 
         for child in children:
             rec_list(child)
