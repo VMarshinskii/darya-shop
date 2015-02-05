@@ -39,7 +39,7 @@ def sort_list():
     roots = Category.objects.filter(parent=None)
 
     def rec_list(obj):
-        obj.title = "— "*obj.step + obj.title
+        obj.title = u'%s' % "— "*obj.step + obj.title
         mass_object.append(obj)
         children = Category.objects.filter(parent=obj)
 
@@ -55,7 +55,7 @@ def sort_list():
 def select_res(categoryes):
     str_res = ""
     for category in categoryes:
-        str_res += smart_unicode(category.title) + ":" + smart_unicode(category.id) + ";"
+        str_res += smart_str(category.title) + ":" + smart_str(category.id) + ";"
     return str_res
 
 admin.site.register(Product)
