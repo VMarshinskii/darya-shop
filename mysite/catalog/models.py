@@ -11,6 +11,10 @@ class Category(models.Model):
     keywords = models.CharField("Ключевые слова", max_length=200, blank=True)
     step = models.IntegerField("Вложенность", blank=True)
 
+    class Meta:
+        verbose_name_plural = "Категории"
+        verbose_name = "Категорияы"
+
     def __unicode__(self):
         return self.title
 
