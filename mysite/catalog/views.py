@@ -57,11 +57,25 @@ def product_edit(request, id=-1):
             model.description = request.POST.get('description', '')
             model.save()
         images = smart_str(model.images).split(';')
+        related_products = []
+
         for img in images:
             if img == '':
                 images.remove(img)
+
+        for pr in smart_str(model.related_products).split(';'):
+            if pr != '':
+                related_products.append(Product.objects.get(id=int(pr)))
+
         csrf_token = get_token(request)
-        return render_to_response('admin/product_form.html', {'csrf_token': csrf_token, 'model': model, 'img': images}, context_instance=RequestContext(request))
+        return render_to_response('admin/product_form.html',
+              {
+                  'csrf_token': csrf_token,
+                  'model': model,
+                  'img': images,
+                  'related_products': related_products
+              }
+              , context_instance=RequestContext(request))
 
 
 def product_edit_afax_related(request):

@@ -147,6 +147,14 @@
             });
 
             $(".adminBoxImgHead").live('click', click_head_img);
+
+            $(".adminBoxProductsClose").live("click", function(){
+                var current = $(this).parent("div").attr("data-id");
+                var val = $("#id_related_products").val();
+                $("#id_related_products").val(val.replace(current, ''));
+                $(this).parents(".adminCatalogResearchProductsItem").hide(300);
+                $(this).remove();
+            });
         });
     </script>
 {% endblock %}
@@ -282,7 +290,7 @@
 
                     <fieldset class="module aligned with-legend collapse">
                         <h2 class="legend">С этим товаром покупают</h2>
-                        <div class="control-group form-row field-keywords ">
+                        <div class="control-group form-row field-keywords " style="min-height: 303px;">
                             <div>
                                 <div class="control-label"><label for="id_keywords">Товары:</label></div>
                                 <div class="controls">
@@ -290,14 +298,16 @@
                                     <input style="width: 500px" class="vTextField" id="id_search_products_ajax" maxlength="200" name="search_products_ajax" type="text">
                                     <div class="adminCatalogSearchProduct"></div>
                                     <div class="adminCatalogResearchProducts">
+                                        {% for product in related_products %}
                                         <div class="adminCatalogResearchProductsItem">
-                                            <div class="adminBoxSettingsImages" data-image="{{ image }}">
+                                            <div class="adminBoxSettingsImages" data-id="{{ product.id }}">
                                                 <img class="adminBoxProductsClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
                                             </div>
-                                            <img src="/static/uploads/{{ model.image }}" alt=""/>
-                                            <h3>{{ model.name }}</h3>
-                                            <p>{{ model.price }} руб.</p>
+                                            <img src="/static/uploads/{{ product.image }}" alt=""/>
+                                            <h3>{{ product.name }}</h3>
+                                            <p>{{ product.price }} руб.</p>
                                         </div>
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </div>
