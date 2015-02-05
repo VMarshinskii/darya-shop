@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/catalog/templates/admin/edit_ajax_related.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.050822124" vertical-offset="0" max-vertical-offset="669">
-              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -1035,7 +1035,7 @@
     <entry file="file://$PROJECT_DIR$/catalog/templates/admin/edit_ajax_related.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.050822124" vertical-offset="0" max-vertical-offset="669">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
         </state>
       </provider>
