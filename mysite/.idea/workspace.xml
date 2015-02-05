@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/catalog/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1207">
-              <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+              <caret line="69" column="91" selection-start-line="69" selection-start-column="91" selection-end-line="69" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -46,8 +46,8 @@
       <file leaf-file-name="edit_ajax_related.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/templates/admin/edit_ajax_related.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.050822124" vertical-offset="0" max-vertical-offset="669">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.076233186" vertical-offset="0" max-vertical-offset="669">
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -151,9 +151,9 @@
         <option value="$PROJECT_DIR$/catalog/templates/admin/result_content_list.html" />
         <option value="$PROJECT_DIR$/catalog/admin.py" />
         <option value="$PROJECT_DIR$/catalog/models.py" />
-        <option value="$PROJECT_DIR$/catalog/views.py" />
         <option value="$PROJECT_DIR$/static/suit/css/suit.css" />
         <option value="$PROJECT_DIR$/catalog/templates/admin/product_form.html" />
+        <option value="$PROJECT_DIR$/catalog/views.py" />
         <option value="$PROJECT_DIR$/catalog/templates/admin/edit_ajax_related.html" />
       </list>
     </option>
@@ -1005,18 +1005,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1207">
-          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/suit/css/suit.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6050" max-vertical-offset="6783">
           <caret line="392" column="14" selection-start-line="392" selection-start-column="14" selection-end-line="392" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1207">
+          <caret line="69" column="91" selection-start-line="69" selection-start-column="91" selection-end-line="69" selection-end-column="91" />
           <folding />
         </state>
       </provider>
@@ -1034,8 +1034,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/templates/admin/edit_ajax_related.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.050822124" vertical-offset="0" max-vertical-offset="669">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.076233186" vertical-offset="0" max-vertical-offset="669">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -67,6 +67,6 @@ def product_edit(request, id=-1):
 def product_edit_afax_related(request):
     key = smart_str(request.GET.get('key'))
     models = Product.objects.filter(name__contains=key)[:7]
-    return render_to_response('admin/edit_ajax_related.html', {'models': models})
+    return render_to_response('admin/edit_ajax_related.html', {'models': models, 'key': key})
 
 import_uploader = AjaxFileUploader()
