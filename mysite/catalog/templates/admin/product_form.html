@@ -115,7 +115,10 @@
                 $(".adminCatalogSearchProduct").show(400);
 
                 $(".adminCatalogSearchProductItem").live("click", function(){
-                    alert($(this).attr("data-id"));
+                    var val = $("#id_related_products").val();
+                    val = val + ";" + $(this).attr("data-id");
+                    $("#id_related_products").val(val);
+                    $(".adminCatalogSearchProduct").hide(300);
                 });
 
                 $(".controls").click(function(){
