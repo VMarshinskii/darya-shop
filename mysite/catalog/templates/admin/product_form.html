@@ -123,8 +123,11 @@
                 var val = $("#id_related_products").val();
                 val = val + ";" + $(this).attr("data-id");
                 $("#id_related_products").val(val);
-                alert("ok");
-                $(".adminCatalogSearchProduct").hide(300);
+
+                $(".adminCatalogResearchProducts").append('<div class="adminCatalogResearchProductsItem"></div>');
+                $(".adminCatalogResearchProductsItem").last().hide();
+                $(".adminCatalogResearchProductsItem").last().load("admin/catalog/product/edit_ajax_reserach/" + $(this).attr("data-id"));
+                $(".adminCatalogResearchProductsItem").last().show(300);
             });
 
             $(".adminBoxImgClose").live("click", function(){
@@ -300,7 +303,7 @@
                                     <div class="adminCatalogResearchProducts">
                                         {% for product in related_products %}
                                         <div class="adminCatalogResearchProductsItem">
-                                            <div class="adminBoxSettingsImages" data-id="{{ product.id }}">
+                                            <div class="adminBoxSettingsImages" data-id="{{ product.id }}" style="width: 17px; height: 17px;">
                                                 <img class="adminBoxProductsClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
                                             </div>
                                             <img src="/static/uploads/{{ product.image }}" alt=""/>

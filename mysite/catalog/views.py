@@ -83,4 +83,12 @@ def product_edit_afax_related(request):
     models = Product.objects.filter(name__contains=key)[:7]
     return render_to_response('admin/edit_ajax_related.html', {'models': models, 'key': key})
 
+
+def product_edit_ajax_research(request, id_pr=-1):
+    if id_pr == -1:
+        return Http404
+    pr = Product.objects.get(id=id_pr)
+    return render_to_response("admin/edit_ajax_research.html", {'product': pr})
+
+
 import_uploader = AjaxFileUploader()
