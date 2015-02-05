@@ -395,19 +395,19 @@ a.append-icon i{margin-left:5px}
 }
 .adminCatalogResearchProducts {
     margin-top: 30px;
-    position: relative;
 }
 .adminCatalogResearchProductsItem {
     display: inline-block;
+    position: relative;
     margin: 0 10px 10px 0;
     overflow: hidden;
     width: 170px;
 }
-.adminCatalogResearchProductsItem img {
+.adminCatalogResearchProductsItem > img {
     height: 125px;
     margin-bottom: 5px;
 }
-.adminCatalogResearchProductsItem h2 {
+.adminCatalogResearchProductsItem h3 {
     font: 16px/16pt sans-serif;
     text-align: left;
     padding: 0;
