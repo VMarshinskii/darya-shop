@@ -39,7 +39,7 @@ def sort_list():
     roots = Category.objects.filter(parent=None)
 
     def rec_list(obj):
-        obj.title = u'%s' % "— "*obj.step + obj.title
+        obj.title = "sdfsadfjasdf"
         mass_object.append(obj)
         children = Category.objects.filter(parent=obj)
 
