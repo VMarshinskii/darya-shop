@@ -151,7 +151,7 @@
             $(".adminBoxProductsClose").live("click", function(){
                 var current = $(this).parent("div").attr("data-id");
                 var val = $("#id_related_products").val();
-                $("#id_related_products").val(val.replace(current, ''));
+                $("#id_related_products").val(val.replace(';' + current, ''));
                 $(this).parents(".adminCatalogResearchProductsItem").hide(300);
                 $(this).remove();
             });
@@ -290,8 +290,8 @@
 
                     <fieldset class="module aligned with-legend collapse">
                         <h2 class="legend">С этим товаром покупают</h2>
-                        <div class="control-group form-row field-keywords " style="min-height: 303px;">
-                            <div>
+                        <div class="control-group form-row field-keywords ">
+                            <div style="min-height: 303px;">
                                 <div class="control-label"><label for="id_keywords">Товары:</label></div>
                                 <div class="controls">
                                     <input style="" id="id_related_products" maxlength="200" name="related_products" value="{{ model.related_products }}" type="text">
