@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.db import models
+from django.utils.encoding import smart_str
 
 
 class Category(models.Model):
@@ -11,8 +12,8 @@ class Category(models.Model):
     step = models.IntegerField("Вложенность", blank=True, editable=False, default=0)
 
     class Meta:
-        verbose_name = "Категория"
-        verbose_name_plural = "Категории"
+        verbose_name = smart_str("Категория")
+        verbose_name_plural = smart_str("Категории")
 
     def __unicode__(self):
         return self.title
