@@ -1,6 +1,5 @@
 ﻿# -*- coding: utf-8 -*-
 from django.db import models
-from django.utils.encoding import smart_str
 
 
 class Category(models.Model):
@@ -9,7 +8,7 @@ class Category(models.Model):
     url = models.CharField("Url", max_length=200, blank=True)
     description = models.CharField("Description", max_length=200, blank=True)
     keywords = models.CharField("Ключевые слова", max_length=200, blank=True)
-    step = models.IntegerField("Вложенность", blank=True)
+    step = models.IntegerField("Вложенность", blank=True, editable=False)
 
     class Meta:
         verbose_name_plural = u"Категории"
@@ -58,6 +57,11 @@ class Product(models.Model):
     images = models.TextField(blank=True)
     image = models.CharField(max_length=200, blank=True)
     related_products = models.CharField(max_length=200, blank=True)
+
+    class Meta:
+        verbose_name_plural = u"Товары"
+        verbose_name = u"Товар"
+        unique_together = ("url",)
 
     def __unicode__(self):
         return self.name
