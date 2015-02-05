@@ -119,7 +119,7 @@
         </entry>
       </file>
       <file leaf-file-name="change_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin/catalog/product/change_list.html">
+        <entry file="file://$PROJECT_DIR$/templates/admin/catalog/category/change_list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-23.923077" vertical-offset="1469" max-vertical-offset="2193">
               <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
@@ -256,7 +256,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
+              <option name="myItemId" value="category" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1077,7 +1077,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/catalog/product/change_list.html">
+    <entry file="file://$PROJECT_DIR$/templates/admin/catalog/category/change_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.923077" vertical-offset="1469" max-vertical-offset="2193">
           <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
