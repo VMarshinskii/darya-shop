@@ -5,6 +5,42 @@ from django.db import models
 class Category(models.Model):
     title = models.CharField(max_length=250, verbose_name="Название")
     parent = models.ForeignKey("self", verbose_name="Родительская категория")
+    url = models.CharField("Url", max_length=200)
+    description = models.CharField("Description", max_length=200)
+    keywords = models.CharField("Ключевые слова", max_length=200)
+    step = models.IntegerField("Вложенность", blank=True, editable=False)
+
+    class Meta:
+        verbose_name = "Категория"
+        verbose_name_plural = "Категории"
+
+    def __unicode__(self):
+        return self.title
+
+    def get_all_product(self):
+        mass_product = []
+
+        def rec_category(obj):
+            product = Product.objects.filter(category=obj)
+            for product in product:
+                mass_product.append(product)
+            categories = Category.objects.filter(parent=obj)
+            for category in categories:
+                rec_category(category)
+        rec_category(self)
+        return mass_product
+
+    def get_path_categ(self):
+        mass_pass = []
+
+        def rec_path(obj):
+            if obj is not None:
+                mass_pass.append(obj)
+                rec_path(obj)
+        rec_path(self)
+        return mass_pass
+
+
 
 
 class Product(models.Model):
