@@ -27,10 +27,10 @@ class CategoryAdmin(admin.ModelAdmin):
         return super(CategoryAdmin, self).changelist_view(request, extra_context=mass)
 
     def save_model(self, request, obj, form, change):
-        if obj.patent is None:
+        if obj.parent is None:
             obj.step = 0
         else:
-            obj.step = obj.patent.step + 1
+            obj.step = obj.parent.step + 1
             obj.save()
 
 
