@@ -84,10 +84,10 @@ def product_edit_afax_related(request):
     return render_to_response('admin/edit_ajax_related.html', {'models': models, 'key': key})
 
 
-def product_edit_ajax_research(request, id_pr=-1):
-    if id_pr == -1:
+def product_edit_ajax_research(request, pr_id=-1):
+    if pr_id == -1:
         return Http404
-    pr = Product.objects.get(id=id_pr)
+    pr = Product.objects.get(id=pr_id)
     return render_to_response("admin/edit_ajax_research.html", {'product': pr})
 
 
