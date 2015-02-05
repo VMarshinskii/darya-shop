@@ -51,6 +51,7 @@ def product_edit(request, id=-1):
             model.status = int(request.POST.get('status', 0))
             model.text = request.POST.get('text', '')
             model.images = request.POST.get('images', '')
+            model.image = request.POST.get('image', '')
             model.related_products = request.POST.get('related_products', '')
             model.keywords = request.POST.get('keywords', '')
             model.description = request.POST.get('description', '')

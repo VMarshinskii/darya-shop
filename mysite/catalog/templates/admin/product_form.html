@@ -117,7 +117,7 @@
                $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
             });
 
-            $(".adminBoxImgClose").click(function(){
+            $(".adminBoxImgClose").live("click", function(){
                 var parent = $(this).parent("div");
                 var img = parent.attr("data-image");
                 var images = $("#hidden_images").val();
