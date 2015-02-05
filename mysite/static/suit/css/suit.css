@@ -393,3 +393,19 @@ a.append-icon i{margin-left:5px}
 .hidden_image_active {
     opacity: 1;
 }
+
+.adminCatalogResearchProductsItem {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+}
+.adminCatalogResearchProductsItem img {
+    height: 100px;
+    margin-bottom: 5px;
+}
+.adminCatalogResearchProductsItem h2 {
+    
+}
+.adminCatalogResearchProductsItem p {
+
+}
