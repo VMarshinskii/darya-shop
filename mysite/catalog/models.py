@@ -13,7 +13,6 @@ class Category(models.Model):
     class Meta:
         verbose_name_plural = u"Категории"
         verbose_name = u"Категория"
-        unique_together = ("url",)
 
     def __unicode__(self):
         return self.title
