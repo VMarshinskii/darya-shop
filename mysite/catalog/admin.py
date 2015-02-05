@@ -46,8 +46,8 @@ def sort_list():
         for child in children:
             rec_list(child)
 
-        for root in roots:
-            rec_list(root)
+    for root in roots:
+        rec_list(root)
 
     return mass_object
 
