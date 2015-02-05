@@ -12,8 +12,8 @@ class Category(models.Model):
     step = models.IntegerField("Вложенность", blank=True)
 
     class Meta:
-        verbose_name_plural = "Категории"
-        verbose_name = "Категория"
+        verbose_name_plural = u"Категории"
+        verbose_name = u"Категория"
         unique_together = ("url",)
 
     def __unicode__(self):
