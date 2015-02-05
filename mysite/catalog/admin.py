@@ -39,7 +39,7 @@ def sort_list():
     roots = Category.objects.filter(parent=None)
 
     def rec_list(obj):
-        obj.title = smart_str("— "*obj.step + obj.title)
+        obj.title = "— "*obj.step + obj.title
         mass_object.append(obj)
         children = Category.objects.filter(parent=obj)
 
