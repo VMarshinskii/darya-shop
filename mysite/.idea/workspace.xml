@@ -86,11 +86,11 @@
       <file leaf-file-name="product_form.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3887195" vertical-offset="1734" max-vertical-offset="5389">
-              <caret line="117" column="51" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.49237806" vertical-offset="1734" max-vertical-offset="5457">
+              <caret line="121" column="60" selection-start-line="121" selection-start-column="60" selection-end-line="121" selection-end-column="60" />
               <folding>
-                <element signature="e#12280#12301#0#HTML" expanded="true" />
-                <element signature="e#12416#12437#0#HTML" expanded="true" />
+                <element signature="e#12421#12442#0#HTML" expanded="true" />
+                <element signature="e#12557#12578#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -679,8 +679,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="5168">
           <caret line="93" column="62" selection-start-line="93" selection-start-column="62" selection-end-line="93" selection-end-column="62" />
           <folding>
-            <element signature="e#12280#12301#0#HTML" expanded="true" />
-            <element signature="e#12416#12437#0#HTML" expanded="true" />
+            <element signature="e#12421#12442#0#HTML" expanded="true" />
+            <element signature="e#12557#12578#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1031,11 +1031,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/templates/admin/product_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3887195" vertical-offset="1734" max-vertical-offset="5389">
-          <caret line="117" column="51" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.49237806" vertical-offset="1734" max-vertical-offset="5457">
+          <caret line="121" column="60" selection-start-line="121" selection-start-column="60" selection-end-line="121" selection-end-column="60" />
           <folding>
-            <element signature="e#12280#12301#0#HTML" expanded="true" />
-            <element signature="e#12416#12437#0#HTML" expanded="true" />
+            <element signature="e#12421#12442#0#HTML" expanded="true" />
+            <element signature="e#12557#12578#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

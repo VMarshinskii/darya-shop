@@ -114,8 +114,12 @@
                 $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
                 $(".adminCatalogSearchProduct").show(400);
 
-                $(".adminCatalogSearchProductItem").click(function(){
+                $(".adminCatalogSearchProductItem").live("click", function(){
                     alert($(this).attr("data-id"));
+                });
+
+                $(".controls").click(function(){
+                    $(".adminCatalogSearchProduct").hide(300);
                 });
             });
 
