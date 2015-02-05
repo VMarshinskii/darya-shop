@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.contrib import admin
 from catalog.models import Product, Category
 from django.shortcuts import render_to_response
