@@ -389,3 +389,6 @@ a.append-icon i{margin-left:5px}
 .adminCatalogSearchProductItem h3 {
     display: inline;
 }
+.hidden_image_active {
+    opacity: 1;
+}
