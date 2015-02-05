@@ -26,9 +26,6 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
-type_category = {0: 'Одежда', 1: 'Аксессуары'}
-
 # Application definition
 INSTALLED_APPS = (
     'catalog',
