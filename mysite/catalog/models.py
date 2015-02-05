@@ -16,7 +16,7 @@ class Category(models.Model):
         verbose_name_plural = smart_str("Категории")
 
     def __unicode__(self):
-        return self.title
+        return smart_str(self.title)
 
     def get_all_product(self):
         mass_product = []
