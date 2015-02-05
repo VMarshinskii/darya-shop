@@ -127,7 +127,12 @@
                 var parent = $(".adminBoxImgClose").parent("div");
                 if(parent.children(".adminBoxImgHead"))
                 {
-                    alert("ok");
+                    var img2 = $(".adminBoxImg").eq(0).children(".adminBoxSettingsImages").attr("data-image");
+                    $("#hidden_image").val(img2);
+
+                    var icon = $(".adminBoxImg").eq(0).children(".adminBoxSettingsImages").children(".adminBoxImgHead");
+                    icon.addClass("hidden_image_active");
+                    icon.css('opacity', '1');
                 }
             });
 
