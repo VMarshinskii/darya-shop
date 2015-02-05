@@ -107,15 +107,11 @@
             });
         });
 
-        var input = document.body.getElementById("id_search_products_ajax");
-
-        alert(input);
-
-        input.oninput = function() {
-            alert("ok");
-        };
-
         $(document).ready(function(){
+            $("#id_search_products_ajax").keyup(function(){
+               var key = $("#id_search_products_ajax").val();
+               $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
+            });
 
             $(".adminBoxImgClose").live("click", function(){
                 var parent = $(this).parent("div");
