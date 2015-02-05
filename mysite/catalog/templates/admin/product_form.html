@@ -292,8 +292,7 @@
                                     <div class="adminCatalogResearchProducts">
                                         <div class="adminCatalogResearchProductsItem">
                                             <div class="adminBoxSettingsImages" data-image="{{ image }}">
-                                                <img class="adminBoxImgClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
-                                                <img class="adminBoxImgHead {%  if image == model.image %}hidden_image_active{% endif %}" src="{% static "images/icon_writing.png" %}" alt="Главная"/>
+                                                <img class="adminBoxProductsClose" src="{% static "images/close_icon.png" %}" alt="Удалить"/>
                                             </div>
                                             <img src="/static/uploads/{{ model.image }}" alt=""/>
                                             <h3>{{ model.name }}</h3>
