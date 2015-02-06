@@ -16,12 +16,12 @@ class CategoryAdmin(admin.ModelAdmin):
         mass = {'result_content': html}
         return super(CategoryAdmin, self).changelist_view(request, extra_context=mass)
 
-    # def save_model(self, request, obj, form, change):
-    #     if obj.parent is None:
-    #         obj.step = 0
-    #     else:
-    #         obj.step = obj.parent.step + 1
-    #         obj.save()
+    def save_model(self, request, obj, form, change):
+        if obj.parent is None:
+            obj.step = 0
+        else:
+            obj.step = obj.parent.step + 1
+            obj.save()
 
 
 def sort_list():
