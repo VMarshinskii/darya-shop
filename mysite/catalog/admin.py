@@ -21,7 +21,7 @@ class CategoryAdmin(admin.ModelAdmin):
             obj.step = 0
         else:
             obj.step = obj.parent.step + 1
-            obj.save()
+        obj.save()
 
 
 def sort_list():
