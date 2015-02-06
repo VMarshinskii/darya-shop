@@ -30,13 +30,30 @@ def product_form(request):
         model.status = int(request.POST.get('status', 0))
         model.text = request.POST.get('text', '')
         model.images = request.POST.get('images', '')
+        model.image = request.POST.get('image', '')
         model.related_products = request.POST.get('related_products', '')
         model.keywords = request.POST.get('keywords', '')
         model.description = request.POST.get('description', '')
+        categories_id = int(request.POST.get('product_category', -1))
+        if categories_id == -1:
+            model.category = None
+        else:
+            model.category = Category.objects.get(id=categories_id)
         model.save()
-    csrf_token = get_token(request)
     images = []
-    return render_to_response('admin/product_form.html', {'csrf_token': csrf_token, 'model': model, 'img': images}, context_instance=RequestContext(request))
+    related_products = []
+    categories = sort_list()
+
+    csrf_token = get_token(request)
+    return render_to_response('admin/product_form.html',
+          {
+              'csrf_token': csrf_token,
+              'model': model,
+              'img': images,
+              'related_products': related_products,
+              'categories': categories,
+          }
+          , context_instance=RequestContext(request))
 
 
 def product_edit(request, id=-1):
