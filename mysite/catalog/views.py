@@ -3,9 +3,10 @@ from django.shortcuts import render_to_response
 from django.http import Http404
 from django.middleware.csrf import get_token
 from django.template import RequestContext
-from catalog.models import Product
+from catalog.models import Product, Category
 from ajaxuploader.views import AjaxFileUploader
 from django.utils.encoding import smart_str
+from catalog.admin import sort_list
 
 
 # Create your views here.
@@ -55,9 +56,15 @@ def product_edit(request, id=-1):
             model.related_products = request.POST.get('related_products', '')
             model.keywords = request.POST.get('keywords', '')
             model.description = request.POST.get('description', '')
+            categories_id = int(request.POST.get('product_category', -1))
+            if categories_id == -1:
+                model.category = None
+            else:
+                model.category = Category.objects.get(id=categories_id)
             model.save()
         images = smart_str(model.images).split(';')
         related_products = []
+        categories = sort_list()
 
         for img in images:
             if img == '':
@@ -73,7 +80,8 @@ def product_edit(request, id=-1):
                   'csrf_token': csrf_token,
                   'model': model,
                   'img': images,
-                  'related_products': related_products
+                  'related_products': related_products,
+                  'categories': categories,
               }
               , context_instance=RequestContext(request))
 
