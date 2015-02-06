@@ -6,7 +6,7 @@ from django.db import models
 class RightBanner(models.Model):
     title = models.CharField("Название", max_length=200)
     link = models.CharField("Ссылка", max_length=200)
-    image = models.ImageField(max_width=222, max_height=330, verbose_name="Изображение", upload_to="static/uploads/")
+    image = models.ImageField(verbose_name="Изображение", upload_to="static/uploads/")
 
     class Meta:
         verbose_name_plural = u"Баннеры справа"
@@ -19,7 +19,7 @@ class RightBanner(models.Model):
 class Slider(models.Model):
     title = models.CharField("Название", max_length=200)
     link = models.CharField("Ссылка", max_length=200)
-    image = models.ImageField(max_width=680, max_height=443, verbose_name="Изображение", upload_to="static/uploads/")
+    image = models.ImageField(verbose_name="Изображение", upload_to="static/uploads/")
 
     class Meta:
         verbose_name_plural = u"Слайдер"
