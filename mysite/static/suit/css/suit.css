@@ -427,3 +427,11 @@ a.append-icon i{margin-left:5px}
 .control-group .field-step {
     display: none;
 }
+
+.adminImageField {
+    margin: 10px 0 10px 0;
+    padding: 7px;
+    background: #fff;
+    border: 1px solid #E7E7E7;
+    border-radius: 3px;
+}
