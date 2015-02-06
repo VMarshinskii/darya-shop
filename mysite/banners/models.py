@@ -5,7 +5,7 @@ from django.db import models
 # Create your models here.
 class RightBanner(models.Model):
     title = models.CharField("Название", max_length=200)
-    image = models.ImageField(verbose_name="Изображение", upload_to="/static/uploads")
+    image = models.ImageField(verbose_name="Изображение", upload_to="static/uploads/")
     link = models.CharField("Ссылка", max_length=200)
 
     class Meta:
@@ -18,7 +18,7 @@ class RightBanner(models.Model):
 
 class Slider(models.Model):
     title = models.CharField("Название", max_length=200)
-    image = models.ImageField(verbose_name="Изображение", upload_to="/static/uploads")
+    image = models.ImageField(verbose_name="Изображение", upload_to="static/uploads/")
     link = models.CharField("Ссылка", max_length=200)
 
     class Meta:
