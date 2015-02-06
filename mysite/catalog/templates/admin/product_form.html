@@ -221,7 +221,7 @@
                                 <div class="control-label"><label class="required" for="id_product_category">Категория:</label></div>
                                 <div class="controls">
                                     <select id="id_product_category" name="product_category">
-                                        <option value=""{% if model.category == None %}selected{% endif %}>---------</option>
+                                        <option value="-1"{% if model.category == None %}selected{% endif %}>---------</option>
                                         {% for cat in categories %}
                                         <option value="{{ cat.id }}" {% if model.category == cat %}selected{% endif %}>{{ cat.title }}</option>
                                         {% endfor %}
