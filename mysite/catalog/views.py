@@ -51,7 +51,7 @@ def product_form(request):
               'model': model,
               'img': images,
               'related_products': related_products,
-              'categories': "fdgdsfgjsdfkljgkjsdfg",
+              'categories': categories,
           }
           , context_instance=RequestContext(request))
 
