@@ -37,8 +37,8 @@ def product_form(request):
         model.related_products = request.POST.get('related_products', '')
         model.keywords = request.POST.get('keywords', '')
         model.description = request.POST.get('description', '')
+        # model.home_status = int(request.POST.get('home_status', 0))
         categories_id = int(request.POST.get('product_category', -1))
-        model.home_status = int(request.POST.get('home_status', 0))
         if categories_id == -1:
             model.category = None
         else:
@@ -77,8 +77,8 @@ def product_edit(request, id=-1):
             model.related_products = request.POST.get('related_products', '')
             model.keywords = request.POST.get('keywords', '')
             model.description = request.POST.get('description', '')
+            # model.home_status = int(request.POST.get('home_status', 0))
             categories_id = int(request.POST.get('product_category', -1))
-            model.home_status = int(request.POST.get('home_status', 0))
             if categories_id == -1:
                 model.category = None
             else:
