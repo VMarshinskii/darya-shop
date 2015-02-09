@@ -22,6 +22,7 @@ def product_form(request):
     model = Product()
     model.price = 0
     model.sale = 0
+    model.count = 0
     if request.method == 'POST':
         model.name = request.POST.get('name', '')
         model.price = int(request.POST.get('price', 0))
