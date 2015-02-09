@@ -236,7 +236,7 @@
                             <div class="control-label"><label for="id_sale">Скидка, %:</label></div>
                             <div class="controls">
                                 <input class="vIntegerField" id="id_sale" value="{{ model.sale }}" name="sale" type="text"/>
-                                <input style="display: inline-block; margin: 0 3px 0 10px;" name="sale_status" value="{{ model.sale_status }}" type="checkbox"/>
+                                <input {% if model.sale_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="sale_status" value="{{ model.sale_status }}" type="checkbox"/>
                                 <label style="display: inline-block;">Сделать скидку</label>
                             </div>
                          </div>
@@ -246,7 +246,7 @@
                             <div class="control-label"><label for="id_count">Товар в наличии:</label></div>
                             <div class="controls">
                                 <input class="vIntegerField" id="id_count" value="{{ model.count }}" name="count" type="text">
-                                <input {% if model.count_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="count_status" value="1" type="checkbox"/>
+                                <input {% if model.count_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="count_status" value="{{ model.count_status }}" type="checkbox"/>
                                 <label style="display: inline-block;">Поставка под заказ</label>
                             </div>
                          </div>
