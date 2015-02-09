@@ -56,6 +56,7 @@ class Product(models.Model):
     images = models.TextField(blank=True)
     image = models.CharField(max_length=200, blank=True)
     related_products = models.CharField(max_length=200, blank=True)
+    home_status = models.IntegerField("На главной", default=0)
 
     class Meta:
         verbose_name_plural = u"Товары"

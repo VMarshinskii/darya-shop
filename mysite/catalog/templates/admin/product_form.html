@@ -302,6 +302,8 @@
                                     <option value="6">Товар недели</option>
                                     <option value="7">Товар месяца</option>
                                 </select>
+                                <input {% if model.home_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="home_status" value="{{ model.home_status }}" type="checkbox"/>
+                                <label style="display: inline-block;">На главной</label>
                             </div>
                          </div>
                       </div>

@@ -337,6 +337,7 @@ body {
 }
 #right-block .banners-r img {
     margin-top: 20px;
+    width: 100%;
 }
 .clear {
     clear: both;
