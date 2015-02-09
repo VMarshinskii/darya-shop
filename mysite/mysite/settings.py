@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'ajaxuploader',
     'redactor',
     'banners',
+    'pages'
 )
 
 
@@ -105,6 +106,7 @@ STATICFILES_DIRS = (
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
     os.path.join(BASE_DIR,  'catalog/templates'),
+    os.path.join(BASE_DIR,  'pages/templates'),
 )
 
 UIT_CONFIG = {
