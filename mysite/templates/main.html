@@ -1,6 +1,7 @@
 {% load static %}
 {% load catalog_menu %}
 {% load main_slider %}
+{% load right_banners %}
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -69,11 +70,7 @@
                     <a href="@lux_style_darya"><img src="images/instgr.png" alt=""/><p>@lux_style_darya</p></a>
                 </div>
             </div>
-            <div class="banners-r">
-                <a href="#"><img src="{% static "images/banner2.jpg" %}" alt="Реклама"/></a>
-                <a href="#"><img src="{% static "images/banner3.jpg" %}" alt="Реклама"/></a>
-                <a href="#"><img src="{% static "images/banner4.jpg" %}" alt="Реклама"/></a>
-            </div>
+            {% right_banners %}
         </div>
         <div class="clear"></div>
     </div>
