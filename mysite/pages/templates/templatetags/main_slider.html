@@ -12,7 +12,19 @@
         <div class="sliderkit-panels">
             {% for slider in sliders %}
             <div class="sliderkit-panel">
-                <img src="{{ slider.image }}" alt="[{{ slider.title }}]" />
+                <img src="{% static "images/mban1.jpg" %}" alt="[Alternative text]" />
+            </div>
+            <div class="sliderkit-panel">
+                <img src="{% static "images/photos/sample-02.jpg" %}" alt="[Alternative text]" />
+            </div>
+            <div class="sliderkit-panel">
+                <img src="{% static "images/photos/sample-03.jpg" %}" alt="[Alternative text]" />
+            </div>
+            <div class="sliderkit-panel">
+                <img src="{% static "images/photos/sample-04.jpg" %}" alt="[Alternative text]" />
+            </div>
+            <div class="sliderkit-panel">
+                <img src="{% static "images/photos/sample-05.jpg" %}" alt="[Alternative text]" />
             </div>
             {% endfor %}
         </div>
