@@ -272,7 +272,7 @@ body {
     color: #ed145b;
     text-overflow: ellipsis;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 0;
 }
 #center-block .goodss .good .price {
     font-size: 18px;
