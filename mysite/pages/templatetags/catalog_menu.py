@@ -6,9 +6,10 @@ register = template.Library()
 def catalog_menu():
     parents = Category.objects.filter(parent=None)
     mass_categ = {}
-    for cat in parents:
-        mass_categ[cat] = {}
-        childrens = Category.objects.filter(parent=cat)
+    for parent in parents:
+        mass_categories = []
+        childrens = Category.objects.filter(parent=parent)
         for child in childrens:
-            mass_categ[cat].append(child)
+            mass_categories.append(child)
+        mass_categ[parent] = mass_categories
     return {'mass_categ': mass_categ}
