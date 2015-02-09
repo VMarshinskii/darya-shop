@@ -3,77 +3,19 @@
 
 {% block content %}
 <div class="goodss">
+    {% for product in products %}
     <div class="good">
         <div class="goods-img">
-            <img src="images/img1.jpg" alt="img"/>
+            <img src="/static/uploads/{{ product.image }}" alt="img"/>
         </div>
         <div class="about-goods">
-            <a href="#">Пальто шерстянное с мехом лань</a>
+            <a href="#">{{ product.name }}</a>
         </div>
-        <div class="price">6 700 Руб.</div>
+        <div class="price">{{ product.price }} руб.</div>
         <div class="good-c">
             <a href="#">В корзину</a>
         </div>
     </div>
-    <div class="good">
-        <div class="goods-img">
-            <img src="images/img2.jpg" alt="img"/>
-        </div>
-        <div class="about-goods">
-            <a href="#">Пальто шерстянное с мехом лань</a>
-        </div>
-        <div class="price">6 700 Руб.</div>
-        <div class="good-c">
-            <a href="#">В корзину</a>
-        </div>
-    </div>
-    <div class="good mar0">
-        <div class="goods-img">
-            <img src="images/img1.jpg" alt="img"/>
-        </div>
-        <div class="about-goods">
-            <a href="#">Пальто шерстянное с мехом лань</a>
-        </div>
-        <div class="price">6 700 Руб.</div>
-        <div class="good-c">
-            <a href="#">В корзину</a>
-        </div>
-    </div>
-    <div class="good">
-        <div class="goods-img">
-            <img src="images/img2.jpg" alt="img"/>
-        </div>
-        <div class="about-goods">
-            <a href="#">Пальто шерстянное с мехом лань</a>
-        </div>
-        <div class="price">6 700 Руб.</div>
-        <div class="good-c">
-            <a href="#">В корзину</a>
-        </div>
-    </div>
-    <div class="good">
-        <div class="goods-img">
-            <img src="images/img1.jpg" alt="img"/>
-        </div>
-        <div class="about-goods">
-            <a href="#">Пальто шерстянное с мехом лань</a>
-        </div>
-        <div class="price">6 700 Руб.</div>
-        <div class="good-c">
-            <a href="#">В корзину</a>
-        </div>
-    </div>
-    <div class="good mar0">
-        <div class="goods-img">
-            <img src="images/img2.jpg" alt="img"/>
-        </div>
-        <div class="about-goods">
-            <a href="#">Пальто шерстянное с мехом лань</a>
-        </div>
-        <div class="price">6 700 Руб.</div>
-        <div class="good-c">
-            <a href="#">В корзину</a>
-        </div>
-    </div>
+    {% endfor %}
 </div>
 {% endblock %}

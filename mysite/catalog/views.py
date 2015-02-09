@@ -11,7 +11,8 @@ from catalog.admin import sort_list
 
 # Create your views here.
 def home(request):
-    return render_to_response("index.html")
+    products = Product.objects.order_by('?')[:12]
+    return render_to_response("index.html", {'products': products})
 
 
 def product(request):
