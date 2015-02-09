@@ -15,8 +15,12 @@ def home(request):
     return render_to_response("index.html", {'products': products})
 
 
-def product(request):
-    return render_to_response("product.html")
+def product(request, id=-1):
+    if id != -1:
+        product = Product.objects.get(id=id)
+        return render_to_response("product.html", {'product': product})
+    else:
+        return Http404
 
 
 def product_form(request):
