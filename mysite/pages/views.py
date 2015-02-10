@@ -8,7 +8,7 @@ from pages.models import Page
 # Create your views here.
 def page_view(request, url="None"):
     try:
-        page = Page.objects.get(url=url)
+        page = Page.objects.get(url="stranica1")
     except Page.DoesNotExist:
         raise Http404
     return render_to_response("page.html", {'page': page})
