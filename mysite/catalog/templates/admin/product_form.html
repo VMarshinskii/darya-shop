@@ -236,7 +236,7 @@
                             <div class="control-label"><label for="id_sale">Скидка, %:</label></div>
                             <div class="controls">
                                 <input class="vIntegerField" id="id_sale" value="{{ model.sale }}" name="sale" type="text"/>
-                                <input {% if model.sale_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="sale_status" value="{{ model.sale_status }}" type="checkbox"/>
+                                <input {% if model.sale_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="sale_status" value="1" type="checkbox"/>
                                 <label style="display: inline-block;">Сделать скидку</label>
                             </div>
                          </div>
@@ -246,7 +246,7 @@
                             <div class="control-label"><label for="id_count">Товар в наличии:</label></div>
                             <div class="controls">
                                 <input class="vIntegerField" id="id_count" value="{{ model.count }}" name="count" type="text">
-                                <input {% if model.count_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="count_status" value="{{ model.count_status }}" type="checkbox"/>
+                                <input {% if model.count_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="count_status" value="1" type="checkbox"/>
                                 <label style="display: inline-block;">Поставка под заказ</label>
                             </div>
                          </div>
@@ -293,16 +293,16 @@
                             <div class="control-label"><label for="id_status">Рекламные метки:</label></div>
                             <div class="controls">
                                 <select id="id_status" name="status">
-                                    <option value="0">нет</option>
-                                    <option value="1">Хит</option>
-                                    <option value="2">Акция</option>
-                                    <option value="3">Хит</option>
-                                    <option value="4">Распродажа</option>
-                                    <option value="5">Товар дня</option>
-                                    <option value="6">Товар недели</option>
-                                    <option value="7">Товар месяца</option>
+                                    <option value="0" {% if model.status == 0 %}selected{% endif %}>нет</option>
+                                    <option value="1" {% if model.status == 1 %}selected{% endif %}>Хит</option>
+                                    <option value="2" {% if model.status == 2 %}selected{% endif %}>Акция</option>
+                                    <option value="3" {% if model.status == 3 %}selected{% endif %}>Хит</option>
+                                    <option value="4" {% if model.status == 4 %}selected{% endif %}>Распродажа</option>
+                                    <option value="5" {% if model.status == 5 %}selected{% endif %}>Товар дня</option>
+                                    <option value="6" {% if model.status == 6 %}selected{% endif %}>Товар недели</option>
+                                    <option value="7" {% if model.status == 7 %}selected{% endif %}>Товар месяца</option>
                                 </select>
-                                <input {% if model.home_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="home_status" value="{{ model.home_status }}" type="checkbox"/>
+                                <input {% if model.home_status == 1 %}checked{% endif %} style="display: inline-block; margin: 0 3px 0 10px;" name="home_status" value="1" type="checkbox"/>
                                 <label style="display: inline-block;">На главной</label>
                             </div>
                          </div>
