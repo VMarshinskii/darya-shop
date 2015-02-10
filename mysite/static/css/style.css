@@ -425,6 +425,13 @@ body {
     border: 1px solid #974d68;
     padding: 10px;
 }
+.CatalogProductBoxContent {
+    margin: 15px 5px 10px 5px;
+    float: left;
+}
+.CatalogProductBoxContent img {
+    max-width: 100%;
+}
 .CatalogProductBox h1 {
     font-family: inherit;
     font-size: 26px;
@@ -434,7 +441,6 @@ body {
 .CatalogGalleryBox {
     background: #eeeeee;
     width: 230px;
-    height: 330px;
     float: left;
 }
 .CatalogPriceBox {
