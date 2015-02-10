@@ -1,13 +1,11 @@
 {% extends "main.html" %}
 {% load staticfiles %}
-{% load main_slider %}
 
 {% block head %}
     <title>Darya-Shop</title>
 {% endblock %}
 
 {% block content %}
-{% main_slider %}
 <div class="goodss">
     {% for product in products %}
     <div class="good">
