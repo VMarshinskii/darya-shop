@@ -425,6 +425,9 @@ body {
     border: 1px solid #974d68;
     padding: 10px;
 }
+.CatalogPriceBox p {
+    margin: 15px 5px 10px 5px;
+}
 .CatalogProductBox h1 {
     font-family: inherit;
     font-size: 26px;
