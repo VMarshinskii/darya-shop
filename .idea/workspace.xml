@@ -70,8 +70,8 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6829971" vertical-offset="6802" max-vertical-offset="8194">
-              <caret line="428" column="30" selection-start-line="428" selection-start-column="30" selection-end-line="428" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.65850145" vertical-offset="6802" max-vertical-offset="8211">
+              <caret line="427" column="18" selection-start-line="427" selection-start-column="18" selection-end-line="427" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -655,7 +655,11 @@
       <created>1423583289172</created>
       <updated>1423583289172</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update">
+      <created>1423583416983</created>
+      <updated>1423583416983</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1099,8 +1103,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6829971" vertical-offset="6802" max-vertical-offset="8194">
-          <caret line="428" column="30" selection-start-line="428" selection-start-column="30" selection-end-line="428" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.65850145" vertical-offset="6802" max-vertical-offset="8211">
+          <caret line="427" column="18" selection-start-line="427" selection-start-column="18" selection-end-line="427" selection-end-column="18" />
           <folding />
         </state>
       </provider>
