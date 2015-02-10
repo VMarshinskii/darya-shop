@@ -12,7 +12,7 @@
         <p class="CatalogPriceOld">{{ product.price }} руб.</p>
         <a href="#">Купить</a>
     </div>
-    {{ product.text }}
+    {{ product.text|safe }}
     <div style="clear: both"></div>
 </div>
 {% endblock %}
