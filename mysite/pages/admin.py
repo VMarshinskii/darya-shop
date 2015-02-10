@@ -14,4 +14,4 @@ class AdminSection(admin.ModelAdmin):
 
 
 admin.site.register(Page, AdminPage)
-admin.site.register(Section, AdminSection)
+# admin.site.register(Section, AdminSection)

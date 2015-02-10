@@ -2,6 +2,7 @@
 {% load catalog_menu %}
 {% load main_slider %}
 {% load right_banners %}
+{% load top_menu %}
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -29,17 +30,7 @@
         </div>
     </div>
 
-    <div id="main-menu">
-        <ul>
-            <li class="first-li"><a href="#">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Look book</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Sale</a></li>
-            <li><a href="#">Сотрудничество</a></li>
-        </ul>
-    </div>
+    {% top_menu %}
 
     <div id="main-content">
         <div id="left-block">
