@@ -425,7 +425,7 @@ body {
     border: 1px solid #974d68;
     padding: 10px;
 }
-.CatalogProductBox p {
+.CatalogProductBoxContent {
     margin: 15px 5px 10px 5px;
     float: left;
 }
