@@ -272,13 +272,13 @@ body {
     color: #ed145b;
     text-overflow: ellipsis;
     overflow: hidden;
-    margin-top: 0;
+    margin-top: 10px;
 }
 #center-block .goodss .good .price {
     font-size: 18px;
     font-weight: 600;
     color: #373032;
-    margin-top: 10px;
+    margin-top: 0;
 }
 #center-block .goodss .good .goods-bot a {
     background: url("../images/goods-but.png");
@@ -478,4 +478,10 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.54);
     border: 1px solid #CF0748;
     text-decoration: none;
+}
+
+.ContentBox {
+    background: #ffffff;
+    border: 1px solid #974d68;
+    padding: 10px;
 }
