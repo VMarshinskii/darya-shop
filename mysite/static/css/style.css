@@ -482,11 +482,15 @@ body {
 
 .ContentBox {
     background: #ffffff;
-    border: 1px solid #974d68;
     padding: 10px;
+    box-shadow: 0 0 15px #5E5E5E;
+    color: #444;
 }
 .ContentBox h1 {
-
+    font: 28px/28pt sans-serif;
+    color: #383838;
+    width: 100%;
+    border-bottom: 1px solid #DADADA;
 }
 .ContentBox p {
     margin: 5px 0;
