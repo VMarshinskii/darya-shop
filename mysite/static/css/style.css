@@ -496,3 +496,9 @@ body {
     margin: 5px 0;
     font: 16px/16pt sans-serif;
 }
+.ContentBoxHead {
+    padding: 10px;
+}
+.ContentBoxPage {
+    padding: 10px;
+}
