@@ -482,7 +482,6 @@ body {
 
 .ContentBox {
     background: #ffffff;
-    padding: 10px;
     box-shadow: 0 0 15px #5E5E5E;
     color: #444;
 }
@@ -497,8 +496,8 @@ body {
     font: 16px/16pt sans-serif;
 }
 .ContentBoxHead {
-    padding: 10px;
+    padding: 15px 20px;
 }
 .ContentBoxPage {
-    padding: 10px;
+    padding: 20px;
 }
