@@ -485,3 +485,10 @@ body {
     border: 1px solid #974d68;
     padding: 10px;
 }
+.ContentBox h1 {
+
+}
+.ContentBox p {
+    margin: 5px 0;
+    font: 16px/16pt sans-serif;
+}
