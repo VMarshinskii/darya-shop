@@ -496,7 +496,8 @@ body {
 }
 .ContentBoxHead {
     padding: 13px 20px;
-    border-bottom: 1px solid #E0DFDF;
+    border-bottom: 1px solid #E7E7E7;
+    background: #eee;
 }
 .ContentBoxPage {
     padding: 15px 20px;

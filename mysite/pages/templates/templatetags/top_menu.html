@@ -1,7 +1,7 @@
 <div id="main-menu">
     <ul>
-        <li class="first-li"><a href="#">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
+        <li class="first-li"><a href="/">Главная</a></li>
+        <li><a href="/catalog/">Каталог</a></li>
         {% for page in pages %}
         <li><a href="/{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
