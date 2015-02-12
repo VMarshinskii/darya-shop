@@ -619,4 +619,21 @@ p.CartSumLabel {
         top: 14px;
         right: 8px;
     }
+    .CartLabels p {
+        display: inline;
+        color: #999999;
+        font: 14px/14pt sans-serif;
+    }
+    p.CartTitleLabel {
+        margin-left: 5px;
+    }
+    p.CartPriceLabel {
+        margin-left: 100px;
+    }
+    p.CartCountLabel {
+        margin-left: 31px;
+    }
+    p.CartSumLabel {
+        margin-left: 3px;
+    }
 }
