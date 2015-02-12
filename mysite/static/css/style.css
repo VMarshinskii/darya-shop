@@ -561,5 +561,17 @@ body {
 @media screen and (max-width:1337px) {
     .CartItem {
         background: #ff0000;
+        width: 360px;
+    }
+    .ContentBoxHead {
+        padding: 10px;
+    }
+    .ContentBoxPage {
+        padding: 10px;
+    }
+    .CartItemImage {
+        float: left;
+        width: 36px;
+        height: 40px;
     }
 }
