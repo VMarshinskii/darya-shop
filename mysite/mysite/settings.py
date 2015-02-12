@@ -107,6 +107,7 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
     os.path.join(BASE_DIR,  'catalog/templates'),
     os.path.join(BASE_DIR,  'pages/templates'),
+    os.path.join(BASE_DIR,  'shop/templates'),
 )
 
 UIT_CONFIG = {
