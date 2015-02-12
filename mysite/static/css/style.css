@@ -507,7 +507,7 @@ body {
 .CartItem {
     width: 650px;
     background: #fff;
-    margin: 5px;
+    margin: 2px 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
     position: relative;
     z-index: 10;
@@ -540,7 +540,7 @@ body {
 }
 .CartItemPrice, .CartItemSumm, .CartItemCount {
     text-align: center;
-    border-left: 1px solid #C8C4C4;
+    border-left: 1px solid #e7e7e7;
 }
 .CartItemPriceLabel, .CartItemSummLabel, .CartItemCountLabel {
     padding-left: 10px;
