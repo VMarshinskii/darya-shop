@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/static/images/cross97.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/static/images/sample-03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/templates/cart.html" afterPath="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="darya-shop.iws" />
@@ -42,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="9588">
-              <caret line="511" column="20" selection-start-line="511" selection-start-column="20" selection-end-line="511" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.89424574" vertical-offset="9251" max-vertical-offset="10132">
+              <caret line="578" column="5" selection-start-line="578" selection-start-column="5" selection-end-line="578" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -124,13 +122,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49594814" vertical-offset="0" max-vertical-offset="617">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            <state vertical-scroll-proportion="-22.423077" vertical-offset="420" max-vertical-offset="1156">
+              <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
               <folding>
-                <element signature="e#757#775#0#HTML" expanded="true" />
+                <element signature="e#196#220#0#HTML" expanded="true" />
+                <element signature="e#789#807#0#HTML" expanded="true" />
+                <element signature="e#1398#1416#0#HTML" expanded="true" />
+                <element signature="e#2007#2025#0#HTML" expanded="true" />
+                <element signature="e#2616#2634#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,8 +156,8 @@
         <option value="$PROJECT_DIR$/mysite/shop/views.py" />
         <option value="$PROJECT_DIR$/mysite/shop/urls.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
+        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
       </list>
     </option>
   </component>
@@ -677,48 +679,6 @@
       <option name="number" value="Default" />
       <updated>1422505767039</updated>
     </task>
-    <task id="LOCAL-00001" summary="Update">
-      <created>1423564031870</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1423564031870</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Update">
-      <created>1423564398825</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1423564398825</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update">
-      <created>1423564424282</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1423564424282</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update">
-      <created>1423570474826</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1423570474826</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Update">
-      <created>1423570664147</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1423570664147</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update">
-      <created>1423571498245</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1423571498245</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Update">
-      <created>1423574280150</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1423574280150</updated>
-    </task>
     <task id="LOCAL-00008" summary="Update">
       <created>1423574406180</created>
       <option name="number" value="00008" />
@@ -929,7 +889,91 @@
       <option name="project" value="LOCAL" />
       <updated>1423741838576</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Update">
+      <created>1423742001036</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1423742001036</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Update">
+      <created>1423742073913</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1423742073913</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Update">
+      <created>1423742398140</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1423742398140</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Update">
+      <created>1423742465487</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1423742465487</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Update">
+      <created>1423742626114</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1423742626114</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Update">
+      <created>1423742665790</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1423742665790</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Update">
+      <created>1423743460919</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1423743460919</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Update">
+      <created>1423743632964</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1423743632968</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Update">
+      <created>1423743714018</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1423743714019</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Update">
+      <created>1423743763682</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1423743763684</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Update">
+      <created>1423743808613</created>
+      <option name="number" value="00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1423743808614</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Update">
+      <created>1423743864505</created>
+      <option name="number" value="00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1423743864505</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Update">
+      <created>1423743910546</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1423743910546</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Update">
+      <created>1423744155970</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1423744155970</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -937,7 +981,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22026432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22026432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1350,21 +1394,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="9588">
-          <caret line="511" column="20" selection-start-line="511" selection-start-column="20" selection-end-line="511" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="-22.423077" vertical-offset="420" max-vertical-offset="1156">
+          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+          <folding>
+            <element signature="e#196#220#0#HTML" expanded="true" />
+            <element signature="e#789#807#0#HTML" expanded="true" />
+            <element signature="e#1398#1416#0#HTML" expanded="true" />
+            <element signature="e#2007#2025#0#HTML" expanded="true" />
+            <element signature="e#2616#2634#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart.html">
+    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49594814" vertical-offset="0" max-vertical-offset="617">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="e#757#775#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.89424574" vertical-offset="9251" max-vertical-offset="10132">
+          <caret line="578" column="5" selection-start-line="578" selection-start-column="5" selection-end-line="578" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

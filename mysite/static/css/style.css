@@ -561,7 +561,21 @@ body {
 @media screen and (max-width:1337px) {
     .CartItem {
         background: #ff0000;
-        width: 360px;
+        width: 370px;
+        margin: 2px 0;
+    }
+    .CartItem h3 {
+        width: 155px;
+        font: 14px/30px sans-serif;
+    }
+    .CartItem p {
+        font: 15px/40px sans-serif;
+    }
+    .CartItemPrice, .CartItemSumm, .CartItemCount {
+        width: 75px;
+    }
+    .CartItemPrice, .CartItemSumm, .CartItemCount {
+        display: none;
     }
     .ContentBoxHead {
         padding: 10px;
