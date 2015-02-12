@@ -562,10 +562,20 @@ body {
 }
 .CartLabels p {
     display: inline;
+    color: #999999;
     font: 16px/16pt sans-serif;
 }
-.CartTitleLabel {
+p.CartTitleLabel {
     margin-left: 5px;
+}
+p.CartPriceLabel {
+    margin-left: 198px;
+}
+p.CartCountLabel {
+    margin-left: 51px;
+}
+p.CartSumLabel {
+    margin-left: 3px;
 }
 
 @media screen and (max-width:1337px) {
