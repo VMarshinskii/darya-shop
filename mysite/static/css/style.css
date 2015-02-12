@@ -523,6 +523,7 @@ body {
 .CartItemImage {
     float: left;
     width: 74px;
+    height: 50px;
 }
 .CartItem p {
     float: left;
