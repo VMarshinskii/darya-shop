@@ -575,7 +575,7 @@ p.CartCountLabel {
     margin-left: 51px;
 }
 p.CartSumLabel {
-    margin-left: 3px;
+    margin-left: 20px;
 }
 
 @media screen and (max-width:1337px) {
