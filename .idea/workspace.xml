@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/templates/cart.html" afterPath="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -40,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9471229" vertical-offset="9064" max-vertical-offset="10489">
-              <caret line="569" column="0" selection-start-line="569" selection-start-column="0" selection-end-line="569" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="10220" max-vertical-offset="10948">
+              <caret line="633" column="22" selection-start-line="633" selection-start-column="22" selection-end-line="633" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -112,17 +113,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1275">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.3306321" vertical-offset="0" max-vertical-offset="1275">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
               <folding>
                 <element signature="e#196#220#0#HTML" expanded="true" />
-                <element signature="e#1039#1057#0#HTML" expanded="true" />
-                <element signature="e#1648#1666#0#HTML" expanded="true" />
-                <element signature="e#2257#2275#0#HTML" expanded="true" />
-                <element signature="e#2866#2884#0#HTML" expanded="true" />
+                <element signature="e#1036#1054#0#HTML" expanded="true" />
+                <element signature="e#1645#1663#0#HTML" expanded="true" />
+                <element signature="e#2254#2272#0#HTML" expanded="true" />
+                <element signature="e#2863#2881#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,8 +157,8 @@
         <option value="$PROJECT_DIR$/mysite/shop/views.py" />
         <option value="$PROJECT_DIR$/mysite/shop/urls.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
         <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
+        <option value="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
       </list>
     </option>
   </component>
@@ -679,24 +680,6 @@
       <option name="number" value="Default" />
       <updated>1422505767039</updated>
     </task>
-    <task id="LOCAL-00014" summary="Update">
-      <created>1423593617429</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1423593617429</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Update">
-      <created>1423593692994</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1423593692994</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Update">
-      <created>1423593876205</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1423593876205</updated>
-    </task>
     <task id="LOCAL-00017" summary="Update">
       <created>1423594439123</created>
       <option name="number" value="00017" />
@@ -973,7 +956,25 @@
       <option name="project" value="LOCAL" />
       <updated>1423745876983</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Update">
+      <created>1423746022021</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1423746022021</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Update">
+      <created>1423746425158</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1423746425158</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Update">
+      <created>1423746600941</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1423746600942</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1394,25 +1395,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart.html">
+    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1275">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="e#196#220#0#HTML" expanded="true" />
-            <element signature="e#1039#1057#0#HTML" expanded="true" />
-            <element signature="e#1648#1666#0#HTML" expanded="true" />
-            <element signature="e#2257#2275#0#HTML" expanded="true" />
-            <element signature="e#2866#2884#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="10220" max-vertical-offset="10948">
+          <caret line="633" column="22" selection-start-line="633" selection-start-column="22" selection-end-line="633" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9471229" vertical-offset="9064" max-vertical-offset="10489">
-          <caret line="569" column="0" selection-start-line="569" selection-start-column="0" selection-end-line="569" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.3306321" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="e#196#220#0#HTML" expanded="true" />
+            <element signature="e#1036#1054#0#HTML" expanded="true" />
+            <element signature="e#1645#1663#0#HTML" expanded="true" />
+            <element signature="e#2254#2272#0#HTML" expanded="true" />
+            <element signature="e#2863#2881#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

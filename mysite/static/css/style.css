@@ -628,12 +628,12 @@ p.CartSumLabel {
         margin-left: 5px;
     }
     p.CartPriceLabel {
-        margin-left: 100px;
+        display: none;
     }
     p.CartCountLabel {
-        margin-left: 31px;
+        margin-left: 81px;
     }
     p.CartSumLabel {
-        margin-left: 3px;
+        margin-left: 30px;
     }
 }
