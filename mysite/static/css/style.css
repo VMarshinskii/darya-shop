@@ -564,7 +564,7 @@ body {
         margin: 2px 0;
     }
     .CartItem h3 {
-        width: 155px;
+        width: 130px;
         font: 14px/30px sans-serif;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -573,9 +573,12 @@ body {
     .CartItem p {
         font: 15px/40px sans-serif;
     }
+    .CartItemPrice {
+        display: none;
+    }
     .CartItemPrice, .CartItemSumm, .CartItemCount {
         width: 75px;
-        height: 50px;
+        height: 40px;
     }
     .CartItemPriceLabel, .CartItemSummLabel, .CartItemCountLabel {
         display: none;
