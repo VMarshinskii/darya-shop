@@ -557,3 +557,9 @@ body {
     opacity: 0.7;
     cursor: pointer;
 }
+
+@media screen and (device-width: 1024px) {
+    .CartItem {
+        background: #ff0000;
+    }
+}
