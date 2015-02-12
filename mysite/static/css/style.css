@@ -561,8 +561,11 @@ body {
     cursor: pointer;
 }
 .CartLabels p {
-    float: left;
+    display: inline;
     font: 16px/16pt sans-serif;
+}
+.CartTitleLabel {
+    margin-left: 5px;
 }
 
 @media screen and (max-width:1337px) {
