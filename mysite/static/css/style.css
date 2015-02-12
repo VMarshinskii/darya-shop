@@ -502,3 +502,57 @@ body {
 .ContentBoxPage {
     padding: 15px 20px;
 }
+
+
+.CartItem {
+    width: 700px;
+    background: #fff;
+    margin: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
+    position: relative;
+    z-index: 10;
+}
+.CartItem h3 {
+    float: left;
+    width: 240px;
+    font: 18px/30pt sans-serif;
+    color: #5E5E5E;
+    padding: 5px 10px;
+    font-weight: 100;
+}
+.CartItemImage {
+    float: left;
+    width: 74px;
+}
+.CartItem p {
+    float: left;
+    font: 15px/50px sans-serif;
+}
+.CartItemPriceLabel, .CartItemPrice, .CartItemSumm, .CartItemSummLabel, .CartItemCount, .CartItemCountLabel {
+    width: 102px;
+    height: 50px;
+    line-height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    border-top: none;
+}
+.CartItemPrice, .CartItemSumm, .CartItemCount {
+    text-align: center;
+    border-left: 1px solid #C8C4C4;
+}
+.CartItemPriceLabel, .CartItemSummLabel, .CartItemCountLabel {
+    padding-left: 10px;
+    display: none;
+}
+.CartItemDelete {
+    position: absolute;
+    z-index: 11;
+    top: 11px;
+    right: 7px;
+    width: 28px;
+    opacity: 0.4;
+}
+.CartItemDelete:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
