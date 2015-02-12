@@ -596,5 +596,7 @@ body {
     }
     .CartItemDelete {
         width: 12px;
+        top: 14px;
+        right: 8px;
     }
 }
