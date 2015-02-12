@@ -505,7 +505,7 @@ body {
 
 
 .CartItem {
-    width: 700px;
+    width: 650px;
     background: #fff;
     margin: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
@@ -514,7 +514,7 @@ body {
 }
 .CartItem h3 {
     float: left;
-    width: 240px;
+    width: 220px;
     font: 18px/30pt sans-serif;
     color: #5E5E5E;
     padding: 5px 10px;
@@ -528,9 +528,10 @@ body {
 .CartItem p {
     float: left;
     font: 15px/50px sans-serif;
+    margin: 0;
 }
 .CartItemPriceLabel, .CartItemPrice, .CartItemSumm, .CartItemSummLabel, .CartItemCount, .CartItemCountLabel {
-    width: 102px;
+    width: 93px;
     height: 50px;
     line-height: 50px;
     display: table-cell;
