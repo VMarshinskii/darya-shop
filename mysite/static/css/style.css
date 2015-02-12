@@ -560,19 +560,22 @@ body {
 
 @media screen and (max-width:1337px) {
     .CartItem {
-        background: #ff0000;
         width: 370px;
         margin: 2px 0;
     }
     .CartItem h3 {
         width: 155px;
         font: 14px/30px sans-serif;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .CartItem p {
         font: 15px/40px sans-serif;
     }
     .CartItemPrice, .CartItemSumm, .CartItemCount {
         width: 75px;
+        height: 50px;
     }
     .CartItemPriceLabel, .CartItemSummLabel, .CartItemCountLabel {
         display: none;
@@ -587,5 +590,8 @@ body {
         float: left;
         width: 36px;
         height: 40px;
+    }
+    .CartItemDelete {
+        width: 12px;
     }
 }
