@@ -574,7 +574,7 @@ body {
     .CartItemPrice, .CartItemSumm, .CartItemCount {
         width: 75px;
     }
-    .CartItemPrice, .CartItemSumm, .CartItemCount {
+    .CartItemPriceLabel, .CartItemSummLabel, .CartItemCountLabel {
         display: none;
     }
     .ContentBoxHead {
