@@ -558,7 +558,7 @@ body {
     cursor: pointer;
 }
 
-@media screen and (device-width: 1024px) {
+@media screen and (max-width:1024px) {
     .CartItem {
         background: #ff0000;
     }
