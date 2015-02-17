@@ -596,19 +596,31 @@ p.CartSumLabel {
 }
 .OrderBoxUserData, .OrderBoxAddressData {
     float: left;
-    width: 300px;
+    width: 249px;
     height: 350px;
     border-bottom: 2px solid #eee;
+    margin: 10px;
+    padding: 20px 40px;
 }
 .OrderBoxUserData {
     border-right: 2px solid #eee;
 }
+.OrderBoxUserData h4,.OrderBoxAddressData h4 {
+    margin: 10px 0 15px 0;
+    font: 18px/18pt sans-serif;
+}
 
 .OrderBoxUserData label,.OrderBoxAddressData label {
-
+    display: block;
+    margin: 13px 0 5px 0;
 }
-.OrderBoxUserData input,.OrderBoxAddressData input {
-
+.OrderBoxUserData input,.OrderBoxAddressData input,
+.OrderBoxUserData textarea,.OrderBoxAddressData textarea {
+    padding: 5px;
+    width: 225px;
+    background: #fff;
+    border: 1px solid #D7D7D7;
+    border-radius: 2px;
 }
 
 
