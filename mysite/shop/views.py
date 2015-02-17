@@ -6,3 +6,7 @@ from django.http import Http404
 # Create your views here.
 def cart(request):
     return render_to_response("cart.html")
+
+
+def order(request):
+    return render_to_response("order.html")
