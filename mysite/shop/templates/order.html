@@ -1,0 +1,43 @@
+{% extends "main.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="ContentBox">
+    <div class="ContentBoxHead">
+        <h1>Корзина</h1>
+    </div>
+    <div class="OrderBox">
+		<h3>У меня уже есть акаунт в интернет-магазине Darya-Shop - <a href="#">войти</a></h3>
+		<table class="UserData">
+		    <tr>
+		        <td>Ваше Ф.И.О.</td>
+		        <td><input type="text" /></td>
+		    </tr>
+		    <tr>
+		        <td>E-mail</td>
+		        <td><input type="text" /></td>
+		    </tr>
+		    <tr>
+		        <td>Телефон</td>
+		        <td><input type="text" /></td>
+		    </tr>
+		</table>
+
+		<h4>Адрес для доставки:</h4>
+		<table class="UserData">
+		    <tr>
+		        <td>Область</td>
+		        <td><input type="text" /></td>
+		    </tr>
+		    <tr>
+		        <td>Город</td>
+		        <td><input type="text" /></td>
+		    </tr>
+		    <tr>
+		        <td>Адрес</td>
+		        <td><textarea></textarea></td>
+		    </tr>
+		</table>
+	</div>
+</div>
+{% endblock %}

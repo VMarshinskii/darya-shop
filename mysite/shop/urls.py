@@ -3,4 +3,5 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
     url(r'^', 'shop.views.cart'),
+    url(r'^order', 'shop.views.cart'),
 )
