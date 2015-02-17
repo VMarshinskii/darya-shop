@@ -652,10 +652,14 @@ p.CartSumLabel {
     padding: 5px 10px 10px 10px;
     margin: 0 10px;
     float: left;
+    width: 100%;
 }
-
+.OrderBoxConfirmation h4 {
+    margin-top: 5px;
+}
 .OrderBoxConfirmation table {
     margin: 5px 0 0 30px;
+    float: left;
 }
 .OrderBoxConfirmation td {
     padding: 5px;
@@ -664,8 +668,16 @@ p.CartSumLabel {
    color: #ed145b;
 }
 .OrderBoxConfirmation a {
-    float: right;
-    margin: 20px 40px 0 0;
+    float: left;
+    margin: 20px 40px 0 130px;
+    padding: 15px 40px;
+    background: #ed145b;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.49);
+    border: 1px solid #DB1355;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
