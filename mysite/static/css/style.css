@@ -682,6 +682,7 @@ p.CartSumLabel {
 .OrderBoxConfirmation a:hover {
     background: #DB1355;
     border: 1px solid #BE0D48;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 
