@@ -649,7 +649,7 @@ p.CartSumLabel {
 }
 
 .OrderBoxConfirmation {
-    padding: 5px 10px 10px 10px;
+    padding: 5px 10px 23px 10px;
     margin: 0 10px;
     float: left;
     width: 100%;
@@ -669,7 +669,7 @@ p.CartSumLabel {
 }
 .OrderBoxConfirmation a {
     float: left;
-    margin: 20px 40px 0 130px;
+    margin: 25px 40px 0 130px;
     padding: 15px 40px;
     background: #ed145b;
     color: #fff;
@@ -678,6 +678,10 @@ p.CartSumLabel {
     border: 1px solid #DB1355;
     text-decoration: none;
     cursor: pointer;
+}
+.OrderBoxConfirmation a:hover {
+    background: #DB1355;
+    border: 1px solid #BE0D48;
 }
 
 
