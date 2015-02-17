@@ -628,7 +628,9 @@ p.CartSumLabel {
 }
 .OrderBoxAddressType {
     border-bottom: 2px solid #eee;
-    margin: 10px;
+    margin: 0 10px;
+    padding: 10px;
+    float: left;
 }
 .OrderBoxAddressTypeItem {
     width: 327px;
