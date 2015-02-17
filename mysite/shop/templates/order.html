@@ -8,36 +8,38 @@
     </div>
     <div class="OrderBox">
 		<h3>У меня уже есть акаунт в интернет-магазине Darya-Shop - <a href="#">войти</a></h3>
-		<table class="UserData">
-		    <tr>
-		        <td>Ваше Ф.И.О.</td>
-		        <td><input type="text" /></td>
-		    </tr>
-		    <tr>
-		        <td>E-mail</td>
-		        <td><input type="text" /></td>
-		    </tr>
-		    <tr>
-		        <td>Телефон</td>
-		        <td><input type="text" /></td>
-		    </tr>
-		</table>
 
-		<h4>Адрес для доставки:</h4>
-		<table class="UserData">
-		    <tr>
-		        <td>Область</td>
-		        <td><input type="text" /></td>
-		    </tr>
-		    <tr>
-		        <td>Город</td>
-		        <td><input type="text" /></td>
-		    </tr>
-		    <tr>
-		        <td>Адрес</td>
-		        <td><textarea></textarea></td>
-		    </tr>
-		</table>
+		<div class="OrderBoxUserData">
+            <h3>Контактная информация</h3>
+
+            <label>Имя</label>
+            <input type="text" required/>
+
+            <label>Фамилия</label>
+            <input type="text" required/>
+
+            <label>Электронная почта</label>
+            <input type="text" required/>
+
+            <label>Телефон</label>
+            <input type="text" required/>
+		</div>
+
+        <div class="OrderBoxAddressData">
+            <h3>Адрес доставки</h3>
+
+            <label>Область</label>
+            <input type="text" required/>
+
+            <label>Город</label>
+            <input type="text" required/>
+
+            <label>Индекс</label>
+            <input type="text" required/>
+
+            <label>Адрес</label>
+            <textarea name="" id="" cols="30" rows="10" required></textarea>
+		</div>
 	</div>
 </div>
 {% endblock %}

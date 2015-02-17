@@ -594,29 +594,22 @@ p.CartSumLabel {
     font: 18px/18pt sans-serif;
     color: #666;
 }
-.UserData {
-    margin: 20px 10px;
-    width: 520px;
-    margin-left: 100px;
-    color: #333;
-    font: 16px/16pt sans-serif;
+.OrderBoxUserData, .OrderBoxAddressData {
+    float: left;
+    width: 300px;
+    height: 350px;
+    border-bottom: 2px solid #eee;
 }
-.UserData td {
-    padding: 5px;
-}
-.UserData input, .UserData textarea {
-    padding: 7px 10px;
-    background: #fff;
-    border: 1px solid #e2e2e2;
-    border-radius: 3px;
-    width: 240px;
-}
-.OrderBox h4 {
-    margin-left: 108px;
-    font: 16px/16pt sans-serif;
-    color: #444;
+.OrderBoxUserData {
+    border-right: 2px solid #eee;
 }
 
+.OrderBoxUserData label,.OrderBoxAddressData label {
+
+}
+.OrderBoxUserData input,.OrderBoxAddressData input {
+
+}
 
 
 
