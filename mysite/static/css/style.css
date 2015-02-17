@@ -648,7 +648,25 @@ p.CartSumLabel {
     margin-left: 22px;
 }
 
+.OrderBoxConfirmation {
+    padding: 5px 10px 10px 10px;
+    margin: 0 10px;
+    float: left;
+}
 
+.OrderBoxConfirmation table {
+    margin: 5px 0 0 30px;
+}
+.OrderBoxConfirmation td {
+    padding: 5px;
+}
+.OrderBoxConfirmationPrice {
+   color: #ed145b;
+}
+.OrderBoxConfirmation a {
+    float: right;
+    margin: 20px 40px 0 0;
+}
 
 
 @media screen and (max-width:1337px) {
