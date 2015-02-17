@@ -595,7 +595,7 @@ p.CartSumLabel {
 }
 .OrderBoxUserData, .OrderBoxAddressData {
     float: left;
-    width: 249px;
+    width: 259px;
     height: 350px;
     border-bottom: 2px solid #eee;
     padding: 10px 40px;
@@ -607,7 +607,7 @@ p.CartSumLabel {
 .OrderBoxAddressData {
     margin-right: 10px;
 }
-.OrderBoxUserData h4,.OrderBoxAddressData h4 {
+.OrderBoxUserData h4,.OrderBoxAddressData h4, .OrderBoxAddressType h4 {
     margin: 10px 0 15px 0;
     font: 18px/18pt sans-serif;
     color: #ed145b;
@@ -627,7 +627,12 @@ p.CartSumLabel {
 .OrderBoxAddressData textarea {
     height: 60px;
 }
+.OrderBoxAddressType {
+    border-bottom: 2px solid #eee;
+}
+.OrderBoxAddressTypeItem {
 
+}
 
 
 
