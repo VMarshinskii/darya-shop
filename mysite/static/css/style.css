@@ -585,42 +585,47 @@ p.CartSumLabel {
     padding-top: 1px;
 }
 .OrderBox h3 {
-    width: 659px;
-    padding: 10px 10px;
+    padding: 5px;
     text-align: center;
-    background: #e9e9e9;
     border-radius: 2px;
     margin: 10px;
-    font: 18px/18pt sans-serif;
-    color: #666;
+    font: 16px/16pt sans-serif;
+    color: #818181;
+    text-decoration: underline;
 }
 .OrderBoxUserData, .OrderBoxAddressData {
     float: left;
     width: 249px;
     height: 350px;
     border-bottom: 2px solid #eee;
-    margin: 10px;
-    padding: 20px 40px;
+    padding: 10px 40px;
 }
 .OrderBoxUserData {
     border-right: 2px solid #eee;
+    margin-left: 10px;
+}
+.OrderBoxAddressData {
+    margin-right: 10px;
 }
 .OrderBoxUserData h4,.OrderBoxAddressData h4 {
     margin: 10px 0 15px 0;
     font: 18px/18pt sans-serif;
+    color: #ed145b;
 }
 
 .OrderBoxUserData label,.OrderBoxAddressData label {
     display: block;
     margin: 13px 0 5px 0;
 }
-.OrderBoxUserData input,.OrderBoxAddressData input,
-.OrderBoxUserData textarea,.OrderBoxAddressData textarea {
-    padding: 5px;
+.OrderBoxUserData input,.OrderBoxAddressData input, .OrderBoxUserData textarea,.OrderBoxAddressData textarea {
+    padding: 8px;
     width: 225px;
     background: #fff;
     border: 1px solid #D7D7D7;
     border-radius: 2px;
+}
+.OrderBoxAddressData textarea {
+    height: 60px;
 }
 
 
