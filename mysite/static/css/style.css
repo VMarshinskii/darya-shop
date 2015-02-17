@@ -632,7 +632,18 @@ p.CartSumLabel {
     margin: 10px;
 }
 .OrderBoxAddressTypeItem {
-
+    width: 327px;
+    float: left;
+}
+.OrderBoxAddressTypeItem input {
+    float: left;
+}
+.OrderBoxAddressTypeItem h5 {
+    font-weight: bold;
+}
+.OrderBoxAddressTypeItem p {
+    font: 13px/13pt sans-serif;
+    margin-left: 22px;
 }
 
 
