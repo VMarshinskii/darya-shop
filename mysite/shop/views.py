@@ -22,7 +22,7 @@ def add_in_cart(request, id=-1):
             user_cart = UserCart()
             user_cart.user_key = "dXs3fFD4sd5g"
         products = unserialize(user_cart.products)
-        products[id] = products.get(id, 0) + 3
+        products[int(id)] = products.get(int(id), 0) + 3
         user_cart.products = serialize(products)
         user_cart.save()
     else:
