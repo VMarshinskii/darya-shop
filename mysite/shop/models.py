@@ -2,6 +2,6 @@
 from django.db import models
 
 
-class UserCart(models.Models):
+class UserCart(models.Model):
     user_key = models.CharField("Ключ", max_length=200)
     products = models.CharField("Товары", max_length=200)
