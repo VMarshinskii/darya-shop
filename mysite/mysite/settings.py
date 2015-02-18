@@ -39,7 +39,8 @@ INSTALLED_APPS = (
     'ajaxuploader',
     'redactor',
     'banners',
-    'pages'
+    'pages',
+    'shop'
 )
 
 
