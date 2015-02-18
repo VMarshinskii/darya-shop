@@ -35,6 +35,8 @@ def add_in_cart(request, id=-1):
 
 def unserialize(str):
     products = {}
+    if str == '':
+        return products
     for i in str.split(";"):
         if i != '':
             mass_str = i.split(":")
