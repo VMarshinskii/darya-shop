@@ -30,6 +30,7 @@ def add_in_cart(request, id=-1):
     else:
         user_cart = UserCart()
         user_cart.user_key = "".join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for x in range(16))
+        user_cart.products = str(id) + ":1"
         request.session["user_cart"] = user_cart.user_key
         user_cart.save()
     return render_to_response("order.html")
