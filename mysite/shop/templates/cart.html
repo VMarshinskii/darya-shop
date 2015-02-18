@@ -16,10 +16,10 @@
 
         {% for product, count in products.items %}
         <div class="CartItem">
-            <img class="CartItemImage" src="{% static "images/sample-03.jpg" %}">
+            <img class="CartItemImage" src="/static/uploads/{{ product.image }}">
             <h3>{{ product.name }}</h3>
             <p class="CartItemPriceLabel">Цена:</p>
-            <p class="CartItemPrice">1200 р.</p>
+            <p class="CartItemPrice">{{ product.price }} р.</p>
             <p class="CartItemCountLabel">Количество</p>
             <p class="CartItemCount"><img src="">{{ count }}</p>
             <p class="CartItemSummLabel">Сумма</p>
@@ -29,44 +29,6 @@
         </div>
         {% endfor %}
 
-        <div class="CartItem">
-            <img class="CartItemImage" src="{% static "images/sample-03.jpg" %}">
-            <h3>Товар название ывавф</h3>
-            <p class="CartItemPriceLabel">Цена:</p>
-            <p class="CartItemPrice">1200 р.</p>
-            <p class="CartItemCountLabel">Количество</p>
-            <p class="CartItemCount"><img src="">3</p>
-            <p class="CartItemSummLabel">Сумма</p>
-            <p class="CartItemSumm">3600 р.</p>
-            <img class="CartItemDelete" src="{% static "images/cross97.png" %}" />
-            <div style="clear:both"></div>
-        </div>
-
-        <div class="CartItem">
-            <img class="CartItemImage" src="{% static "images/sample-03.jpg" %}">
-            <h3>Товар название ывавф</h3>
-            <p class="CartItemPriceLabel">Цена:</p>
-            <p class="CartItemPrice">1200 р.</p>
-            <p class="CartItemCountLabel">Количество</p>
-            <p class="CartItemCount"><img src="">3</p>
-            <p class="CartItemSummLabel">Сумма</p>
-            <p class="CartItemSumm">3600 р.</p>
-            <img class="CartItemDelete" src="{% static "images/cross97.png" %}" />
-            <div style="clear:both"></div>
-        </div>
-
-        <div class="CartItem">
-            <img class="CartItemImage" src="{% static "images/sample-03.jpg" %}">
-            <h3>Товар название ывавф</h3>
-            <p class="CartItemPriceLabel">Цена:</p>
-            <p class="CartItemPrice">1200 р.</p>
-            <p class="CartItemCountLabel">Количество</p>
-            <p class="CartItemCount"><img src="">3</p>
-            <p class="CartItemSummLabel">Сумма</p>
-            <p class="CartItemSumm">3600 р.</p>
-            <img class="CartItemDelete" src="{% static "images/cross97.png" %}" />
-            <div style="clear:both"></div>
-        </div>
     </div>
 </div>
 {% endblock %}
