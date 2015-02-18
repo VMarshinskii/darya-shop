@@ -515,7 +515,7 @@ body {
     float: left;
     width: 220px;
     font: 18px/30pt sans-serif;
-    color: #5E5E5E;
+    color: #ed145b;
     padding: 5px 10px;
     font-weight: 100;
     overflow: hidden;
@@ -531,6 +531,7 @@ body {
     float: left;
     font: 15px/50px sans-serif;
     margin: 0;
+    color: #ed145b;
 }
 .CartItemPriceLabel, .CartItemPrice, .CartItemSumm, .CartItemSummLabel, .CartItemCount, .CartItemCountLabel {
     width: 93px;
@@ -554,15 +555,15 @@ body {
     top: 11px;
     right: 7px;
     width: 28px;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 .CartItemDelete:hover {
-    opacity: 0.7;
+    opacity: 0.6;
     cursor: pointer;
 }
 .CartLabels p {
     display: inline;
-    color: #ed145b;
+    color: #999999;
     font: 16px/16pt sans-serif;
 }
 p.CartTitleLabel {
