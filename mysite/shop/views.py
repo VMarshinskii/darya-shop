@@ -2,6 +2,8 @@
 from django.shortcuts import render_to_response
 from django.http import Http404
 from shop.models import UserCart
+import random
+import string
 
 
 # Create your views here.
@@ -20,13 +22,16 @@ def add_in_cart(request, id=-1):
             user_cart = UserCart.objects.get(user_key=user_key)
         except UserCart.DoesNotExist:
             user_cart = UserCart()
-            user_cart.user_key = "dXs3fFD4sd5g"
+            user_cart.user_key = user_key
         products = unserialize(user_cart.products)
         products[int(id)] = products.get(int(id), 0) + 3
         user_cart.products = serialize(products)
         user_cart.save()
     else:
-        request.session["user_cart"] = "dXs3fFD4sd5g"
+        user_cart = UserCart()
+        user_cart.user_key = "".join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for x in range(16))
+        request.session["user_cart"] = user_cart.user_key
+        user_cart.save()
     return render_to_response("order.html")
 
 
