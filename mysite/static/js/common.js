@@ -67,7 +67,7 @@ jQuery(window).load(function(){
 });
 
 $(document).ready(function (){
-    $(".good-c").click(function(){
+    $(".good-c a").click(function(){
         var id = $(this).attr("data-id");
         $.get("/cart/add_in_cart/" + id + "/");
         return false;
