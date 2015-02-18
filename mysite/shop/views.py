@@ -9,7 +9,19 @@ import string
 
 # Create your views here.
 def cart(request):
-    return render_to_response("cart.html")
+    products = {}
+    if "user_cart" in request.session:
+        user_key = request.session["user_cart"]
+        try:
+            user_cart = UserCart.objects.get(user_key=user_key)
+            for product_id, count in unserialize(user_cart.products).items():
+                try:
+                    products[Product.objects.get(id=product_id)] = count
+                except Product.DoesNotExist:
+                    pass
+        except UserCart.DoesNotExist:
+            pass
+    return render_to_response("cart.html", {'products': products})
 
 
 def order(request):
