@@ -2,6 +2,7 @@
 from django.shortcuts import render_to_response
 from django.http import Http404
 from shop.models import UserCart
+from catalog.models import Products
 import random
 import string
 
@@ -33,7 +34,8 @@ def add_in_cart(request, id=-1):
         user_cart.products = str(id) + ":1"
         request.session["user_cart"] = user_cart.user_key
         user_cart.save()
-    return render_to_response("order.html")
+    product = Products.objects.get(id=id)
+    return render_to_response("add_in_cart.html", {'product': product})
 
 
 def unserialize(str):

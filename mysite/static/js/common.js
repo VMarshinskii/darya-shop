@@ -65,3 +65,10 @@ jQuery(window).load(function(){
         panelfxeasing:"easeOutExpo" // "easeOutExpo", "easeInOutExpo", etc.
     });
 });
+
+$(document).ready(function (){
+    $(".good-c").click(function(){
+        alert("ok");
+        return false;
+    });
+});
