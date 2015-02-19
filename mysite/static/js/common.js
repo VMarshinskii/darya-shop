@@ -73,19 +73,19 @@ $(document).ready(function (){
         return false;
     });
 
-    var add = function()
+    $add = function()
     {
         var id = $(this).attr("data-id");
         $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
     }
 
-    $(".CartAdd").live('click', add());
+    $(".CartAdd").live('click', $add);
 
-    var del = function()
+    $del = function()
     {
         var id = $(this).attr("data-id");
         $(".ContentBoxPage").load("/cart/del_in_cart/" + id + "/");
     }
 
-    $(".CartDelete").live('click', del());
+    $(".CartDelete").live('click', $del);
 });
