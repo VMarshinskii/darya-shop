@@ -2,13 +2,13 @@ from django import template
 from pages.models import Page
 register = template.Library()
 
-@register.inclusion_tag('templatetags/top_cart.html')
+@register.inclusion_tag('templatetags/top_cart.html', takes_context=True)
 def top_cart():
     sum = 0
     count_val = 0
     request = context['request']
     if "user_cart" in request.session:
-        user_key = request.COOKIES['user_cart']
+        user_key = request.SESSION['user_cart']
         try:
             user_cart = UserCart.objects.get(user_key=user_key)
             products = unserialize(user_cart.products)
