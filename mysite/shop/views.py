@@ -19,8 +19,8 @@ def cart(request):
             for product_id, count in unserialize(user_cart.products).items():
                 try:
                     pr = Product.objects.get(id=product_id)
+                    pr.price_sum = pr.price * int(count)
                     products[pr] = count
-                    sum_mass[pr.id] = pr.price * int(count)
                     sum += pr.price * int(count)
                 except Product.DoesNotExist:
                     pass
