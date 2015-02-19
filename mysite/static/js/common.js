@@ -73,12 +73,12 @@ $(document).ready(function (){
         return false;
     });
 
-    $(".CartAdd").click(function(){
+    $(".CartAdd").live('click', function(){
         var id = $(this).attr("data-id");
         $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
     });
 
-    $(".CartDelete").click(function(){
+    $(".CartDelete").live('click', function(){
         var id = $(this).attr("data-id");
         $(".ContentBoxPage").load("/cart/del_in_cart/" + id);
     });
