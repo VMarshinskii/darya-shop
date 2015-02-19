@@ -80,7 +80,7 @@ $(".CartItemDelete").live('click', function(){
 });
 
 $(document).ready(function (){
-    $(".good-c a").on(function(){
+    $(".good-c a").click(function(){
         var id = $(this).attr("data-id");
         $.get("/cart/add_in_cart/" + id + "/");
         return false;
