@@ -83,6 +83,7 @@ $(document).ready(function (){
     $(".good-c a").click(function(){
         var id = $(this).attr("data-id");
         $.get("/cart/add_in_cart/" + id + "/");
+        alert("Товар в корзине");
         return false;
     });
 });

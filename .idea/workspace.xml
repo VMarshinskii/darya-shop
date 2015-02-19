@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/templates/cart.html" afterPath="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/js/common.js" afterPath="$PROJECT_DIR$/mysite/static/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/urls.py" afterPath="$PROJECT_DIR$/mysite/shop/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/views.py" afterPath="$PROJECT_DIR$/mysite/shop/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/main.html" afterPath="$PROJECT_DIR$/mysite/templates/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="darya-shop.iws" />
@@ -30,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8996" max-vertical-offset="13481">
-              <caret line="553" column="23" selection-start-line="553" selection-start-column="23" selection-end-line="553" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.58357346" vertical-offset="12005" max-vertical-offset="13549">
+              <caret line="730" column="23" selection-start-line="730" selection-start-column="23" selection-end-line="730" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -43,18 +42,18 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6" vertical-offset="1728" max-vertical-offset="2652">
-              <caret line="109" column="18" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="18" />
+            <state vertical-scroll-proportion="-9.76" vertical-offset="1167" max-vertical-offset="2686">
+              <caret line="88" column="37" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7795389" vertical-offset="785" max-vertical-offset="1581">
-              <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="887" max-vertical-offset="1598">
+              <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -63,8 +62,8 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.346153" vertical-offset="858" max-vertical-offset="1513">
-              <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="102" max-vertical-offset="1530">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -83,10 +82,10 @@
       <file leaf-file-name="cart_ajax.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart_ajax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="595">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="595">
+              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
               <folding>
-                <element signature="e#978#996#0#HTML" expanded="true" />
+                <element signature="e#1005#1023#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,13 +152,13 @@
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/add_in_cart.html" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/index.html" />
-        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
-        <option value="$PROJECT_DIR$/mysite/templates/main.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/cart_ajax.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/views.py" />
         <option value="$PROJECT_DIR$/mysite/shop/urls.py" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
+        <option value="$PROJECT_DIR$/mysite/shop/views.py" />
+        <option value="$PROJECT_DIR$/mysite/shop/templates/cart_ajax.html" />
         <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
+        <option value="$PROJECT_DIR$/mysite/templates/main.html" />
+        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
       </list>
     </option>
   </component>
@@ -1111,7 +1110,23 @@
       <created>1424361752577</created>
       <updated>1424361752577</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="Update">
+      <created>1424362714356</created>
+      <updated>1424362714356</updated>
+    </task>
+    <task id="LOCAL-00141" summary="Update">
+      <created>1424362808909</created>
+      <updated>1424362808909</updated>
+    </task>
+    <task id="LOCAL-00142" summary="Update">
+      <created>1424362919901</created>
+      <updated>1424362919901</updated>
+    </task>
+    <task id="LOCAL-00143" summary="Update">
+      <created>1424363111637</created>
+      <updated>1424363111637</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1478,48 +1493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8996" max-vertical-offset="13481">
-          <caret line="553" column="23" selection-start-line="553" selection-start-column="23" selection-end-line="553" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.346153" vertical-offset="858" max-vertical-offset="1513">
-          <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart_ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="595">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#978#996#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/pages/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="306">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6" vertical-offset="1728" max-vertical-offset="2652">
-          <caret line="109" column="18" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="782">
@@ -1538,10 +1511,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="306">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.76" vertical-offset="1167" max-vertical-offset="2686">
+          <caret line="88" column="37" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart_ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="595">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+          <folding>
+            <element signature="e#1005#1023#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7795389" vertical-offset="785" max-vertical-offset="1581">
-          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="887" max-vertical-offset="1598">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="102" max-vertical-offset="1530">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58357346" vertical-offset="12005" max-vertical-offset="13549">
+          <caret line="730" column="23" selection-start-line="730" selection-start-column="23" selection-end-line="730" selection-end-column="23" />
           <folding />
         </state>
       </provider>

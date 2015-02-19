@@ -727,6 +727,10 @@ p.CartSumLabel {
 }
 
 
+.cart {
+    background: #0000ff;
+}
+
 @media screen and (max-width:1337px) {
     .CartItem {
         width: 370px;
