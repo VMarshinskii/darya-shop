@@ -6,4 +6,5 @@ urlpatterns = patterns('',
     url(r'^order/$', 'shop.views.order'),
     url(r'^add_in_cart/(?P<id>\d+)/$', 'shop.views.add_in_cart'),
     url(r'^del_in_cart/(?P<id>\d+)/$', 'shop.views.del_in_cart'),
+    url(r'^remove_in_cart/(?P<id>\d+)/$', 'shop.views.remove_in_cart'),
 )

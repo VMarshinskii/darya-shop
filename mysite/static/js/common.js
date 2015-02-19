@@ -74,6 +74,10 @@ $(".CartDelete").live('click', function(){
     var id = $(this).attr("data-id");
     $(".ContentBoxPage").load("/cart/del_in_cart/" + id + "/");
 });
+$(".CartItemDelete").live('click', function(){
+    var id = $(this).attr("data-id");
+    $(".ContentBoxPage").load("/cart/remove_in_cart/" + id + "/");
+});
 
 $(document).ready(function (){
     $(".good-c a").on(function(){

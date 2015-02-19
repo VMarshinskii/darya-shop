@@ -25,7 +25,7 @@
             <p class="CartItemCount"><img class="CartAdd" data-id="{{ product.id }}" src="{% static "images/rounded54.png" %}">{{ count }}<img class="CartDelete" data-id="{{ product.id }}" src="{% static "images/round56.png" %}"></p>
             <p class="CartItemSummLabel">Сумма</p>
             <p class="CartItemSumm">{{ product.price_sum }} р.</p>
-            <img class="CartItemDelete" src="{% static "images/cross97.png" %}" />
+            <img class="CartItemDelete" data-id="{{ product.id }}" src="{% static "images/cross97.png" %}" />
             <div style="clear:both"></div>
         </div>
         {% endfor %}
