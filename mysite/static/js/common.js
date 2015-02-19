@@ -72,4 +72,14 @@ $(document).ready(function (){
         $.get("/cart/add_in_cart/" + id + "/");
         return false;
     });
+
+    $(".CartAdd").click(function(){
+        var id = $(this).attr("data-id");
+        $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
+    });
+
+    $(".CartDelete").click(function(){
+        var id = $(this).attr("data-id");
+        $(".ContentBoxPage").load("/cart/del_in_cart/" + id);
+    });
 });
