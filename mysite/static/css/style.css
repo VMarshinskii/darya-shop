@@ -728,7 +728,20 @@ p.CartSumLabel {
 
 
 .cart {
-    background: #0000ff;
+    width: 260px;
+    height: 45px;
+    position: absolute;
+    top: 126px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.39);
+}
+.cart p {
+    font: 16px/16pt sans-serif;
+    color: #ffffff;
+}
+.cart a {
+    text-decoration: underline;
 }
 
 @media screen and (max-width:1337px) {
