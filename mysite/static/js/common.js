@@ -66,16 +66,14 @@ jQuery(window).load(function(){
     });
 });
 
-$add = function(){
+$(".CartAdd").live('click', function(){
     var id = $(this).attr("data-id");
     $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
-}
-$del = function(){
+});
+$(".CartDelete").live('click', function(){
     var id = $(this).attr("data-id");
     $(".ContentBoxPage").load("/cart/del_in_cart/" + id + "/");
-}
-$(".CartAdd").live('click', $add);
-$(".CartDelete").live('click', $del);
+});
 
 $(document).ready(function (){
     $(".good-c a").on(function(){
