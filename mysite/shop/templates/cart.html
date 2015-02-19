@@ -30,8 +30,8 @@
         </div>
         {% endfor %}
 
-        <h4>Сумма заказа: <span>{{ sum }} руб.</span></h4>
-        <a href="#">Оформить заказ</a>
+        <h4 class="CartSum">Сумма заказа: <span>{{ sum }} руб.</span></h4>
+        <a class="CartOrder" href="/cart/order/">Оформить заказ</a>
 
         {% else %}
         <p>Корзина пуста</p>
