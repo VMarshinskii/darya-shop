@@ -563,7 +563,7 @@ body {
 }
 .CartLabels p {
     display: inline;
-    color: #999999;
+    color: #333;
     font: 16px/16pt sans-serif;
 }
 p.CartTitleLabel {
@@ -577,6 +577,25 @@ p.CartCountLabel {
 }
 p.CartSumLabel {
     margin-left: 39px;
+}
+.CartSum {
+    font: 20px/20pt sans-serif;
+    margin: 17px 0 0 220px;
+    display: inline-block;
+}
+.CartSum span {
+    color: #ed145b;
+}
+.CartOrder {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #ed145b;
+    margin-left: 55px;
+    color: #fff;
+    border-radius: 2px;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.71);
+    border: 1px solid #CA0B4A;
 }
 
 
