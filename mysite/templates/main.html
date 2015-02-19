@@ -3,6 +3,7 @@
 {% load right_banners %}
 {% load main_slider %}
 {% load top_menu %}
+{% load cart_module %}
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -20,7 +21,7 @@
 
     <div id="header">
         <div class="logo">Darya-A-Shop</div>
-        <div class="cart"></div>
+        <div class="cart">{% cart_module %}</div>
         <div class="header-info">
             <span class="header-info-one">Магазин модной, молодежной одежды, обуви и акссеусуаров.</span>
             <span class="motto"><img src="{% static "images/motto.png" %}" alt="С нами быть модной легко!"/></span>
