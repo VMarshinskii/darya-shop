@@ -2,10 +2,11 @@ from django import template
 from pages.models import Page
 register = template.Library()
 
-@register.inclusion_tag('templatetags/top_cart.html')
-def top_cart(request):
+@register.inclusion_tag('templatetags/top_cart.html', takes_context=True)
+def top_cart():
     sum = 0
     count_val = 0
+    request = context['request']
     if "user_cart" in request.session:
         user_key = request.session["user_cart"]
         try:
