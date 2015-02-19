@@ -67,7 +67,6 @@ jQuery(window).load(function(){
 });
 
 $(".CartAdd").live('click', function(){
-    alert("ok");
     var id = $(this).attr("data-id");
     $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
 });
