@@ -583,6 +583,7 @@ p.CartSumLabel {
     font: 20px/20pt sans-serif;
     margin: 17px 0 0 190px;
     display: inline-block;
+    width: 270px;
 }
 .CartSum span {
     color: #ed145b;
@@ -591,7 +592,6 @@ p.CartSumLabel {
     display: inline-block;
     padding: 10px 30px;
     background: #ed145b;
-    margin-left: 41px;
     color: #fff;
     border-radius: 2px;
     text-decoration: none;
