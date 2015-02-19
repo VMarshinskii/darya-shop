@@ -8,7 +8,7 @@ def top_cart():
     count_val = 0
     request = context['request']
     if "user_cart" in request.session:
-        user_key = request.SESSION['user_cart']
+        user_key = request.COOKIES['filename']
         try:
             user_cart = UserCart.objects.get(user_key=user_key)
             products = unserialize(user_cart.products)
