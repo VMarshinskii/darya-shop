@@ -550,6 +550,9 @@ body {
     padding-left: 10px;
     display: none;
 }
+.CartItemCount {
+    position: relative;
+}
 .CartItemDelete {
     position: absolute;
     z-index: 11;
