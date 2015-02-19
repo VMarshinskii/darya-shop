@@ -85,6 +85,8 @@ def del_in_cart(request, id=-1):
         products = unserialize(user_cart.products)
         if int(id) in products and products[int(id)] > 0:
             products[int(id)] -= 1
+            if products[int(id)] == 0:
+                products.pop(int(id))
             user_cart.products = serialize(products)
             user_cart.save()
     products = {}
@@ -117,7 +119,7 @@ def remove_in_cart(request, id=-1):
             user_cart.user_key = user_key
         products = unserialize(user_cart.products)
         products.pop(int(id))
-        user_cart.products = products
+        user_cart.products = serialize(products)
         user_cart.save()
     products = {}
     sum_mass = {}
