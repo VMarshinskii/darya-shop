@@ -510,6 +510,7 @@ body {
     margin: 2px 5px;
     position: relative;
     z-index: 10;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
 }
 .CartItem h3 {
     float: left;
