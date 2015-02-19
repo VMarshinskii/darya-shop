@@ -737,11 +737,14 @@ p.CartSumLabel {
     background: rgba(0, 0, 0, 0.39);
 }
 .cart p {
-    font: 16px/16pt sans-serif;
+    font: 17px/16pt sans-serif;
     color: #ffffff;
+    text-align: left;
+    margin: 12px;
 }
 .cart a {
     text-decoration: underline;
+    color: #ffffff;
 }
 
 @media screen and (max-width:1337px) {

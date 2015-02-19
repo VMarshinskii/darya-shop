@@ -140,6 +140,7 @@ def remove_in_cart(request, id=-1):
             pass
     return render_to_response("cart_ajax.html", {'products': products, 'sum_mass': sum_mass, 'sum': sum})
 
+
 def unserialize(str):
     products = {}
     if str == '':
