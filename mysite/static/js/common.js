@@ -66,26 +66,21 @@ jQuery(window).load(function(){
     });
 });
 
+$add = function(){
+    var id = $(this).attr("data-id");
+    $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
+}
+$del = function(){
+    var id = $(this).attr("data-id");
+    $(".ContentBoxPage").load("/cart/del_in_cart/" + id + "/");
+}
+$(".CartAdd").on('click', $add);
+$(".CartDelete").on('click', $del);
+
 $(document).ready(function (){
     $(".good-c a").on(function(){
         var id = $(this).attr("data-id");
         $.get("/cart/add_in_cart/" + id + "/");
         return false;
     });
-
-    $add = function()
-    {
-        var id = $(this).attr("data-id");
-        $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
-    }
-
-    $(".CartAdd").on('click', $add);
-
-    $del = function()
-    {
-        var id = $(this).attr("data-id");
-        $(".ContentBoxPage").load("/cart/del_in_cart/" + id + "/");
-    }
-
-    $(".CartDelete").on('click', $del);
 });
