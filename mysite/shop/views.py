@@ -10,18 +10,23 @@ import string
 # Create your views here.
 def cart(request):
     products = {}
+    sum_mass = {}
+    sum = 0
     if "user_cart" in request.session:
         user_key = request.session["user_cart"]
         try:
             user_cart = UserCart.objects.get(user_key=user_key)
             for product_id, count in unserialize(user_cart.products).items():
                 try:
-                    products[Product.objects.get(id=product_id)] = count
+                    pr = Product.objects.get(id=product_id)
+                    products[pr] = count
+                    sum_mass[pr.id] = pr.price * int(count)
+                    sum += pr.price * int(count)
                 except Product.DoesNotExist:
                     pass
         except UserCart.DoesNotExist:
             pass
-    return render_to_response("cart.html", {'products': products})
+    return render_to_response("cart.html", {'products': products, 'sum_mass': sum_mass, 'sum': sum})
 
 
 def order(request):
