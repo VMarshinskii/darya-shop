@@ -83,8 +83,8 @@ def del_in_cart(request, id=-1):
             user_cart = UserCart()
             user_cart.user_key = user_key
         products = unserialize(user_cart.products)
-        if int(id) in products and products[id] > 0:
-            products[id] -= 1
+        if int(id) in products and products[int(id)] > 0:
+            products[int(id)] -= 1
             user_cart.products = serialize(products)
             user_cart.save()
     products = {}
