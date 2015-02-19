@@ -67,18 +67,18 @@ jQuery(window).load(function(){
 });
 
 $(document).ready(function (){
-    $(".good-c a").click(function(){
+    $(".good-c a").on(function(){
         var id = $(this).attr("data-id");
         $.get("/cart/add_in_cart/" + id + "/");
         return false;
     });
 
-    $(".CartAdd").live('click', function(){
+    $(".CartAdd").on('click', function(){
         var id = $(this).attr("data-id");
         $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
     });
 
-    $(".CartDelete").live('click', function(){
+    $(".CartDelete").on('click', function(){
         var id = $(this).attr("data-id");
         $(".ContentBoxPage").load("/cart/del_in_cart/" + id);
     });
