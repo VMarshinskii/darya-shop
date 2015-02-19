@@ -79,7 +79,7 @@ $(document).ready(function (){
         $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
     }
 
-    $(".CartAdd").live('click', $add);
+    $(".CartAdd").on('click', $add);
 
     $del = function()
     {
@@ -87,5 +87,5 @@ $(document).ready(function (){
         $(".ContentBoxPage").load("/cart/del_in_cart/" + id + "/");
     }
 
-    $(".CartDelete").live('click', $del);
+    $(".CartDelete").on('click', $del);
 });
