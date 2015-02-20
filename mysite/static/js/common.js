@@ -69,20 +69,24 @@ jQuery(window).load(function(){
 $(".CartAdd").live('click', function(){
     var id = $(this).attr("data-id");
     $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
+    $(".cart").load("/cart/cart_top_ajax/");
 });
 $(".CartDelete").live('click', function(){
     var id = $(this).attr("data-id");
     $(".ContentBoxPage").load("/cart/del_in_cart/" + id + "/");
+    $(".cart").load("/cart/cart_top_ajax/");
 });
 $(".CartItemDelete").live('click', function(){
     var id = $(this).attr("data-id");
     $(".ContentBoxPage").load("/cart/remove_in_cart/" + id + "/");
+    $(".cart").load("/cart/cart_top_ajax/");
 });
 
 $(document).ready(function (){
     $(".good-c a").click(function(){
         var id = $(this).attr("data-id");
         $.get("/cart/add_in_cart/" + id + "/");
+        $(".cart").load("/cart/cart_top_ajax/");
         alert("Товар в корзине");
         return false;
     });
