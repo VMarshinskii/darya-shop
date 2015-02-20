@@ -141,6 +141,24 @@ def remove_in_cart(request, id=-1):
     return render_to_response("cart_ajax.html", {'products': products, 'sum_mass': sum_mass, 'sum': sum})
 
 
+def cart_top_ajax(request):
+    sum = 0; count_all = 0
+    if "user_cart" in request.session:
+        user_key = request.session["user_cart"]
+        try:
+            user_cart = UserCart.objects.get(user_key=user_key)
+            for product_id, count in unserialize(user_cart.products).items():
+                try:
+                    pr = Product.objects.get(id=product_id)
+                    sum += int(pr.price) * int(count)
+                    count_all += int(count)
+                except Product.DoesNotExist:
+                    pass
+        except UserCart.DoesNotExist:
+            pass
+    return render_to_response("cart_top_ajax.html", {'count': count_all, 'sum': sum})
+
+
 def unserialize(str):
     products = {}
     if str == '':
