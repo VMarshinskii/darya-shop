@@ -30,12 +30,12 @@ def category(request, url="none"):
         categ = Category.objects.get(url=url)
         categs_child = Category.objects.filter(parent=categ)
         for child in categs_child:
-            products = Product.objects.filter(category=child)
+            products = Product.objects.filter(category=child)[:3]
             data[child] = products
         products = Product.objects.filter(category=categ)
     except Category.DoesNotExist:
         return Http404
-    return render_to_response("category_root.html", {'data': data, 'products': products})
+    return render_to_response("category.html", {'data': data, 'products': products})
 
 
 def product_form(request):

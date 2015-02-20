@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% load staticfiles %}
+
+{% block content %}
+{% for categ_child, categ_child_products in data %}
+<div class="goodss">
+    <h3><a href="/catalog/{{ categ_child.url }}/">{{ categ_child }}</a></h3>
+    {% for product in categ_child_products %}
+    <div class="good">
+        <div class="goods-img">
+            <img src="/static/uploads/{{ product.image }}" alt="img"/>
+        </div>
+        <div class="about-goods">
+            <a href="/catalog/product/{{ product.id }}/">{{ product.name }}</a>
+        </div>
+        <div class="price">{{ product.price }} руб.</div>
+        <div class="good-c">
+            <a data-id="{{ product.id }}" href="#">В корзину</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+<div style="clear: both"></div>
+{% endblock %}
