@@ -2,7 +2,6 @@
 {% load staticfiles %}
 
 {% block content %}
-{% for categ_child, categ_child_products in data.items %}
 <div class="goodss">
     <ul class="catalogCategPath">
         <li><a href="/">Главная</a></li>
@@ -25,6 +24,5 @@
     </div>
     {% endfor %}
 </div>
-{% endfor %}
 <div style="clear: both"></div>
 {% endblock %}
