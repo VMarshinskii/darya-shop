@@ -747,6 +747,18 @@ p.CartSumLabel {
     color: #ffffff;
 }
 
+.catalogCategPath {
+    margin: 10px 0;
+}
+.catalogCategPath li {
+    float: left;
+    margin-right: 10px;
+}
+.catalogCategPath a {
+    color: #ffffff;
+}
+
+
 @media screen and (max-width:1337px) {
     .CartItem {
         width: 370px;
