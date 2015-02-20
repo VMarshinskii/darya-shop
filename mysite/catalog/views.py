@@ -28,7 +28,7 @@ def category(request, url="none"):
     try:
         categ = Category.objects.get(url=url)
         products = categ.get_all_product()
-        path = categ.get_path_categ().reverse()
+        path = categ.get_path_categ()
     except Category.DoesNotExist:
         return Http404
     return render_to_response("category.html", {'path': path, 'categ': categ, 'products': products})
