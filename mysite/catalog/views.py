@@ -25,17 +25,13 @@ def product(request, id=-1):
 
 
 def category(request, url="none"):
-    data = {}
     try:
         categ = Category.objects.get(url=url)
-        categs_child = Category.objects.filter(parent=categ)
-        for child in categs_child:
-            products = Product.objects.filter(category=child)[:3]
-            data[child] = products
-        products = Product.objects.filter(category=categ)
+        product = categ.get_all_product()
+        path = categ.get_path_categ().reverse()
     except Category.DoesNotExist:
         return Http404
-    return render_to_response("category.html", {'data': data, 'products': products})
+    return render_to_response("category.html", {'path': path, 'categ': categ, 'products': products})
 
 
 def product_form(request):
