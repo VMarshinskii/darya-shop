@@ -91,5 +91,13 @@ $(document).ready(function (){
         return false;
     });
 
+    $(".CatalogPriceBox a").click(function(){
+        var id = $(this).attr("data-id");
+        $.get("/cart/add_in_cart/" + id + "/");
+        $(".cart").load("/cart/cart_top_ajax/");
+        alert("Товар в корзине");
+        return false;
+    });
+
     $(".cart").load("/cart/cart_top_ajax/");
 });

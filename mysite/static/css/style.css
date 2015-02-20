@@ -757,6 +757,7 @@ p.CartSumLabel {
 .catalogCategPath li {
     float: left;
     margin-right: 10px;
+    color: #ffffff;
 }
 .catalogCategPath a {
     color: #ffffff;
