@@ -65,7 +65,7 @@ body {
 }
 .logo {
     position: absolute;
-    top: 55px;
+    top: 44px;
     left: 0;
     color: #fff;
     font-family: Gabriola;
@@ -729,9 +729,9 @@ p.CartSumLabel {
 
 .cart {
     width: 260px;
-    height: 45px;
+    height: 37px;
     position: absolute;
-    top: 126px;
+    top: 127px;
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0.39);
@@ -740,7 +740,7 @@ p.CartSumLabel {
     font: 17px/16pt sans-serif;
     color: #ffffff;
     text-align: left;
-    margin: 12px;
+    margin: 9px 0 0 10px;
 }
 .cart a {
     text-decoration: underline;
