@@ -58,7 +58,7 @@ jQuery(window).load(function(){
     jQuery(".photoslider-bullets").sliderkit({
         auto:true,
         circular:true,
-        mousewheel:true,
+        mousewheel:false,
         shownavitems:5,
         panelfx:"sliding",
         panelfxspeed:2000,
