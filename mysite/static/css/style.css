@@ -439,7 +439,6 @@ body {
     float: left;
 }
 .galeryBox {
-    background: #eeeeee;
     width: 230px;
     float: left;
 }
@@ -450,7 +449,7 @@ body {
 }
 .your-class button {
     position: absolute;
-    top: 13px;
+    top: 7px;
     width: 20px;
     height: 40px;
     background: rgba(0, 0, 0, 0.05);
@@ -481,10 +480,10 @@ body {
 }
 .galeryBoxImg {
     min-height: 260px;
+    overflow: hidden;
 }
 .galeryBoxImg img {
-    width: 260px;
-    margin: 0 10px;
+    width: 228px;
 }
 
 .CatalogPriceBox {
