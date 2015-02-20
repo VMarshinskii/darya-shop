@@ -747,6 +747,10 @@ p.CartSumLabel {
     color: #ffffff;
 }
 
+.goodss {
+    clear: both;
+    padding-top: 10px;
+}
 .catalogCategPath {
     margin: 10px 0;
 }

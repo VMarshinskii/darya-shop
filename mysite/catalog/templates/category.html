@@ -5,6 +5,7 @@
 <ul class="catalogCategPath">
     <li><a href="/">Главная</a></li>
     {% for cat in path %}
+    <li>></li>
     <li><a href="/catalog/{{ cat.url }}/">{{ cat.title }}</a></li>
     {% endfor %}
 </ul>
