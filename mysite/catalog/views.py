@@ -31,7 +31,7 @@ def category(request, url="none"):
         if categ.parent is not None:
             categs_child = Category.objects.filter(parent=None)
             for child in categs_child:
-                products = Product.objects.get()
+                products = Product.objects.all()
                 data[child] = products
         return render_to_response("category_root.html", {'data': data})
     except Category.DoesNotExist:
