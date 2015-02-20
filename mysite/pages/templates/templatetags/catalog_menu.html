@@ -5,10 +5,10 @@
         <ul>
             {% for parent,childrens in mass_categ.items %}
             <li>
-                <a href="">{{ parent.title }}:</a>
+                <a href="/catalog/{{ parent.url }}/">{{ parent.title }}:</a>
                 <ul>
                     {% for child in childrens %}
-                    <li><a href="/catalog/{{ child.url }}">{{ child.title }}</a></li>
+                    <li><a href="/catalog/{{ child.url }}/">{{ child.title }}</a></li>
                     {% endfor %}
                 </ul>
             </li>
