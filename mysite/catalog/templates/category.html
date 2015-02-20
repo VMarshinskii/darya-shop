@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block content %}
-{% for categ_child, categ_child_products in data %}
+{% for categ_child, categ_child_products in data.items %}
 <div class="goodss">
     <h3><a href="/catalog/{{ categ_child.url }}/">{{ categ_child }}</a></h3>
     {% for product in categ_child_products %}
