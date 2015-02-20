@@ -2,13 +2,13 @@
 {% load staticfiles %}
 
 {% block content %}
+<ul class="catalogCategPath">
+    <li><a href="/">Главная</a></li>
+    {% for cat in path %}
+    <li><a href="/catalog/{{ cat.url }}/">{{ cat.title }}</a></li>
+    {% endfor %}
+</ul>
 <div class="goodss">
-    <ul class="catalogCategPath">
-        <li><a href="/">Главная</a></li>
-        {% for cat in path %}
-        <li><a href="/catalog/{{ cat.url }}/">{{ cat.title }}</a></li>
-        {% endfor %}
-    </ul>
     {% for product in products %}
     <div class="good">
         <div class="goods-img">
