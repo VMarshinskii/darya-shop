@@ -86,4 +86,6 @@ $(document).ready(function (){
         alert("Товар в корзине");
         return false;
     });
+
+    $(".cart").load("/cart/cart_top_ajax/");
 });
