@@ -24,6 +24,20 @@ def product(request, id=-1):
         return Http404
 
 
+def category(request, url="none"):
+    data = {}
+    try:
+        categ = Category.objects.get(url=url)
+        if categ.parent is not None:
+            categs_child = Category.objects.get(parent=None)
+            for child in categs_child:
+                products = Product.objects.get()
+                data[child] = products
+        return
+    except Category.DoesNotExist:
+        return Http404
+
+
 def product_form(request):
     model = Product()
     model.price = 0

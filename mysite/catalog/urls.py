@@ -8,4 +8,5 @@ urlpatterns = patterns('',
 
     url(r'^$', 'catalog.views.home'),
     url(r'^product/(?P<id>\d+)/$', 'catalog.views.product'),
+    url(r'^(?P<url>[\-\w]+)/$', 'catalog.views.category')
 )
