@@ -29,7 +29,7 @@ def category(request, url="none"):
     try:
         categ = Category.objects.get(url=url)
         if categ.parent is not None:
-            categs_child = Category.objects.get(parent=None)
+            categs_child = Category.objects.filter(parent=None)
             for child in categs_child:
                 products = Product.objects.get()
                 data[child] = products
