@@ -33,7 +33,7 @@ def category(request, url="none"):
             for child in categs_child:
                 products = Product.objects.get()
                 data[child] = products
-        return
+        return render_to_response("category_root.html", {'data': data})
     except Category.DoesNotExist:
         return Http404
 
