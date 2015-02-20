@@ -438,11 +438,55 @@ body {
     margin: 5px 0 0 5px;
     float: left;
 }
-.CatalogGalleryBox {
+.galeryBox {
     background: #eeeeee;
     width: 230px;
     float: left;
 }
+.your-class	{
+    width: 220px;
+    margin: 0 30px;
+    position: relative;
+}
+.your-class button {
+    position: absolute;
+    top: 13px;
+    width: 20px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+}
+.your-class button:hover {
+    background: rgba(0, 0, 0, 0.15);
+}
+.slick-prev {
+    left: -22px;
+}
+.slick-next {
+    right: -22px;
+}
+.slick-slide {
+    margin: 5px;
+    overflow: hidden;
+    background: #0000ff;
+    height: 60px;
+}
+.slick-slide:hover {
+    box-shadow: 0 0 5px #333;
+}
+.slick-slide img {
+    width: 100%;
+    cursor: pointer;
+}
+.galeryBoxImg {
+    min-height: 260px;
+}
+.galeryBoxImg img {
+    width: 260px;
+    margin: 0 10px;
+}
+
 .CatalogPriceBox {
     float: left;
     margin-left: 6px;
