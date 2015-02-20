@@ -10,7 +10,7 @@
     <div class="CatalogPriceBox">
         <p class="CatalogPriceBoxPrice">Цена: <span>{{ new_price }} руб.</span></p>
         <p class="CatalogPriceOld">{{ product.price }} руб.</p>
-        <a href="#">Купить</a>
+        <a href="#" data-id="{{ product.id }}">Купить</a>
     </div>
     <div class="CatalogProductBoxContent">
         {{ product.text|safe }}
