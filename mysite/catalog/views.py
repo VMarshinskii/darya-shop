@@ -28,14 +28,14 @@ def category(request, url="none"):
     data = {}
     try:
         categ = Category.objects.get(url=url)
-        if categ.parent is not None:
-            categs_child = Category.objects.filter(parent=None)
-            for child in categs_child:
-                products = Product.objects.all()
-                data[child] = products
-        return render_to_response("category_root.html", {'data': data})
+        categs_child = Category.objects.filter(parent=categ)
+        for child in categs_child:
+            products = Product.objects.filter(category=child)
+            data[child] = products
+        products = Product.objects.filter(parent=categ)
     except Category.DoesNotExist:
         return Http404
+    return render_to_response("category_root.html", {'data': data, 'products': products})
 
 
 def product_form(request):
