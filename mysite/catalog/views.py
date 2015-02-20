@@ -32,7 +32,7 @@ def category(request, url="none"):
         for child in categs_child:
             products = Product.objects.filter(category=child)
             data[child] = products
-        products = Product.objects.filter(parent=categ)
+        products = Product.objects.filter(category=categ)
     except Category.DoesNotExist:
         return Http404
     return render_to_response("category_root.html", {'data': data, 'products': products})
