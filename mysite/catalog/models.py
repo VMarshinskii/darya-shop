@@ -27,6 +27,7 @@ class Category(models.Model):
             categories = Category.objects.filter(parent=obj)
             for category in categories:
                 rec_category(category)
+
         rec_category(self)
         return mass_product
 
@@ -36,7 +37,7 @@ class Category(models.Model):
         def rec_path(obj):
             if obj is not None:
                 mass_pass.append(obj)
-                rec_path(obj)
+                rec_path(obj.parent)
         rec_path(self)
         return mass_pass
 
