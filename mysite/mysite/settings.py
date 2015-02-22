@@ -26,8 +26,8 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# Application definition
 INSTALLED_APPS = (
+    'accounts',
     'catalog',
     'suit',
     'django.contrib.admin',
@@ -41,8 +41,8 @@ INSTALLED_APPS = (
     'banners',
     'pages',
     'shop',
-    'accounts'
 )
+# Application definition
 
 
 MIDDLEWARE_CLASSES = (
