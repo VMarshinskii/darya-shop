@@ -7,14 +7,13 @@ from catalog.models import Product, Category
 from ajaxuploader.views import AjaxFileUploader
 from django.utils.encoding import smart_str
 from catalog.admin import sort_list
-from accounts.models import User
 
 
 # Create your views here.
 def home(request):
     products = Product.objects.filter(home_status=1)
     user = request.user
-    return render_to_response("index.html", {'products': products, user_birthday: user})
+    return render_to_response("index.html", {'products': products, 'user_birthday': user})
 
 
 def product(request, id=-1):
