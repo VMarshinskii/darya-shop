@@ -40,7 +40,8 @@ INSTALLED_APPS = (
     'redactor',
     'banners',
     'pages',
-    'shop'
+    'shop',
+    'accounts'
 )
 
 
