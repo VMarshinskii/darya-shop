@@ -14,8 +14,9 @@ class User(AbstractUser):
     # Добавляем поля аватара. null=True не нужен т.к. в БД это обычное текстовое поле.
     # max_length=1000 - по умолчанию значение 100, пару раз натыкался на глюки при длинных названиях файлов,
     # может в 1.5 уже и не нужно, но там все так же 100.
-    phone = models.CharField("Телефон", blank=False, unique=True, max_length=200, default=0)
-
+    avatar = models.ImageField(_(u'avatar'), upload_to='accounts/avatar/%Y/%m/', blank=True, max_length=1000)
+    # Добавляем поле дня рождения.
+    birthday = models.DateField(_(u'birthday'), blank=True, null=True)
 
 #class Address(models.Model):
     #region = models.CharField("Область", max_length=200)
