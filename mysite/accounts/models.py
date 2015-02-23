@@ -22,4 +22,4 @@ class Address(models.Model):
     city = models.CharField("Город", max_length=200)
     index = models.CharField("Индекс", max_length=200)
     address = models.TextField("Адрес")
-    user = models.ForeignKey(User, verbose_name="Пользователь", blank=True, null=True)
+    user = models.ForeignKey(User, verbose_name="Пользователь", blank=True)
