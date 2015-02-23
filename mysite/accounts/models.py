@@ -17,4 +17,12 @@ class User(AbstractUser):
     avatar = models.ImageField(_(u'avatar'), upload_to='accounts/avatar/%Y/%m/', blank=True, max_length=1000)
     # Добавляем поле дня рождения.
     birthday = models.DateField(_(u'birthday'), blank=True, null=True)
-    phone = models.CharField("Телефон", max_length=200, unique = True, blank=True)
+    phone = models.CharField("Телефон", max_length=200, unique=True, blank=True)
+
+
+class Address(models.Model):
+    region = models.CharField("Область", max_length=200, blank=True)
+    city = models.CharField("Город", max_length=200, blank=True)
+    index = models.CharField("Индекс", max_length=200, blank=True)
+    address = models.CharField("Адрес", max_length=200, blank=True)
+    user = models.ForeignKey(User, verbose_name="Пользователь", blank=True, null=True)
