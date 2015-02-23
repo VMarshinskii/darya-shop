@@ -29,3 +29,4 @@ class AdminUserChangeForm(UserChangeForm):
 
     class Meta:
         model = User
+        fields = "__all__"
