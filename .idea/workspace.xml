@@ -93,8 +93,8 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63527656" vertical-offset="0" max-vertical-offset="669">
-              <caret line="25" column="87" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.6098655" vertical-offset="0" max-vertical-offset="669">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="e#15#66#0" expanded="true" />
               </folding>
@@ -1487,7 +1487,11 @@
       <created>1424697383365</created>
       <updated>1424697383365</updated>
     </task>
-    <option name="localTasksCounter" value="230" />
+    <task id="LOCAL-00230" summary="Update">
+      <created>1424697465650</created>
+      <updated>1424697465650</updated>
+    </task>
+    <option name="localTasksCounter" value="231" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1907,8 +1911,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63527656" vertical-offset="0" max-vertical-offset="669">
-          <caret line="25" column="87" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.6098655" vertical-offset="0" max-vertical-offset="669">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#15#66#0" expanded="true" />
           </folding>
