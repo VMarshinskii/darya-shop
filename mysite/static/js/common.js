@@ -69,7 +69,9 @@ jQuery(window).load(function(){
 $(".CartAdd").live('click', function(){
     var id = $(this).attr("data-id");
     $(".ContentBoxPage").load("/cart/add_in_cart/" + id + "/?cart=1");
-    $(".cart").load("/cart/cart_top_ajax/");
+    setTimeout(function f() {
+        $(".cart").load("/cart/cart_top_ajax/");
+    }, 500);
 });
 $(".CartDelete").live('click', function(){
     var id = $(this).attr("data-id");
@@ -79,14 +81,18 @@ $(".CartDelete").live('click', function(){
 $(".CartItemDelete").live('click', function(){
     var id = $(this).attr("data-id");
     $(".ContentBoxPage").load("/cart/remove_in_cart/" + id + "/");
-    $(".cart").load("/cart/cart_top_ajax/");
+    setTimeout(function f() {
+        $(".cart").load("/cart/cart_top_ajax/");
+    }, 500);
 });
 
 $(document).ready(function (){
     $(".good-c a").click(function(){
         var id = $(this).attr("data-id");
         $.get("/cart/add_in_cart/" + id + "/");
-        $(".cart").load("/cart/cart_top_ajax/");
+        setTimeout(function f() {
+            $(".cart").load("/cart/cart_top_ajax/");
+        }, 500);
         alert("Товар в корзине");
         return false;
     });
@@ -94,7 +100,9 @@ $(document).ready(function (){
     $(".CatalogPriceBox a").click(function(){
         var id = $(this).attr("data-id");
         $.get("/cart/add_in_cart/" + id + "/");
-        $(".cart").load("/cart/cart_top_ajax/");
+        setTimeout(function f() {
+            $(".cart").load("/cart/cart_top_ajax/");
+        }, 500);
         alert("Товар в корзине");
         return false;
     });
