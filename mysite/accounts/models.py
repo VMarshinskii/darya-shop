@@ -14,7 +14,7 @@ class User(AbstractUser):
     # Добавляем поля аватара. null=True не нужен т.к. в БД это обычное текстовое поле.
     # max_length=1000 - по умолчанию значение 100, пару раз натыкался на глюки при длинных названиях файлов,
     # может в 1.5 уже и не нужно, но там все так же 100.
-    phone = models.CharField("Телефон", blank=False, unique=True, max_length=200, default=0)
+    phone2 = models.CharField("Телефон", blank=False, unique=True, max_length=200, default=0)
 
 
 class Address(models.Model):
