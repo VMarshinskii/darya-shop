@@ -17,3 +17,4 @@ class User(AbstractUser):
     avatar = models.ImageField(_(u'avatar'), upload_to='accounts/avatar/%Y/%m/', blank=True, max_length=1000)
     # Добавляем поле дня рождения.
     birthday = models.DateField(_(u'birthday'), blank=True, null=True)
+    phone = models.CharField("Телефон", max_length=200, unique = True, blank=True)
