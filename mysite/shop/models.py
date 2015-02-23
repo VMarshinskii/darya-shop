@@ -13,8 +13,8 @@ Order_Status = (
 
 class TypeDelivery(models.Model):
     title = models.CharField("Название", max_length=200)
-    description = models.CharField("Описание", max_length=200)
-    price = models.IntegerField("Под заказ", default=0)
+    description = models.TextField("Описание")
+    price = models.IntegerField("Цена", default=0)
 
 
 class UserCart(models.Model):
