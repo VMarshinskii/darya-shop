@@ -24,7 +24,7 @@ class UserCart(models.Model):
 
 class Order(models.Model):
     user = models.ForeignKey(User, verbose_name="Пользователь", blank=True, null=True)
-    address = models.ForeignKey(Adderss, verbose_name="Адрес", blank=True, null=True)
+    address = models.ForeignKey(Address, verbose_name="Адрес", blank=True, null=True)
     type_delivery = models.ForeignKey(TypeDelivery, verbose_name="Вариант доставки", blank=True, null=True)
     products = models.CharField("Заказ", max_length=200)
     status = models.CharField(max_length=1, choices=Order_Status)
