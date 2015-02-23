@@ -17,9 +17,9 @@ class User(AbstractUser):
     phone = models.CharField("Телефон", blank=False, unique=True, max_length=200, default=0)
 
 
-class Address(models.Model):
-    region = models.CharField("Область", max_length=200)
-    city = models.CharField("Город", max_length=200)
-    index = models.CharField("Индекс", max_length=200)
-    address = models.TextField("Адрес")
+#class Address(models.Model):
+    #region = models.CharField("Область", max_length=200)
+    #city = models.CharField("Город", max_length=200)
+    #index = models.CharField("Индекс", max_length=200)
+    #address = models.TextField("Адрес")
     #user = models.ForeignKey(User, verbose_name="Пользователь", blank=True, null=True)
