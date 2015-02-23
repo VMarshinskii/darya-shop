@@ -16,6 +16,13 @@ class TypeDelivery(models.Model):
     description = models.TextField("Описание")
     price = models.IntegerField("Цена", default=0)
 
+    class Meta:
+        verbose_name = 'Вариант доставки'
+        verbose_name_plural = 'Варианты доставки'
+
+    def __unicode__(self):
+        return self.title
+
 
 class UserCart(models.Model):
     user_key = models.CharField("Ключ", max_length=200)
@@ -31,3 +38,10 @@ class Order(models.Model):
     date_create = models.DateField("Дата создания заказа", auto_now_add=True)
     date_change = models.DateField("Дата редактирования заказа", auto_now=True)
     admin_comment = models.TextField("Комментарий администратора")
+
+    class Meta:
+        verbose_name = 'Заказ'
+        verbose_name_plural = 'Заказы'
+
+    def __unicode__(self):
+        return self.date_create
