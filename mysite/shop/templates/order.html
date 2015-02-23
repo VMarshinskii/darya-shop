@@ -4,7 +4,7 @@
 {% block content %}
 <div class="ContentBox">
     <div class="ContentBoxHead">
-        <h1>Корзина</h1>
+        <h1>Форма заказа</h1>
     </div>
     <div class="OrderBox">
 		<h3>У меня уже есть акаунт в интернет-магазине Darya-Shop - <a href="#">войти</a></h3>
@@ -42,19 +42,15 @@
 		</div>
 
         <div class="OrderBoxAddressType">
-            <h4>Адрес доставки</h4>
+            <h4>Вариант доставки</h4>
 
+            {% for type_delivery in types_delivery %}
             <div class="OrderBoxAddressTypeItem">
                 <input type="radio" name="type_address"/>
-                <h5>Курьером</h5>
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <h5>{{ type_delivery.title }} - <span style="color: #ed145b; font-weight: 200">{{ type_delivery.price }}</span></h5>
+                <p>{{ type_delivery.description }}</p>
             </div>
-
-            <div class="OrderBoxAddressTypeItem">
-                <input type="radio" name="type_address"/>
-                <h5>Курьером</h5>
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-            </div>
+            {% endfor %}
 
             <div style="clear: both"></div>
         </div>

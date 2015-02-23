@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
 from django.http import Http404
-from shop.models import UserCart
+from shop.models import UserCart, TypeDelivery
 from catalog.models import Product
 import random
 import string
@@ -31,7 +31,8 @@ def cart(request):
 
 
 def order(request):
-    return render_to_response("order.html")
+    types_delivery = TypeDelivery.objects.all()
+    return render_to_response("order.html", {'types_delivery': types_delivery})
 
 
 def add_in_cart(request, id=-1):
