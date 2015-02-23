@@ -19,7 +19,7 @@ def cart(request):
             for product_id, count in unserialize(user_cart.products).items():
                 try:
                     pr = Product.objects.get(id=product_id)
-                    pr.price -= (pr.price / 100) * (100 - pr.sale)
+                    pr.price = (pr.price / 100) * (100 - pr.sale)
                     pr.price_sum = pr.price * int(count)
                     products[pr] = count
                     sum += pr.price * int(count)
@@ -64,7 +64,7 @@ def add_in_cart(request, id=-1):
                 for product_id, count in unserialize(user_cart.products).items():
                     try:
                         pr = Product.objects.get(id=product_id)
-                        pr.price -= (pr.price / 100) * (100 - pr.sale)
+                        pr.price = (pr.price / 100) * (100 - pr.sale)
                         pr.price_sum = pr.price * int(count)
                         products[pr] = count
                         sum += pr.price * int(count)
@@ -101,7 +101,7 @@ def del_in_cart(request, id=-1):
             for product_id, count in unserialize(user_cart.products).items():
                 try:
                     pr = Product.objects.get(id=product_id)
-                    pr.price -= (pr.price / 100) * (100 - pr.sale)
+                    pr.price = (pr.price / 100) * (100 - pr.sale)
                     pr.price_sum = pr.price * int(count)
                     products[pr] = count
                     sum += pr.price * int(count)
@@ -134,7 +134,7 @@ def remove_in_cart(request, id=-1):
             for product_id, count in unserialize(user_cart.products).items():
                 try:
                     pr = Product.objects.get(id=product_id)
-                    pr.price -= (pr.price / 100) * (100 - pr.sale)
+                    pr.price = (pr.price / 100) * (100 - pr.sale)
                     pr.price_sum = pr.price * int(count)
                     products[pr] = count
                     sum += pr.price * int(count)
@@ -154,7 +154,7 @@ def cart_top_ajax(request):
             for product_id, count in unserialize(user_cart.products).items():
                 try:
                     pr = Product.objects.get(id=product_id)
-                    pr.price -= (pr.price / 100) * (100 - pr.sale)
+                    pr.price = (pr.price / 100) * (100 - pr.sale)
                     pr.price_sum = pr.price * int(count)
                     count_all += int(count)
                     sum += pr.price * int(count)
