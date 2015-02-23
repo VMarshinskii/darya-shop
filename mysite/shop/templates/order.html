@@ -47,7 +47,7 @@
             {% for type_delivery in types_delivery %}
             <div class="OrderBoxAddressTypeItem">
                 <input type="radio" name="type_address"/>
-                <h5>{{ type_delivery.title }} - <span style="color: #ed145b; font-weight: 200">{{ type_delivery.price }}</span></h5>
+                <h5>{{ type_delivery.title }} - <span style="color: #ed145b">{{ type_delivery.price }} руб.</span></h5>
                 <p>{{ type_delivery.description }}</p>
             </div>
             {% endfor %}
