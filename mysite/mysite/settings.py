@@ -27,7 +27,7 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
-    'accounts',
+    #'accounts',
     'catalog',
     'suit',
     'django.contrib.admin',
@@ -146,7 +146,7 @@ UIT_CONFIG = {
     )
 }
 
-AUTH_USER_MODEL = 'accounts.User'
+#AUTH_USER_MODEL = 'accounts.User'
 
 LOGGING = {
     'version': 1,
