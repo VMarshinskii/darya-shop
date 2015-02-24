@@ -79,28 +79,10 @@ def add_in_cart(request, id=-1):
         user_cart.products = str(id) + ":1"
         request.session["user_cart"] = user_cart.user_key
         user_cart.save()
-    product = Product.objects.get(id=id)
+    cart_mass = return_cart(request)
     if 'cart' in request.GET:
-        products = {}
-        sum_mass = {}
-        sum = 0
-        if "user_cart" in request.session:
-            user_key = request.session["user_cart"]
-            try:
-                user_cart = UserCart.objects.get(user_key=user_key)
-                for product_id, count in unserialize(user_cart.products).items():
-                    try:
-                        pr = Product.objects.get(id=product_id)
-                        pr.price = (pr.price / 100) * (100 - pr.sale)
-                        pr.price_sum = pr.price * int(count)
-                        products[pr] = count
-                        sum += pr.price * int(count)
-                    except Product.DoesNotExist:
-                        pass
-            except UserCart.DoesNotExist:
-                pass
-        return render_to_response("cart_ajax.html", {'products': products, 'sum_mass': sum_mass, 'sum': sum})
-    return render_to_response("add_in_cart.html", {'product': product})
+        return render_to_response("cart_ajax.html", {'products': cart_mass['products'], 'sum': cart_mass['sum']})
+    return render_to_response("add_in_cart.html", {'count': cart_mass['count'], 'sum': cart_mass['sum']})
 
 
 def del_in_cart(request, id=-1):
