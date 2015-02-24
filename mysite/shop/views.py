@@ -32,7 +32,8 @@ def cart(request):
 
 def order(request):
     types_delivery = TypeDelivery.objects.all()
-    return render_to_response("order.html", {'types_delivery': types_delivery})
+    cart_mass = return_cart()
+    return render_to_response("order.html", {'types_delivery': types_delivery, 'sum': cart_mass['sum']})
 
 
 def add_in_cart(request, id=-1):
@@ -164,6 +165,31 @@ def cart_top_ajax(request):
         except UserCart.DoesNotExist:
             pass
     return render_to_response("cart_top_ajax.html", {'count': count_all, 'sum': sum})
+
+
+def return_cart():
+    sum = 0
+    count_all = 0
+    products = []
+    if "user_cart" in request.session:
+        user_key = request.session["user_cart"]
+        try:
+            user_cart = UserCart.objects.get(user_key=user_key)
+            for product_id, count in unserialize(user_cart.products).items():
+                try:
+                    pr = Product.objects.get(id=product_id)
+                    pr.price_new = (pr.price / 100) * (100 - pr.sale)
+                    pr.price_sum_new = pr.price_new * int(count)
+                    pr.price_sum_old = pr.price * int(count)
+                    pr.count = int(count)
+                    products.append(pr)
+                    count_all += int(count)
+                    sum += pr.price_new * int(count)
+                except Product.DoesNotExist:
+                    pass
+        except UserCart.DoesNotExist:
+            pass
+    return {'count': count_all, 'sum': sum, 'products': products}
 
 
 def unserialize(str):
