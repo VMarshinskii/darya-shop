@@ -97,7 +97,6 @@ $(document).ready(function (){
         setTimeout(function f() {
             $(".cart").load("/cart/cart_top_ajax/");
         }, 500);
-        alert("Товар в корзине");
         return false;
     });
 
@@ -111,7 +110,6 @@ $(document).ready(function (){
         setTimeout(function f() {
             $(".cart").load("/cart/cart_top_ajax/");
         }, 500);
-        alert("Товар в корзине");
         return false;
     });
 
