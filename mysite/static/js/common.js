@@ -89,27 +89,33 @@ $(".CartItemDelete").live('click', function(){
 $(document).ready(function (){
     $(".good-c a").click(function(){
         var id = $(this).attr("data-id");
-        $.get("/cart/add_in_cart/" + id + "/");
+        $.get("/cart/add_in_cart/" + id + "/", function(data){
+            $(".popupBox").html(data);
+            $(".background").css('display', 'block');
+            $(".popupBox").css('display', 'block');
+        });
         setTimeout(function f() {
             $(".cart").load("/cart/cart_top_ajax/");
         }, 500);
-        alert("Товар в корзине");
         return false;
     });
 
     $(".CatalogPriceBox a").click(function(){
         var id = $(this).attr("data-id");
-        $.get("/cart/add_in_cart/" + id + "/");
+        $.get("/cart/add_in_cart/" + id + "/", function(data){
+            $(".popupBox").html(data);
+            $(".background").css('display', 'block');
+            $(".popupBox").css('display', 'block');
+        });
         setTimeout(function f() {
             $(".cart").load("/cart/cart_top_ajax/");
         }, 500);
-        alert("Товар в корзине");
         return false;
     });
 
     $(".cart").load("/cart/cart_top_ajax/");
 
-    $(".popupBoxLoginFormClose").click(function(){
+    $(".popupBoxLoginFormClose").live('click', function(){
         $(".background").css('display', 'none');
         $(".popupBox").css('display', 'none');
     });
