@@ -849,6 +849,11 @@ p.CartSumLabel {
     width: 163px;
     box-shadow: 0 0 5px #4A4747;
     border: 1px solid #C50A47;
+    text-decoration: none;
+}
+.popupBoxOrder:hover {
+    background: #b61145;
+    cursor: pointer;
 }
 .popupBoxOpenCart {
     float: left;
@@ -914,6 +919,11 @@ label.popupBoxLoginFormZap {
     width: 70px;
     box-shadow: 0 0 5px #4A4747;
     border: 1px solid #C50A47;
+    text-decoration: none;
+}
+.popupBoxBottom:hover {
+    background: #b61145;
+    cursor: pointer;
 }
 .popupBoxLoginFormClose {
     position: absolute;
