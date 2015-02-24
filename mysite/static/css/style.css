@@ -859,7 +859,21 @@ p.CartSumLabel {
     margin-left: 192px;
     margin-top: 5px;
 }
-
+.popupBoxLoginFormZap {
+    clear: none;
+    font-size: 13px;
+    display: block;
+    width: 128px;
+}
+.popupBoxLoginFormVos {
+    clear: none;
+    /* font-size: 12px; */
+    float: left;
+    display: block;
+    font-size: 11px;
+    width: 92px;
+    margin-left: 5px;
+}
 
 @media screen and (max-width:1337px) {
     .CartItem {
