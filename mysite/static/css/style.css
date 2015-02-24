@@ -816,19 +816,20 @@ p.CartSumLabel {
     z-index: 300;
 }
 .popupBox {
-    position: absolute;
+    position: fixed;
     width: 480px;
-    height: 180px;
+    height: 280px;
     left: 50%;
     top: 50%;
     margin-left: -250px;
-    margin-top: -100px;
+    margin-top: -200px;
     background: #FFF;
     /* border: solid 1px black; */
     padding: 10px;
     border-radius: 1px;
     overflow: auto;
     z-index: 301;
+    box-shadow: 0 0 10px #000;
 }
 
 
