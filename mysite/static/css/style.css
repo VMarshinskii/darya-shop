@@ -807,6 +807,27 @@ p.CartSumLabel {
     color: #ffffff;
 }
 
+.background {
+    background: #000000;
+    opacity: 0.7;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.popupBox {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 280px; /* Ширина слоя в пикселах */
+    height: 180px; /* Высота слоя в пикселах */
+    left: 50%; /* Положение слоя от левого края */
+    top: 50%; /* Положение слоя от верхнего края */
+    margin-left: -150px; /* Отступ слева */
+    margin-top: -100px;	/* Отступ сверху */
+    background: #fc0; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки вокруг */
+    padding: 10px; /* Поля вокруг текста */
+    overflow: auto; /* Добавление полосы прокрутки */
+}
+
 
 @media screen and (max-width:1337px) {
     .CartItem {
