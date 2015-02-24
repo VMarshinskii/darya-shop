@@ -7,6 +7,24 @@ import random
 import string
 
 
+def unserialize(str):
+    products = {}
+    if str == '':
+        return products
+    for i in str.split(";"):
+        if i != '':
+            mass_str = i.split(":")
+        products[int(mass_str[0])] = int(mass_str[1])
+    return products
+
+
+def serialize(products):
+    str_mass = []
+    for key, value in products.items():
+        str_mass.append(str(key) + ":" + str(value))
+    return ";".join(str_mass)
+
+
 def return_cart(request):
     sum = 0
     count_all = 0
@@ -30,24 +48,6 @@ def return_cart(request):
         except UserCart.DoesNotExist:
             pass
     return {'count': count_all, 'sum': sum, 'products': products}
-
-
-def unserialize(str):
-    products = {}
-    if str == '':
-        return products
-    for i in str.split(";"):
-        if i != '':
-            mass_str = i.split(":")
-        products[int(mass_str[0])] = int(mass_str[1])
-    return products
-
-
-def serialize(products):
-    str_mass = []
-    for key, value in products.items():
-        str_mass.append(str(key) + ":" + str(value))
-    return ";".join(str_mass)
 
 
 def cart(request):
