@@ -7,7 +7,7 @@
     <p class="CartSumLabel">Сумма</p>
 </div>
 
-{% for product, count in products.items %}
+{% for product in products %}
 <div class="CartItem">
     <img class="CartItemImage" src="/static/uploads/{{ product.image }}">
     <h3>{{ product.name }}</h3>
