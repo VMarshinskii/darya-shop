@@ -831,6 +831,10 @@ p.CartSumLabel {
     z-index: 301;
     box-shadow: 0 0 10px #000;
 }
+.popupBox h4 {
+    font-size: 26px;
+    margin: 5px 0 15px 5px;
+}
 .popupBoxLoginForm {
     margin: 10px;
 }
@@ -844,10 +848,7 @@ p.CartSumLabel {
     margin-left: 20px;
 
 }
-.popupBoxLoginForm h4 {
-    font-size: 26px;
-    margin: 5px 0 15px 5px;
-}
+
 
 @media screen and (max-width:1337px) {
     .CartItem {
