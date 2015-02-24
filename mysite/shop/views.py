@@ -32,7 +32,7 @@ def cart(request):
 
 def order(request):
     types_delivery = TypeDelivery.objects.all()
-    cart_mass = return_cart()
+    cart_mass = return_cart(request)
     return render_to_response("order.html", {'types_delivery': types_delivery, 'sum': cart_mass['sum']})
 
 
@@ -167,7 +167,7 @@ def cart_top_ajax(request):
     return render_to_response("cart_top_ajax.html", {'count': count_all, 'sum': sum})
 
 
-def return_cart():
+def return_cart(request):
     sum = 0
     count_all = 0
     products = []
