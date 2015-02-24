@@ -817,11 +817,11 @@ p.CartSumLabel {
 }
 .popupBox {
     position: fixed;
-    width: 480px;
+    width: 580px;
     height: 230px;
     left: 50%;
     top: 50%;
-    margin-left: -250px;
+    margin-left: -300px;
     margin-top: -130px;
     background: #FFF;
     /* border: solid 1px black; */
@@ -831,7 +831,9 @@ p.CartSumLabel {
     z-index: 301;
     box-shadow: 0 0 10px #000;
 }
+.popupBoxLoginForm {
 
+}
 
 @media screen and (max-width:1337px) {
     .CartItem {
