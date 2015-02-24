@@ -858,6 +858,10 @@ p.CartSumLabel {
 .popupBoxOpenCart {
     float: left;
     margin: 34px 0 0 70px;
+    opacity: 0.9;
+}
+.popupBoxOpenCart:hover {
+    opacity: 1;
 }
 .popupBoxOpenCart img {
     float: left;
