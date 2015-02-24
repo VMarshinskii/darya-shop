@@ -836,7 +836,22 @@ p.CartSumLabel {
     margin: 10px 0 0 10px;
 }
 .popupBox p {
-    margin: 10px 12px;
+    margin: 10px 15px;
+}
+.popupBoxOrder {
+    float: left;
+    clear: both;
+    margin: 25px 15px;
+    padding: 10px 35px;
+    background: #ed145b;
+    color: #ffffff;
+    text-align: center;
+    width: 104px;
+    box-shadow: 0 0 5px #4A4747;
+    border: 1px solid #C50A47;
+}
+.popupBoxOpenCart {
+
 }
 .popupBoxLoginForm {
     margin: 30px 0 0 60px;
