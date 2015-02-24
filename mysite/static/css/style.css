@@ -835,6 +835,9 @@ p.CartSumLabel {
     font-size: 26px;
     margin: 10px 0 0 10px;
 }
+.popupBox p {
+    margin: 10px 12px;
+}
 .popupBoxLoginForm {
     margin: 30px 0 0 60px;
     position: relative;
