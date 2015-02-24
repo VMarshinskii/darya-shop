@@ -832,7 +832,21 @@ p.CartSumLabel {
     box-shadow: 0 0 10px #000;
 }
 .popupBoxLoginForm {
+    margin: 10px;
+}
+.popupBoxLoginForm label {
+    float: left;
+    clear: both;
+    font-size: 14px;
+}
+.popupBoxLoginForm input {
+    float: left;
+    margin-left: 20px;
 
+}
+.popupBoxLoginForm h4 {
+    font-size: 26px;
+    margin: 5px 0 15px 5px;
 }
 
 @media screen and (max-width:1337px) {
