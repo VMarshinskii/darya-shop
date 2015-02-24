@@ -859,7 +859,7 @@ p.CartSumLabel {
     margin-left: 192px;
     margin-top: 5px;
 }
-.popupBoxLoginFormZap {
+input.popupBoxLoginFormZap {
     clear: none;
     font-size: 13px;
     display: block;
