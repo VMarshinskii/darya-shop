@@ -108,4 +108,9 @@ $(document).ready(function (){
     });
 
     $(".cart").load("/cart/cart_top_ajax/");
+
+    $(".popupBoxLoginFormClose").click(function(){
+        $(".background").css('display', 'none');
+        $(".popupBox").css('display', 'none');
+    });
 });
