@@ -838,6 +838,9 @@ p.CartSumLabel {
 .popupBox p {
     margin: 10px 15px 10px 30px;
 }
+.popupBox p span {
+    font-weight: bold;
+}
 .popupBoxOrder {
     float: left;
     clear: both;
