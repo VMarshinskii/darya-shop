@@ -20,7 +20,7 @@
             <img class="CartItemImage" src="/static/uploads/{{ product.image }}">
             <h3>{{ product.name }}</h3>
             <p class="CartItemPriceLabel">Цена:</p>
-            <p class="CartItemPrice">{{ product.price }} р.</p>
+            <p class="CartItemPrice">{{ product.price_new }} р.</p>
             <p class="CartItemCountLabel">Количество</p>
             <p class="CartItemCount"><img class="CartAdd" data-id="{{ product.id }}" src="{% static "images/rounded54.png" %}">{{ product.count }}<img class="CartDelete" data-id="{{ product.id }}" src="{% static "images/round56.png" %}"></p>
             <p class="CartItemSummLabel">Сумма</p>
