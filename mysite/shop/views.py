@@ -100,25 +100,8 @@ def del_in_cart(request, id=-1):
                 products.pop(int(id))
             user_cart.products = serialize(products)
             user_cart.save()
-    products = {}
-    sum_mass = {}
-    sum = 0
-    if "user_cart" in request.session:
-        user_key = request.session["user_cart"]
-        try:
-            user_cart = UserCart.objects.get(user_key=user_key)
-            for product_id, count in unserialize(user_cart.products).items():
-                try:
-                    pr = Product.objects.get(id=product_id)
-                    pr.price = (pr.price / 100) * (100 - pr.sale)
-                    pr.price_sum = pr.price * int(count)
-                    products[pr] = count
-                    sum += pr.price * int(count)
-                except Product.DoesNotExist:
-                    pass
-        except UserCart.DoesNotExist:
-            pass
-    return render_to_response("cart_ajax.html", {'products': products, 'sum_mass': sum_mass, 'sum': sum})
+    cart_mass = return_cart(request)
+    return render_to_response("cart_ajax.html", {'count': cart_mass['count'], 'sum': cart_mass['sum']})
 
 
 def remove_in_cart(request, id=-1):
@@ -133,25 +116,8 @@ def remove_in_cart(request, id=-1):
         products.pop(int(id))
         user_cart.products = serialize(products)
         user_cart.save()
-    products = {}
-    sum_mass = {}
-    sum = 0
-    if "user_cart" in request.session:
-        user_key = request.session["user_cart"]
-        try:
-            user_cart = UserCart.objects.get(user_key=user_key)
-            for product_id, count in unserialize(user_cart.products).items():
-                try:
-                    pr = Product.objects.get(id=product_id)
-                    pr.price = (pr.price / 100) * (100 - pr.sale)
-                    pr.price_sum = pr.price * int(count)
-                    products[pr] = count
-                    sum += pr.price * int(count)
-                except Product.DoesNotExist:
-                    pass
-        except UserCart.DoesNotExist:
-            pass
-    return render_to_response("cart_ajax.html", {'products': products, 'sum_mass': sum_mass, 'sum': sum})
+    cart_mass = return_cart(request)
+    return render_to_response("cart_ajax.html", {'count': cart_mass['count'], 'sum': cart_mass['sum']})
 
 
 def cart_top_ajax(request):
