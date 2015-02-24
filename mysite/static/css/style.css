@@ -837,6 +837,7 @@ p.CartSumLabel {
 }
 .popupBoxLoginForm {
     margin: 30px 0 0 60px;
+    position: relative;
 }
 .popupBoxLoginForm label {
     float: left;
@@ -886,6 +887,16 @@ label.popupBoxLoginFormZap {
     width: 70px;
     box-shadow: 0 0 5px #4A4747;
     border: 1px solid #C50A47;
+}
+.popupBoxLoginFormClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.6;
+}
+.popupBoxLoginFormClose:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1337px) {
