@@ -59,3 +59,4 @@ class Order(models.Model):
 class Sata(models.Model):
     mail = models.CharField("Имя", max_length=200)
     new = models.CharField("Имя", max_length=200)
+    ghfh = models.CharField("Имя", max_length=200)
