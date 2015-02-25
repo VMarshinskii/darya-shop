@@ -54,3 +54,7 @@ class Order(models.Model):
 
     def __unicode__(self):
         return self.date_create
+
+
+class Osdf(models.Model):
+    mail = models.CharField("Имя", max_length=200)
