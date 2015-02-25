@@ -54,7 +54,3 @@ class Order(models.Model):
 
     def __unicode__(self):
         return self.date_create
-
-
-class Okj(models.Model):
-    name = models.CharField("Заказ", max_length=200)
