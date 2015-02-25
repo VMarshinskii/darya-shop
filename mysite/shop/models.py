@@ -56,5 +56,6 @@ class Order(models.Model):
         return self.date_create
 
 
-class Osdf(models.Model):
+class Sata(models.Model):
     mail = models.CharField("Имя", max_length=200)
+    new = models.CharField("Имя", max_length=200)
