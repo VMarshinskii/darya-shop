@@ -11,6 +11,7 @@ class Section(models.Model):
     keyword = models.CharField("Ключевые слова", max_length=200)
     text = RedactorField(verbose_name="Текст")
     url = models.CharField("Url", max_length=200)
+    asd = models.CharField("Url", max_length=200)
 
     class Meta:
         verbose_name = 'Раздел'
