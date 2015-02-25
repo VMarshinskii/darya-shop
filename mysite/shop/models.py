@@ -37,16 +37,16 @@ class Order(models.Model):
     date_create = models.DateField("Дата создания заказа", auto_now_add=True)
     date_change = models.DateField("Дата редактирования заказа", auto_now=True)
 
-    name = models.CharField("Имя", max_length=200)
-    surname = models.CharField("Фамилия", max_length=200)
-    phone = models.CharField("Телефон", max_length=200)
-    mail = models.CharField("Имя", max_length=200)
+    # name = models.CharField("Имя", max_length=200)
+    # surname = models.CharField("Фамилия", max_length=200)
+    # phone = models.CharField("Телефон", max_length=200)
+    # mail = models.CharField("Имя", max_length=200)
 
-    # admin_comment = models.TextField("Комментарий администратора")
-    # region = models.CharField("Область", max_length=200, blank=True)
-    # city = models.CharField("Город", max_length=200, blank=True)
-    # index = models.CharField("Индекс", max_length=200, blank=True)
-    # address = models.CharField("Адрес", max_length=200, blank=True)
+    admin_comment = models.TextField("Комментарий администратора")
+    region = models.CharField("Область", max_length=200, blank=True)
+    city = models.CharField("Город", max_length=200, blank=True)
+    index = models.CharField("Индекс", max_length=200, blank=True)
+    address = models.CharField("Адрес", max_length=200, blank=True)
 
     class Meta:
         verbose_name = 'Заказ'
