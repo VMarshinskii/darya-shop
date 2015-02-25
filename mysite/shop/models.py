@@ -54,9 +54,3 @@ class Order(models.Model):
 
     def __unicode__(self):
         return self.date_create
-
-
-class Sata(models.Model):
-    mail = models.CharField("Имя", max_length=200)
-    new = models.CharField("Имя", max_length=200)
-    ghfh = models.CharField("Имя", max_length=200)
