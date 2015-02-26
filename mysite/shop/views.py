@@ -67,7 +67,7 @@ def order(request):
 
     if request.method == 'POST':
         form = OrderForm(request.POST)
-        ord = form.save(comit=False)
+        ord = form.save(commit=False)
         ord.type_delivery = TypeDelivery.objects.get(int(ord.type_delivery))
         ord.status = '0'
         ord.order = '1:1'
