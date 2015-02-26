@@ -58,12 +58,20 @@ def cart(request):
 
 
 def order(request):
-    cart_mass = return_cart(request)
     args = {}
     args.update(csrf(request))
+    cart_mass = return_cart(request)
     args['types_delivery'] = TypeDelivery.objects.all()
     args['sum'] = cart_mass['sum']
-    args['form'] = OrderForm
+    args['form'] = OrderForm()
+
+    if request.method == 'POST':
+        form = OrderForm(request.post)
+        form.type_delivery = TypeDelivery.objects.get(id=int(form.cleaned_data['type_delivery']))
+        if form.is_valid():
+            return render_to_response("order.html", args)
+        else:
+            args['form'] = form
     return render_to_response("order.html", args)
 
 

@@ -36,13 +36,13 @@ class Order(models.Model):
     status = models.CharField(max_length=1, choices=Order_Status)
     date_create = models.DateField(verbose_name="Дата создания заказа", auto_now_add=True)
     date_change = models.DateField(verbose_name="Дата редактирования заказа", auto_now=True)
+    admin_comment = models.TextField(verbose_name="Комментарий администратора")
 
     name = models.CharField("Имя", max_length=200)
     surname = models.CharField("Фамилия", max_length=200)
     phone = models.CharField("Телефон", max_length=200)
     mail = models.CharField("Имя", max_length=200)
 
-    admin_comment = models.TextField(verbose_name="Комментарий администратора")
     region = models.CharField("Область", max_length=200, blank=True)
     city = models.CharField("Город", max_length=200, blank=True)
     index = models.CharField("Индекс", max_length=200, blank=True)
