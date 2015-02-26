@@ -36,7 +36,7 @@ class Order(models.Model):
     status = models.CharField(max_length=1, choices=Order_Status)
     date_create = models.DateField(verbose_name="Дата создания заказа", auto_now_add=True)
     date_change = models.DateField(verbose_name="Дата редактирования заказа", auto_now=True)
-    admin_comment = models.TextField(verbose_name="Комментарий администратора")
+    admin_comment = models.TextField(verbose_name="Комментарий администратора", blank=True)
 
     name = models.CharField("Имя", max_length=200)
     surname = models.CharField("Фамилия", max_length=200)

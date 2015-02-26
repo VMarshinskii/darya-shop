@@ -67,9 +67,11 @@ def order(request):
 
     if request.method == 'POST':
         form = OrderForm(request.POST)
-        form.status = '0'
         if form.is_valid():
-            form.type_delivery = TypeDelivery.objects.get(form.cleaned_data.get('type_delivery', None))
+            ord = form.save(comit=False)
+            ord.type_delivery = TypeDelivery.objects.get(int(ord.type_delivery))
+            ord.status = '0'
+            ord.save()
             return render_to_response("order_thanks.html")
         else:
             args['form'] = form

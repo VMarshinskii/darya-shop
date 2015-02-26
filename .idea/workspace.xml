@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/shop/templates/order_thanks.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/models.py" afterPath="$PROJECT_DIR$/mysite/shop/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/templates/order.html" afterPath="$PROJECT_DIR$/mysite/shop/templates/order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/views.py" afterPath="$PROJECT_DIR$/mysite/shop/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,16 +31,16 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76233184" vertical-offset="170" max-vertical-offset="1020">
-              <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.76233184" vertical-offset="136" max-vertical-offset="1071">
+              <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
               <folding>
                 <element signature="e#24#71#0" expanded="true" />
                 <element signature="e#318#532#0" expanded="false" />
                 <element signature="e#564#700#0" expanded="false" />
                 <element signature="e#733#1665#0" expanded="false" />
-                <element signature="e#2447#3494#0" expanded="false" />
-                <element signature="e#3534#4258#0" expanded="false" />
-                <element signature="e#4301#4877#0" expanded="false" />
+                <element signature="e#2524#3571#0" expanded="false" />
+                <element signature="e#3611#4335#0" expanded="false" />
+                <element signature="e#4378#4954#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,8 +59,8 @@
       <file leaf-file-name="order.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1564">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state vertical-scroll-proportion="-34.846153" vertical-offset="437" max-vertical-offset="1581">
+              <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
               <folding>
                 <element signature="e#540#562#0#HTML" expanded="true" />
                 <element signature="e#671#693#0#HTML" expanded="true" />
@@ -75,7 +73,7 @@
                 <element signature="e#2054#2076#0#HTML" expanded="true" />
                 <element signature="e#2253#2272#0#HTML" expanded="true" />
                 <element signature="e#2829#2863#0#HTML" expanded="true" />
-                <element signature="e#3133#3152#0#HTML" expanded="true" />
+                <element signature="e#3188#3207#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,8 +112,8 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.8" vertical-offset="334" max-vertical-offset="1020">
-              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+            <state vertical-scroll-proportion="-17.0" vertical-offset="204" max-vertical-offset="1020">
+              <caret line="38" column="90" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -200,9 +198,9 @@
         <option value="$PROJECT_DIR$/mysite/accounts/models.py" />
         <option value="$PROJECT_DIR$/mysite/pages/models.py" />
         <option value="$PROJECT_DIR$/mysite/shop/forms.py" />
-        <option value="$PROJECT_DIR$/mysite/shop/models.py" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order.html" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/order_thanks.html" />
+        <option value="$PROJECT_DIR$/mysite/shop/templates/order.html" />
+        <option value="$PROJECT_DIR$/mysite/shop/models.py" />
         <option value="$PROJECT_DIR$/mysite/shop/views.py" />
       </list>
     </option>
@@ -421,43 +419,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="darya-shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="darya-shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mysite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="darya-shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="darya-shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1835,7 +1797,39 @@
       <created>1424949682239</created>
       <updated>1424949682239</updated>
     </task>
-    <option name="localTasksCounter" value="305" />
+    <task id="LOCAL-00305" summary="Update">
+      <created>1424950723189</created>
+      <updated>1424950723189</updated>
+    </task>
+    <task id="LOCAL-00306" summary="Update">
+      <created>1424950790108</created>
+      <updated>1424950790108</updated>
+    </task>
+    <task id="LOCAL-00307" summary="Update">
+      <created>1424950863004</created>
+      <updated>1424950863004</updated>
+    </task>
+    <task id="LOCAL-00308" summary="Update">
+      <created>1424951419471</created>
+      <updated>1424951419471</updated>
+    </task>
+    <task id="LOCAL-00309" summary="Update">
+      <created>1424951557433</created>
+      <updated>1424951557433</updated>
+    </task>
+    <task id="LOCAL-00310" summary="Update">
+      <created>1424951806229</created>
+      <updated>1424951806229</updated>
+    </task>
+    <task id="LOCAL-00311" summary="Update">
+      <created>1424951923281</created>
+      <updated>1424951923281</updated>
+    </task>
+    <task id="LOCAL-00312" summary="Update">
+      <created>1424952311774</created>
+      <updated>1424952311774</updated>
+    </task>
+    <option name="localTasksCounter" value="313" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1848,7 +1842,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16709511" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16709511" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2233,18 +2227,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
+    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_thanks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.8" vertical-offset="334" max-vertical-offset="1020">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1564">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state vertical-scroll-proportion="-34.846153" vertical-offset="437" max-vertical-offset="1581">
+          <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
           <folding>
             <element signature="e#540#562#0#HTML" expanded="true" />
             <element signature="e#671#693#0#HTML" expanded="true" />
@@ -2257,31 +2251,31 @@
             <element signature="e#2054#2076#0#HTML" expanded="true" />
             <element signature="e#2253#2272#0#HTML" expanded="true" />
             <element signature="e#2829#2863#0#HTML" expanded="true" />
-            <element signature="e#3133#3152#0#HTML" expanded="true" />
+            <element signature="e#3188#3207#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_thanks.html">
+    <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state vertical-scroll-proportion="-17.0" vertical-offset="204" max-vertical-offset="1020">
+          <caret line="38" column="90" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76233184" vertical-offset="170" max-vertical-offset="1020">
-          <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.76233184" vertical-offset="136" max-vertical-offset="1071">
+          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
           <folding>
             <element signature="e#24#71#0" expanded="true" />
             <element signature="e#318#532#0" expanded="false" />
             <element signature="e#564#700#0" expanded="false" />
             <element signature="e#733#1665#0" expanded="false" />
-            <element signature="e#2447#3494#0" expanded="false" />
-            <element signature="e#3534#4258#0" expanded="false" />
-            <element signature="e#4301#4877#0" expanded="false" />
+            <element signature="e#2524#3571#0" expanded="false" />
+            <element signature="e#3611#4335#0" expanded="false" />
+            <element signature="e#4378#4954#0" expanded="false" />
           </folding>
         </state>
       </provider>
