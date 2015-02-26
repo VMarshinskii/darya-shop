@@ -772,6 +772,10 @@ p.CartSumLabel {
     border: 1px solid #BE0D48;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
+.OrderBoxAddressAddItem {
+    width: 300px;
+    float: left;
+}
 .OrderBoxAddressAdd label {
 
 }
