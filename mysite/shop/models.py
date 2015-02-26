@@ -31,7 +31,7 @@ class UserCart(models.Model):
 
 class Order(models.Model):
     user = models.ForeignKey(User, verbose_name="Пользователь", blank=True, null=True)
-    type_delivery = models.ForeignKey(TypeDelivery, verbose_name="Вариант доставки", blank=True, null=True)
+    type_delivery = models.ForeignKey(TypeDelivery, verbose_name="Вариант доставки", null=True)
     products = models.CharField("Заказ", max_length=200)
     status = models.CharField(max_length=1, choices=Order_Status)
     date_create = models.DateField(verbose_name="Дата создания заказа", auto_now_add=True)
