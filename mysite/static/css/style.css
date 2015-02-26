@@ -732,6 +732,9 @@ p.CartSumLabel {
     font: 13px/13pt sans-serif;
     margin-left: 22px;
 }
+.OrderBoxAddressTypeItem ul li {
+    margin: 10px 5px;
+}
 
 .OrderBoxConfirmation {
     padding: 5px 10px 23px 10px;
