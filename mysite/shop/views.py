@@ -64,7 +64,7 @@ def order(request):
     args['types_delivery'] = TypeDelivery.objects.all()
     args['sum'] = cart_mass['sum']
     args['form'] = OrderForm
-    return render_to_response("order.html", {'types_delivery': types_delivery, 'sum': cart_mass['count']})
+    return render_to_response("order.html", args)
 
 
 def add_in_cart(request, id=-1):
