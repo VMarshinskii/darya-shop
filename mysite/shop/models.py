@@ -53,4 +53,4 @@ class Order(models.Model):
         verbose_name_plural = 'Заказы'
 
     def __unicode__(self):
-        return self.date_create
+        return self.date_create.strftime('%Y-%m-%d')
