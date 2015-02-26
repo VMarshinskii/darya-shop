@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/js/common.js" afterPath="$PROJECT_DIR$/mysite/static/js/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/templates/order.html" afterPath="$PROJECT_DIR$/mysite/shop/templates/order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -69,8 +70,8 @@
       <file leaf-file-name="order.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.923077" vertical-offset="709" max-vertical-offset="2210">
-              <caret line="63" column="54" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="54" />
+            <state vertical-scroll-proportion="-6.730769" vertical-offset="709" max-vertical-offset="2210">
+              <caret line="52" column="78" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="78" />
               <folding>
                 <element signature="e#540#562#0#HTML" expanded="true" />
                 <element signature="e#671#693#0#HTML" expanded="true" />
@@ -81,37 +82,37 @@
                 <element signature="e#1451#1473#0#HTML" expanded="true" />
                 <element signature="e#1582#1604#0#HTML" expanded="true" />
                 <element signature="e#1841#1861#0#HTML" expanded="true" />
-                <element signature="e#2290#2314#0#HTML" expanded="true" />
-                <element signature="e#2321#2359#0#HTML" expanded="true" />
-                <element signature="e#2625#2647#0#HTML" expanded="true" />
-                <element signature="e#2774#2796#0#HTML" expanded="true" />
-                <element signature="e#3003#3025#0#HTML" expanded="true" />
-                <element signature="e#3150#3172#0#HTML" expanded="true" />
-                <element signature="e#3329#3348#0#HTML" expanded="true" />
-                <element signature="e#3777#3799#0#HTML" expanded="true" />
-                <element signature="e#3976#3995#0#HTML" expanded="true" />
-                <element signature="e#4552#4586#0#HTML" expanded="true" />
-                <element signature="e#4911#4930#0#HTML" expanded="true" />
+                <element signature="e#2386#2410#0#HTML" expanded="true" />
+                <element signature="e#2417#2455#0#HTML" expanded="true" />
+                <element signature="e#2721#2743#0#HTML" expanded="true" />
+                <element signature="e#2870#2892#0#HTML" expanded="true" />
+                <element signature="e#3099#3121#0#HTML" expanded="true" />
+                <element signature="e#3246#3268#0#HTML" expanded="true" />
+                <element signature="e#3425#3444#0#HTML" expanded="true" />
+                <element signature="e#3873#3895#0#HTML" expanded="true" />
+                <element signature="e#4072#4091#0#HTML" expanded="true" />
+                <element signature="e#4648#4682#0#HTML" expanded="true" />
+                <element signature="e#5007#5026#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46541786" vertical-offset="12869" max-vertical-offset="17374">
-              <caret line="776" column="16" selection-start-line="776" selection-start-column="16" selection-end-line="776" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="12869" max-vertical-offset="17459">
+              <caret line="782" column="46" selection-start-line="782" selection-start-column="46" selection-end-line="782" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/pages/models.py">
+      <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="680">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.7550432" vertical-offset="1635" max-vertical-offset="2329">
+              <caret line="127" column="53" selection-start-line="127" selection-start-column="53" selection-end-line="127" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -144,6 +145,8 @@
               <caret line="8" column="106" selection-start-line="8" selection-start-column="106" selection-end-line="8" selection-end-column="106" />
               <folding>
                 <element signature="e#24#58#0" expanded="true" />
+                <marker date="1424953628212" expanded="true" signature="113:260" placeholder="..." />
+                <marker date="1424953628212" expanded="true" signature="129:260" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -199,15 +202,15 @@
         <option value="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/cart_ajax.html" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/add_in_cart.html" />
-        <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
         <option value="$PROJECT_DIR$/mysite/accounts/models.py" />
         <option value="$PROJECT_DIR$/mysite/pages/models.py" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/order_thanks.html" />
         <option value="$PROJECT_DIR$/mysite/shop/forms.py" />
         <option value="$PROJECT_DIR$/mysite/shop/views.py" />
         <option value="$PROJECT_DIR$/mysite/shop/models.py" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order.html" />
         <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
+        <option value="$PROJECT_DIR$/mysite/shop/templates/order.html" />
+        <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
       </list>
     </option>
   </component>
@@ -1917,7 +1920,11 @@
       <created>1424964319496</created>
       <updated>1424964319496</updated>
     </task>
-    <option name="localTasksCounter" value="329" />
+    <task id="LOCAL-00329" summary="Update">
+      <created>1424965603863</created>
+      <updated>1424965603863</updated>
+    </task>
+    <option name="localTasksCounter" value="330" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2206,6 +2213,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1615">
           <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2241,14 +2249,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1419" max-vertical-offset="2159">
-          <caret line="110" column="36" selection-start-line="110" selection-start-column="36" selection-end-line="110" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="527">
@@ -2262,7 +2262,7 @@
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="26" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2299,20 +2299,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1224">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="238">
           <caret line="8" column="106" selection-start-line="8" selection-start-column="106" selection-end-line="8" selection-end-column="106" />
           <folding>
             <element signature="e#24#58#0" expanded="true" />
+            <marker date="1424953628212" expanded="true" signature="113:260" placeholder="..." />
+            <marker date="1424953628212" expanded="true" signature="129:260" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -2341,10 +2335,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1224">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="12869" max-vertical-offset="17459">
+          <caret line="782" column="46" selection-start-line="782" selection-start-column="46" selection-end-line="782" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.923077" vertical-offset="709" max-vertical-offset="2210">
-          <caret line="63" column="54" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="54" />
+        <state vertical-scroll-proportion="-6.730769" vertical-offset="709" max-vertical-offset="2210">
+          <caret line="52" column="78" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="78" />
           <folding>
             <element signature="e#540#562#0#HTML" expanded="true" />
             <element signature="e#671#693#0#HTML" expanded="true" />
@@ -2355,25 +2365,25 @@
             <element signature="e#1451#1473#0#HTML" expanded="true" />
             <element signature="e#1582#1604#0#HTML" expanded="true" />
             <element signature="e#1841#1861#0#HTML" expanded="true" />
-            <element signature="e#2290#2314#0#HTML" expanded="true" />
-            <element signature="e#2321#2359#0#HTML" expanded="true" />
-            <element signature="e#2625#2647#0#HTML" expanded="true" />
-            <element signature="e#2774#2796#0#HTML" expanded="true" />
-            <element signature="e#3003#3025#0#HTML" expanded="true" />
-            <element signature="e#3150#3172#0#HTML" expanded="true" />
-            <element signature="e#3329#3348#0#HTML" expanded="true" />
-            <element signature="e#3777#3799#0#HTML" expanded="true" />
-            <element signature="e#3976#3995#0#HTML" expanded="true" />
-            <element signature="e#4552#4586#0#HTML" expanded="true" />
-            <element signature="e#4911#4930#0#HTML" expanded="true" />
+            <element signature="e#2386#2410#0#HTML" expanded="true" />
+            <element signature="e#2417#2455#0#HTML" expanded="true" />
+            <element signature="e#2721#2743#0#HTML" expanded="true" />
+            <element signature="e#2870#2892#0#HTML" expanded="true" />
+            <element signature="e#3099#3121#0#HTML" expanded="true" />
+            <element signature="e#3246#3268#0#HTML" expanded="true" />
+            <element signature="e#3425#3444#0#HTML" expanded="true" />
+            <element signature="e#3873#3895#0#HTML" expanded="true" />
+            <element signature="e#4072#4091#0#HTML" expanded="true" />
+            <element signature="e#4648#4682#0#HTML" expanded="true" />
+            <element signature="e#5007#5026#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46541786" vertical-offset="12869" max-vertical-offset="17374">
-          <caret line="776" column="16" selection-start-line="776" selection-start-column="16" selection-end-line="776" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.7550432" vertical-offset="1635" max-vertical-offset="2329">
+          <caret line="127" column="53" selection-start-line="127" selection-start-column="53" selection-end-line="127" selection-end-column="53" />
           <folding />
         </state>
       </provider>

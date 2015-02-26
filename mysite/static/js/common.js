@@ -119,4 +119,14 @@ $(document).ready(function (){
         $(".background").css('display', 'none');
         $(".popupBox").css('display', 'none');
     });
+
+    $(".OrderBoxAddressAddClick").live('click', function(){
+        $(".OrderBoxAddressAdd").css('display', 'block');
+    });
+
+    $(".OrderBoxAddressAddCheck").live('click', function(){
+        $(".OrderBoxAddressAdd").css('display', 'none');
+    });
+
+
 });

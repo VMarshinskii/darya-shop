@@ -773,14 +773,19 @@ p.CartSumLabel {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 .OrderBoxAddressAddItem {
-    width: 300px;
+    width: 260px;
     float: left;
+    padding: 10px 32px;
 }
 .OrderBoxAddressAdd label {
-
+    display: block;
 }
-.OrderBoxAddressAdd input {
-
+.OrderBoxAddressAdd input, .OrderBoxAddressAdd textarea {
+    width: 230px;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    border-radius: 2px;
+    border: 1px solid #D8D8D8;
 }
 
 
