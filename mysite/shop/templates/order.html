@@ -9,20 +9,21 @@
     <div class="OrderBox">
 		<h3>У меня уже есть акаунт в интернет-магазине Darya-Shop - <a href="#">войти</a></h3>
 
+        {{ form.non_field_errors }}
 		<div class="OrderBoxUserData">
             <h4>Контактная информация</h4>
 
-            <label>Имя <span style="color: #ff0000"> - обязательное поле</span></label>
-            <input type="text" required/>
+            <label>Имя <span style="color: #ff0000">- {{ form.name.errors }}</span></label>
+            {{ form.name }}
 
-            <label>Фамилия</label>
-            <input type="text" required/>
+            <label>Фамилия <span style="color: #ff0000">- {{ form.surname.errors }}</span></label>
+            {{ form.surname }}
 
-            <label>Электронная почта</label>
-            <input type="text" required/>
+            <label>Электронная почта <span style="color: #ff0000">- {{ form.mail.errors }}</span></label>
+            {{ form.mail }}
 
-            <label>Телефон</label>
-            <input type="text" required/>
+            <label>Телефон <span style="color: #ff0000">- {{ form.phone.errors }}</span></label>
+            {{ form.phone }}
 		</div>
 
         <div class="OrderBoxAddressData">
@@ -74,8 +75,6 @@
             </table>
 
             <a href="#">Оформить заказ</a>
-
-            {{ form }}
 
         </div>
 
