@@ -45,6 +45,17 @@
             </div>
 
             <div class="OrderBoxAddressType">
+                <h4>Адрес доставки</h4>
+
+                <div class="OrderBoxAddressTypeItem">
+                    <input type="radio" name="type_delivery" value="{{ type_delivery.id }}"/>
+                    <h5>Оренбургская обл., Оренбург, ул. Кима, 8</h5>
+                </div>
+
+                <div style="clear: both"></div>
+            </div>
+
+            <div class="OrderBoxAddressType">
                 <h4>Вариант доставки</h4>
 
                 {{ form.type_delivery.errors }}
