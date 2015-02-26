@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
+from django.template.context_processors import csrf
 from django.http import Http404
 from shop.models import UserCart, TypeDelivery
 from catalog.models import Product
+from forms import OrderForm
 import random
 import string
 
@@ -56,8 +58,12 @@ def cart(request):
 
 
 def order(request):
-    types_delivery = TypeDelivery.objects.all()
     cart_mass = return_cart(request)
+    args = {}
+    args.update(csrf(request))
+    args['types_delivery'] = TypeDelivery.objects.all()
+    args['sum'] = cart_mass['sum']
+    args['form'] = OrderForm
     return render_to_response("order.html", {'types_delivery': types_delivery, 'sum': cart_mass['count']})
 
 
