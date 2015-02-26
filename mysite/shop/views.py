@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
-from django.template.context_processors import csrf
+from django.core.context_processors import csrf
 from django.http import Http404
 from shop.models import UserCart, TypeDelivery
 from catalog.models import Product
