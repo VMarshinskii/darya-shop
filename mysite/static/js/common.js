@@ -114,6 +114,7 @@ $(document).ready(function (){
     });
 
     $(".cart").load("/cart/cart_top_ajax/");
+    $(".OrderBoxAddressAdd").hide();
 
     $(".popupBoxLoginFormClose").live('click', function(){
         $(".background").css('display', 'none');
@@ -121,11 +122,11 @@ $(document).ready(function (){
     });
 
     $(".OrderBoxAddressAddClick").live('click', function(){
-        $(".OrderBoxAddressAdd").css('display', 'block');
+        $(".OrderBoxAddressAdd").show(400);
     });
 
     $(".OrderBoxAddressAddCheck").live('click', function(){
-        $(".OrderBoxAddressAdd").css('display', 'none');
+        $(".OrderBoxAddressAdd").hide(300);
     });
 
 
