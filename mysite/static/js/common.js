@@ -122,11 +122,11 @@ $(document).ready(function (){
     });
 
     $(".OrderBoxAddressAddClick").live('click', function(){
-        $(".OrderBoxAddressAdd").show(400);
+        $(".OrderBoxAddressAdd").show(200);
     });
 
     $(".OrderBoxAddressAddCheck").live('click', function(){
-        $(".OrderBoxAddressAdd").hide(300);
+        $(".OrderBoxAddressAdd").hide(200);
     });
 
 
