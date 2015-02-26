@@ -60,6 +60,20 @@
                     </ul>
                 </div>
 
+                <div class="OrderBoxAddressAdd" style="display: none">
+                    <label>Область <span style="color: #ff0000">{{ form.region.errors }}</span></label>
+                    {{ form.region }}
+
+                    <label>Город <span style="color: #ff0000">{{ form.city.errors }}</span></label>
+                    {{ form.city }}
+
+                    <label>Индекс <span style="color: #ff0000">{{ form.index.errors }}</span></label>
+                    {{ form.index }}
+
+                    <label>Адрес <span style="color: #ff0000">{{ form.address.errors }}</span></label>
+                    {{ form.address }}
+                </div>
+
                 <div style="clear: both"></div>
             </div>
 
