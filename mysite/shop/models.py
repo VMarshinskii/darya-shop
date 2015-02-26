@@ -43,10 +43,10 @@ class Order(models.Model):
     phone = models.CharField("Телефон", max_length=200)
     mail = models.CharField("Имя", max_length=200)
 
-    region = models.CharField("Область", max_length=200, blank=True)
-    city = models.CharField("Город", max_length=200, blank=True)
-    index = models.CharField("Индекс", max_length=200, blank=True)
-    address = models.CharField("Адрес", max_length=200, blank=True)
+    region = models.CharField("Область", max_length=200)
+    city = models.CharField("Город", max_length=200)
+    index = models.CharField("Индекс", max_length=200)
+    address = models.CharField("Адрес", max_length=200)
 
     class Meta:
         verbose_name = 'Заказ'
