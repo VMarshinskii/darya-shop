@@ -81,6 +81,7 @@ def order(request):
     args['form'] = OrderForm()
 
     if user.is_authenticated():
+        args['addresses'] = Address.objects.filter(user=user)
         if request.method == 'POST':
             if 'address_id' in request.POST and request.POST.get('address_id', -1) == -1:
                 form = OrderForm2(request.POST)
@@ -99,7 +100,7 @@ def order(request):
                 else:
                     args['form'] = form
                     #рендерим 2-ю форму
-                    return render_to_response("order_thanks.html")
+                    return render_to_response("order2.html", args)
             elif 'address_id' in request.POST:
                 form = OrderForm3(request.POST)
                 if form.is_valid():
@@ -114,9 +115,9 @@ def order(request):
                 else:
                     args['form'] = form
                     #рендерим 3-ю форму
-                    return render_to_response("order_thanks.html")
+                    return render_to_response("order3.html", args)
         args['form'] = OrderForm3()
-        return render_to_response("order.html", args)
+        return render_to_response("order3.html", args)
 
     if request.method == 'POST':
         form = OrderForm(request.POST)

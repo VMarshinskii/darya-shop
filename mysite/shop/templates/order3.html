@@ -1,0 +1,94 @@
+{% extends "main.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="ContentBox">
+    <div class="ContentBoxHead">
+        <h1>Форма заказа</h1>
+    </div>
+    <div class="OrderBox">
+        <form action="/cart/order/" method="post">
+            {% csrf_token %}
+
+            <div class="OrderBoxAddressType">
+                <h4>Адрес доставки</h4>
+
+                <div class="OrderBoxAddressTypeItem" style="width: 660px">
+                {{ form.address_id.errors }}
+                    <ul>
+                        {% for address in addresses %}
+                        <li>
+                            <input type="radio" class="OrderBoxAddressAddCheck" name="address_id" value="{{ address.id }}"/>
+                            <h5>{{ address.region }} обл., {{ address.city }}, {{ address.address }}, {{ address.index }}</h5>
+                        </li>
+                        {% endfor %}
+                        <li>
+                            <input type="radio" class="OrderBoxAddressAddClick" name="type_delivery" value="{{ type_delivery.id }}"/>
+                            <h5 class="OrderBoxAddressAddClick" style="font-weight: 200"><span style="border-bottom: 1px dashed #666">другой адрес</span></h5>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="OrderBoxAddressAdd act" style="">
+                    <div class="OrderBoxAddressAddItem">
+                        <label>Область <span style="color: #ff0000">{{ form.region.errors }}</span></label>
+                        {{ form.region }}
+
+                        <label>Город <span style="color: #ff0000">{{ form.city.errors }}</span></label>
+                        {{ form.city }}
+                    </div>
+                    <div class="OrderBoxAddressAddItem">
+                        <label>Индекс <span style="color: #ff0000">{{ form.index.errors }}</span></label>
+                        {{ form.index }}
+
+                        <label>Адрес <span style="color: #ff0000">{{ form.address.errors }}</span></label>
+                        {{ form.address }}
+                    </div>
+                </div>
+
+                <div style="clear: both"></div>
+            </div>
+
+            <div class="OrderBoxAddressType">
+                <h4>Вариант доставки</h4>
+
+                {{ form.type_delivery.errors }}
+                {% for type_delivery in types_delivery %}
+                <div class="OrderBoxAddressTypeItem">
+                    <input type="radio" name="type_delivery" value="{{ type_delivery.id }}"/>
+                    <h5>{{ type_delivery.title }} - <span style="color: #ed145b">{{ type_delivery.price }} руб.</span></h5>
+                    <p>{{ type_delivery.description }}</p>
+                </div>
+                {% endfor %}
+
+                <div style="clear: both"></div>
+            </div>
+
+            <div class="OrderBoxConfirmation">
+                <h4>Подьверждение заказа</h4>
+
+                <table>
+                    <tr>
+                        <td width="150px">Сумма заказа:</td>
+                        <td align="right" class="OrderBoxConfirmationPrice">3600 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Доставка:</td>
+                        <td align="right" class="OrderBoxConfirmationPrice">300 руб.</td>
+                    </tr>
+                    <tr style="border-top: 1px solid #eee">
+                        <td>Итого:</td>
+                        <td align="right" class="OrderBoxConfirmationPrice">3900 руб.</td>
+                    </tr>
+                </table>
+
+                <a href="#">Оформить заказ</a>
+                <input type="submit" value="Submit" />
+
+            </div>
+
+            <div style="clear: both"></div>
+        </form>
+	</div>
+</div>
+{% endblock %}
