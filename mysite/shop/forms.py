@@ -16,7 +16,7 @@ class OrderForm2(ModelForm):
     region = forms.CharField(max_length=200)
     city = forms.CharField(max_length=200)
     index = forms.CharField(max_length=200)
-    address = forms.TextField(max_length=200)
+    address = forms.CharField(max_length=200, widget=forms.Textarea)
 
 
 class OrderForm3(ModelForm):
