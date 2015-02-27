@@ -2,9 +2,10 @@
 from django.shortcuts import render_to_response
 from django.core.context_processors import csrf
 from django.http import Http404
-from shop.models import UserCart, TypeDelivery
+from shop.models import UserCart, TypeDelivery, Order
 from catalog.models import Product
-from forms import OrderForm
+from accounts.models import Address
+from forms import OrderForm, OrderForm2
 import random
 import string
 
@@ -52,6 +53,19 @@ def return_cart(request):
     return {'count': count_all, 'sum': sum, 'products': products}
 
 
+def return_order(ord, address=None):
+    if address:
+        ord.region = address.region
+        ord.city = address.city
+        ord.index = address.index
+        ord.address = address.address
+    ord.name = user.first_name
+    ord.surname = user.last_name
+    ord.mail = user.email
+    ord.phone = user.phone
+    return ord
+
+
 def cart(request):
     cart_mass = return_cart(request)
     return render_to_response("cart.html", {'products': cart_mass['products'], 'sum': cart_mass['sum']})
@@ -59,11 +73,50 @@ def cart(request):
 
 def order(request):
     args = {}
+    user = request.user
     args.update(csrf(request))
     cart_mass = return_cart(request)
     args['types_delivery'] = TypeDelivery.objects.all()
     args['sum'] = cart_mass['sum']
     args['form'] = OrderForm()
+
+    if user.is_authenticated():
+        if request.method == 'POST':
+            if 'address_id' in request.POST and request.POST.get('address_id', -1) == -1:
+                form = OrderForm2(request.POST)
+                if form.is_valid():
+                    ord = Order()
+                    ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
+                    ord.region = form.cleaned_data.get('region', '')
+                    ord.city = form.cleaned_data.get('city', '')
+                    ord.index = form.cleaned_data.get('index', '')
+                    ord.address = form.cleaned_data.get('address', '')
+                    ord = return_order(ord)
+                    ord.status = '0'
+                    ord.order = '1:1'
+                    ord.save()
+                    return render_to_response("order_thanks.html")
+                else:
+                    args['form'] = form
+                    #рендерим 2-ю форму
+                    return render_to_response("order_thanks.html")
+            elif 'address_id' in request.POST:
+                form = OrderForm3(request.POST)
+                if form.is_valid():
+                    ord = Order()
+                    address = Address.objects.get(id=int(request.POST.get('address_id')))
+                    ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
+                    ord = return_order(ord, address)
+                    ord.status = '0'
+                    ord.order = '1:1'
+                    ord.save()
+                    return render_to_response("order_thanks.html")
+                else:
+                    args['form'] = form
+                    #рендерим 3-ю форму
+                    return render_to_response("order_thanks.html")
+        args['form'] = OrderForm3()
+        return render_to_response("order.html", args)
 
     if request.method == 'POST':
         form = OrderForm(request.POST)
