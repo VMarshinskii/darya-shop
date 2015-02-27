@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.forms import ModelForm
 from models import Order
+from django import forms
 
 
 class OrderForm(ModelForm):
