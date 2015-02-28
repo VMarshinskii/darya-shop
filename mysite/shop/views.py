@@ -97,7 +97,7 @@ def order_user(request):
             else:
                 args['form'] = form
                 return render_to_response("order2.html", args)
-        elif 'address_id' in request.POST:
+        else:
             form = OrderForm3(request.POST)
             if form.is_valid():
                 ord = Order()
