@@ -80,45 +80,6 @@ def order(request):
     args['sum'] = cart_mass['sum']
     args['form'] = OrderForm()
 
-    if user.is_authenticated():
-        args['addresses'] = Address.objects.filter(user=user)
-        if request.method == 'POST':
-            if 'address_id' in request.POST and request.POST.get('address_id', -1) == -1:
-                form = OrderForm2(request.POST)
-                if form.is_valid():
-                    ord = Order()
-                    ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-                    ord.region = form.cleaned_data.get('region', '')
-                    ord.city = form.cleaned_data.get('city', '')
-                    ord.index = form.cleaned_data.get('index', '')
-                    ord.address = form.cleaned_data.get('address', '')
-                    ord = return_order(ord)
-                    ord.status = '0'
-                    ord.order = '1:1'
-                    ord.save()
-                    return render_to_response("order_thanks.html")
-                else:
-                    args['form'] = form
-                    #рендерим 2-ю форму
-                    return render_to_response("order2.html", args)
-            elif 'address_id' in request.POST:
-                form = OrderForm3(request.POST)
-                if form.is_valid():
-                    ord = Order()
-                    address = Address.objects.get(id=int(request.POST.get('address_id')))
-                    ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-                    ord = return_order(ord, address)
-                    ord.status = '0'
-                    ord.order = '1:1'
-                    ord.save()
-                    return render_to_response("order_thanks.html")
-                else:
-                    args['form'] = form
-                    #рендерим 3-ю форму
-                    return render_to_response("order3.html", args)
-        args['form'] = OrderForm2
-        return render_to_response("order2.html", args)
-
     if request.method == 'POST':
         form = OrderForm(request.POST)
         if form.is_valid():
