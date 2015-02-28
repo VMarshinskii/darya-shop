@@ -110,7 +110,7 @@ def order_user(request):
                 return render_to_response("order_thanks.html")
             else:
                 args['form'] = OrderForm2(request.POST)
-                return render_to_response("order3.html", args)
+                return render_to_response("order2.html", args)
     return render_to_response("order3.html", args)
 
 
