@@ -116,7 +116,7 @@ def order(request):
                     args['form'] = form
                     #рендерим 3-ю форму
                     return render_to_response("order3.html", args)
-        args['form'] = OrderForm3
+        args['form'] = OrderForm3(request.POST)
         return render_to_response("order3.html", args)
 
     if request.method == 'POST':
