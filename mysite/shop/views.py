@@ -80,7 +80,7 @@ def order_user(request):
     args['form'] = OrderForm2()
 
     if request.POST:
-        if 'address_id' in request.POST and request.POST.get('address_id', -1) == -1:
+        if 'address_id' in request.POST and request.POST.get('address_id') == '-1':
             form = OrderForm2(request.POST)
             if form.is_valid():
                 ord = Order()
