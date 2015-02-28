@@ -116,7 +116,7 @@ def order_user(request):
 
 def order(request):
     if request.user.is_authenticated():
-        order_user(request)
+        return order_user(request)
 
     else:
         args = {}
