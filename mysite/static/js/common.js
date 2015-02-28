@@ -114,7 +114,7 @@ $(document).ready(function (){
     });
 
     $(".cart").load("/cart/cart_top_ajax/");
-    $(".OrderBoxAddressAdd").hide();
+//    $(".OrderBoxAddressAdd").hide();
 
     $(".popupBoxLoginFormClose").live('click', function(){
         $(".background").css('display', 'none');
