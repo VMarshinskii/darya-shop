@@ -77,7 +77,7 @@ def order_user(request):
     cart_mass = return_cart(request)
     args['types_delivery'] = TypeDelivery.objects.all()
     args['sum'] = cart_mass['sum']
-    args['form'] = OrderForm3()
+    args['form'] = OrderForm3
 
     if request.POST:
         if 'address_id' in request.POST and request.POST.get('address_id', -1) == -1:
