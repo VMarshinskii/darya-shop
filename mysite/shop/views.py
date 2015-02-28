@@ -53,7 +53,7 @@ def return_cart(request):
     return {'count': count_all, 'sum': sum, 'products': products}
 
 
-def return_order(ord, address=None):
+def return_order(ord, request, address=None):
     if address:
         ord.region = address.region
         ord.city = address.city
@@ -85,7 +85,7 @@ def order_user(request):
             if form.is_valid():
                 ord = Order()
                 ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-                ord = return_order(ord)
+                ord = return_order(ord, request)
                 ord.region = form.cleaned_data.get('region', '')
                 ord.city = form.cleaned_data.get('city', '')
                 ord.index = form.cleaned_data.get('index', '')
@@ -103,7 +103,7 @@ def order_user(request):
                 ord = Order()
                 address = Address.objects.get(id=int(request.POST.get('address_id', 0)))
                 ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-                ord = return_order(ord, address)
+                ord = return_order(ord, request, address)
                 ord.status = '0'
                 ord.order = '1:1'
                 ord.save()
