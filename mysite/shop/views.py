@@ -4,7 +4,7 @@ from django.core.context_processors import csrf
 from django.http import Http404
 from shop.models import UserCart, TypeDelivery, Order
 from catalog.models import Product
-from accounts.models import Address
+from accounts.models import Address, User
 from forms import OrderForm
 import random
 import string
