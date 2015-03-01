@@ -143,7 +143,6 @@ def order(request):
                 ord.save()
                 return render_to_response("order_thanks.html")
             else:
-                form.region = "Регион"
                 args['form'] = form
         return render_to_response("order.html", args)
 
