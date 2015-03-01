@@ -794,6 +794,7 @@ p.CartSumLabel {
     font-size: 12px;
     display: inline;
     font-weight: bold;
+    color: #ff0000;
 }
 .UserInformation {
     margin: 10px 10px 5px 10px;
