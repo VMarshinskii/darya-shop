@@ -77,13 +77,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax_login.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ajax_login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/ajax_login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0508982" vertical-offset="0" max-vertical-offset="668">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="391">
+              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="612">
-              <caret line="27" column="19" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.68609864" vertical-offset="0" max-vertical-offset="669">
+              <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
               <folding>
                 <element signature="e#24#71#0" expanded="true" />
               </folding>
@@ -201,8 +201,8 @@
         <option value="$PROJECT_DIR$/mysite/accounts/forms.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/yes.html" />
         <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
-        <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/ajax_login.html" />
+        <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
       </list>
     </option>
   </component>
@@ -2172,7 +2172,23 @@
       <created>1425220516412</created>
       <updated>1425220516412</updated>
     </task>
-    <option name="localTasksCounter" value="404" />
+    <task id="LOCAL-00404" summary="Update">
+      <created>1425221266787</created>
+      <updated>1425221266787</updated>
+    </task>
+    <task id="LOCAL-00405" summary="Update">
+      <created>1425221369769</created>
+      <updated>1425221369769</updated>
+    </task>
+    <task id="LOCAL-00406" summary="Update">
+      <created>1425221474673</created>
+      <updated>1425221474673</updated>
+    </task>
+    <task id="LOCAL-00407" summary="Update">
+      <created>1425221600266</created>
+      <updated>1425221600266</updated>
+    </task>
+    <option name="localTasksCounter" value="408" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2605,22 +2621,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
+    <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/ajax_login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="612">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="19" />
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="391">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
           <folding>
-            <element signature="e#24#71#0" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/ajax_login.html">
+    <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0508982" vertical-offset="0" max-vertical-offset="668">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.68609864" vertical-offset="0" max-vertical-offset="669">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="e#24#71#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -25,7 +25,7 @@ def ajax_login(request):
             except User.DoesNotExist:
                 pass
         args['form'] = form
-        args['error'] = "Данные введены не верно"
+        args['error'] = "Данные введены не верно!"
         return render_to_response("ajax_login.html", args)
 
     return render_to_response("ajax_login.html", args)
