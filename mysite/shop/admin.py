@@ -3,7 +3,7 @@ from shop.models import UserCart, TypeDelivery, Order
 
 
 class AdminOrder(admin.ModelAdmin):
-    list_display = ('id', 'order_title', 'date_create', 'status')
+    list_display = ('id', 'order_title', 'order_date', 'status')
 
 
 admin.site.register(UserCart)

@@ -58,3 +58,6 @@ class Order(models.Model):
     def order_title(self):
         return '<a href="#">' + self.name + ' ' + self.surname + '</a>'
     order_title.allow_tags = True
+
+    def order_date(self):
+        return self.date_create.strftime('%Y-%m-%d')
