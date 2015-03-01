@@ -76,6 +76,7 @@ def order_user(request):
     args.update(csrf(request))
     cart_mass = return_cart(request)
     args['types_delivery'] = TypeDelivery.objects.all()
+    args['addresses'] = Address.objects.filter(user=request.user)
     args['sum'] = cart_mass['sum']
     args['form'] = OrderForm2()
 
