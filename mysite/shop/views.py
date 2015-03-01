@@ -130,7 +130,7 @@ def order(request):
     args['types_delivery'] = TypeDelivery.objects.all()
     args['sum'] = cart_mass['sum']
     model = Order.objects.get(id=2)
-    args['form'] = OrderForm(model)
+    args['form'] = OrderForm(instance=model)
 
     if request.user.is_authenticated():
         return render_to_response("order_registered.html", args)
