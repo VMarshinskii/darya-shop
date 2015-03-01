@@ -64,6 +64,7 @@ def order(request):
     cart_mass = return_cart(request)
     args['types_delivery'] = TypeDelivery.objects.all()
     args['sum'] = cart_mass['sum']
+    args['form'] = OrderForm()
 
     if request.user.is_authenticated():
         if request.POST:
