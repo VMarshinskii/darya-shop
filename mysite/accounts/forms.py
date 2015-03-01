@@ -37,13 +37,13 @@ class LoginForm(forms.Form):
     password = forms.CharField('Пароль', max_length=100)
     is_remember = forms.BooleanField(required=False)
 
-    def clean(self):
-        cleaned_data = super(LoginForm, self).clean()
-        login = cleaned_data.get("login")
-
-        try:
-            user = User.objects.get(phone=login)
-        except User.DoesNotExist:
-            raise forms.ValidationError("Не правельный логин или пароль")
-
-        return cleaned_data
+    # def clean(self):
+    #     cleaned_data = super(LoginForm, self).clean()
+    #     login = cleaned_data.get("login")
+    #
+    #     try:
+    #         user = User.objects.get(phone=login)
+    #     except User.DoesNotExist:
+    #         raise forms.ValidationError("Не правельный логин или пароль")
+    #
+    #     return cleaned_data
