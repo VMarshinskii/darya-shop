@@ -53,88 +53,19 @@ def return_cart(request):
     return {'count': count_all, 'sum': sum, 'products': products}
 
 
-def return_order(ord, request, address=None):
-    if address:
-        ord.region = address.region
-        ord.city = address.city
-        ord.index = address.index
-        ord.address = address.address
-    ord.name = request.user.first_name
-    ord.surname = request.user.last_name
-    ord.mail = request.user.email
-    ord.phone = request.user.phone
-    return ord
-
-
 def cart(request):
     cart_mass = return_cart(request)
     return render_to_response("cart.html", {'products': cart_mass['products'], 'sum': cart_mass['sum']})
 
 
-def order_user(request):
-    args = {}
-    args.update(csrf(request))
-    cart_mass = return_cart(request)
-    args['types_delivery'] = TypeDelivery.objects.all()
-    args['addresses'] = Address.objects.filter(user=request.user)
-    args['sum'] = cart_mass['sum']
-    args['form'] = OrderForm2()
-
-    if request.POST:
-        if 'address_id' in request.POST and request.POST.get('address_id') == '-1':
-            form = OrderForm2(request.POST)
-            if form.is_valid():
-                ord = Order()
-                ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-                ord = return_order(ord, request)
-                ord.region = form.cleaned_data.get('region', '')
-                ord.city = form.cleaned_data.get('city', '')
-                ord.index = form.cleaned_data.get('index', '')
-                ord.address = form.cleaned_data.get('address', '')
-                address = Address()
-                address.user = request.user
-                address.region = ord.region
-                address.city = ord.city
-                address.index = ord.index
-                address.address = ord.address
-                address.save()
-                ord.status = '0'
-                ord.order = '1:1'
-                ord.save()
-                return render_to_response("order_thanks.html")
-            else:
-                args['form'] = form
-                return render_to_response("order2.html", args)
-        else:
-            form = OrderForm3(request.POST)
-            if form.is_valid():
-                ord = Order()
-                address = Address.objects.get(id=int(request.POST.get('address_id', 0)))
-                ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-                ord = return_order(ord, request, address)
-                ord.status = '0'
-                ord.order = '1:1'
-                ord.save()
-                return render_to_response("order_thanks.html")
-            else:
-                args['form'] = OrderForm3(request.POST)
-                return render_to_response("order3.html", args)
-    return render_to_response("order3.html", args)
-
-
 def order(request):
-
     args = {}
     args.update(csrf(request))
     cart_mass = return_cart(request)
     args['types_delivery'] = TypeDelivery.objects.all()
     args['sum'] = cart_mass['sum']
-    model = Order.objects.get(id=2)
-    args['form'] = OrderForm(instance=model)
 
     if request.user.is_authenticated():
-        return render_to_response("order_registered.html", args)
-    else:
         if request.POST:
             form = OrderForm(request.POST)
             if form.is_valid():
@@ -146,7 +77,24 @@ def order(request):
                 return render_to_response("order_thanks.html")
             else:
                 args['form'] = form
-            return render_to_response("order_not_registered.html", args)
+                return render_to_response("order_registered.html", args)
+        model = Order.objects.get(id=2)
+        args['form'] = OrderForm(instance=model)
+        return render_to_response("order_registered.html", args)
+
+    if request.POST:
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            ord = form.save(commit=False)
+            ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
+            ord.status = '0'
+            ord.order = '1:1'
+            ord.save()
+            return render_to_response("order_thanks.html")
+        else:
+            args['form'] = form
+        return render_to_response("order_not_registered.html", args)
+
     return render_to_response("order_not_registered.html", args)
 
 
