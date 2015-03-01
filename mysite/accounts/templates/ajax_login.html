@@ -1,8 +1,9 @@
 <h4>Вход в личный кабинет DaryaShop</h4>
-{% if error %}
-<p style="color: #ff0000">{{ error }}</p>
-{% endif %}
+
 <form class="popupBoxLoginForm" action="">
+    {% if error %}
+    <p style="color: #ff0000; margin: 4px;">{{ error }}</p>
+    {% endif %}
     {% csrf_token %}
     <label for="">Ваш номер телефона</label>
     {{ form.login }}
