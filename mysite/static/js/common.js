@@ -140,6 +140,8 @@ $(document).ready(function (){
             function(data){
             $(".popupBox").html(data);
         });
+        var a = $(".popupBox input[name='csrfmiddlewaretoken']").val();
+        alert(a);
         return false;
     });
 
