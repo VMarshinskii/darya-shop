@@ -33,8 +33,8 @@ class AdminUserChangeForm(UserChangeForm):
 
 
 class LoginForm(forms.Form):
-    login = forms.CharField(max_length=100)
-    password = forms.CharField(max_length=100)
+    login = forms.CharField(max_length=100, placeholder="+79228188758")
+    password = forms.CharField(max_length=100, widget=forms.PasswordInput())
     is_remember = forms.BooleanField(required=False)
 
     # def clean(self):
