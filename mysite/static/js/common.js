@@ -134,11 +134,14 @@ $(document).ready(function (){
         $.post("/login/",
             {
                 login: $("#id_login").val(),
-                password: $("#id_password").val()
+                password: $("#id_password").val(),
+                csrfmiddlewaretoken: $(".popupBox input[name='csrfmiddlewaretoken']").val()
             },
             function(data){
             $(".popupBox").html(data);
         });
+        var a = $(".popupBox input[name='csrfmiddlewaretoken']").val();
+        alert(a);
         return false;
     });
 

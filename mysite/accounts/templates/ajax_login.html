@@ -1,6 +1,7 @@
 <h4>Вход в личный кабинет DaryaShop</h4>
 
 <form class="popupBoxLoginForm" action="">
+    {% csrf_token %}
     <label for="">Ваш номер телефона</label>
     {{ form.login }}
     <label for="">Ваш пароль</label>
