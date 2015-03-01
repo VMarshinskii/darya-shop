@@ -20,6 +20,7 @@ def ajax_login(request):
                 user = auth.authenticate(username=username, password=password)
                 if user is not None and user.is_active:
                     auth.login(request, user)
+                    return render_to_response("yes.html", us)
             except User.DoesNotExist:
                 pass
 
