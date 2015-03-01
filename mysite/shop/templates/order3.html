@@ -32,17 +32,17 @@
                 <div class="OrderBoxAddressAdd act" style="display: none">
                     <div class="OrderBoxAddressAddItem">
                         <label>Область <span style="color: #ff0000">{{ form.region.errors }}</span></label>
-                        {{ form.region }}
+                        <input id="id_region" maxlength="200" name="region" type="text">
 
                         <label>Город <span style="color: #ff0000">{{ form.city.errors }}</span></label>
-                        {{ form.city }}
+                        <input id="id_city" maxlength="200" name="city" type="text">
                     </div>
                     <div class="OrderBoxAddressAddItem">
                         <label>Индекс <span style="color: #ff0000">{{ form.index.errors }}</span></label>
-                        {{ form.index }}
+                        <input id="id_index" maxlength="200" name="index" type="text">
 
                         <label>Адрес <span style="color: #ff0000">{{ form.address.errors }}</span></label>
-                        {{ form.address }}
+                        <textarea cols="40" id="id_address" maxlength="200" name="address" rows="10"></textarea>
                     </div>
                 </div>
 
