@@ -121,13 +121,12 @@ $(document).ready(function (){
         $(".popupBox").css('display', 'none');
     });
 
-    $(".OrderBoxAddressAddClick").live('click', function(){
-        $(".OrderBoxAddressAdd").show(400);
+    $(".login").live('click', function(){
+        $.get("/login/", function(data){
+            $(".popupBox").html(data);
+            $(".background").css('display', 'block');
+            $(".popupBox").css('display', 'block');
+        });
     });
-
-    $(".OrderBoxAddressAddCheck").live('click', function(){
-        $(".OrderBoxAddressAdd").hide(400);
-    });
-
 
 });

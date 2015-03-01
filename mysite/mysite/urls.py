@@ -17,5 +17,6 @@ urlpatterns = patterns('',
     url(r'ajax-upload$', 'catalog.views.import_uploader', name="my_ajax_upload"),
     url(r'^redactor/', include('redactor.urls')),
     url(r'^cart/', include('shop.urls')),
+    url(r'^login/', 'accounts.views.ajax_login'),
     url(r'', include('pages.urls')),
 )
