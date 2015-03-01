@@ -9,5 +9,6 @@ class OrderForm(ModelForm):
         fields = ['type_delivery', 'name', 'surname', 'mail', 'phone', 'region', 'city', 'index', 'address']
         widgets = {
             'address': Textarea(),
-            'phone': RegexField(regex=r'^\+7\d{9,15}$'),
+            'phone': TextInput(attrs={'placeholder': '+7XXXXXXXXXX'}),
+
         }
