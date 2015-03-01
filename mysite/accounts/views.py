@@ -15,7 +15,7 @@ def ajax_login(request):
         if form.is_valid():
             try:
                 us = User.objects.get(phone=request.POST.get('login'))
-                username = us.login
+                username = us.username
                 password = request.POST.get('password')
                 user = auth.authenticate(username=username, password=password)
                 if user is not None and user.is_active:
