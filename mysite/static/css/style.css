@@ -787,6 +787,14 @@ p.CartSumLabel {
     border-radius: 2px;
     border: 1px solid #D8D8D8;
 }
+.errorlist {
+    display: inline;
+}
+.errorlist li {
+    font-size: 12px;
+    display: inline;
+    font-weight: bold;
+}
 
 
 .cart {
