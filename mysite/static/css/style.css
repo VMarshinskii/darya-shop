@@ -803,6 +803,13 @@ p.CartSumLabel {
 .UserInformation p {
     font: 14px/15pt sans-serif;
 }
+.UserInformation img {
+    width: 43px;
+    float: left;
+    opacity: 0.5;
+    margin-right: 9px;
+    margin-top: 1px;
+}
 
 .cart {
     width: 260px;
