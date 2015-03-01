@@ -33,7 +33,7 @@ class Order(models.Model):
     user = models.ForeignKey(User, verbose_name="Пользователь", blank=True, null=True)
     type_delivery = models.ForeignKey(TypeDelivery, verbose_name="Вариант доставки", null=True)
     products = models.CharField("Заказ", max_length=200)
-    status = models.CharField(max_length=1, choices=Order_Status)
+    status = models.CharField("Статус", max_length=1, choices=Order_Status)
     date_create = models.DateField(verbose_name="Дата создания заказа", auto_now_add=True)
     date_change = models.DateField(verbose_name="Дата редактирования заказа", auto_now=True)
     admin_comment = models.TextField(verbose_name="Комментарий администратора", blank=True)
@@ -56,4 +56,4 @@ class Order(models.Model):
         return self.date_create.strftime('%Y-%m-%d') + '(' + self.name + ' ' + self.surname + ')'
 
     def order_title(self):
-        return self.date_create.strftime('%Y-%m-%d') + '(' + self.name + ' ' + self.surname + ')'
+        return '(' + self.name + ' ' + self.surname + ')'
