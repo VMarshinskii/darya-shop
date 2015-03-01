@@ -755,7 +755,7 @@ p.CartSumLabel {
 .OrderBoxConfirmationPrice {
    color: #ed145b;
 }
-.OrderBoxConfirmation a {
+.OrderSubmit {
     float: left;
     margin: 25px 40px 0 130px;
     padding: 15px 40px;

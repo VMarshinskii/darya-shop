@@ -45,9 +45,10 @@
             </div>
 
             <div class="OrderBoxAddressType">
+                {{ form.type_delivery.errors }}
+
                 <h4>Вариант доставки</h4>
 
-                {{ form.type_delivery.errors }}
                 {% for type_delivery in types_delivery %}
                 <div class="OrderBoxAddressTypeItem">
                     <input type="radio" name="type_delivery" value="{{ type_delivery.id }}"/>
@@ -77,8 +78,7 @@
                     </tr>
                 </table>
 
-                <a href="#">Оформить заказ</a>
-                <input type="submit" value="Submit" />
+                <input type="submit" class="OrderSubmit" value="Оформить заказ" />
 
             </div>
 
