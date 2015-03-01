@@ -75,14 +75,6 @@ def order(request):
                 ord.status = '0'
                 ord.order = '1:1'
                 ord.save()
-
-                user = User()
-                user.username = "slavok"
-                user.password = "qwerty"
-                user.phone = ord.phone
-                user.first_name = ord.name
-                user.last_name = ord.surname
-                user.save()
                 return render_to_response("order_thanks.html")
             else:
                 args['form'] = form
@@ -99,6 +91,13 @@ def order(request):
             ord.status = '0'
             ord.order = '1:1'
             ord.save()
+            user = User()
+            user.username = "slavok"
+            user.password = "qwerty"
+            user.phone = ord.phone
+            user.first_name = ord.name
+            user.last_name = ord.surname
+            user.save()
             return render_to_response("order_thanks.html")
         else:
             args['form'] = form
