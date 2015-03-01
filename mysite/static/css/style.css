@@ -795,7 +795,14 @@ p.CartSumLabel {
     display: inline;
     font-weight: bold;
 }
-
+.UserInformation {
+    margin: 10px 10px 5px 10px;
+    background: #eee;
+    padding: 10px;
+}
+.UserInformation p {
+    font: 14px/15pt sans-serif;
+}
 
 .cart {
     width: 260px;
