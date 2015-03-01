@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/accounts/templates/ajax_login.html" afterPath="$PROJECT_DIR$/mysite/accounts/templates/ajax_login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/accounts/views.py" afterPath="$PROJECT_DIR$/mysite/accounts/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/forms.py" afterPath="$PROJECT_DIR$/mysite/shop/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html" afterPath="$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/templates/order_registered.html" afterPath="$PROJECT_DIR$/mysite/shop/templates/order_registered.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="darya-shop.iws" />
@@ -56,13 +57,23 @@
       <file leaf-file-name="order_not_registered.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1564">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="28" />
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="153" max-vertical-offset="1564">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding>
-                <element signature="e#1596#1618#0#HTML" expanded="true" />
-                <element signature="e#1804#1826#0#HTML" expanded="true" />
-                <element signature="e#2911#2945#0#HTML" expanded="true" />
+                <element signature="e#1611#1633#0#HTML" expanded="true" />
+                <element signature="e#1819#1841#0#HTML" expanded="true" />
+                <element signature="e#2926#2960#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_registered.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_registered.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.259542" vertical-offset="340" max-vertical-offset="1632">
+              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,21 +115,19 @@
       <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="289">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="289">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
-                <marker date="1425210378750" expanded="true" signature="24:93" placeholder="import ..." />
-                <marker date="1425210378750" expanded="true" signature="123:335" placeholder="..." />
-                <marker date="1425210378750" expanded="true" signature="139:335" placeholder="..." />
+                <element signature="e#24#91#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68609864" vertical-offset="0" max-vertical-offset="669">
+            <state vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="612">
               <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
               <folding>
                 <element signature="e#24#71#0" expanded="true" />
@@ -132,16 +141,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="119">
               <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="442">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -192,17 +191,17 @@
         <option value="$PROJECT_DIR$/mysite/shop/models.py" />
         <option value="$PROJECT_DIR$/mysite/shop/admin.py" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/order.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/forms.py" />
         <option value="$PROJECT_DIR$/mysite/shop/views.py" />
         <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order_registered.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/forms.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/yes.html" />
         <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/ajax_login.html" />
         <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
+        <option value="$PROJECT_DIR$/mysite/shop/forms.py" />
+        <option value="$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html" />
+        <option value="$PROJECT_DIR$/mysite/shop/templates/order_registered.html" />
       </list>
     </option>
   </component>
@@ -381,6 +380,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2188,7 +2209,31 @@
       <created>1425221600266</created>
       <updated>1425221600266</updated>
     </task>
-    <option name="localTasksCounter" value="408" />
+    <task id="LOCAL-00408" summary="Update">
+      <created>1425221670609</created>
+      <updated>1425221670609</updated>
+    </task>
+    <task id="LOCAL-00409" summary="Update">
+      <created>1425223433392</created>
+      <updated>1425223433392</updated>
+    </task>
+    <task id="LOCAL-00410" summary="Update">
+      <created>1425223492378</created>
+      <updated>1425223492379</updated>
+    </task>
+    <task id="LOCAL-00411" summary="Update">
+      <created>1425223565549</created>
+      <updated>1425223565549</updated>
+    </task>
+    <task id="LOCAL-00412" summary="Update">
+      <created>1425223603317</created>
+      <updated>1425223603317</updated>
+    </task>
+    <task id="LOCAL-00413" summary="Update">
+      <created>1425223691308</created>
+      <updated>1425223691308</updated>
+    </task>
+    <option name="localTasksCounter" value="414" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2534,14 +2579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_registered.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.346153" vertical-offset="0" max-vertical-offset="1632">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="442">
@@ -2550,35 +2587,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="289">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-          <folding>
-            <marker date="1425210378750" expanded="true" signature="24:93" placeholder="import ..." />
-            <marker date="1425210378750" expanded="true" signature="123:335" placeholder="..." />
-            <marker date="1425210378750" expanded="true" signature="139:335" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="527">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1564">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#1596#1618#0#HTML" expanded="true" />
-            <element signature="e#1804#1826#0#HTML" expanded="true" />
-            <element signature="e#2911#2945#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2591,16 +2604,6 @@
             <element signature="e#361#575#0" expanded="false" />
             <element signature="e#607#743#0" expanded="false" />
             <element signature="e#776#1708#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/accounts/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.64" vertical-offset="249" max-vertical-offset="918">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="34" />
-          <folding>
-            <element signature="e#15#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2633,11 +2636,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68609864" vertical-offset="0" max-vertical-offset="669">
+        <state vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="612">
           <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
           <folding>
             <element signature="e#24#71#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/accounts/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.64" vertical-offset="249" max-vertical-offset="918">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="34" />
+          <folding>
+            <element signature="e#15#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/shop/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="289">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#24#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="153" max-vertical-offset="1564">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <element signature="e#1611#1633#0#HTML" expanded="true" />
+            <element signature="e#1819#1841#0#HTML" expanded="true" />
+            <element signature="e#2926#2960#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_registered.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.259542" vertical-offset="340" max-vertical-offset="1632">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -9,6 +9,4 @@ class OrderForm(ModelForm):
         fields = ['type_delivery', 'name', 'surname', 'mail', 'phone', 'region', 'city', 'index', 'address']
         widgets = {
             'address': Textarea(),
-            'phone': TextInput(attrs={'placeholder': '+7XXXXXXXXXX'}),
-
         }
