@@ -92,8 +92,8 @@ def order(request):
             ord.order = '1:1'
             ord.save()
             user = User()
-            user.username = "slavok"
-            user.password = "qwerty"
+            user.username = "lenok"
+            user.set_password("qwerty")
             user.phone = ord.phone
             user.first_name = ord.name
             user.last_name = ord.surname
