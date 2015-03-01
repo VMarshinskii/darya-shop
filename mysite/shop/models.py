@@ -54,3 +54,6 @@ class Order(models.Model):
 
     def __unicode__(self):
         return self.date_create.strftime('%Y-%m-%d') + '(' + self.name + ' ' + self.surname + ')'
+
+    def order_title(self):
+        return self.date_create.strftime('%Y-%m-%d') + '(' + self.name + ' ' + self.surname + ')'
