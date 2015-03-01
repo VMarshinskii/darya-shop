@@ -9,4 +9,7 @@ def ajax_login(request):
     args.update(csrf(request))
     args['form'] = LoginForm()
 
+    if request.POST:
+        return render_to_response("yes.html")
+
     return render_to_response("ajax_login.html", args)

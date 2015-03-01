@@ -130,4 +130,16 @@ $(document).ready(function (){
         return false;
     });
 
+    $(".loginSubmit").live('click', function(){
+        $.post("/login/",
+            {
+                login: $("#id_login").val(),
+                password: $("#id_password").val()
+            },
+            function(data){
+            $(".popupBox").html(data);
+        });
+        return false;
+    });
+
 });
