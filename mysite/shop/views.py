@@ -90,6 +90,13 @@ def order_user(request):
                 ord.city = form.cleaned_data.get('city', '')
                 ord.index = form.cleaned_data.get('index', '')
                 ord.address = form.cleaned_data.get('address', '')
+                address = Address()
+                address.user = request.user
+                address.region = ord.region
+                address.city = ord.city
+                address.index = ord.index
+                address.address = ord.address
+                address.save()
                 ord.status = '0'
                 ord.order = '1:1'
                 ord.save()
@@ -117,7 +124,6 @@ def order_user(request):
 def order(request):
     if request.user.is_authenticated():
         return order_user(request)
-
     else:
         args = {}
         args.update(csrf(request))

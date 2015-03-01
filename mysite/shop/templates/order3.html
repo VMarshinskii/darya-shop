@@ -23,7 +23,7 @@
                         </li>
                         {% endfor %}
                         <li>
-                            <input type="radio" class="OrderBoxAddressAddClick" name="address_id" value="-1"/>
+                            <input type="radio" class="OrderBoxAddressAddClick" name="address_id" value="-1" {% if form.address_id == '-1' %}checked{% endif %}/>
                             <h5 class="OrderBoxAddressAddClick" style="font-weight: 200"><span style="border-bottom: 1px dashed #666">другой адрес</span></h5>
                         </li>
                     </ul>
