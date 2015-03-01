@@ -135,17 +135,19 @@ def order(request):
     if request.user.is_authenticated():
         return render_to_response("order_registered.html", args)
     else:
-        form = OrderForm(request.POST)
-        if form.is_valid():
-            ord = form.save(commit=False)
-            ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-            ord.status = '0'
-            ord.order = '1:1'
-            ord.save()
-            return render_to_response("order_thanks.html")
-        else:
-            args['form'] = form
-        return render_to_response("order_not_registered.html", args)
+        if request.POST:
+            form = OrderForm(request.POST)
+            if form.is_valid():
+                ord = form.save(commit=False)
+                ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
+                ord.status = '0'
+                ord.order = '1:1'
+                ord.save()
+                return render_to_response("order_thanks.html")
+            else:
+                args['form'] = form
+            return render_to_response("order_not_registered.html", args)
+    return render_to_response("order_not_registered.html", args)
 
 
 def add_in_cart(request, id=-1):
