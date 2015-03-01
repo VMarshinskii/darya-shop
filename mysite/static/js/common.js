@@ -127,6 +127,7 @@ $(document).ready(function (){
             $(".background").css('display', 'block');
             $(".popupBox").css('display', 'block');
         });
+        return false;
     });
 
 });
