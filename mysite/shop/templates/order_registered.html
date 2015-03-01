@@ -49,9 +49,7 @@
             </div>
 
             <div class="OrderBoxAddressType">
-                {{ form.type_delivery.errors }}
-
-                <h4>Вариант доставки</h4>
+                <h4>Вариант доставки <span style="color: #ff0000">{{ form.type_delivery.errors }}</span></h4>
 
                 {% for type_delivery in types_delivery %}
                 <div class="OrderBoxAddressTypeItem">
