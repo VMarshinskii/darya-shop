@@ -123,7 +123,7 @@ def get_model_order(request):
     model.mail = request.user.email
 
     try:
-        order = Order.objects.get(user=request.user)
+        order = Order.objects.filter(user=request.user)[:1]
         model.region = order.region
         model.city = order.city
         model.index = order.index
