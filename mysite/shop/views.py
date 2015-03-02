@@ -61,6 +61,7 @@ def order(request):
                 return render_to_response("order_registered.html", args)
         model = get_model_order(request)
         args['form'] = OrderForm(instance=model)
+        args['user'] = request.user
         return render_to_response("order_registered.html", args)
 
     if request.POST:
