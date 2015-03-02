@@ -68,6 +68,7 @@ def create_user(request):
         user.phone = form.phone
         user.first_name = form.name
         user.last_name = form.surname
+        user.email = form.mail
         user.save()
     except User.IntegrityError:
         return None
