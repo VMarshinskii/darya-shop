@@ -59,12 +59,12 @@ def cart(request):
     return render_to_response("cart.html", {'products': cart_mass['products'], 'sum': cart_mass['sum']})
 
 
-def create_user(request):
+def create_user(request, password):
     try:
         form = OrderForm(request.POST).save(commit=False)
         user = User()
         user.username = create_username(form.name)
-        user.set_password(random_str(7))
+        user.set_password(password)
         user.phone = form.phone
         user.first_name = form.name
         user.last_name = form.surname
@@ -114,9 +114,10 @@ def order(request):
     if request.POST:
         form = OrderForm(request.POST)
         if form.is_valid():
-            user = create_user(request)
+            password = random_str(7)
+            user = create_user(request, password)
             ord = create_order(request, user)
-            return render_to_response("order_thanks.html", {'ord': ord})
+            return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
         else:
             args['form'] = form
         return render_to_response("order_not_registered.html", args)
