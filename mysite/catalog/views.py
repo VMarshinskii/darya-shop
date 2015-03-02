@@ -12,8 +12,7 @@ from catalog.admin import sort_list
 # Create your views here.
 def home(request):
     products = Product.objects.filter(home_status=1)
-    user = request.user
-    return render_to_response("index.html", {'products': products, 'user_birthday': user.birthday})
+    return render_to_response("index.html", {'products': products})
 
 
 def product(request, id=-1):
