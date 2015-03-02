@@ -59,7 +59,7 @@ def order(request):
             else:
                 args['form'] = form
                 return render_to_response("order_registered.html", args)
-        model = Order.objects.get(id=2)
+        model = get_model_order(request)
         args['form'] = OrderForm(instance=model)
         return render_to_response("order_registered.html", args)
 

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from string import maketrans
+from models import Order
 import random
 import string
 
@@ -111,3 +112,21 @@ def create_order(request, user):
     ord.user = user
     ord.save()
     return ord
+
+
+def get_model_order(request):
+    model = Order()
+    model.name = request.user.first_name
+    model.surname = request.user.last_name
+    model.phone = request.user.phone
+    model.mail = request.user.email
+
+    try:
+        order = Order.objects.get(user=request.user)
+        model.region = order.region
+        model.city = order.city
+        model.index = order.index
+        model.address = order.address
+    except Order.DoesNotExist:
+        pass
+    return model
