@@ -5,5 +5,9 @@
         {% for page in pages %}
         <li><a href="/{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
+        {% if user %}
+        <li><a href="/logout/">Выйти</a></li>
+        {% else %}
+        <li><a href="#" class="login">Войти</a></li>
     </ul>
 </div>

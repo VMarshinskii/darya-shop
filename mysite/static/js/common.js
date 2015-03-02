@@ -121,7 +121,7 @@ $(document).ready(function (){
         $(".popupBox").css('display', 'none');
     });
 
-    $(".login").live('click', function(){
+    $(".login_order").live('click', function(){
         $.get("/login/", function(data){
             $(".popupBox").html(data);
             $(".background").css('display', 'block');
@@ -141,7 +141,11 @@ $(document).ready(function (){
             $(".popupBox").html(data);
         });
         var a = $(".popupBox input[name='csrfmiddlewaretoken']").val();
-        alert(a);
+                // similar behavior as an HTTP redirect
+        window.location.replace("/");
+
+        // similar behavior as clicking on a link
+        window.location.href = "/";
         return false;
     });
 
