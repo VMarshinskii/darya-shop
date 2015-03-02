@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from string import maketrans
+from accounts.models import User
 from models import Order, TypeDelivery
 from forms import OrderForm
 import random
