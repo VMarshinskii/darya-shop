@@ -50,5 +50,64 @@ def random_str(n):
     return "".join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for x in range(n))
 
 
+def unserialize(str):
+    products = {}
+    if str == '':
+        return products
+    for i in str.split(";"):
+        if i != '':
+            mass_str = i.split(":")
+        products[int(mass_str[0])] = int(mass_str[1])
+    return products
+
+
+def serialize(products):
+    str_mass = []
+    for key, value in products.items():
+        str_mass.append(str(key) + ":" + str(value))
+    return ";".join(str_mass)
+
+
 def create_username(first_name):
     return translit(first_name) + '_' + random_str(3)
+
+
+def update_user(request):
+    try:
+        form = OrderForm(request.POST).save(commit=False)
+        user = request.user
+        user.phone = form.phone
+        user.first_name = form.name
+        user.last_name = form.surname
+        user.email = form.mail
+        user.save()
+    except User.IntegrityError:
+        return None
+    return user
+
+
+def create_user(request, password):
+    try:
+        form = OrderForm(request.POST).save(commit=False)
+        user = User()
+        user.username = create_username(form.name)
+        user.set_password(password)
+        user.phone = form.phone
+        user.first_name = form.name
+        user.last_name = form.surname
+        user.email = form.mail
+        user.save()
+    except User.IntegrityError:
+        return None
+    return user
+
+
+def create_order(request, user):
+    form = OrderForm(request.POST)
+    ord = form.save(commit=False)
+    ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
+    ord.status = '0'
+    ord.order = '1:1'
+    ord.user = user
+    ord.save()
+    return ord

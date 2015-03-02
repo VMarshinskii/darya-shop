@@ -5,28 +5,10 @@ from django.http import Http404
 from shop.models import UserCart, TypeDelivery, Order
 from catalog.models import Product
 from accounts.models import Address, User
-from additions import create_username, random_str
 from forms import OrderForm
+import additions
 import random
 import string
-
-
-def unserialize(str):
-    products = {}
-    if str == '':
-        return products
-    for i in str.split(";"):
-        if i != '':
-            mass_str = i.split(":")
-        products[int(mass_str[0])] = int(mass_str[1])
-    return products
-
-
-def serialize(products):
-    str_mass = []
-    for key, value in products.items():
-        str_mass.append(str(key) + ":" + str(value))
-    return ";".join(str_mass)
 
 
 def return_cart(request):
@@ -59,33 +41,6 @@ def cart(request):
     return render_to_response("cart.html", {'products': cart_mass['products'], 'sum': cart_mass['sum']})
 
 
-def create_user(request, password):
-    try:
-        form = OrderForm(request.POST).save(commit=False)
-        user = User()
-        user.username = create_username(form.name)
-        user.set_password(password)
-        user.phone = form.phone
-        user.first_name = form.name
-        user.last_name = form.surname
-        user.email = form.mail
-        user.save()
-    except User.IntegrityError:
-        return None
-    return user
-
-
-def create_order(request, user):
-    form = OrderForm(request.POST)
-    ord = form.save(commit=False)
-    ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-    ord.status = '0'
-    ord.order = '1:1'
-    ord.user = user
-    ord.save()
-    return ord
-
-
 def order(request):
     args = {}
     args.update(csrf(request))
@@ -98,11 +53,8 @@ def order(request):
         if request.POST:
             form = OrderForm(request.POST)
             if form.is_valid():
-                ord = form.save(commit=False)
-                ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-                ord.status = '0'
-                ord.order = '1:1'
-                ord.save()
+                ord = create_order(request, request.user)
+                user = update_user(request) or request.user
                 return render_to_response("order_thanks.html")
             else:
                 args['form'] = form
