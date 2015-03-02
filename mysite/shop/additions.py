@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from string import maketrans
-from models import Order
+from models import Order, TypeDelivery
 from forms import OrderForm
 import random
 import string
