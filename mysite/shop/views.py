@@ -5,7 +5,7 @@ from django.http import Http404
 from shop.models import UserCart, TypeDelivery, Order
 from catalog.models import Product
 from accounts.models import Address, User
-from additions import create_order, get_model_order, create_user, serialize, unserialize, update_user
+from additions import create_order, get_model_order, create_user, serialize, unserialize, update_user, random_str
 from forms import OrderForm
 import random
 import string
