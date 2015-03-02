@@ -60,15 +60,18 @@ def cart(request):
 
 
 def create_user(request):
-    form = OrderForm(request.POST).save(commit=False)
-    user = User()
-    user.username = create_username(form.name)
-    user.set_password(random_str(7))
-    user.phone = form.phone
-    user.first_name = form.name
-    user.last_name = form.surname
-    user.save()
-    return user#or None
+    try:
+        form = OrderForm(request.POST).save(commit=False)
+        user = User()
+        user.username = create_username(form.name)
+        user.set_password(random_str(7))
+        user.phone = form.phone
+        user.first_name = form.name
+        user.last_name = form.surname
+        user.save()
+    except User.IntegrityError:
+        return None
+    return user
 
 
 def create_order(request, user):
