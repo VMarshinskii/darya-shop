@@ -139,13 +139,9 @@ $(document).ready(function (){
             },
             function(data){
             $(".popupBox").html(data);
+            window.location.replace("/");
+            window.location.href = "/";
         });
-        var a = $(".popupBox input[name='csrfmiddlewaretoken']").val();
-                // similar behavior as an HTTP redirect
-        window.location.replace("/");
-
-        // similar behavior as clicking on a link
-        window.location.href = "/";
         return false;
     });
 
