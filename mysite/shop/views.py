@@ -5,6 +5,7 @@ from django.http import Http404
 from shop.models import UserCart, TypeDelivery, Order
 from catalog.models import Product
 from accounts.models import Address, User
+from additions import create_username, random_str
 from forms import OrderForm
 import random
 import string
@@ -58,6 +59,29 @@ def cart(request):
     return render_to_response("cart.html", {'products': cart_mass['products'], 'sum': cart_mass['sum']})
 
 
+def create_user(request):
+    form = OrderForm(request.POST).save(commit=False)
+    user = User()
+    user.username = create_username(form.name)
+    user.set_password(random_str(7))
+    user.phone = form.phone
+    user.first_name = form.name
+    user.last_name = form.surname
+    user.save()
+    return user#or None
+
+
+def create_order(request, user):
+    form = OrderForm(request.POST)
+    ord = form.save(commit=False)
+    ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
+    ord.status = '0'
+    ord.order = '1:1'
+    ord.user = user
+    ord.save()
+    return ord
+
+
 def order(request):
     args = {}
     args.update(csrf(request))
@@ -86,19 +110,9 @@ def order(request):
     if request.POST:
         form = OrderForm(request.POST)
         if form.is_valid():
-            ord = form.save(commit=False)
-            ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
-            ord.status = '0'
-            ord.order = '1:1'
-            ord.save()
-            user = User()
-            user.username = "lenok"
-            user.set_password("qwerty")
-            user.phone = ord.phone
-            user.first_name = ord.name
-            user.last_name = ord.surname
-            user.save()
-            return render_to_response("order_thanks.html")
+            user = create_user(request)
+            ord = create_order(request, user)
+            return render_to_response("order_thanks.html", {'ord': ord})
         else:
             args['form'] = form
         return render_to_response("order_not_registered.html", args)
