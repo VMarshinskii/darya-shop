@@ -7,10 +7,15 @@
         <h1>Мои заказы</h1>
     </div>
     <div class="ContentBoxPage">
+        <h3>Доставка - {{ order.title }}</h3>
+        <p>{{ order.user.name }} {{ order.user.surname }}</p>
+        <p>{{ order.index }}, {{ order.region }}, {{ order.city }}</p>
+        <p>{{ order.address }}</p>
+
         <table>
             <tr>
-                <td><a href="#">#11</a></td>
-                <td><p style="background: #ed145b;padding: 2px 4px;color: #fff;">Исполнен</p></td>
+                <td><a href="/user/order/{{ order.id }}/">#{{ order.id }}</a></td>
+                <td><p style="background: #ed145b;padding: 2px 4px;color: #fff;">{{ order.status }}</p></td>
                 <td width="340px">
                     <ul>
                         <li>Крем-маска для рук сибирская витаминная, Natura Siberica, 75 мл. x 1</li>
@@ -18,15 +23,8 @@
                         <li>Зубная паста "Снежная белизна и сибирский уход. Жемчужина Сибири", Natura Siberica, 100 гр. x 1</li>
                     </ul>
                 </td>
-                <td>Почта России</td>
+                <td>{{ order.type_delivery.title }}</td>
                 <td>12.10.2015г</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
         </table>
 	</div>

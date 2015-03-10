@@ -51,7 +51,7 @@ def my_order(request, id=-1):
         try:
             order = Order.objects.get(id=id)
             if request.user == order.user:
-                return render_to_response("my_order.html")
+                return render_to_response("my_order.html", {'order': order})
         except Order.DoesNotExist:
             pass
     raise Http404("Страница не найдена!")
