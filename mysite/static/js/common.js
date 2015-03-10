@@ -139,8 +139,11 @@ $(document).ready(function (){
             },
             function(data){
             $(".popupBox").html(data);
-            window.location.replace("/");
-            window.location.href = "/";
+                if(data == "true")
+                {
+                    window.location.replace("/");
+                    window.location.href = "/";
+                }
         });
         return false;
     });
