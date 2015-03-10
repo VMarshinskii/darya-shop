@@ -4,10 +4,10 @@
 {% block content %}
 <div class="ContentBox">
     <div class="ContentBoxHead">
-        <h1>Мои заказы</h1>
+        <h1>Заказ #{{ order.id }}</h1>
     </div>
     <div class="ContentBoxPage">
-        <h5>Доставка - {{ order.type_delivery.title }}</h5>
+        <h5 style="font-weight: bold">Доставка - {{ order.type_delivery.title }}</h5>
         <p>{{ order.user.name }} {{ order.user.surname }}</p>
         <p>{{ order.index }}, {{ order.region }}, {{ order.city }}, {{ order.address }}</p>
 
