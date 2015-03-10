@@ -3,7 +3,7 @@ from django.shortcuts import render_to_response, HttpResponseRedirect
 from django.core.context_processors import csrf
 from django.http import Http404
 from django.contrib import auth
-from shop import Order
+from shop.models import Order
 from forms import LoginForm
 from models import User
 
