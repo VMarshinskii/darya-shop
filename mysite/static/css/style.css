@@ -984,6 +984,11 @@ label.popupBoxLoginFormZap {
     cursor: pointer;
 }
 
+.ContentBoxPage table td {
+    padding: 3px;
+}
+
+
 @media screen and (max-width:1337px) {
     .CartItem {
         width: 370px;
