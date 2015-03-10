@@ -49,7 +49,7 @@ def my_orders(request):
 def my_order(request, id=-1):
     if request.user.is_authenticated():
         try:
-            order = Order.objects.get(id=id)
+            order = Order.objects.get(id=26)
             if order.user is request.user:
                 return render_to_response("my_orders.html")
         except Order.DoesNotExist:
