@@ -19,5 +19,6 @@ urlpatterns = patterns('',
     url(r'^cart/', include('shop.urls')),
     url(r'^login/', 'accounts.views.ajax_login'),
     url(r'^logout/', 'accounts.views.logout'),
+    url(r'^user/orders/', 'accounts.views.my_orders'),
     url(r'', include('pages.urls')),
 )
