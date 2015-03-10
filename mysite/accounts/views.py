@@ -40,3 +40,4 @@ def logout(request):
 def my_orders(request):
     if request.user.is_authenticated():
         return render_to_response("my_orders.html")
+    return render_to_response("my_orders_not_registered.html")
