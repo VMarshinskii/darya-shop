@@ -52,7 +52,7 @@ def my_order(request, id=-1):
         try:
             order = Order.objects.get(id=id)
             if request.user == order.user:
-                order.order = unserialize_get(order.products)
+                order.products = unserialize_get(order.products)
                 return render_to_response("my_order.html", {'order': order})
         except Order.DoesNotExist:
             pass
