@@ -984,8 +984,16 @@ label.popupBoxLoginFormZap {
     cursor: pointer;
 }
 
+
+.ContentBoxPage table {
+    font: 14px/14pt sans-serif;
+}
 .ContentBoxPage table td {
     padding: 3px;
+}
+.ContentBoxPage table td ul {
+    list-style: inherit;
+    margin-left: 16px;
 }
 
 
