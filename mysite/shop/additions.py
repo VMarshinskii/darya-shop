@@ -80,7 +80,7 @@ def unserialize_get(str):
         if i != '':
             mass_str = i.split(":")
         try:
-            products[Product.objects.get(int(mass_str[0]))] = int(mass_str[1])
+            products[Product.objects.get(id=int(mass_str[0]))] = int(mass_str[1])
         except Product.DoesNotExist:
             pass
     return products
