@@ -35,3 +35,8 @@ def logout(request):
     auth.logout(request)
     # Перенаправление на страницу.
     return HttpResponseRedirect("/")
+
+
+def my_orders(request):
+    if request.user.is_authenticated():
+        return render_to_response("my_orders.html")
