@@ -3,6 +3,7 @@ from string import maketrans
 from accounts.models import User
 from models import Order, TypeDelivery
 from forms import OrderForm
+from catalog.models import Product
 import random
 import string
 
@@ -69,6 +70,20 @@ def serialize(products):
     for key, value in products.items():
         str_mass.append(str(key) + ":" + str(value))
     return ";".join(str_mass)
+
+
+def unserialize_get(str):
+    products = {}
+    if str == '':
+        return products
+    for i in str.split(";"):
+        if i != '':
+            mass_str = i.split(":")
+        try:
+            products[Product.objects.get(int(mass_str[0]))] = int(mass_str[1])
+        except Product.DoesNotExist:
+            pass
+    return products
 
 
 def create_username(first_name):

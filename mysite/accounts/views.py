@@ -3,6 +3,7 @@ from django.shortcuts import render_to_response, HttpResponseRedirect
 from django.core.context_processors import csrf
 from django.http import Http404
 from django.contrib import auth
+from shop.additions import unserialize_get
 from shop.models import Order
 from forms import LoginForm
 from models import User
@@ -51,6 +52,7 @@ def my_order(request, id=-1):
         try:
             order = Order.objects.get(id=id)
             if request.user == order.user:
+                order.products = unserialize_get(order.products)
                 return render_to_response("my_order.html", {'order': order})
         except Order.DoesNotExist:
             pass

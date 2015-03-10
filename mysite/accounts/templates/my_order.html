@@ -12,11 +12,13 @@
         <p>{{ order.index }}, {{ order.region }}, {{ order.city }}, {{ order.address }}</p>
 
         <table>
+            {% for product,count in order.products.items %}
             <tr>
-                <td><a href="/catalog/product/1/">Пальто Green Frash зеленое</a></td>
-                <td align="center">123 руб. x 2</td>
+                <td><a href="/catalog/product/{{ product.id }}/">{{ product.title }}</a></td>
+                <td align="center">{{ product.price }} руб. x 2</td>
                 <td align="center">246 руб.</td>
             </tr>
+            {% endfor %}
             <tr>
                 <td colspan="2" align="right">Подытог</td>
                 <td align="center"></td>
