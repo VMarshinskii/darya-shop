@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response, HttpResponseRedirect
 from django.core.context_processors import csrf
+from django.http import Http404
 from django.contrib import auth
+from shop import Order
 from forms import LoginForm
 from models import User
 
@@ -41,3 +43,14 @@ def my_orders(request):
     if request.user.is_authenticated():
         return render_to_response("my_orders.html")
     return render_to_response("my_orders_not_registered.html")
+
+
+def my_order(request, id=-1):
+    if request.user.is_authenticated():
+        try:
+            order = Order.objects.get(id=id)
+            if order.user is request.user:
+                return render_to_response("my_orders.html")
+        except Order.DoesNotExist:
+            pass
+    raise Http404("Страница не найдена!")

@@ -1056,4 +1056,8 @@ label.popupBoxLoginFormZap {
     p.CartSumLabel {
         margin-left: 30px;
     }
+
+    .ContentBoxPage table {
+        font: 12px/14pt sans-serif;
+    }
 }
