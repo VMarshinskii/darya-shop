@@ -12,10 +12,9 @@
         <p>{{ order.index }}, {{ order.region }}, {{ order.city }}, {{ order.address }}</p>
 
         <table>
-        {{ order.products }}
             {% for product,count in order.products.items %}
             <tr>
-                <td><a href="/catalog/product/{{ product.id }}/">{{ product.title }}</a></td>
+                <td><a href="/catalog/product/{{ product.id }}/">{{ product.name }}</a></td>
                 <td align="center">{{ product.price }} руб. x {{ count }}</td>
                 <td align="center">246 руб.</td>
             </tr>
