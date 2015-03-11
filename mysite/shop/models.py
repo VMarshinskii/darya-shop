@@ -3,7 +3,12 @@ from django.db import models
 from accounts.models import User, Address
 
 
-Order_Status = ('Обрабатывется', 'Ждёт оплаты', 'Оплачен', 'Отправлен')
+Order_Status = (
+    ('Обрабатывется', 'Обрабатывется'),
+    ('Ждёт оплаты', 'Ждёт оплаты'),
+    ('Оплачен', 'Оплачен'),
+    ('Отправлен', 'Отправлен'),
+)
 
 
 class TypeDelivery(models.Model):
