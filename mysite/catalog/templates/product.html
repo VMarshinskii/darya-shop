@@ -3,6 +3,19 @@
 
 {% block content %}
 <div class="CatalogProductBox">
+    <div class="CatalogProductBoxContent">
+        <h1>{{ product.name }}</h1>
+        <div class="CatalogPriceBox">
+            <p class="CatalogPriceBoxPrice">Цена: <span>{{ new_price }} руб.</span></p>
+            <p class="CatalogPriceOld">{{ product.price }} руб.</p>
+            <a href="#" data-id="{{ product.id }}">Купить</a>
+        </div>
+        <div class="CatalogProductBoxContent">
+            {{ product.text|safe }}
+        </div>
+        <div style="clear: both"></div>
+    </div>
+
     <div class="galeryBox">
         <div class="galeryBoxImg">
             <img src="/static/slick/images/business-infographic-with-pinned-notes_23-2147505469.jpg">
@@ -17,16 +30,6 @@
             <div><img src="/static/slick/images/circle-infographic-template_23-2147502536.jpg"></div>
         </div>
 	</div>
-    <h1>{{ product.name }}</h1>
-    <div class="CatalogPriceBox">
-        <p class="CatalogPriceBoxPrice">Цена: <span>{{ new_price }} руб.</span></p>
-        <p class="CatalogPriceOld">{{ product.price }} руб.</p>
-        <a href="#" data-id="{{ product.id }}">Купить</a>
-    </div>
-    <div class="CatalogProductBoxContent">
-        {{ product.text|safe }}
-    </div>
-    <div style="clear: both"></div>
 </div>
 {% endblock %}
 

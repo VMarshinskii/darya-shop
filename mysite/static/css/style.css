@@ -440,7 +440,7 @@ body {
 }
 .galeryBox {
     width: 230px;
-    float: left;
+    float: right;
 }
 .your-class	{
     width: 160px;
@@ -999,6 +999,10 @@ label.popupBoxLoginFormZap {
 .ContentBoxPage table td ul {
     list-style: inherit;
     margin-left: 16px;
+}
+
+.CatalogProductBoxContent {
+    float: right;
 }
 
 
