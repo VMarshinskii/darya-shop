@@ -22,7 +22,7 @@ class User(AbstractUser):
     region = models.CharField("Область", max_length=200, blank=True)
     city = models.CharField("Город", max_length=200, blank=True)
     index = models.CharField("Индекс", max_length=200, blank=True)
-    address = models.CharField("Адрес", max_length=200, blank=True)
+    address2 = models.CharField("Адрес", max_length=200, blank=True)
 
 
 class Address(models.Model):
