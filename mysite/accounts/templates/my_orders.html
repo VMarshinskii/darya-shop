@@ -17,12 +17,12 @@
             </tr>
             {% for order in orders %}
             <tr>
-                <td><a href="/user/order/{{ order.id }}/">#{{ order.id }}</a></td>
+                <td align="center"><a href="/user/order/{{ order.id }}/">#{{ order.id }}</a></td>
                 <td><p style="background: #ed145b;padding: 2px 4px;color: #fff;">{{ order.status }}</p></td>
                 <td width="340px">
                     <ul>
                         {% for product,count in order.products.items %}
-                        <li><a href="/catalog/product/{{ product.id }}/">{{ product.name }} x {{ count }}</a></li>
+                        <li><a target="_blank" href="/catalog/product/{{ product.id }}/">{{ product.name }}</a> x {{ count }}</li>
                         {% endfor %}
                     </ul>
                 </td>

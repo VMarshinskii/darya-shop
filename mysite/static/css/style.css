@@ -989,6 +989,9 @@ label.popupBoxLoginFormZap {
     font: 14px/14pt sans-serif;
     width: 100%;
 }
+.ContentBoxPage table p {
+    font: 14px/14pt sans-serif;
+}
 .ContentBoxPage table td {
     border: 1px solid #E0E0E0;
     padding: 6px;
