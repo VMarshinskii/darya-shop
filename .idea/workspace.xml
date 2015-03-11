@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/accounts/templates/my_order.html" afterPath="$PROJECT_DIR$/mysite/accounts/templates/my_order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/templates/product.html" afterPath="$PROJECT_DIR$/mysite/catalog/templates/product.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -109,23 +108,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="product.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1105">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.8143712" vertical-offset="0" max-vertical-offset="1139">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="e#558#577#0#HTML" expanded="true" />
+                <element signature="e#1553#1572#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5100865" vertical-offset="7160" max-vertical-offset="18292">
-              <caret line="442" column="17" selection-start-line="442" selection-start-column="17" selection-end-line="442" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="16881" max-vertical-offset="18309">
+              <caret line="1005" column="17" selection-start-line="1005" selection-start-column="17" selection-end-line="1005" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -189,8 +189,8 @@
         <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/my_orders.html" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/my_order.html" />
-        <option value="$PROJECT_DIR$/mysite/catalog/templates/product.html" />
         <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
+        <option value="$PROJECT_DIR$/mysite/catalog/templates/product.html" />
       </list>
     </option>
   </component>
@@ -2426,7 +2426,11 @@
       <created>1426091012660</created>
       <updated>1426091012660</updated>
     </task>
-    <option name="localTasksCounter" value="465" />
+    <task id="LOCAL-00465" summary="Update">
+      <created>1426093566318</created>
+      <updated>1426093566318</updated>
+    </task>
+    <option name="localTasksCounter" value="466" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2837,21 +2841,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/product.html">
+    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1105">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="40" />
-          <folding>
-            <element signature="e#558#577#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="16881" max-vertical-offset="18309">
+          <caret line="1005" column="17" selection-start-line="1005" selection-start-column="17" selection-end-line="1005" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5100865" vertical-offset="7160" max-vertical-offset="18292">
-          <caret line="442" column="17" selection-start-line="442" selection-start-column="17" selection-end-line="442" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="0.8143712" vertical-offset="0" max-vertical-offset="1139">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#558#577#0#HTML" expanded="true" />
+            <element signature="e#1553#1572#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
