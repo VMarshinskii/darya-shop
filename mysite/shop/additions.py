@@ -148,5 +148,5 @@ def get_model_order(request):
     model.region = request.user.region
     model.city = request.user.city
     model.index = request.user.index
-    model.address = request.user.address
+    model.address = request.user.address2
     return model
