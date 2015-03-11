@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/additions.py" afterPath="$PROJECT_DIR$/mysite/shop/additions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/accounts/views.py" afterPath="$PROJECT_DIR$/mysite/accounts/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="darya-shop.iws" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.08" vertical-offset="510" max-vertical-offset="2346">
+            <state vertical-scroll-proportion="-24.48" vertical-offset="0" max-vertical-offset="2346">
               <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
               <folding />
             </state>
@@ -59,21 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.56" vertical-offset="274" max-vertical-offset="1003">
-              <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.74588937" vertical-offset="283" max-vertical-offset="1122">
+              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="additions.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="additions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/additions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8221226" vertical-offset="1898" max-vertical-offset="2567">
-              <caret line="150" column="33" selection-start-line="150" selection-start-column="33" selection-end-line="150" selection-end-column="33" />
+            <state vertical-scroll-proportion="-66.88" vertical-offset="776" max-vertical-offset="2567">
+              <caret line="150" column="41" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -102,8 +102,8 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1156">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="12" />
+            <state vertical-scroll-proportion="-0.68" vertical-offset="68" max-vertical-offset="1139">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -170,7 +170,6 @@
         <option value="$PROJECT_DIR$/mysite/shop/templates/order3.html" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/order2.html" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/order_thanks.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/models.py" />
         <option value="$PROJECT_DIR$/mysite/shop/admin.py" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/order.html" />
         <option value="$PROJECT_DIR$/mysite/accounts/forms.py" />
@@ -185,10 +184,11 @@
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/my_order.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/my_orders.html" />
         <option value="$PROJECT_DIR$/mysite/accounts/models.py" />
         <option value="$PROJECT_DIR$/mysite/shop/additions.py" />
+        <option value="$PROJECT_DIR$/mysite/shop/models.py" />
+        <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
       </list>
     </option>
   </component>
@@ -2402,7 +2402,35 @@
       <created>1426063960424</created>
       <updated>1426063960424</updated>
     </task>
-    <option name="localTasksCounter" value="455" />
+    <task id="LOCAL-00455" summary="Update">
+      <created>1426065274820</created>
+      <updated>1426065274820</updated>
+    </task>
+    <task id="LOCAL-00456" summary="Update">
+      <created>1426071196252</created>
+      <updated>1426071196253</updated>
+    </task>
+    <task id="LOCAL-00457" summary="Update">
+      <created>1426071377343</created>
+      <updated>1426071377344</updated>
+    </task>
+    <task id="LOCAL-00458" summary="Update">
+      <created>1426077666625</created>
+      <updated>1426077666625</updated>
+    </task>
+    <task id="LOCAL-00459" summary="Update">
+      <created>1426077832583</created>
+      <updated>1426077832583</updated>
+    </task>
+    <task id="LOCAL-00460" summary="Update">
+      <created>1426078069642</created>
+      <updated>1426078069642</updated>
+    </task>
+    <task id="LOCAL-00461" summary="Update">
+      <created>1426090377661</created>
+      <updated>1426090377661</updated>
+    </task>
+    <option name="localTasksCounter" value="462" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2752,42 +2780,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1156">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1224">
           <caret line="44" column="13" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="714">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.56" vertical-offset="274" max-vertical-offset="1003">
-          <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="578">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -2812,7 +2808,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.08" vertical-offset="510" max-vertical-offset="2346">
+        <state vertical-scroll-proportion="-24.48" vertical-offset="0" max-vertical-offset="2346">
           <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
           <folding />
         </state>
@@ -2820,8 +2816,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/additions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8221226" vertical-offset="1898" max-vertical-offset="2567">
-          <caret line="150" column="33" selection-start-line="150" selection-start-column="33" selection-end-line="150" selection-end-column="33" />
+        <state vertical-scroll-proportion="-66.88" vertical-offset="776" max-vertical-offset="2567">
+          <caret line="150" column="41" selection-start-line="150" selection-start-column="41" selection-end-line="150" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.68" vertical-offset="68" max-vertical-offset="1139">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="714">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="578">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74588937" vertical-offset="283" max-vertical-offset="1122">
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
           <folding />
         </state>
       </provider>

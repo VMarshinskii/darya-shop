@@ -41,10 +41,17 @@ def logout(request):
 
 
 def my_orders(request):
+    status_mass = {
+        '0': 'Обрабатывется',
+        '1': 'Ждёт оплаты',
+        '2': 'Оплачен',
+        '3': 'Отправлен',
+    }
     if request.user.is_authenticated():
         orders = Order.objects.filter(user=request.user)
         for order in orders:
             order.products = unserialize_get(order.products)
+            order.status = status_mass[order.status]
         return render_to_response("my_orders.html", {'orders': orders})
     return render_to_response("my_orders_not_registered.html")
 
