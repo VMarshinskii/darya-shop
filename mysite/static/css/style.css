@@ -1070,4 +1070,11 @@ label.popupBoxLoginFormZap {
     .ContentBoxPage table {
         font: 12px/14pt sans-serif;
     }
+
+    .CatalogProductBoxCont {
+        width: 375px;
+    }
+    .CatalogPriceBox {
+        width: 353px;
+    }
 }
