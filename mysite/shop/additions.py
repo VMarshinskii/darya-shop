@@ -125,7 +125,7 @@ def create_order(request, user):
     ord = form.save(commit=False)
     ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
     ord.status = '0'
-    ord.order = '1:1'
+    ord.products = '1:1'
     ord.user = user
     ord.save()
     return ord

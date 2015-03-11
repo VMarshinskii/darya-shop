@@ -19,6 +19,11 @@ class User(AbstractUser):
     birthday = models.DateField(_(u'birthday'), blank=True, null=True)
     phone = models.CharField("Телефон", max_length=200, unique=True, blank=True)
 
+    region = models.CharField("Область", max_length=200, blank=True)
+    city = models.CharField("Город", max_length=200, blank=True)
+    index = models.CharField("Индекс", max_length=200, blank=True)
+    address = models.CharField("Адрес", max_length=200, blank=True)
+
 
 class Address(models.Model):
     region = models.CharField("Область", max_length=200, blank=True)
