@@ -98,6 +98,10 @@ def update_user(request):
         user.first_name = form.name
         user.last_name = form.surname
         user.email = form.mail
+        user.region = form.region
+        user.city = form.city
+        user.address2 = form.address
+        user.index = form.index
         user.save()
     except User.IntegrityError:
         return None
@@ -114,6 +118,10 @@ def create_user(request, password):
         user.first_name = form.name
         user.last_name = form.surname
         user.email = form.mail
+        user.region = form.region
+        user.city = form.city
+        user.address2 = form.address
+        user.index = form.index
         user.save()
     except User.IntegrityError:
         return None
@@ -137,13 +145,8 @@ def get_model_order(request):
     model.surname = request.user.last_name
     model.phone = request.user.phone
     model.mail = request.user.email
-
-    try:
-        order = Order.objects.filter(user=request.user)[0]
-        model.region = order.region
-        model.city = order.city
-        model.index = order.index
-        model.address = order.address
-    except Order.DoesNotExist:
-        pass
+    model.region = request.user.region
+    model.city = request.user.city
+    model.index = request.user.index
+    model.address = request.user.address
     return model
