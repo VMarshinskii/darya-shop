@@ -4,10 +4,10 @@ from accounts.models import User, Address
 
 
 Order_Status = (
-    ('Обрабатывется', 'Обрабатывется'),
-    ('Ждёт оплаты', 'Ждёт оплаты'),
-    ('Оплачен', 'Оплачен'),
-    ('Отправлен', 'Отправлен'),
+    ('0', 'Обрабатывется'),
+    ('1', 'Ждёт оплаты'),
+    ('2', 'Оплачен'),
+    ('3', 'Отправлен'),
 )
 
 
@@ -33,7 +33,7 @@ class Order(models.Model):
     user = models.ForeignKey(User, verbose_name="Пользователь", blank=True, null=True)
     type_delivery = models.ForeignKey(TypeDelivery, verbose_name="Вариант доставки", null=True)
     products = models.CharField("Заказ", max_length=200)
-    status = models.CharField("Статус", max_length=200, choices=Order_Status)
+    status = models.CharField("Статус", max_length=1, choices=Order_Status)
     date_create = models.DateField(verbose_name="Дата создания заказа", auto_now_add=True)
     date_change = models.DateField(verbose_name="Дата редактирования заказа", auto_now=True)
     admin_comment = models.TextField(verbose_name="Комментарий администратора", blank=True)
