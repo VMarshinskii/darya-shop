@@ -16,6 +16,7 @@
                     <ul>
                         {% for product,count in order.products.items %}
                         <li><a href="/catalog/product/{{ product.id }}/">{{ product.name }} x {{ count }}</a></li>
+                        {% endfor %}
                     </ul>
                 </td>
                 <td>{{ order.type_delivery.title }}</td>
