@@ -14,9 +14,8 @@
                 <td><p style="background: #ed145b;padding: 2px 4px;color: #fff;">{{ order.status }}</p></td>
                 <td width="340px">
                     <ul>
-                        <li>Крем-маска для рук сибирская витаминная, Natura Siberica, 75 мл. x 1</li>
-                        <li>Бальзам для губ, Himalaya, 10 мл. x 1</li>
-                        <li>Зубная паста "Снежная белизна и сибирский уход. Жемчужина Сибири", Natura Siberica, 100 гр. x 1</li>
+                        {% for product,count in order.products.items %}
+                        <li><a href="/catalog/product/{{ product.id }}/">{{ product.name }} x {{ count }}</a></li>
                     </ul>
                 </td>
                 <td>{{ order.type_delivery.title }}</td>

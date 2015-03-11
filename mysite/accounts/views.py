@@ -43,6 +43,8 @@ def logout(request):
 def my_orders(request):
     if request.user.is_authenticated():
         orders = Order.objects.filter(user=request.user)
+        for order in orders:
+            order.products = unserialize_get(order.products)
         return render_to_response("my_orders.html", {'orders': orders})
     return render_to_response("my_orders_not_registered.html")
 
