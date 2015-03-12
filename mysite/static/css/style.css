@@ -997,6 +997,10 @@ label.popupBoxLoginFormZap {
 .ContentBoxPage table td {
     border: 1px solid #E0E0E0;
     padding: 6px;
+    vertical-align: middle;
+}
+.ContentBoxPage table td a {
+    line-height: 40px;
 }
 .ContentBoxPage table td ul {
     list-style: inherit;
