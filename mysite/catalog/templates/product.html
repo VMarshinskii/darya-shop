@@ -34,7 +34,7 @@
 
         {% for pr in related_products %}
         <div class="relatedProductsItem">
-            <a href="#">
+            <a href="/catalog/product/{{ pr.id }}/">
                 <div class="relatedProductsItemImg">
                     <img src="/static/uploads/{{ pr.image }}">
                 </div>
