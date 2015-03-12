@@ -1013,16 +1013,21 @@ label.popupBoxLoginFormZap {
     border-top: 1px solid #D0CECE;
     padding-top: 10px;
 }
+.relatedProducts h3 {
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: bold;
+}
 .relatedProductsItem {
     width: 140px;
     height: 160px;
     border: 1px solid #E7E4E4;
     margin: 10px 5px 0 5px;
+    padding: 5px;
+    overflow: hidden;
 }
-.relatedProductsItem h3 {
-    font-family: inherit;
-    font-size: 22px;
-    font-weight: bold;
+.relatedProductsItem img {
+    height: 100px;
 }
 
 
