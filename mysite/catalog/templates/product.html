@@ -18,11 +18,11 @@
 
     <div class="galeryBox">
         <div class="galeryBoxImg">
-            <img src="/static/uploads/{{ image }}">
+            <img src="/static/uploads/{{ product.image }}">
         </div>
         <div class="your-class">
-            <div><img src="/static/uploads/{{ image }}"></div>
-            {% for img in images %}
+            <div><img src="/static/uploads/{{ product.image }}"></div>
+            {% for img in product.images %}
                 <div><img src="/static/uploads/{{ img }}"></div>
             {% endfor %}
         </div>
