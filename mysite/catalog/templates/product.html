@@ -28,6 +28,7 @@
         </div>
 	</div>
 
+    {% if related_products %}
     <div class="relatedProducts">
         <h3>Сопутствующие товары</h3>
 
@@ -46,6 +47,7 @@
         </div>
         {% endfor %}
     </div>
+    {% endif %}
 
     <div style="clear: both"></div>
 </div>
