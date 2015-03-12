@@ -429,6 +429,9 @@ body {
     margin: 15px 5px 10px 5px;
     float: left;
 }
+.CatalogProductBoxContent p {
+    font: 16px/16pt sans-serif;
+}
 .CatalogProductBoxContent img {
     max-width: 100%;
 }
