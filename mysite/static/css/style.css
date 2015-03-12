@@ -1026,6 +1026,18 @@ label.popupBoxLoginFormZap {
     padding: 5px;
     float: left;
 }
+.relatedProductsItem h4 {
+    margin-top: 5px;
+    font: 16px/16pt sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.relatedProductsItem p.price {
+    font: 14px/14pt sans-serif;
+    color: #7B7777;
+    margin-top: 5px;
+}
 .relatedProductsItemImg {
     width: 100%;
     height: 110px;

@@ -101,8 +101,8 @@
       <file leaf-file-name="product.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="255" max-vertical-offset="1275">
-              <caret line="34" column="46" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="46" />
+            <state vertical-scroll-proportion="-15.038462" vertical-offset="255" max-vertical-offset="1292">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="27" />
               <folding>
                 <element signature="e#555#574#0#HTML" expanded="true" />
               </folding>
@@ -123,8 +123,8 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.740634" vertical-offset="16979" max-vertical-offset="18972">
-              <caret line="1029" column="16" selection-start-line="1029" selection-start-column="16" selection-end-line="1029" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.8386167" vertical-offset="17081" max-vertical-offset="19176">
+              <caret line="1039" column="1" selection-start-line="1039" selection-start-column="1" selection-end-line="1039" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -2431,7 +2431,11 @@
       <created>1426166805716</created>
       <updated>1426166805716</updated>
     </task>
-    <option name="localTasksCounter" value="481" />
+    <task id="LOCAL-00481" summary="Update">
+      <created>1426166976796</created>
+      <updated>1426166976796</updated>
+    </task>
+    <option name="localTasksCounter" value="482" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2841,8 +2845,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="255" max-vertical-offset="1275">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="46" />
+        <state vertical-scroll-proportion="-15.038462" vertical-offset="255" max-vertical-offset="1292">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="27" />
           <folding>
             <element signature="e#555#574#0#HTML" expanded="true" />
           </folding>
@@ -2851,8 +2855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.740634" vertical-offset="16979" max-vertical-offset="18972">
-          <caret line="1029" column="16" selection-start-line="1029" selection-start-column="16" selection-end-line="1029" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.8386167" vertical-offset="17081" max-vertical-offset="19176">
+          <caret line="1039" column="1" selection-start-line="1039" selection-start-column="1" selection-end-line="1039" selection-end-column="1" />
           <folding />
         </state>
       </provider>
