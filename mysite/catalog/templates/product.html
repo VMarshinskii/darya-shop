@@ -18,16 +18,13 @@
 
     <div class="galeryBox">
         <div class="galeryBoxImg">
-            <img src="/static/images/{{ images }}">
+            <img src="/static/uploads/{{ image }}">
         </div>
         <div class="your-class">
-            <div><img src="/static/slick/images/business-infographic-with-pinned-notes_23-2147505469.jpg"></div>
-            <div><img src="/static/slick/images/circle-infographic-template_23-2147502536.jpg"></div>
-            <div><img src="/static/slick/images/hands-holding-megaphones_23-2147505586.jpg"></div>
-            <div><img src="/static/slick/images/infographic-vector-free-design_23-2147488954.jpg"></div>
-            <div><img src="/static/slick/images/label150p-01-01.jpg"></div>
-            <div><img src="/static/slick/images/business-infographic-with-pinned-notes_23-2147505469.jpg"></div>
-            <div><img src="/static/slick/images/circle-infographic-template_23-2147502536.jpg"></div>
+            <div><img src="/static/uploads/{{ image }}"></div>
+            {% for img in images %}
+                <div><img src="/static/uploads/{{ img }}"></div>
+            {% endfor %}
         </div>
 	</div>
 
