@@ -1010,6 +1010,8 @@ label.popupBoxLoginFormZap {
 
 .relatedProducts {
     clear: both;
+    border-top: 1px solid #D0CECE;
+    padding-top: 10px;
 }
 .relatedProductsItem {
     width: 140px;
@@ -1019,7 +1021,8 @@ label.popupBoxLoginFormZap {
 }
 .relatedProductsItem h3 {
     font-family: inherit;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 
