@@ -1007,6 +1007,15 @@ label.popupBoxLoginFormZap {
     padding: 4px;
 }
 
+.relatedProducts {
+    clear: both;
+}
+.relatedProductsItem {
+    width: 100px;
+    height: 160px;
+    border: 1px solid #eee;
+}
+
 
 @media screen and (max-width:1337px) {
     .CartItem {
