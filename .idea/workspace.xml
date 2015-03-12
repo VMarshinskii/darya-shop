@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/templates/product.html" afterPath="$PROJECT_DIR$/mysite/catalog/templates/product.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -123,8 +122,8 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6426513" vertical-offset="16809" max-vertical-offset="18649">
-              <caret line="1015" column="27" selection-start-line="1015" selection-start-column="27" selection-end-line="1015" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.814121" vertical-offset="16792" max-vertical-offset="18751">
+              <caret line="1021" column="19" selection-start-line="1021" selection-start-column="19" selection-end-line="1021" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -2415,7 +2414,11 @@
       <created>1426163715045</created>
       <updated>1426163715045</updated>
     </task>
-    <option name="localTasksCounter" value="477" />
+    <task id="LOCAL-00477" summary="Update">
+      <created>1426164277349</created>
+      <updated>1426164277349</updated>
+    </task>
+    <option name="localTasksCounter" value="478" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2835,8 +2838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6426513" vertical-offset="16809" max-vertical-offset="18649">
-          <caret line="1015" column="27" selection-start-line="1015" selection-start-column="27" selection-end-line="1015" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.814121" vertical-offset="16792" max-vertical-offset="18751">
+          <caret line="1021" column="19" selection-start-line="1021" selection-start-column="19" selection-end-line="1021" selection-end-column="19" />
           <folding />
         </state>
       </provider>
