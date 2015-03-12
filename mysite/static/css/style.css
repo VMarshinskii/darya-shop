@@ -818,8 +818,7 @@ p.CartSumLabel {
     position: absolute;
     top: 127px;
     border-radius: 2px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0.39);
+    background: url("../images/btn-c.png") 0 0 repeat-x;
 }
 .cart p {
     font: 17px/16pt sans-serif;
@@ -1005,7 +1004,7 @@ label.popupBoxLoginFormZap {
     float: right;
     width: 438px;
     padding: 4px;
-    min-height: 317px;
+    /*min-height: 317px;*/
 }
 
 .relatedProducts {
@@ -1019,7 +1018,7 @@ label.popupBoxLoginFormZap {
     margin-left: 5px;
 }
 .relatedProductsItem {
-    width: 160px;
+    width: 154px;
     height: 220px;
     margin: 10px 5px 0 5px;
     padding: 10px;
