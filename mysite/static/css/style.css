@@ -1024,10 +1024,15 @@ label.popupBoxLoginFormZap {
     border: 1px solid #E7E4E4;
     margin: 10px 5px 0 5px;
     padding: 5px;
+    float: left;
+}
+.relatedProductsItemImg {
+    width: 100%;
+    height: 110px;
     overflow: hidden;
 }
-.relatedProductsItem img {
-    height: 100px;
+.relatedProductsItemImg img {
+    width: 100%;
 }
 
 

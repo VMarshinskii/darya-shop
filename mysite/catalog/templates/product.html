@@ -24,7 +24,6 @@
             <div><img src="/static/uploads/{{ product.image }}"></div>
             {% for img in images %}
                 <div><img src="/static/uploads/{{ img }}"></div>
-                <h4>Платье какое-то</h4>
             {% endfor %}
         </div>
 	</div>
@@ -33,7 +32,10 @@
         <h3>Сопутствующие товары</h3>
 
         <div class="relatedProductsItem">
-            <img src="/static/uploads/{{ product.image }}">
+            <div class="relatedProductsItemImg">
+                <img src="/static/uploads/{{ product.image }}">
+            </div>
+            <h4>Платье какое-то</h4>
         </div>
     </div>
 
