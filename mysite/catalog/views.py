@@ -23,8 +23,20 @@ def product(request, id=-1):
         for img in images_mass:
             if img != '' and img != product.image:
                 images.append(img)
+        related_products = []
+        for pr in product.related_products.split(";"):
+            if pr != '':
+                try:
+                    related_products.append(Product.objects.get(id=int(pr)))
+                except Product.DoesNotExist:
+                    pass
         new_price = (product.price / 100) * (100 - product.sale)
-        return render_to_response("product.html", {'product': product, 'new_price': new_price, 'images': images})
+        return render_to_response("product.html", {
+            'product': product,
+            'new_price': new_price,
+            'images': images,
+            'related_products': related_products
+        })
     else:
         return Http404
 

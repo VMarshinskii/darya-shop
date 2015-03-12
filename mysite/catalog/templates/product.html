@@ -31,31 +31,20 @@
     <div class="relatedProducts">
         <h3>Сопутствующие товары</h3>
 
+        {% for pr in related_products %}
         <div class="relatedProductsItem">
             <a href="#">
                 <div class="relatedProductsItemImg">
-                    <img src="/static/uploads/{{ product.image }}">
+                    <img src="/static/uploads/{{ pr.image }}">
                 </div>
-                <h4>Платье какое-то</h4>
+                <h4>{{ pr.name }}</h4>
             </a>
-            <p class="price">12000 руб.</p>
+            <p class="price">{{ pr.price }} руб.</p>
             <div class="good-c">
-                <a data-id="2" href="#">В корзину</a>
+                <a data-id="{{ pr.id }}" href="#">В корзину</a>
             </div>
         </div>
-
-        <div class="relatedProductsItem">
-            <a href="#">
-                <div class="relatedProductsItemImg">
-                    <img src="/static/uploads/{{ product.image }}">
-                </div>
-                <h4>Платье какое-то</h4>
-            </a>
-            <p class="price">12000 руб.</p>
-            <div class="good-c">
-                <a data-id="2" href="#">В корзину</a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 
     <div style="clear: both"></div>
