@@ -18,7 +18,7 @@ def home(request):
 def product(request, id=-1):
     if id != -1:
         product = Product.objects.get(id=id)
-        images = product.split(";")
+        images = product.images.split(";")
         new_price = (product.price / 100) * (100 - product.sale)
         return render_to_response("product.html", {'product': product, 'new_price': new_price, 'images': images})
     else:
