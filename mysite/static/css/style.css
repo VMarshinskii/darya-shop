@@ -1025,6 +1025,11 @@ label.popupBoxLoginFormZap {
     padding: 5px;
     float: left;
     border: 1px solid #E7E4E4;
+}
+.relatedProductsItem:hover {
+    box-shadow: 0 0 5px #000;
+}
+.relatedProductsItem a {
     text-decoration: none;
 }
 .relatedProductsItem h4 {
