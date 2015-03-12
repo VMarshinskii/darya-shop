@@ -1019,12 +1019,12 @@ label.popupBoxLoginFormZap {
     margin-left: 5px;
 }
 .relatedProductsItem {
-    width: 140px;
+    width: 150px;
     height: 170px;
     margin: 10px 5px 0 5px;
-    padding: 5px;
+    padding: 10px;
     float: left;
-    border: 1px solid #E7E4E4;
+    border: 1px solid #D3D3D3;
 }
 .relatedProductsItem:hover {
     box-shadow: 0 0 5px #A1A1A1;
@@ -1052,6 +1052,9 @@ label.popupBoxLoginFormZap {
 }
 .relatedProductsItemImg img {
     width: 100%;
+}
+.relatedProductsItem div.good-c {
+    margin-top: 10px;
 }
 
 
