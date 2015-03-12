@@ -14,7 +14,12 @@
         <table>
             {% for product,count in order.products.items %}
             <tr>
-                <td><img style="width: 40px; float: left; margin-right: 5px" src="/static/uploads/{{ product.image }}" alt="{{ product.name }}"/><a target="_blank" href="/catalog/product/{{ product.id }}/">{{ product.name }}</a></td>
+                <td>
+                    <div style="width: 40px; height: 50px; float: left; margin-right: 5px">
+                        <img style="width: 40px;" src="/static/uploads/{{ product.image }}" alt="{{ product.name }}"/>
+                    </div>
+                    <a target="_blank" href="/catalog/product/{{ product.id }}/">{{ product.name }}</a>
+                </td>
                 <td align="center">{{ product.price }} руб. x {{ count }}</td>
                 <td align="center">246 руб.</td>
             </tr>
