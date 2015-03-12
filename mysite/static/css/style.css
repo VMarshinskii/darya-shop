@@ -1030,11 +1030,8 @@ label.popupBoxLoginFormZap {
     box-shadow: 0 0 5px #A1A1A1;
     border: 1px solid #C3C3C3;
 }
-.relatedProductsItem a {
-    text-decoration: none;
-}
 .relatedProductsItem h4 {
-    margin-top: 5px;
+    margin-top: 10px;
     font: 16px/16pt sans-serif;
     white-space: nowrap;
     text-overflow: ellipsis;
