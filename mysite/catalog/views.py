@@ -45,6 +45,9 @@ def category(request, url="none"):
     try:
         categ = Category.objects.get(url=url)
         products = categ.get_all_product()
+        for pr in products:
+            if pr.sale_status == 1:
+                pr.price_new = pr.price - (pr.price / 100 * pr.sale)
         path = list(reversed(categ.get_path_categ()))
     except Category.DoesNotExist:
         return Http404

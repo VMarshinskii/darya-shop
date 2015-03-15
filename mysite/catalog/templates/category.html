@@ -18,7 +18,12 @@
         <div class="about-goods">
             <a href="/catalog/product/{{ product.id }}/">{{ product.name }}</a>
         </div>
+        {% if product.price_new %}
+        <div class="price">{{ product.price_new }} руб.</div>
+        <div class="price" style="float: right">{{ product.price }} руб.</div>
+        {% else %}
         <div class="price">{{ product.price }} руб.</div>
+        {% endif %}
         <div class="good-c">
             <a data-id="{{ product.id }}" href="#">В корзину</a>
         </div>
