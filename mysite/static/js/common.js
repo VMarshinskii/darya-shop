@@ -131,7 +131,7 @@ $(document).ready(function (){
     });
 
     $(".loginSubmit").live('click', function(){
-        var link = $(".loginSubmit").attr("data-link");
+        var link = $(this).attr("data-link");
         $.post("/login/",
             {
                 login: $("#id_login").val(),
