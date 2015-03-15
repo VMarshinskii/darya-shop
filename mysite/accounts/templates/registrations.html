@@ -13,14 +13,14 @@
             <div class="OrderBoxUserData">
                 <h4>Контактная информация</h4>
 
-                <label>Имя <span style="color: #ff0000">{{ form.name.errors }}</span></label>
-                {{ form.name }}
+                <label>Имя <span style="color: #ff0000">{{ form.first_name.errors }}</span></label>
+                {{ form.first_name }}
 
-                <label>Фамилия <span style="color: #ff0000">{{ form.surname.errors }}</span></label>
-                {{ form.surname }}
+                <label>Фамилия <span style="color: #ff0000">{{ form.last_name.errors }}</span></label>
+                {{ form.last_name }}
 
-                <label>Электронная почта <span style="color: #ff0000">{{ form.mail.errors }}</span></label>
-                {{ form.mail }}
+                <label>Электронная почта <span style="color: #ff0000">{{ form.email.errors }}</span></label>
+                {{ form.email }}
 
                 <label>Телефон <span style="color: #ff0000">{{ form.phone.errors }}</span></label>
                 {{ form.phone }}
