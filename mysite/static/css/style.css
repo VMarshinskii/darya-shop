@@ -1061,6 +1061,7 @@ label.popupBoxLoginFormZap {
 }
 .RegistrationBox {
     width: 607px;
+    height: 230px;
 }
 
 
@@ -1139,5 +1140,6 @@ label.popupBoxLoginFormZap {
 
     .RegistrationBox {
         width: 303px;
+        height: 350px;
     }
 }
