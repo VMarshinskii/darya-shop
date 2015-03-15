@@ -11,29 +11,29 @@
             {% csrf_token %}
             {{ form.non_field_errors }}
 
-            <div class="OrderBoxUserData">
+            <div class="OrderBoxUserData" style="width: 607px">
                 <h4>Контактная информация</h4>
 
-                <div class="OrderBoxAddressTypeItem">
+                <div class="OrderBoxAddressTypeItem" style="width: 303px;">
                     <label>Имя <span style="color: #ff0000">{{ form.first_name.errors }}</span></label>
                     {{ form.first_name }}
                 </div>
 
-                <div class="OrderBoxAddressTypeItem">
-                    <label>Фамилия <span style="color: #ff0000">{{ form.last_name.errors }}</span></label>
-                    {{ form.last_name }}
-                </div>
-
-                <div class="OrderBoxAddressTypeItem">
+                <div class="OrderBoxAddressTypeItem" style="width: 303px;">
                     <label>Электронная почта <span style="color: #ff0000">{{ form.email.errors }}</span></label>
                     {{ form.email }}
                 </div>
 
-                <div class="OrderBoxAddressTypeItem">
+                <div class="OrderBoxAddressTypeItem" style="width: 303px;">
+                    <label>Фамилия <span style="color: #ff0000">{{ form.last_name.errors }}</span></label>
+                    {{ form.last_name }}
+                </div>
+
+                <div class="OrderBoxAddressTypeItem" style="width: 303px;">
                     <label>Телефон <span style="color: #ff0000">{{ form.phone.errors }}</span></label>
                     {{ form.phone }}
                 </div>
-                <div class="OrderBoxAddressTypeItem">
+                <div class="OrderBoxAddressTypeItem" style="width: 303px; float: right">
                     <input type="submit" class="OrderSubmit" value="Зарегистрироваться"/>
                 </div>
             </div>
