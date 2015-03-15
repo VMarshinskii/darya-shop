@@ -144,8 +144,8 @@ $(document).ready(function (){
                 {
                     if(link == '')
                     {
-                        window.location.replace("/user/orders/");
-                        window.location.href = "/user/orders/";
+                        window.location.replace("http://85.143.216.11/user/orders/");
+                        window.location.href = "http://85.143.216.11/user/orders/";
                     }
                     else
                     {
