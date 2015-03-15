@@ -408,14 +408,15 @@ body {
 .good-c a {
     height: 18px;
     padding: 8px;
-    background: url("../images/gb-cr.png") right 0 no-repeat,
-                url("../images/gb-c.png");
+    background: url("../images/gb-cr.png") right 0 no-repeat, url("../images/gb-c.png");
     display: block;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
+    clear: both;
+    margin-top: 35px;
 }
 
 

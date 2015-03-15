@@ -20,7 +20,7 @@
         </div>
         {% if product.price_new %}
         <div class="price">{{ product.price_new }} руб.</div>
-        <div class="price" style="float: right">{{ product.price }} руб.</div>
+        <div class="price" style="float: right; color: #999; text-decoration: line-through">{{ product.price }} руб.</div>
         {% else %}
         <div class="price">{{ product.price }} руб.</div>
         {% endif %}
