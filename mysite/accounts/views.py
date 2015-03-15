@@ -3,9 +3,9 @@ from django.shortcuts import render_to_response, HttpResponseRedirect
 from django.core.context_processors import csrf
 from django.http import Http404
 from django.contrib import auth
-from shop.additions import unserialize_get
+from shop.additions import unserialize_get, translit, random_str
 from shop.models import Order
-from forms import LoginForm
+from forms import LoginForm, UserRegistrationsForm
 from models import User
 
 
@@ -38,6 +38,19 @@ def logout(request):
     auth.logout(request)
     # Перенаправление на страницу.
     return HttpResponseRedirect("/")
+
+
+def registrations(request):
+    args = {}
+    args.update(csrf(request))
+    args['form'] = UserRegistrationsForm()
+    if request.POST:
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            form.login = translit(form.first_name) + random_str(3)
+            form.save()
+        args['form'] = form
+    return render_to_response("registrations.html", args)
 
 
 def my_orders(request):

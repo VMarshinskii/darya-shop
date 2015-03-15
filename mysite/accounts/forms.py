@@ -47,3 +47,10 @@ class LoginForm(forms.Form):
     #         raise forms.ValidationError("Не правельный логин или пароль")
     #
     #     return cleaned_data
+
+
+class UserRegistrationsForm(forms.ModelForm):
+
+    class Meta:
+        model = User
+        fields = ['first_name', 'last_name', 'email', 'phone']

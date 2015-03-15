@@ -1,0 +1,33 @@
+{% extends "main.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="ContentBox">
+    <div class="ContentBoxHead">
+        <h1>Регистрация</h1>
+    </div>
+    <div class="OrderBox">
+        <form action="/registrations/" method="post">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            <div class="OrderBoxUserData">
+                <h4>Контактная информация</h4>
+
+                <label>Имя <span style="color: #ff0000">{{ form.name.errors }}</span></label>
+                {{ form.name }}
+
+                <label>Фамилия <span style="color: #ff0000">{{ form.surname.errors }}</span></label>
+                {{ form.surname }}
+
+                <label>Электронная почта <span style="color: #ff0000">{{ form.mail.errors }}</span></label>
+                {{ form.mail }}
+
+                <label>Телефон <span style="color: #ff0000">{{ form.phone.errors }}</span></label>
+                {{ form.phone }}
+            </div>
+
+            <div style="clear: both"></div>
+        </form>
+	</div>
+</div>
+{% endblock %}
