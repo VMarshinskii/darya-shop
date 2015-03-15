@@ -7,7 +7,7 @@ function resize() {
         $("#all-content").css({"width":"1600px"});
         $(".header-info .header-info-one").css({"width":"585px"});
     }*/
-    if($(document).width() > 1330) {
+    if($(document).width() > 1340) {
         $("#all-content").css({"width":"1285px"});
         $(".all-content").css({"width":"1285px"});
         $(".header-info .header-info-one").css({"width":"585px"});
