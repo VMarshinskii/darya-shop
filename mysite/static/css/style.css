@@ -278,6 +278,7 @@ body {
     font-weight: 600;
     color: #373032;
     margin-top: 0;
+    float: left;
 }
 #center-block .goodss .good .goods-bot a {
     background: url("../images/goods-but.png");
