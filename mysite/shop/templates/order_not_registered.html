@@ -9,7 +9,7 @@
     <div class="OrderBox">
         <form action="/cart/order/" method="post">
             {% csrf_token %}
-            <h3>У меня уже есть акаунт в интернет-магазине Darya-Shop - <a class="login_order" href="#">войти</a></h3>
+            <h3>У меня уже есть акаунт в интернет-магазине Darya-Shop - <a class="login_order" data-link="http://85.143.216.11/cart/order/" href="#">войти</a></h3>
 
             {{ form.non_field_errors }}
             <div class="OrderBoxUserData">
