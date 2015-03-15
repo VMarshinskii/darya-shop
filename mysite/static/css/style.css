@@ -726,7 +726,7 @@ p.CartSumLabel {
 }
 .OrderBoxAddressTypeItem input {
     float: left;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 .OrderBoxAddressTypeItem h5 {
     font-weight: bold;
