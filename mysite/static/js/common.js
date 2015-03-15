@@ -162,7 +162,9 @@ $(document).ready(function (){
 
     $("#id_type_delivery").live('click', function(){
         var price = $(this).attr('data-price');
-        $(".OrderBoxConfirmationPrice span").html(price);
+        $("#OrderBoxConfirmationPriceCurrent span").html(price);
+        var price_all = parseInt($("#OrderBoxConfirmationPriceSum span").html()) + parseInt(price);
+        $("#OrderBoxConfirmationPriceAll span").html(price_all);
     });
 
 });
