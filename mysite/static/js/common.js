@@ -163,8 +163,8 @@ $(document).ready(function (){
     $("#id_type_delivery").live('click', function(){
         var price = $(this).attr('data-price');
         $("#OrderBoxConfirmationPriceCurrent span").html(price);
-        //var price_all = parseInt($("#OrderBoxConfirmationPriceSum span").html(), 10) + parseInt(price, 10);
-        //$("#OrderBoxConfirmationPriceAll span").html(price_all);
+        var price_all = parseInt($("#OrderBoxConfirmationPriceSum span").html(), 10) + parseInt(price, 10);
+        $("#OrderBoxConfirmationPriceAll span").html(price_all);
     });
 
 });
