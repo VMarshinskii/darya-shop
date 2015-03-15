@@ -52,7 +52,7 @@ def registration(request):
             us.username = translit(us.first_name) + '_' + random_str(3)
             us.set_password(password)
             us.save()
-            return render_to_response("registration_thank.html", {'username': us.username, 'password': password})
+            return render_to_response("registration_thank.html", {'username': us.phone, 'password': password})
         args['form'] = form
     return render_to_response("registration.html", args)
 
