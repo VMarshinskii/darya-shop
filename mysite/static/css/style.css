@@ -677,8 +677,11 @@ p.CartSumLabel {
     border-radius: 2px;
     margin: 10px;
     font: 16px/16pt sans-serif;
-    color: #818181;
-    text-decoration: underline;
+    color: #FFFFFF;
+    background: #ED145B;
+}
+.OrderBox h3 a {
+    color: #fff;
 }
 .OrderBoxUserData, .OrderBoxAddressData {
     float: left;
