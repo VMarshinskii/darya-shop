@@ -4,7 +4,6 @@
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/templates/product.html" afterPath="$PROJECT_DIR$/mysite/catalog/templates/product.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/views.py" afterPath="$PROJECT_DIR$/mysite/catalog/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="darya-shop.iws" />
@@ -79,14 +78,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="product.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61077845" vertical-offset="459" max-vertical-offset="1615">
-              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+            <state vertical-scroll-proportion="-17.653847" vertical-offset="459" max-vertical-offset="1615">
+              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
               <folding>
                 <element signature="e#1728#1792#0#HTML" expanded="true" />
-                <element signature="e#1969#1994#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="19128" max-vertical-offset="19839">
-              <caret line="1160" column="5" selection-start-line="1160" selection-start-column="5" selection-end-line="1160" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6440922" vertical-offset="17437" max-vertical-offset="19856">
+              <caret line="1052" column="15" selection-start-line="1052" selection-start-column="15" selection-end-line="1052" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -195,9 +193,9 @@
         <option value="$PROJECT_DIR$/mysite/accounts/templates/my_orders_not_registered.html" />
         <option value="$PROJECT_DIR$/mysite/pages/templates/templatetags/top_menu.html" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/category.html" />
-        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
         <option value="$PROJECT_DIR$/mysite/catalog/views.py" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/product.html" />
+        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
       </list>
     </option>
   </component>
@@ -2879,7 +2877,11 @@
       <created>1426429258082</created>
       <updated>1426429258082</updated>
     </task>
-    <option name="localTasksCounter" value="550" />
+    <task id="LOCAL-00550" summary="Update">
+      <created>1426430329357</created>
+      <updated>1426430329357</updated>
+    </task>
+    <option name="localTasksCounter" value="551" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3294,14 +3296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="19128" max-vertical-offset="19839">
-          <caret line="1160" column="5" selection-start-line="1160" selection-start-column="5" selection-end-line="1160" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.88" vertical-offset="136" max-vertical-offset="2754">
@@ -3322,12 +3316,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61077845" vertical-offset="459" max-vertical-offset="1615">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        <state vertical-scroll-proportion="-17.653847" vertical-offset="459" max-vertical-offset="1615">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
           <folding>
             <element signature="e#1728#1792#0#HTML" expanded="true" />
-            <element signature="e#1969#1994#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6440922" vertical-offset="17437" max-vertical-offset="19856">
+          <caret line="1052" column="15" selection-start-line="1052" selection-start-column="15" selection-end-line="1052" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

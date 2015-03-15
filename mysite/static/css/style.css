@@ -1050,8 +1050,9 @@ label.popupBoxLoginFormZap {
 }
 .relatedProductsItem p.price {
     font: 14px/14pt sans-serif;
-    color: #7B7777;
+    color: #222;
     margin-top: 5px;
+    float: left;
 }
 .relatedProductsItemImg {
     width: 100%;
