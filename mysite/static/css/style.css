@@ -1072,6 +1072,9 @@ label.popupBoxLoginFormZap {
 
 
 @media screen and (max-width:1337px) {
+    #center-block {
+        width: 395px
+    }
     .CartItem {
         width: 370px;
         margin: 2px 0;
