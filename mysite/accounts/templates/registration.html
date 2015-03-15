@@ -10,25 +10,42 @@
         <form action="/registration/" method="post">
             {% csrf_token %}
             {{ form.non_field_errors }}
-            <div class="OrderBoxUserData">
-                <h4>Контактная информация</h4>
 
-                <label>Имя <span style="color: #ff0000">{{ form.first_name.errors }}</span></label>
-                {{ form.first_name }}
 
-                <label>Фамилия <span style="color: #ff0000">{{ form.last_name.errors }}</span></label>
-                {{ form.last_name }}
-
-                <label>Электронная почта <span style="color: #ff0000">{{ form.email.errors }}</span></label>
-                {{ form.email }}
-
-                <label>Телефон <span style="color: #ff0000">{{ form.phone.errors }}</span></label>
-                {{ form.phone }}
-            </div>
-
-            <input type="submit" value="Зарегистрироваться"/>
-
-            <div style="clear: both"></div>
+            <table>
+                <tr>
+                    <td>
+                        <label>Имя <span style="color: #ff0000">{{ form.first_name.errors }}</span></label>
+                        {{ form.first_name }}
+                    </td>
+                    <td>
+                        <label>Электронная почта <span style="color: #ff0000">{{ form.email.errors }}</span></label>
+                        {{ form.email }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Фамилия <span style="color: #ff0000">{{ form.last_name.errors }}</span></label>
+                        {{ form.last_name }}
+                    </td>
+                    <td>
+                        <label>Телефон <span style="color: #ff0000">{{ form.phone.errors }}</span></label>
+                        {{ form.phone }}
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Зарегистрироваться"/></td>
+                </tr>
+            </table>
         </form>
 	</div>
 </div>
