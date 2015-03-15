@@ -6,8 +6,13 @@
     <div class="CatalogProductBoxCont">
         <h1>{{ product.name }}</h1>
         <div class="CatalogPriceBox">
-            <p class="CatalogPriceBoxPrice">Цена: <span>{{ new_price }} руб.</span></p>
+            {% if product.new_price %}
+            <p class="CatalogPriceBoxPrice">Цена: <span>{{ product.new_price }} руб.</span></p>
             <p class="CatalogPriceOld">{{ product.price }} руб.</p>
+            {% else %}
+            <p class="CatalogPriceBoxPrice">Цена: <span>{{ product.price }} руб.</span></p>
+            {% endif %} 
+
             <a href="#" data-id="{{ product.id }}">Купить</a>
         </div>
         <div class="CatalogProductBoxContent">
@@ -40,9 +45,14 @@
                 </div>
                 <h4>{{ pr.name }}</h4>
             </a>
+            {% if pr.new_price %}
+            <p class="price">{{ pr.new_price }} руб.</p>
+            <p class="price" style="float: right; color: #999; text-decoration: line-through">{{ pr.price }} руб.</p>
+            {% else %}
             <p class="price">{{ pr.price }} руб.</p>
+            {% endif %}
             <div class="good-c">
-                <a data-id="{{ pr.id }}" href="#">В корзину</a>
+                <a style="margin-top: 13px;" data-id="{{ pr.id }}" href="#">В корзину</a>
             </div>
         </div>
         {% endfor %}

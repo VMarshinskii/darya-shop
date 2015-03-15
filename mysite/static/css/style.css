@@ -1152,4 +1152,11 @@ label.popupBoxLoginFormZap {
         font-size: 14px;
         line-height: 21px;
     }
+
+    .CartSum {
+        margin: 7px 0 0 120px;
+    }
+    .CartOrder {
+        margin-top: 10px;
+    }
 }
