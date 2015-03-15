@@ -29,7 +29,7 @@ def product(request, id=-1):
                 try:
                     sop_pr = Product.objects.get(id=int(pr))
                     if sop_pr.sale_status == 1:
-                        sop_pr.new_price = (product.price / 100) * (100 - product.sale)
+                        sop_pr.new_price = (sop_pr.price / 100) * (100 - sop_pr.sale)
                     related_products.append(sop_pr)
 
                 except Product.DoesNotExist:
