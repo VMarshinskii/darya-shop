@@ -1071,7 +1071,7 @@ label.popupBoxLoginFormZap {
 }
 
 
-@media screen and (max-width:1337px) {
+@media screen and (max-width:1285px) {
     .CartItem {
         width: 370px;
         margin: 2px 0;
@@ -1159,5 +1159,8 @@ label.popupBoxLoginFormZap {
     }
     .CartOrder {
         margin-top: 10px;
+    }
+    #center-block .goodss .good .price {
+        font-size: 15px;
     }
 }
