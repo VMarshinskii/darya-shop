@@ -48,7 +48,7 @@ def registration(request):
         form = UserRegistrationForm(request.POST)
         if form.is_valid():
             us = form.save(commit=False)
-            us.login = translit(us.first_name) + "_" + random_str(3)
+            us.username = translit(us.first_name) + '_' + random_str(3)
             us.password = random_str(6)
             us.save()
         args['form'] = form
