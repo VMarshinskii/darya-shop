@@ -131,6 +131,7 @@ $(document).ready(function (){
     });
 
     $(".loginSubmit").live('click', function(){
+        var link = $(".loginSubmit").attr("data-link");
         $.post("/login/",
             {
                 login: $("#id_login").val(),
@@ -141,8 +142,16 @@ $(document).ready(function (){
             $(".popupBox").html(data);
                 if(data == "true")
                 {
-                    window.location.replace("/");
-                    window.location.href = "/";
+                    if(link == '')
+                    {
+                        window.location.replace("/user/orders/");
+                        window.location.href = "/user/orders/";
+                    }
+                    else
+                    {
+                        window.location.replace(link);
+                        window.location.href = link;
+                    }
                 }
         });
         return false;
