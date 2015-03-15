@@ -5,7 +5,7 @@ from django.http import Http404
 from django.contrib import auth
 from shop.additions import unserialize_get, translit, random_str
 from shop.models import Order
-from forms import LoginForm, UserRegistrationsForm
+from forms import LoginForm, UserRegistrationForm
 from models import User
 
 
@@ -40,17 +40,17 @@ def logout(request):
     return HttpResponseRedirect("/")
 
 
-def registrations(request):
+def registration(request):
     args = {}
     args.update(csrf(request))
-    args['form'] = UserRegistrationsForm()
+    args['form'] = UserRegistrationForm()
     if request.POST:
-        form = LoginForm(request.POST)
+        form = UserRegistrationForm(request.POST)
         if form.is_valid():
             form.login = translit(form.first_name) + random_str(3)
             form.save()
         args['form'] = form
-    return render_to_response("registrations.html", args)
+    return render_to_response("registration.html", args)
 
 
 def my_orders(request):

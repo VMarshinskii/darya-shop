@@ -49,7 +49,7 @@ class LoginForm(forms.Form):
     #     return cleaned_data
 
 
-class UserRegistrationsForm(forms.ModelForm):
+class UserRegistrationForm(forms.ModelForm):
 
     class Meta:
         model = User
