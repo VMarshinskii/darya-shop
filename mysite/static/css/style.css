@@ -1059,6 +1059,9 @@ label.popupBoxLoginFormZap {
 .relatedProductsItem div.good-c {
     margin-top: 10px;
 }
+.RegistrationBox {
+    width: 607px;
+}
 
 
 @media screen and (max-width:1337px) {
@@ -1134,7 +1137,7 @@ label.popupBoxLoginFormZap {
         width: 301px;
     }
 
-    .OrderBoxUserData {
+    .RegistrationBox {
         width: 303px;
     }
 }
