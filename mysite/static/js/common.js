@@ -160,4 +160,9 @@ $(document).ready(function (){
 
     $("#id_phone").mask("+7 (999) 999-9999");
 
+    $("#id_type_delivery").live('click', function(){
+        var price = $(this).attr('data-price');
+        $(".OrderBoxConfirmationPrice span").html(price);
+    });
+
 });

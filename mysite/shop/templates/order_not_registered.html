@@ -49,7 +49,7 @@
 
                 {% for type_delivery in types_delivery %}
                 <div class="OrderBoxAddressTypeItem">
-                    <input type="radio" name="type_delivery" value="{{ type_delivery.id }}"/>
+                    <input type="radio" data-price="{{ type_delivery.price }}" name="type_delivery" id="id_type_delivery"  value="{{ type_delivery.id }}"/>
                     <h5>{{ type_delivery.title }} - <span style="color: #ed145b">{{ type_delivery.price }} руб.</span></h5>
                     <p>{{ type_delivery.description }}</p>
                 </div>
