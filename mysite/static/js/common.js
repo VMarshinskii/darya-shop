@@ -142,10 +142,10 @@ $(document).ready(function (){
             $(".popupBox").html(data);
                 if(data == "true")
                 {
-                    if(link == '')
+                    if(link == undefined)
                     {
-                        window.location.replace("http://85.143.216.11/user/orders/");
-                        window.location.href = "http://85.143.216.11/user/orders/";
+                        window.location.replace("../user/orders/");
+                        window.location.href = "../user/orders/";
                     }
                     else
                     {
