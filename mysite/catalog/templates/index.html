@@ -9,13 +9,18 @@
 <div class="goodss">
     {% for product in products %}
     <div class="good">
-        <div class="goods-img">
-            <img src="/static/uploads/{{ product.image }}" alt="img"/>
-        </div>
-        <div class="about-goods">
-            <a href="/catalog/product/{{ product.id }}/">{{ product.name }}</a>
-        </div>
+        <a href="/catalog/product/{{ product.id }}/">
+            <div class="goods-img">
+                <img src="/static/uploads/{{ product.image }}" alt="img"/>
+            </div>
+            <div class="about-goods">{{ product.name }}</div>
+        </a>
+        {% if product.price_new %}
+        <div class="price">{{ product.price_new }} руб.</div>
+        <div class="price" style="float: right; color: #999; text-decoration: line-through">{{ product.price }} руб.</div>
+        {% else %}
         <div class="price">{{ product.price }} руб.</div>
+        {% endif %}
         <div class="good-c">
             <a data-id="{{ product.id }}" href="#">В корзину</a>
         </div>
