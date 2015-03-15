@@ -12,6 +12,9 @@ from catalog.admin import sort_list
 # Create your views here.
 def home(request):
     products = Product.objects.filter(home_status=1)
+    for pr in products:
+        if pr.sale_status == 1:
+                pr.new_price = (pr.price / 100) * (100 - pr.sale)
     return render_to_response("index.html", {'products': products})
 
 
