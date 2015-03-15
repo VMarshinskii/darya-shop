@@ -47,8 +47,9 @@ def registration(request):
     if request.POST:
         form = UserRegistrationForm(request.POST)
         if form.is_valid():
-            form.login = translit(form.first_name) + random_str(3)
-            form.save()
+            us = form.save(commit=false)
+            us.login = translit(us.first_name) + random_str(3)
+            us.save()
         args['form'] = form
     return render_to_response("registration.html", args)
 
