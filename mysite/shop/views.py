@@ -22,7 +22,10 @@ def return_cart(request):
             for product_id, count in unserialize(user_cart.products).items():
                 try:
                     pr = Product.objects.get(id=product_id)
-                    pr.price_new = (pr.price / 100) * (100 - pr.sale)
+                    if pr.sale_status == 1:
+                        pr.price_new = (pr.price / 100) * (100 - pr.sale)
+                    else:
+                        pr.price_new = pr.price
                     pr.price_sum_new = pr.price_new * int(count)
                     pr.price_sum_old = pr.price * int(count)
                     pr.count = int(count)
