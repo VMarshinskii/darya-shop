@@ -13,7 +13,9 @@
 
             {% if error %}
             <script>
-                alert("Вы уже зарегистрированы на Darya-Shop - войдите в систему");
+                $(document).ready(function(){
+                    alert("Вы уже зарегистрированы на Darya-Shop - войдите в систему");
+                });
             </script>
             {% endif %}
 
