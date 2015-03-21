@@ -109,22 +109,19 @@ def update_user(request):
 
 
 def create_user(request, password):
-    try:
-        form = OrderForm(request.POST).save(commit=False)
-        user = User()
-        user.username = create_username(form.name)
-        user.set_password(password)
-        user.phone = form.phone
-        user.first_name = form.name
-        user.last_name = form.surname
-        user.email = form.mail
-        user.region = form.region
-        user.city = form.city
-        user.address2 = form.address
-        user.index = form.index
-        user.save()
-    except User.IntegrityError:
-        return None
+    form = OrderForm(request.POST).save(commit=False)
+    user = User()
+    user.username = create_username(form.name)
+    user.set_password(password)
+    user.phone = form.phone
+    user.first_name = form.name
+    user.last_name = form.surname
+    user.email = form.mail
+    user.region = form.region
+    user.city = form.city
+    user.address2 = form.address
+    user.index = form.index
+    user.save()
     return user
 
 
