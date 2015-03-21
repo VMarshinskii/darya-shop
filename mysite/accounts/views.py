@@ -92,7 +92,7 @@ def my_order(request, id=-1):
             order = Order.objects.get(id=id)
             if request.user == order.user:
                 mass_pr = order.products.split("==")
-                mass_pr_new = []
+                order.products = []
                 for prr in mass_pr:
                     new_pr = Product()
                     data = prr.split(";")
@@ -103,8 +103,7 @@ def my_order(request, id=-1):
                     new_pr.price_all = data[4]
                     new_pr.sale = 0
                     new_pr.save()
-                    mass_pr_new.append(new_pr)
-                    order.products = mass_pr_new
+                    order.products.append(new_pr)
                     return render_to_response("my_order.html", {'order': order})
         except Order.DoesNotExist:
             pass
