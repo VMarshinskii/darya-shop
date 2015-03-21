@@ -7,6 +7,7 @@ from shop.additions import unserialize_get, translit, random_str
 from shop.models import Order
 from forms import LoginForm, UserRegistrationForm
 from models import User
+from catalog.models import Product
 
 
 def ajax_login(request):
