@@ -53,11 +53,11 @@ class Order(models.Model):
         verbose_name_plural = 'Заказы'
 
     def __unicode__(self):
-        return self.date_create.strftime('%Y-%m-%d') + '(' + self.name + ' ' + self.surname + ')'
+        return self.date_create.strftime('%d-%m-%y') + '(' + self.name + ' ' + self.surname + ')'
 
     def order_title(self):
         return '<a href="#">' + self.name + ' ' + self.surname + '</a>'
     order_title.allow_tags = True
 
     def order_date(self):
-        return self.date_create.strftime('%Y-%m-%d')
+        return self.date_create.strftime('%d-%m-%y')
