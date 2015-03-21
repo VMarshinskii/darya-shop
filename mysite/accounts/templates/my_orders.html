@@ -12,15 +12,15 @@
             <tr>
                 <td>Номер</td>
                 <td>Статус заказа</td>
-                <td width="310px">Товары</td>
+                <td width="300px">Товары</td>
                 <td>Доставка</td>
-                <td>Дата заказа</td>
+                <td width="100px">Дата заказа</td>
             </tr>
             {% for order in orders %}
             <tr>
                 <td align="center"><a href="/user/order/{{ order.id }}/">#{{ order.id }}</a></td>
                 <td><p style="background: #ed145b;padding: 2px 4px;color: #fff;">{{ order.status }}</p></td>
-                <td width="310px">
+                <td width="300px">
                     <ul>
                         {% for product in order.products %}
                         <li><a target="_blank" href="/catalog/product/{{ product.id }}/">{{ product.name }}</a> x {{ product.count }}</li>
@@ -28,7 +28,7 @@
                     </ul>
                 </td>
                 <td>{{ order.type_delivery.title }}</td>
-                <td>{{ order.date_create }}</td>
+                <td width="100px">{{ order.date_create }}</td>
             </tr>
             {% endfor %}
         </table>
