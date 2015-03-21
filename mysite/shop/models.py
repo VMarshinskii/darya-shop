@@ -37,6 +37,7 @@ class Order(models.Model):
     date_create = models.DateField(verbose_name="Дата создания заказа", auto_now_add=True)
     date_change = models.DateField(verbose_name="Дата редактирования заказа", auto_now=True)
     admin_comment = models.TextField(verbose_name="Комментарий администратора", blank=True)
+    sum = models.IntegerField("Сумма заказа", default=0)
 
     name = models.CharField("Имя", max_length=200)
     surname = models.CharField("Фамилия", max_length=200)
