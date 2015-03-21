@@ -77,6 +77,7 @@ def order(request):
                 return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
             else:
                 args['error'] = "Вы уже зарегистрированны - войдите в систему"
+                args['form'] = form
         else:
             args['form'] = form
         return render_to_response("order_not_registered.html", args)
