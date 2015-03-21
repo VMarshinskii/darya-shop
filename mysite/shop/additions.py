@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from string import maketrans
 from accounts.models import User
-from models import Order, TypeDelivery
+from models import Order, TypeDelivery, UserCart
 from forms import OrderForm
 from catalog.models import Product
 import random
@@ -133,7 +133,19 @@ def create_order(request, user):
     ord = form.save(commit=False)
     ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
     ord.status = '0'
-    ord.products = '1:1'
+    user_key = request.session["user_cart"]
+    products_str = ''
+    try:
+        user_cart = UserCart.objects.get(user_key=user_key)
+        for product_id, count in unserialize(user_cart.products).items():
+            pr = Product.objects.get(id=product_id)
+            price = pr.price
+            if pr.sale_status == 1:
+                price = (pr.price / 100) * (100 - pr.sale)
+            products_str += pr.image + ";" + pr.name + ";" + price + ";" + count + ";" + count*price + "=="
+    except UserCart.DoesNotExist, Product.DoesNotExist:
+        pass
+    ord.products = products_str
     ord.user = user
     ord.save()
     return ord
