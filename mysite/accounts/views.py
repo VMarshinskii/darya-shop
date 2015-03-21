@@ -94,7 +94,7 @@ def my_order(request, id=-1):
                 mass_pr = order.products.split("==")
                 order.products = []
                 new_pr = Product()
-                data = prr.split(";")
+                # data = prr.split(";")
                 new_pr.image = "ind"
                 new_pr.name = "jdisfksjdfs"
                 new_pr.price = 123
