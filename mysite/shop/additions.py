@@ -133,6 +133,7 @@ def create_order(request, user):
     ord = form.save(commit=False)
     ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
     ord.status = '0'
+    ord.sum = 0
     user_key = request.session["user_cart"]
     products_str = ''
     try:
@@ -142,6 +143,7 @@ def create_order(request, user):
             price = pr.price
             if pr.sale_status == 1:
                 price = (pr.price / 100) * (100 - pr.sale)
+            ord.sum += price
             products_str += pr.image + ";" + pr.name + ";" + str(price) + ";" + str(count) + ";" + str(count*price) + "=="
     except UserCart.DoesNotExist, Product.DoesNotExist:
         pass
