@@ -81,7 +81,6 @@ def my_orders(request):
                     new_pr.price_all = data[4]
                     mass_pr_new.append(new_pr)
             order.products = mass_pr_new
-            order.products = unserialize_get(order.products)
             order.status = status_mass[order.status]
         return render_to_response("my_orders.html", {'orders': orders})
     return render_to_response("my_orders_not_registered.html")
