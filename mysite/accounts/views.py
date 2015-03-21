@@ -91,8 +91,20 @@ def my_order(request, id=-1):
         try:
             order = Order.objects.get(id=id)
             if request.user == order.user:
-                order.products = unserialize_get(order.products)
-                return render_to_response("my_order.html", {'order': order})
+                mass_pr = order.products.split("==")
+                mass_pr_new = []
+                for prr in mass_pr:
+                    if prr != '':
+                        new_pr = Product()
+                        data = prr.split(";")
+                        new_pr.image = data[0]
+                        new_pr.name = data[1]
+                        new_pr.price = data[2]
+                        new_pr.count = data[3]
+                        new_pr.price_all = data[4]
+                        mass_pr_new.append(new_pr)
+                    order.products = mass_pr_new
+                    return render_to_response("my_order.html", {'order': order})
         except Order.DoesNotExist:
             pass
     raise Http404("Страница не найдена!")
