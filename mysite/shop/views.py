@@ -73,7 +73,10 @@ def order(request):
             password = random_str(7)
             user = create_user(request, password)
             ord = create_order(request, user)
-            return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
+            if user:
+                return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
+            else:
+                args['error'] = "Вы уже зарегистрированны - войдите в систему"
         else:
             args['form'] = form
         return render_to_response("order_not_registered.html", args)

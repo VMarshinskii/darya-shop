@@ -114,7 +114,7 @@ def create_user(request, password):
     user1 = User.objects.filter(phone=form.phone)
     user2 = User.objects.filter(email=form.mail)
     if user1 or user2:
-        raise forms.ValidationError("Error")
+        return None
     user = User()
     user.username = create_username(form.name)
     user.set_password(password)
