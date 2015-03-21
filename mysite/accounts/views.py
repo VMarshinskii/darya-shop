@@ -70,6 +70,7 @@ def my_orders(request):
             mass_pr = order.products.split("==")
             mass_pr_new = []
             for prr in mass_pr:
+                new_pr = Product()
                 data = prr.split(";")
                 new_pr.image = data[0]
                 new_pr.name = data[1]
