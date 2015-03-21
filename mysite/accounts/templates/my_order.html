@@ -12,7 +12,7 @@
         <p>{{ order.index }}, {{ order.region }}, {{ order.city }}, {{ order.address }}</p>
 
         <table>
-            {% for product,count in order.products.items %}
+            {% for product in order.products %}
             <tr>
                 <td>
                     <div style="width: 40px; height: 35px; float: left; margin-right: 10px; overflow: hidden;">
