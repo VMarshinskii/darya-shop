@@ -80,7 +80,7 @@ def my_orders(request):
                     new_pr.count = data[3]
                     new_pr.price_all = data[4]
                     new_pr.sale = 0
-                    new_pr.save(commit=false)
+                    new_pr.save(commit=False)
                     mass_pr_new.append(new_pr)
             order.products = mass_pr_new
             order.status = status_mass[order.status]
@@ -104,7 +104,7 @@ def my_order(request, id=-1):
                     new_pr.count = data[3]
                     new_pr.price_all = data[4]
                     new_pr.sale = 0
-                    new_pr.save(commit=false)
+                    new_pr.save(commit=False)
                     mass_pr_new.append(new_pr)
                     order.products = mass_pr_new
                     return render_to_response("my_order.html", {'order': order})
