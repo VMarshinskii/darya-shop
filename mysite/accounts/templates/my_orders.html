@@ -23,7 +23,7 @@
                 <td width="300px">
                     <ul>
                         {% for product in order.products %}
-                        <li><a target="_blank" href="/catalog/product/{{ product.id }}/">{{ product.name }}</a> x {{ product.count }}</li>
+                        <li><p>{{ product.name }}</p> x {{ product.count }}</li>
                         {% endfor %}
                     </ul>
                 </td>
