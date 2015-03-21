@@ -62,3 +62,7 @@ class Order(models.Model):
 
     def order_date(self):
         return self.date_create.strftime('%d-%m-%y')
+
+
+class New(models.Model):
+    asd = models.CharField("dfkjsadf", max_length=200)
