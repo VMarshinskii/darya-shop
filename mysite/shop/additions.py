@@ -133,7 +133,7 @@ def create_order(request, user):
     ord = form.save(commit=False)
     ord.type_delivery = TypeDelivery.objects.get(id=int(request.POST.get('type_delivery', 0)))
     ord.status = '0'
-    ord.sum = 0
+    ord.sum = ord.type_delivery.price
     user_key = request.session["user_cart"]
     products_str = ''
     try:
