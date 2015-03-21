@@ -142,7 +142,7 @@ def create_order(request, user):
             price = pr.price
             if pr.sale_status == 1:
                 price = (pr.price / 100) * (100 - pr.sale)
-            products_str += pr.image + ";" + pr.name + ";" + price + ";" + count + ";" + count*price + "=="
+            products_str += pr.image + ";" + pr.name + ";" + str(price) + ";" + str(count) + ";" + str(count*price) + "=="
     except UserCart.DoesNotExist, Product.DoesNotExist:
         pass
     ord.products = products_str
