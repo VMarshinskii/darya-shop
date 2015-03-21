@@ -110,6 +110,10 @@ def update_user(request):
 
 def create_user(request, password):
     form = OrderForm(request.POST).save(commit=False)
+    user1 = User.objects.filter(phone=form.phone)
+    user2 = User.objects.filter(email=form.mail)
+    if user1 or user2:
+        raise forms.ValidationError("Ошибка")
     user = User()
     user.username = create_username(form.name)
     user.set_password(password)
@@ -122,6 +126,7 @@ def create_user(request, password):
     user.address2 = form.address
     user.index = form.index
     user.save()
+
     return user
 
 
