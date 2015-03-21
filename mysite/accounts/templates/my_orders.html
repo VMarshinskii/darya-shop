@@ -20,7 +20,7 @@
             <tr>
                 <td align="center"><a href="/user/order/{{ order.id }}/">#{{ order.id }}</a></td>
                 <td><p style="background: #ed145b;padding: 2px 4px;color: #fff;">{{ order.status }}</p></td>
-                <td width="340px">
+                <td width="310px">
                     <ul>
                         {% for product in order.products %}
                         <li><a target="_blank" href="/catalog/product/{{ product.id }}/">{{ product.name }}</a> x {{ product.count }}</li>
