@@ -91,7 +91,7 @@ def my_order(request, id=-1):
         try:
             order = Order.objects.get(id=id)
             if request.user == order.user:
-                mass_pr = order.products.split("==")
+                mass_pr = order.products.split("=")
                 mass_pr_new = []
                 for prr in mass_pr:
                     if prr != '':
