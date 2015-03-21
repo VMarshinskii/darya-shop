@@ -4,6 +4,7 @@ from accounts.models import User
 from models import Order, TypeDelivery, UserCart
 from forms import OrderForm
 from catalog.models import Product
+from django import forms
 import random
 import string
 
@@ -126,7 +127,6 @@ def create_user(request, password):
     user.address2 = form.address
     user.index = form.index
     user.save()
-
     return user
 
 
