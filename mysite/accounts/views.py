@@ -92,17 +92,20 @@ def my_order(request, id=-1):
             order = Order.objects.get(id=id)
             if request.user == order.user:
                 mass_pr = order.products.split("==")
-                order.products = []
-                new_pr = Product()
-                # data = prr.split(";")
-                new_pr.image = "ind"
-                new_pr.name = "jdisfksjdfs"
-                new_pr.price = 123
-                new_pr.count = 3
-                new_pr.price_all = 4444
-                new_pr.sale = 0
-                order.products.append(new_pr)
-                return render_to_response("my_order.html", {'order': order})
+                mass_pr_new = []
+                for prr in mass_pr:
+                    new_pr = Product()
+                    data = prr.split(";")
+                    new_pr.image = data[0]
+                    new_pr.name = data[1]
+                    new_pr.price = data[2]
+                    new_pr.count = data[3]
+                    new_pr.price_all = data[4]
+                    new_pr.sale = 0
+                    new_pr.save()
+                    mass_pr_new.append(new_pr)
+                    order.products = mass_pr_new
+                    return render_to_response("my_order.html", {'order': order})
         except Order.DoesNotExist:
             pass
     raise Http404("Страница не найдена!")

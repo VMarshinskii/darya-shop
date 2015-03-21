@@ -22,8 +22,8 @@
                 <td><p style="background: #ed145b;padding: 2px 4px;color: #fff;">{{ order.status }}</p></td>
                 <td width="340px">
                     <ul>
-                        {% for product,count in order.products.items %}
-                        <li><a target="_blank" href="/catalog/product/{{ product.id }}/">{{ product.name }}</a> x {{ count }}</li>
+                        {% for product in order.products %}
+                        <li><a target="_blank" href="/catalog/product/{{ product.id }}/">{{ product.name }}</a> x {{ product.count }}</li>
                         {% endfor %}
                     </ul>
                 </td>
