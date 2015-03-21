@@ -66,3 +66,4 @@ class Order(models.Model):
 
 class New(models.Model):
     asd = models.CharField("dfkjsadf", max_length=200)
+    sdf = models.CharField("dfkjsadf", max_length=200)
