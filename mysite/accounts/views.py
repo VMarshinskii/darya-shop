@@ -71,14 +71,15 @@ def my_orders(request):
             mass_pr = order.products.split("==")
             mass_pr_new = []
             for prr in mass_pr:
-                new_pr = Product()
-                data = prr.split(";")
-                new_pr.image = data[0]
-                new_pr.name = data[1]
-                new_pr.price = data[2]
-                new_pr.count = data[3]
-                new_pr.price_all = data[4]
-                mass_pr_new.append(new_pr)
+                if prr != '':
+                    new_pr = Product()
+                    data = prr.split(";")
+                    new_pr.image = data[0]
+                    new_pr.name = data[1]
+                    new_pr.price = data[2]
+                    new_pr.count = data[3]
+                    new_pr.price_all = data[4]
+                    mass_pr_new.append(new_pr)
             order.products = mass_pr_new
             order.products = unserialize_get(order.products)
             order.status = status_mass[order.status]
