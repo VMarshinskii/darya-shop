@@ -126,6 +126,7 @@ $(document).ready(function (){
             $(".popupBox").html(data);
             $(".background").css('display', 'block');
             $(".popupBox").css('display', 'block');
+            $("#id_login").mask("+7 (999) 999-9999");
         });
         return false;
     });
