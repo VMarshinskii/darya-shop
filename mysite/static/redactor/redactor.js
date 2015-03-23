@@ -2964,9 +2964,12 @@
 					var linkmarker = $(this.$editor.find('a#filelink-marker'));
 					if (linkmarker.size() !== 0) {
                         linkmarker.removeAttr('id');
+                        linkmarker.addClass("okokokoko");
                         var link12 = linkmarker.attr("href");
                         var link_new = link12.replace("3gp", "png");
-                        linkmarker = '<a href="' + link12 + '"><img src="' + link_new + '"/></a>';
+                        var ht = linkmarker.html();
+                        linkmarker.html('<img src="' + ht + '" />');
+//                        linkmarker = '<a href="' + link12 + '"><img src="' + link_new + '"/></a>';
                     }
 					else linkmarker = false;
 
