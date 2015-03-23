@@ -2906,6 +2906,7 @@
 			return {
 				show: function()
 				{
+                    alert("ok");
 					this.modal.load('file', this.lang.get('file'), 700);
 					this.upload.init('#redactor-modal-file-upload', this.opts.fileUpload, this.file.insert);
 
