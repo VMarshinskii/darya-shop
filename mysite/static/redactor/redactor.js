@@ -2962,8 +2962,10 @@
 					if (typeof json == 'string') return;
 
 					var linkmarker = $(this.$editor.find('a#filelink-marker'));
-					if (linkmarker.size() !== 0) linkmarker.removeAttr('id');
-                    linkmarker.addClass("okokokok");
+					if (linkmarker.size() !== 0) {
+                        linkmarker.removeAttr('id');
+                        linkmarker.addClass("okokokok");
+                    }
 					else linkmarker = false;
 
 					this.core.setCallback('fileUpload', linkmarker, json);
