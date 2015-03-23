@@ -5123,7 +5123,7 @@
 							var $a;
 							if (this.utils.browser('msie'))
 							{
-								$a = $('<a href="' + link + '">').text(text);
+								$a = $('<a class="qweqweqweqweqwe" href="' + link + '">').text(text);
 								if (target !== '') $a.attr('target', target);
 
 								$a = $(this.insert.node($a));
