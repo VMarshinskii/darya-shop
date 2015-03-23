@@ -2968,7 +2968,7 @@
                         var link12 = linkmarker.attr("href");
                         var link_new = link12.replace("3gp", "png");
                         var ht = linkmarker.html();
-                        linkmarker.html('<img src="' + ht + '" />');
+                        linkmarker.html('<img src="' + link_new + '" />');
 //                        linkmarker = '<a href="' + link12 + '"><img src="' + link_new + '"/></a>';
                     }
 					else linkmarker = false;
