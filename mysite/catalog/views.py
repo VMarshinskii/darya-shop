@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from django.http import Http404
 from django.middleware.csrf import get_token
 from django.template import RequestContext
@@ -87,6 +87,7 @@ def product_form(request):
         else:
             model.category = Category.objects.get(id=categories_id)
         model.save()
+        return redirect("/admin/catalog/product/")
     images = []
     related_products = []
     categories = sort_list()
@@ -127,6 +128,7 @@ def product_edit(request, id=-1):
             else:
                 model.category = Category.objects.get(id=categories_id)
             model.save()
+            return redirect("/admin/catalog/product/")
         images = smart_str(model.images).split(';')
         related_products = []
         categories = sort_list()

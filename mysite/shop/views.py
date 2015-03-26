@@ -5,7 +5,7 @@ from django.http import Http404
 from shop.models import UserCart, TypeDelivery, Order
 from catalog.models import Product
 from accounts.models import Address, User
-from additions import create_order, get_model_order, create_user, serialize, unserialize, update_user, random_str
+from additions import create_order, get_model_order, create_user, serialize, unserialize, update_user, random_str, sms
 from forms import OrderForm
 from mysite.smsc_api import *
 import random
@@ -60,8 +60,7 @@ def order(request):
                 ord = create_order(request, request.user)
                 user = update_user(request) or request.user
                 #отправка на e-mail и sms
-                smsc = SMSC()
-                r = smsc.send_sms("79228188758", "Ваш пароль: 123", sender="sms")
+                sms(user.phone, "Darya-Shop: Ваш заказ оформлен")
                 return render_to_response("order_thanks.html")
             else:
                 args['form'] = form
@@ -79,6 +78,7 @@ def order(request):
             if user:
                 ord = create_order(request, user)
                 #отправка на e-mail и sms
+                sms(user.phone, "DARYA-SHOP: Ваш заказ оформлен. Данные для входа в личный кабинет: " + user.phone + ", " + password)
                 return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
             else:
                 args['error'] = "Вы уже зарегистрированны - войдите в систему"

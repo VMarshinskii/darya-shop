@@ -166,3 +166,8 @@ def get_model_order(request):
     model.index = request.user.index
     model.address = request.user.address2
     return model
+
+
+def sms(phone, text):
+    smsc = SMSC()
+    r = smsc.send_sms(phone, text, sender="sms")
