@@ -77,7 +77,7 @@ def order(request):
             if user:
                 ord = create_order(request, user)
                 #отправка на e-mail и sms
-                sms(user.phone, "DARYA-SHOP: Ваш заказ оформлен. Данные для входа в личный кабинет: " + string(user.phone) + ", " + (password))
+                sms(user.phone, "DARYA-SHOP: Ваш заказ оформлен. Данные для входа в личный кабинет: " + string(user.phone) + ", " + string(password))
                 return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
             else:
                 args['error'] = "Вы уже зарегистрированны - войдите в систему"
