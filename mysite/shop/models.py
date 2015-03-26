@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from accounts.models import User, Address
-from additions import sms
+from shop.additions import sms
 
 
 Order_Status = (
