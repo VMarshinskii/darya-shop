@@ -7,7 +7,6 @@ from catalog.models import Product
 from accounts.models import Address, User
 from additions import create_order, get_model_order, create_user, serialize, unserialize, update_user, random_str, sms
 from forms import OrderForm
-from mysite.smsc_api import *
 import random
 import string
 
@@ -60,7 +59,7 @@ def order(request):
                 ord = create_order(request, request.user)
                 user = update_user(request) or request.user
                 #отправка на e-mail и sms
-                sms(user.phone, "Darya-Shop: Ваш заказ оформлен")
+                sms(user.phone, u"Darya-Shop: Ваш заказ оформлен")
                 return render_to_response("order_thanks.html")
             else:
                 args['form'] = form

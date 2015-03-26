@@ -5,6 +5,7 @@ from models import Order, TypeDelivery, UserCart
 from forms import OrderForm
 from catalog.models import Product
 from django import forms
+from mysite.smsc_api import *
 import random
 import string
 
