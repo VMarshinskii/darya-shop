@@ -80,7 +80,8 @@ def order(request):
                 phone = user.phone.replace("(", "")
                 phone = phone.replace(")", "")
                 phone = phone.replace(" ", "")
-                sms(user.phone, "DARYA-SHOP: Ваш заказ оформлен. Данные для входа в личный кабинет: " + phone + ", " + password)
+                phone = phone.replace("-", "")
+                sms(phone, "Darya-Shop. Ваш заказ оформлен!")
                 return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
             else:
                 args['error'] = "Вы уже зарегистрированны - войдите в систему"
