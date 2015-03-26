@@ -28,6 +28,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'accounts',
+    'shop',
     'catalog',
     'suit',
     'django.contrib.admin',
@@ -40,7 +41,6 @@ INSTALLED_APPS = (
     'redactor',
     'banners',
     'pages',
-    'shop',
 )
 # Application definition
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from string import maketrans
 from accounts.models import User
-from models import Order, TypeDelivery, UserCart
+from shop.models import Order, TypeDelivery, UserCart
 from forms import OrderForm
 from catalog.models import Product
 from django import forms
