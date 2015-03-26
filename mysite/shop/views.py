@@ -7,6 +7,7 @@ from catalog.models import Product
 from accounts.models import Address, User
 from additions import create_order, get_model_order, create_user, serialize, unserialize, update_user, random_str
 from forms import OrderForm
+from mysite.smsc_api import *
 import random
 import string
 
@@ -58,6 +59,9 @@ def order(request):
             if form.is_valid():
                 ord = create_order(request, request.user)
                 user = update_user(request) or request.user
+                #отправка на e-mail и sms
+                smsc = SMSC()
+                r = smsc.send_sms("79228188758", "Ваш пароль: 123", sender="sms")
                 return render_to_response("order_thanks.html")
             else:
                 args['form'] = form
@@ -74,7 +78,7 @@ def order(request):
             user = create_user(request, password)
             if user:
                 ord = create_order(request, user)
-            if user:
+                #отправка на e-mail и sms
                 return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
             else:
                 args['error'] = "Вы уже зарегистрированны - войдите в систему"
