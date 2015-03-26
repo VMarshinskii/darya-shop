@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from accounts.models import User, Address
-from shop.additions import sms
 
 
 Order_Status = (
@@ -10,6 +9,11 @@ Order_Status = (
     ('2', 'Оплачен'),
     ('3', 'Отправлен'),
 )
+
+
+def sms(phone, text):
+    smsc = SMSC()
+    r = smsc.send_sms(phone, text, sender="sms")
 
 
 class TypeDelivery(models.Model):
@@ -64,12 +68,12 @@ class Order(models.Model):
     def order_date(self):
         return self.date_create.strftime('%d-%m-%y')
 
-    # def save(self, *args, **kwargs):
-    #     model_old = self.objects.get(id=self.id)
-    #     if model_old.status != self.status:
-    #         phone = self.phone.replace("(", "")
-    #         phone = phone.replace(")", "")
-    #         phone = phone.replace(" ", "")
-    #         phone = phone.replace("-", "")
-    #         sms(phone, "Статус вашего заказа изменён - " + Order_Status(self.status))
-    #     super(Order, self).save(*args, **kwargs)
+    def save(self, *args, **kwargs):
+        model_old = self.objects.get(id=self.id)
+        if model_old.status != self.status:
+            phone = self.phone.replace("(", "")
+            phone = phone.replace(")", "")
+            phone = phone.replace(" ", "")
+            phone = phone.replace("-", "")
+            sms(phone, "Статус вашего заказа изменён - " + Order_Status(self.status))
+        super(Order, self).save(*args, **kwargs)
