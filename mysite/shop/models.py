@@ -11,6 +11,13 @@ Order_Status = (
     ('3', 'Отправлен'),
 )
 
+St = {
+    '0': 'Обрабатывется',
+    '1': 'Ждёт оплаты',
+    '2': 'Оплачен',
+    '3': 'Отправлен'
+}
+
 
 def sms(phone, text):
     smsc = SMSC()
@@ -64,6 +71,7 @@ class Order(models.Model):
 
     def order_title(self):
         return '<a href="#">' + self.name + ' ' + self.surname + '</a>'
+
     order_title.allow_tags = True
 
     def order_date(self):
@@ -76,5 +84,5 @@ class Order(models.Model):
             phone = phone.replace(")", "")
             phone = phone.replace(" ", "")
             phone = phone.replace("-", "")
-            sms(phone, "Статус вашего заказа изменён - " + Order_Status(self.status))
+            sms(phone, "Статус вашего заказа изменён - " + St[self.status])
         super(Order, self).save(*args, **kwargs)
