@@ -59,7 +59,11 @@ def order(request):
                 ord = create_order(request, request.user)
                 user = update_user(request) or request.user
                 #отправка на e-mail и sms
-                sms(user.phone, "Darya-Shop: Ваш заказ оформлен")
+                phone = user.phone.replace("(", "")
+                phone = phone.replace(")", "")
+                phone = phone.replace(" ", "")
+                phone = phone.replace("-", "")
+                sms(phone, "Darya-Shop: Ваш заказ оформлен")
                 return render_to_response("order_thanks.html")
             else:
                 args['form'] = form
@@ -81,7 +85,8 @@ def order(request):
                 phone = phone.replace(")", "")
                 phone = phone.replace(" ", "")
                 phone = phone.replace("-", "")
-                sms(phone, "Darya-Shop. Ваш заказ оформлен!")
+                message = "Darya-Shop. Ваш заказ оформлен! Данные для входа в личный кабинет: %s - %s" % ('two', 'three')
+                sms(phone, message)
                 return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
             else:
                 args['error'] = "Вы уже зарегистрированны - войдите в систему"
