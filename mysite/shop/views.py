@@ -72,7 +72,8 @@ def order(request):
         if form.is_valid():
             password = random_str(7)
             user = create_user(request, password)
-            ord = create_order(request, user)
+            if user:
+                ord = create_order(request, user)
             if user:
                 return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
             else:
