@@ -64,12 +64,12 @@ class Order(models.Model):
     def order_date(self):
         return self.date_create.strftime('%d-%m-%y')
 
-    def save(self, *args, **kwargs):
-        model_old = self.objects.get(id=self.id)
-        if model_old.status != self.status:
-            phone = self.phone.replace("(", "")
-            phone = phone.replace(")", "")
-            phone = phone.replace(" ", "")
-            phone = phone.replace("-", "")
-            sms(phone, "Статус вашего заказа изменён - " + Order_Status(self.status))
-        super(Order, self).save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     model_old = self.objects.get(id=self.id)
+    #     if model_old.status != self.status:
+    #         phone = self.phone.replace("(", "")
+    #         phone = phone.replace(")", "")
+    #         phone = phone.replace(" ", "")
+    #         phone = phone.replace("-", "")
+    #         sms(phone, "Статус вашего заказа изменён - " + Order_Status(self.status))
+    #     super(Order, self).save(*args, **kwargs)
