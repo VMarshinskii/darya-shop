@@ -171,4 +171,4 @@ def get_model_order(request):
 
 def sms(phone, text):
     smsc = SMSC()
-    r = smsc.send_sms(phone, unicode(text), sender="sms")
+    r = smsc.send_sms(phone, text, sender="sms")
