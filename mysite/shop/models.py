@@ -65,11 +65,11 @@ class Order(models.Model):
         return self.date_create.strftime('%d-%m-%y')
 
     def save(self, *args, **kwargs):
-        model_old = Order.objects.get(id=self.id)
+        model_old = self.objects.get(id=self.id)
         if model_old.status != self.status:
             phone = self.phone.replace("(", "")
             phone = phone.replace(")", "")
             phone = phone.replace(" ", "")
             phone = phone.replace("-", "")
             sms(phone, "Статус вашего заказа изменён - " + Order_Status(self.status))
-        super(Accessories, self).save(*args, **kwargs)
+        super(Order, self).save(*args, **kwargs)
