@@ -85,7 +85,7 @@ def order(request):
                 phone = phone.replace(")", "")
                 phone = phone.replace(" ", "")
                 phone = phone.replace("-", "")
-                message = "Darya-Shop. Ваш заказ оформлен! Данные для входа в личный кабинет: %s - %s" % ('two', 'three')
+                message = "Darya-Shop. Ваш заказ оформлен! Данные для входа в личный кабинет: \nлогин: %s \nпароль: %s" % (phone, password)
                 sms(phone, message)
                 return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
             else:
