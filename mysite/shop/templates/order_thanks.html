@@ -9,8 +9,10 @@
     <div class="ContentBoxPage">
         <p>Спасибо, ваш заказ оформлен</p>
         <p>Вы можете войти в <a href="/user/orders/">личный кабинет</a> для просмотра своих заказов</p>
+        {% if password %}
         <p>Пароль: {{ password }}</p>
         <p>Тел.(логин): {{ ord.user.phone }}</p>
+        {% endif %}
 	</div>
 </div>
 {% endblock %}

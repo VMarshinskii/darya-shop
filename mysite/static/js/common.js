@@ -133,7 +133,6 @@ $(document).ready(function (){
 
     $(".loginSubmit").live('click', function(){
         var link = $(".login_order").attr("data-link");
-        alert(link);
         $.post("/login/",
             {
                 login: $("#id_login").val(),
@@ -141,7 +140,6 @@ $(document).ready(function (){
                 csrfmiddlewaretoken: $(".popupBox input[name='csrfmiddlewaretoken']").val()
             },
             function(data){
-            $(".popupBox").html(data);
                 if(data == "true")
                 {
                     if(link == undefined)

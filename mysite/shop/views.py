@@ -57,7 +57,7 @@ def order(request):
             form = OrderForm(request.POST)
             if form.is_valid():
                 ord = create_order(request, request.user)
-                user = update_user(request) or request.user
+                user = update_user(request)
                 #отправка на e-mail и sms
                 phone = user.phone.replace("(", "")
                 phone = phone.replace(")", "")

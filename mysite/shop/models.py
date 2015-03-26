@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from accounts.models import User, Address
+from additions import sms
 
 
 Order_Status = (
@@ -62,3 +63,13 @@ class Order(models.Model):
 
     def order_date(self):
         return self.date_create.strftime('%d-%m-%y')
+
+    def save(self, *args, **kwargs):
+        model_old = Order.objects.get(id=self.id)
+        if model_old.status != self.status:
+            phone = self.phone.replace("(", "")
+            phone = phone.replace(")", "")
+            phone = phone.replace(" ", "")
+            phone = phone.replace("-", "")
+            sms(phone, "Статус вашего заказа изменён - " + Order_Status(self.status))
+        super(Accessories, self).save(*args, **kwargs)
