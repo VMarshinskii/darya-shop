@@ -30,8 +30,8 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.076233186" vertical-offset="0" max-vertical-offset="1445">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.6696562" vertical-offset="776" max-vertical-offset="1445">
+              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
               <folding>
                 <element signature="e#24#52#0" expanded="true" />
               </folding>
@@ -3136,7 +3136,11 @@
       <created>1427385461540</created>
       <updated>1427385461540</updated>
     </task>
-    <option name="localTasksCounter" value="642" />
+    <task id="LOCAL-00642" summary="Update">
+      <created>1427385541008</created>
+      <updated>1427385541008</updated>
+    </task>
+    <option name="localTasksCounter" value="643" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3558,8 +3562,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.076233186" vertical-offset="0" max-vertical-offset="1445">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.6696562" vertical-offset="776" max-vertical-offset="1445">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
           <folding>
             <element signature="e#24#52#0" expanded="true" />
           </folding>
