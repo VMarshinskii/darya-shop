@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6696562" vertical-offset="776" max-vertical-offset="1445">
-              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+            <state vertical-scroll-proportion="-22.0" vertical-offset="912" max-vertical-offset="1581">
+              <caret line="86" column="36" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
               <folding>
                 <element signature="e#24#52#0" expanded="true" />
               </folding>
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.88" vertical-offset="765" max-vertical-offset="2839">
+            <state vertical-scroll-proportion="0.41463414" vertical-offset="765" max-vertical-offset="2839">
               <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="64" selection-end-column="46" />
               <folding>
                 <element signature="e#24#71#0" expanded="true" />
@@ -3140,7 +3140,15 @@
       <created>1427385541008</created>
       <updated>1427385541008</updated>
     </task>
-    <option name="localTasksCounter" value="643" />
+    <task id="LOCAL-00643" summary="Update">
+      <created>1427385633384</created>
+      <updated>1427385633384</updated>
+    </task>
+    <task id="LOCAL-00644" summary="Update">
+      <created>1427385867763</created>
+      <updated>1427385867763</updated>
+    </task>
+    <option name="localTasksCounter" value="645" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3153,7 +3161,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19280206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19280206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -3550,22 +3558,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
+    <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.88" vertical-offset="765" max-vertical-offset="2839">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="64" selection-end-column="46" />
+        <state vertical-scroll-proportion="-22.0" vertical-offset="912" max-vertical-offset="1581">
+          <caret line="86" column="36" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
           <folding>
-            <element signature="e#24#71#0" expanded="true" />
+            <element signature="e#24#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
+    <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6696562" vertical-offset="776" max-vertical-offset="1445">
-          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.41463414" vertical-offset="765" max-vertical-offset="2839">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="64" selection-end-column="46" />
           <folding>
-            <element signature="e#24#52#0" expanded="true" />
+            <element signature="e#24#71#0" expanded="true" />
           </folding>
         </state>
       </provider>

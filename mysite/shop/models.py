@@ -84,5 +84,5 @@ class Order(models.Model):
             phone = phone.replace(")", "")
             phone = phone.replace(" ", "")
             phone = phone.replace("-", "")
-            sms(phone, "Статус вашего заказа изменён - " + St[self.status])
+            sms(phone, "Darya-Shop: Статус вашего заказа изменён - " + St[self.status])
         super(Order, self).save(*args, **kwargs)
