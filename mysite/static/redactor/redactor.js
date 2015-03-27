@@ -2906,7 +2906,6 @@
 			return {
 				show: function()
 				{
-                    alert("ok");
 					this.modal.load('file', this.lang.get('file'), 700);
 					this.upload.init('#redactor-modal-file-upload', this.opts.fileUpload, this.file.insert);
 
@@ -2966,10 +2965,11 @@
                         linkmarker.removeAttr('id');
                         linkmarker.addClass("okokokoko");
                         var link12 = linkmarker.attr("href");
-                        var link_new = link12.replace("3gp", "png");
+                        var ext_mass = link12.split(".");
+                        var ext = ext_mass[ext_mass.length-1];
+                        var link_new = link12.replace(ext, "png");
                         var ht = linkmarker.html();
                         linkmarker.html('<img src="' + link_new + '" />');
-//                        linkmarker = '<a href="' + link12 + '"><img src="' + link_new + '"/></a>';
                     }
 					else linkmarker = false;
 
