@@ -59,7 +59,7 @@ def order(request):
             if form.is_valid():
                 ord = create_order(request, request.user)
                 user = update_user(request)
-                #отправка на e-mail и sms
+                # отправка на e-mail и sms
                 phone = user.phone.replace("(", "")
                 phone = phone.replace(")", "")
                 phone = phone.replace(" ", "")
@@ -81,12 +81,13 @@ def order(request):
             user = create_user(request, password)
             if user:
                 ord = create_order(request, user)
-                #отправка на e-mail и sms
+                # отправка на e-mail и sms
                 phone = user.phone.replace("(", "")
                 phone = phone.replace(")", "")
                 phone = phone.replace(" ", "")
                 phone = phone.replace("-", "")
-                message = "Darya-Shop. Ваш заказ оформлен! Данные для входа в личный кабинет: \nлогин: %s \nпароль: %s" % (phone.encode('utf-8'), password.encode('utf-8'))
+                message = "Darya-Shop. Ваш заказ оформлен! Данные для входа в личный кабинет: \nлогин: %s \nпароль: %s" % (
+                    phone.encode('utf-8'), password.encode('utf-8'))
                 sms(phone, message)
                 return render_to_response("order_thanks.html", {'ord': ord, 'password': password})
             else:
@@ -113,7 +114,8 @@ def add_in_cart(request, id=-1):
         user_cart.save()
     else:
         user_cart = UserCart()
-        user_cart.user_key = "".join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for x in range(16))
+        user_cart.user_key = "".join(
+            random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for x in range(16))
         user_cart.products = str(id) + ":1"
         request.session["user_cart"] = user_cart.user_key
         user_cart.save()
@@ -170,7 +172,13 @@ def admin_email(request):
     if request.POST:
         form = MailSenderForm(request.POST)
         if form.is_valid():
-            send_mail(request.POST.get('theme'), request.POST.get('text'), 'from@example.com', ['marshinskii@gmail.com'])
+            # send_mail(request.POST.get('theme'), Context(request.POST.get('text')), 'from@example.com', ['marshinskii@gmail.com'])
+            subject, from_email, to = request.POST.get('theme'), 'from@example.com', ['marshinskii@gmail.com']
+            text_content = request.POST.get('text')
+            html_content = request.POST.get('text')
+            msg = EmailMultiAlternatives(subject, text_content, from_email, to)
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
             pass
         else:
             args['form'] = MailSenderForm(request.POST)
