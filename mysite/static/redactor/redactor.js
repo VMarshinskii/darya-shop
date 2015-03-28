@@ -2963,7 +2963,7 @@
 					var linkmarker = $(this.$editor.find('a#filelink-marker'));
 					if (linkmarker.size() !== 0) {
                         linkmarker.removeAttr('id');
-                        linkmarker.addClass("okokokoko");
+                        linkmarker.addClass("video_file");
                         var link12 = linkmarker.attr("href");
                         var ext_mass = link12.split(".");
                         var ext = ext_mass[ext_mass.length-1];

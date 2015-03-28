@@ -167,4 +167,13 @@ $(document).ready(function (){
         $("#OrderBoxConfirmationPriceAll span").html(price_all);
     });
 
+
+    $(".video_file").click(function(){
+        var url = $(this).attr("href");
+        $(".popupBox").html(url);
+        $(".background").css('display', 'block');
+        $(".popupBox").css('display', 'block');
+        return false;
+    });
+
 });
