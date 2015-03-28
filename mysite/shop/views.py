@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
 from django.core.context_processors import csrf
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMultiAlternatives
 from django.http import Http404
 from shop.models import UserCart, TypeDelivery, Order
 from catalog.models import Product
