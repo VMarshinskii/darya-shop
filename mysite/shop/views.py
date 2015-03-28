@@ -164,7 +164,16 @@ def cart_top_ajax(request):
 
 
 def admin_email(request):
-    #send_mail('Subject here', 'Here is the message.', 'from@example.com', ['marshinskii@gmail.com'])
-    form = MailSenderForm()
 
+    form = MailSenderForm()
+    args = {}
+    args.update(csrf(request))
+    args['form'] = UserRegistrationForm()
+    if request.POST:
+        form = UserRegistrationForm(request.POST)
+        if form.is_valid():
+            send_mail(request.POST.get('theme'), request.POST.get('text'), 'from@example.com', ['marshinskii@gmail.com'])
+            pass
+        else:
+            args['form'] = UserRegistrationForm(request.POST)
     return render_to_response("admin_email.html", {'form':form})
