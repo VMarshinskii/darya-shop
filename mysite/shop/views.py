@@ -7,7 +7,7 @@ from shop.models import UserCart, TypeDelivery, Order
 from catalog.models import Product
 from accounts.models import Address, User
 from additions import create_order, get_model_order, create_user, serialize, unserialize, update_user, random_str, sms
-from forms import OrderForm
+from forms import OrderForm, MailSenderForm
 import random
 import string
 
@@ -164,5 +164,7 @@ def cart_top_ajax(request):
 
 
 def admin_email(request):
-    send_mail('Subject here', 'Here is the message.', 'from@example.com', ['marshinskii@gmail.com'])
-    return render_to_response("admin_email.html")
+    #send_mail('Subject here', 'Here is the message.', 'from@example.com', ['marshinskii@gmail.com'])
+    form = MailSenderForm()
+
+    return render_to_response("admin_email.html", {'form':form})
