@@ -168,9 +168,9 @@ def admin_email(request):
     form = MailSenderForm()
     args = {}
     args.update(csrf(request))
-    args['form'] = UserRegistrationForm()
+    args['form'] = MailSenderForm()
     if request.POST:
-        form = UserRegistrationForm(request.POST)
+        form = MailSenderForm(request.POST)
         if form.is_valid():
             send_mail(request.POST.get('theme'), request.POST.get('text'), 'from@example.com', ['marshinskii@gmail.com'])
             pass
