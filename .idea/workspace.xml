@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/static/images/play87.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -84,8 +83,8 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6680614" vertical-offset="17813" max-vertical-offset="20077">
-              <caret line="1076" column="41" selection-start-line="1076" selection-start-column="41" selection-end-line="1076" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.71548116" vertical-offset="17813" max-vertical-offset="20196">
+              <caret line="1078" column="19" selection-start-line="1078" selection-start-column="19" selection-end-line="1078" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -3254,7 +3253,19 @@
       <created>1427540484801</created>
       <updated>1427540484801</updated>
     </task>
-    <option name="localTasksCounter" value="658" />
+    <task id="LOCAL-00658" summary="Update">
+      <created>1427540760113</created>
+      <updated>1427540760114</updated>
+    </task>
+    <task id="LOCAL-00659" summary="Update">
+      <created>1427540813358</created>
+      <updated>1427540813358</updated>
+    </task>
+    <task id="LOCAL-00660" summary="Update">
+      <created>1427540868928</created>
+      <updated>1427540868928</updated>
+    </task>
+    <option name="localTasksCounter" value="661" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3687,8 +3698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6680614" vertical-offset="17813" max-vertical-offset="20077">
-          <caret line="1076" column="41" selection-start-line="1076" selection-start-column="41" selection-end-line="1076" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.71548116" vertical-offset="17813" max-vertical-offset="20196">
+          <caret line="1078" column="19" selection-start-line="1078" selection-start-column="19" selection-end-line="1078" selection-end-column="19" />
           <folding />
         </state>
       </provider>
