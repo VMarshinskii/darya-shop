@@ -2966,8 +2966,10 @@
                         linkmarker.addClass("video_file");
                         linkmarker.css({
                             'width': '200px',
-                            'height': '130px',
-                            'display': 'block'
+                            'height': '160px',
+                            'display': 'block',
+                            'position': 'relative',
+                            'overflow': 'hidden'
                         });
                         var link12 = linkmarker.attr("href");
                         var ext_mass = link12.split(".");
