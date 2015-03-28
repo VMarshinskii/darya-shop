@@ -164,6 +164,13 @@ def cart_top_ajax(request):
 
 
 def admin_email(request):
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'user@domain.com'
+    EMAIL_USE_TLS = True
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = 'marshinskii@gmail.com'
+    EMAIL_HOST_PASSWORD = 'Avagon_VIP5'
+    EMAIL_PORT = 587
     send_mail('Subject here', 'Here is the message.', 'from@example.com', ['marshinskii@gmail.com'],
               fail_silently=False)
     return render_to_response("admin_email.html")
