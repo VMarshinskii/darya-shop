@@ -58,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redactor.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="redactor.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48011363" vertical-offset="9539" max-vertical-offset="95948">
-              <caret line="2969" column="45" selection-start-line="2969" selection-start-column="45" selection-end-line="2969" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9522" max-vertical-offset="95982">
+              <caret line="2978" column="219" selection-start-line="2978" selection-start-column="219" selection-end-line="2978" selection-end-column="219" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#11652#13087#0" expanded="false" />
@@ -75,17 +75,17 @@
                 <element signature="e#65257#68440#0" expanded="false" />
                 <element signature="e#68463#70375#0" expanded="false" />
                 <element signature="e#70402#74746#0" expanded="false" />
-                <element signature="e#77018#78725#0" expanded="false" />
+                <element signature="e#77267#78974#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17813" max-vertical-offset="20247">
-              <caret line="1073" column="23" selection-start-line="1073" selection-start-column="23" selection-end-line="1073" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.6443515" vertical-offset="17796" max-vertical-offset="20077">
+              <caret line="1074" column="1" selection-start-line="1074" selection-start-column="1" selection-end-line="1074" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
       <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2536" max-vertical-offset="3264">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2560" max-vertical-offset="3264">
               <caret line="182" column="126" selection-start-line="182" selection-start-column="126" selection-end-line="182" selection-end-column="126" />
               <folding />
             </state>
@@ -205,8 +205,8 @@
         <option value="$PROJECT_DIR$/mysite/shop/models.py" />
         <option value="$PROJECT_DIR$/mysite/templates/main.html" />
         <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
-        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
         <option value="$PROJECT_DIR$/mysite/static/redactor/redactor.js" />
+        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
       </list>
     </option>
   </component>
@@ -446,42 +446,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mysite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="darya-shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="darya-shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="darya-shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="darya-shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="banners" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3253,7 +3217,19 @@
       <created>1427541345555</created>
       <updated>1427541345555</updated>
     </task>
-    <option name="localTasksCounter" value="662" />
+    <task id="LOCAL-00662" summary="Update">
+      <created>1427542022243</created>
+      <updated>1427542022244</updated>
+    </task>
+    <task id="LOCAL-00663" summary="Update">
+      <created>1427543084808</created>
+      <updated>1427543084808</updated>
+    </task>
+    <task id="LOCAL-00664" summary="Update">
+      <created>1427543274079</created>
+      <updated>1427543274080</updated>
+    </task>
+    <option name="localTasksCounter" value="665" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3266,7 +3242,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19780928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19780928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -3655,14 +3631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17813" max-vertical-offset="20247">
-          <caret line="1073" column="23" selection-start-line="1073" selection-start-column="23" selection-end-line="1073" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2536" max-vertical-offset="3264">
@@ -3673,8 +3641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48011363" vertical-offset="9539" max-vertical-offset="95948">
-          <caret line="2969" column="45" selection-start-line="2969" selection-start-column="45" selection-end-line="2969" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="9522" max-vertical-offset="95982">
+          <caret line="2978" column="219" selection-start-line="2978" selection-start-column="219" selection-end-line="2978" selection-end-column="219" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#11652#13087#0" expanded="false" />
@@ -3687,8 +3655,16 @@
             <element signature="e#65257#68440#0" expanded="false" />
             <element signature="e#68463#70375#0" expanded="false" />
             <element signature="e#70402#74746#0" expanded="false" />
-            <element signature="e#77018#78725#0" expanded="false" />
+            <element signature="e#77267#78974#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6443515" vertical-offset="17796" max-vertical-offset="20077">
+          <caret line="1074" column="1" selection-start-line="1074" selection-start-column="1" selection-end-line="1074" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
