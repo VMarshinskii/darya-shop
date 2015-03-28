@@ -180,7 +180,7 @@ $(document).ready(function (){
         $(".popupBox").html(str);
         $(".background").css('display', 'block');
         $(".popupBox").css('display', 'block');
-        $(".popupBox").css({'width':'620px', 'height': '334px', 'margin-left': '-320px', 'margin-top': '-171px'});
+        $(".popupBox").css({'width':'500px', 'height': '375px', 'margin-left': '-250px', 'margin-top': '-171px'});
         return false;
     });
 
