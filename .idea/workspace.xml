@@ -103,8 +103,8 @@
       <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7795389" vertical-offset="2383" max-vertical-offset="3111">
-              <caret line="172" column="31" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.8530259" vertical-offset="2383" max-vertical-offset="3128">
+              <caret line="175" column="21" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -3189,7 +3189,11 @@
       <created>1427535372903</created>
       <updated>1427535372903</updated>
     </task>
-    <option name="localTasksCounter" value="648" />
+    <task id="LOCAL-00648" summary="Update">
+      <created>1427535711832</created>
+      <updated>1427535711832</updated>
+    </task>
+    <option name="localTasksCounter" value="649" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3617,8 +3621,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7795389" vertical-offset="2383" max-vertical-offset="3111">
-          <caret line="172" column="31" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.8530259" vertical-offset="2383" max-vertical-offset="3128">
+          <caret line="175" column="21" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
           <folding />
         </state>
       </provider>

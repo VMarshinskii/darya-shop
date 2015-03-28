@@ -173,6 +173,7 @@ $(document).ready(function (){
         $(".popupBox").html(url);
         $(".background").css('display', 'block');
         $(".popupBox").css('display', 'block');
+        return false;
     });
 
 });
