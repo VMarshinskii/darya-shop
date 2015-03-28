@@ -160,3 +160,7 @@ def remove_in_cart(request, id=-1):
 def cart_top_ajax(request):
     cart_mass = return_cart(request)
     return render_to_response("cart_top_ajax.html", {'count': cart_mass['count'], 'sum': cart_mass['sum']})
+
+
+def admin_email(request):
+    return render_to_response("admin_email.html")
