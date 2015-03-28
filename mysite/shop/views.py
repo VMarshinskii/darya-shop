@@ -164,8 +164,6 @@ def cart_top_ajax(request):
 
 
 def admin_email(request):
-
-    form = MailSenderForm()
     args = {}
     args.update(csrf(request))
     args['form'] = MailSenderForm()
@@ -176,4 +174,4 @@ def admin_email(request):
             pass
         else:
             args['form'] = UserRegistrationForm(request.POST)
-    return render_to_response("admin_email.html", {'form':form})
+    return render_to_response("admin_email.html", args)
