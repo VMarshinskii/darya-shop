@@ -202,6 +202,7 @@
                    <fieldset class="module aligned first ">
                       <div class="control-group form-row field-name ">
                          <div>
+                            {{ form.theme.errors }}
                             <div class="control-label"><label class="required" for="id_name">Тема рассылки:</label></div>
                             <div class="controls">{{ form.theme }}</div>
                          </div>
@@ -209,6 +210,7 @@
 
                        <div class="control-group form-row field-price ">
                          <div>
+                             {{ form.text.errors }}
                             <div class="control-label"><label class="required" for="id_price">Текст:</label></div>
                             <div class="controls">{{ form.text }}</div>
                          </div>
