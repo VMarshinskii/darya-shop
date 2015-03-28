@@ -1070,6 +1070,9 @@ label.popupBoxLoginFormZap {
     height: 230px;
 }
 
+.video_file {
+    position: relative;
+}
 .video_file:after {
     content: '';
     width: 64px;
