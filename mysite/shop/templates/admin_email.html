@@ -204,9 +204,11 @@
                          <div>
                             <div class="control-label">
                                 <label class="required" for="id_name">Тема рассылки:</label>
-                                {{ form.theme.errors }}
                             </div>
-                            <div class="controls">{{ form.theme }}</div>
+                             <div class="controls">
+                                 {{ form.theme }}
+                                 {{ form.theme.errors }}
+                             </div>
                          </div>
                       </div>
 
@@ -214,9 +216,11 @@
                          <div>
                             <div class="control-label">
                                 <label class="required" for="id_price">Текст:</label>
+                            </div>
+                            <div class="controls">
+                                {{ form.text }}
                                 {{ form.text.errors }}
                             </div>
-                            <div class="controls">{{ form.text }}</div>
                          </div>
                       </div>
                    </fieldset>
