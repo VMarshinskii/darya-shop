@@ -173,5 +173,5 @@ def admin_email(request):
             send_mail(request.POST.get('theme'), request.POST.get('text'), 'from@example.com', ['marshinskii@gmail.com'])
             pass
         else:
-            args['form'] = UserRegistrationForm(request.POST)
+            args['form'] = MailSenderForm(request.POST)
     return render_to_response("admin_email.html", args)
