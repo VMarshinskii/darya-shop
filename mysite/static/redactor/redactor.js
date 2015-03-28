@@ -2969,7 +2969,7 @@
                         var ext = ext_mass[ext_mass.length-1];
                         var link_new = link12.replace(ext, "png");
                         var ht = linkmarker.html();
-                        linkmarker.html('<img src="' + link_new + '" />');
+                        linkmarker.html('<img width="200px" src="' + link_new + '" />');
                     }
 					else linkmarker = false;
 
