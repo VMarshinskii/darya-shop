@@ -188,7 +188,38 @@
     <div id="content" class="colM row-fluid">
        <h2 class="content-title">Добавить product</h2>
        <div id="content-main" class="inner-two-columns">
-        {{ form }}
+       <form enctype="multipart/form-data" action="" method="post" id="product_form" class="form-horizontal">
+             <div class="inner-right-column">
+                <div class="box save-box">
+                   <div class="submit-row clearfix">
+                      <button type="submit" class="btn btn-high btn-info" name="_save">Сохранить</button>
+                      <button type="submit" name="_continue" class=" btn btn-high">Сохранить и продолжить редактирование</button>
+                      <button type="submit" name="_addanother" class="btn">Сохранить и добавить другой объект</button>
+                   </div>
+                </div>
+             </div>
+             <div class="inner-center-column">
+                <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                <div class="tab-content tab-content-main">
+                   <fieldset class="module aligned first ">
+                      <div class="control-group form-row field-name ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_name">Тема рассылки:</label></div>
+                            <div class="controls">{{ form.theme }}</div>
+                         </div>
+                      </div>
+
+                       <div class="control-group form-row field-price ">
+                         <div>
+                            <div class="control-label"><label class="required" for="id_price">Tercn:</label></div>
+                            <div class="controls">{{ form.text }}</div>
+                         </div>
+                      </div>
+                   </fieldset>
+
+                </div>
+             </div>
+          </form>
        </div>
     </div>
 {% endblock %}
