@@ -1073,16 +1073,6 @@ label.popupBoxLoginFormZap {
 .video_file {
     position: relative;
 }
-.video_file:after {
-    content: '';
-    width: 64px;
-    height: 64px;
-    margin: 30px auto;
-    background: url("../images/play87.png");
-    position: absolute;
-    top: 10px;
-    left: 78px;
-}
 .video_file img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.42);
 }
