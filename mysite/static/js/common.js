@@ -177,7 +177,7 @@ $(document).ready(function (){
     $(".video_file").click(function(){
         var url = $(this).attr("href");
         var str = '<div class="player" id="videoplayer"></div><script type="text/javascript">this.player = new Uppod({m:"video",uid:"videoplayer",file:"'+ url +'",poster:"'+ url +'"});</script>'
-        $(".popupBox").html(url);
+        $(".popupBox").html(str);
         $(".background").css('display', 'block');
         $(".popupBox").css('display', 'block');
         $(".popupBox").css({'width':'620px', 'height': '334px', 'margin-left': '-320px', 'margin-top': '-171px'});
