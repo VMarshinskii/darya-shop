@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/shop/templates/admin_email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/views.py" afterPath="$PROJECT_DIR$/mysite/shop/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -64,14 +62,15 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76233184" vertical-offset="0" max-vertical-offset="669">
-              <caret line="165" column="47" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.8729447" vertical-offset="130" max-vertical-offset="816">
+              <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
               <folding>
-                <element signature="e#490#1544#0" expanded="false" />
-                <element signature="e#1734#3956#0" expanded="false" />
-                <element signature="e#3996#5043#0" expanded="false" />
-                <element signature="e#5083#5807#0" expanded="false" />
-                <element signature="e#5850#6426#0" expanded="false" />
+                <element signature="e#24#71#0" expanded="true" />
+                <element signature="e#529#1583#0" expanded="false" />
+                <element signature="e#1773#3995#0" expanded="false" />
+                <element signature="e#4035#5082#0" expanded="false" />
+                <element signature="e#5122#5846#0" expanded="false" />
+                <element signature="e#5889#6465#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -3237,7 +3236,11 @@
       <created>1427552216870</created>
       <updated>1427552216870</updated>
     </task>
-    <option name="localTasksCounter" value="671" />
+    <task id="LOCAL-00671" summary="Update">
+      <created>1427554071259</created>
+      <updated>1427554071259</updated>
+    </task>
+    <option name="localTasksCounter" value="672" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3681,14 +3684,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76233184" vertical-offset="0" max-vertical-offset="669">
-          <caret line="165" column="47" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.8729447" vertical-offset="130" max-vertical-offset="816">
+          <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
           <folding>
-            <element signature="e#490#1544#0" expanded="false" />
-            <element signature="e#1734#3956#0" expanded="false" />
-            <element signature="e#3996#5043#0" expanded="false" />
-            <element signature="e#5083#5807#0" expanded="false" />
-            <element signature="e#5850#6426#0" expanded="false" />
+            <element signature="e#24#71#0" expanded="true" />
+            <element signature="e#529#1583#0" expanded="false" />
+            <element signature="e#1773#3995#0" expanded="false" />
+            <element signature="e#4035#5082#0" expanded="false" />
+            <element signature="e#5122#5846#0" expanded="false" />
+            <element signature="e#5889#6465#0" expanded="false" />
           </folding>
         </state>
       </provider>

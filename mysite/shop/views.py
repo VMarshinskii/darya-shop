@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render_to_response
 from django.core.context_processors import csrf
+from django.core.mail import send_mail
 from django.http import Http404
 from shop.models import UserCart, TypeDelivery, Order
 from catalog.models import Product
@@ -163,4 +164,6 @@ def cart_top_ajax(request):
 
 
 def admin_email(request):
+    send_mail('Subject here', 'Here is the message.', 'from@example.com', ['marshinskii@gmail.com'],
+              fail_silently=False)
     return render_to_response("admin_email.html")
