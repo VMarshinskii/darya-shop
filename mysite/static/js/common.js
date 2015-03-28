@@ -175,9 +175,9 @@ $(document).ready(function (){
 
 
     $(".video_file").click(function(){
-        var url = $(this).attr("href");
+        var url = 'http://85.143.216.11' + $(this).attr("href");
         var str = '<div class="player" id="videoplayer"></div><script type="text/javascript">this.player = new Uppod({m:"video",uid:"videoplayer",file:"'+ url +'",poster:"'+ url +'"});</script>'
-        $(".popupBox").html(str);
+        $(".popupBox").html(url);
         $(".background").css('display', 'block');
         $(".popupBox").css('display', 'block');
         $(".popupBox").css({'width':'620px', 'height': '334px', 'margin-left': '-320px', 'margin-top': '-171px'});
