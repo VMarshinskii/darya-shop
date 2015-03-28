@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/static/js/uppod-0.5.15.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/js/common.js" afterPath="$PROJECT_DIR$/mysite/static/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/main.html" afterPath="$PROJECT_DIR$/mysite/templates/main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/static/images/play87.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="darya-shop.iws" />
@@ -63,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="9539" max-vertical-offset="95863">
-              <caret line="2965" column="58" selection-start-line="2965" selection-start-column="58" selection-end-line="2965" selection-end-column="58" />
+              <caret line="2971" column="58" selection-start-line="2971" selection-start-column="58" selection-end-line="2971" selection-end-column="58" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#11652#13087#0" expanded="false" />
@@ -76,27 +75,27 @@
                 <element signature="e#65257#68440#0" expanded="false" />
                 <element signature="e#68463#70375#0" expanded="false" />
                 <element signature="e#70402#74746#0" expanded="false" />
-                <element signature="e#76795#78502#0" expanded="false" />
+                <element signature="e#76809#78516#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart_top_ajax.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart_top_ajax.html">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="187">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.6680614" vertical-offset="17813" max-vertical-offset="20077">
+              <caret line="1076" column="41" selection-start-line="1076" selection-start-column="41" selection-end-line="1076" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9192364" vertical-offset="2536" max-vertical-offset="3264">
-              <caret line="186" column="3" selection-start-line="186" selection-start-column="3" selection-end-line="186" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2536" max-vertical-offset="3264">
+              <caret line="182" column="126" selection-start-line="182" selection-start-column="126" selection-end-line="182" selection-end-column="126" />
               <folding />
             </state>
           </provider>
@@ -193,7 +192,6 @@
         <option value="$PROJECT_DIR$/mysite/catalog/templates/product.html" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/index.html" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/order_registered.html" />
-        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
         <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/my_order.html" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/my_orders.html" />
@@ -205,9 +203,10 @@
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/shop/additions.py" />
         <option value="$PROJECT_DIR$/mysite/shop/models.py" />
-        <option value="$PROJECT_DIR$/mysite/static/redactor/redactor.js" />
         <option value="$PROJECT_DIR$/mysite/templates/main.html" />
         <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
+        <option value="$PROJECT_DIR$/mysite/static/redactor/redactor.js" />
+        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
       </list>
     </option>
   </component>
@@ -388,6 +387,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -499,11 +520,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\darya-shop\mysite\static\images" />
       <recent name="C:\work\darya-shop\mysite\static\js" />
       <recent name="C:\work\darya-shop\mysite\mysite" />
       <recent name="C:\Python34\project\github\darya-shop\mysite\static\js" />
       <recent name="C:\Python34\project\github\darya-shop\mysite\accounts\templates" />
-      <recent name="C:\Python34\project\github\darya-shop\mysite\shop\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Python34\project\github\darya-shop\mysite\shop\templates" />
@@ -3205,7 +3226,35 @@
       <created>1427536182875</created>
       <updated>1427536182875</updated>
     </task>
-    <option name="localTasksCounter" value="651" />
+    <task id="LOCAL-00651" summary="Update">
+      <created>1427539601771</created>
+      <updated>1427539601771</updated>
+    </task>
+    <task id="LOCAL-00652" summary="Update">
+      <created>1427539654731</created>
+      <updated>1427539654732</updated>
+    </task>
+    <task id="LOCAL-00653" summary="Update">
+      <created>1427539758864</created>
+      <updated>1427539758864</updated>
+    </task>
+    <task id="LOCAL-00654" summary="Update">
+      <created>1427539806021</created>
+      <updated>1427539806021</updated>
+    </task>
+    <task id="LOCAL-00655" summary="Update">
+      <created>1427540160967</created>
+      <updated>1427540160967</updated>
+    </task>
+    <task id="LOCAL-00656" summary="Update">
+      <created>1427540349897</created>
+      <updated>1427540349897</updated>
+    </task>
+    <task id="LOCAL-00657" summary="Update">
+      <created>1427540484801</created>
+      <updated>1427540484801</updated>
+    </task>
+    <option name="localTasksCounter" value="658" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3469,13 +3518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18193" max-vertical-offset="19958">
-          <caret line="1099" column="22" selection-start-line="1099" selection-start-column="22" selection-end-line="1099" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1224">
@@ -3596,27 +3638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9539" max-vertical-offset="95863">
-          <caret line="2965" column="58" selection-start-line="2965" selection-start-column="58" selection-end-line="2965" selection-end-column="58" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#11652#13087#0" expanded="false" />
-            <element signature="e#13111#25263#0" expanded="false" />
-            <element signature="e#25288#26504#0" expanded="false" />
-            <element signature="e#26528#33432#0" expanded="false" />
-            <element signature="e#33457#39500#0" expanded="false" />
-            <element signature="e#39524#43751#0" expanded="false" />
-            <element signature="e#43775#65234#0" expanded="false" />
-            <element signature="e#65257#68440#0" expanded="false" />
-            <element signature="e#68463#70375#0" expanded="false" />
-            <element signature="e#70402#74746#0" expanded="false" />
-            <element signature="e#76795#78502#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/js/uppod-0.5.15.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="681">
@@ -3637,8 +3658,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9192364" vertical-offset="2536" max-vertical-offset="3264">
-          <caret line="186" column="3" selection-start-line="186" selection-start-column="3" selection-end-line="186" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2536" max-vertical-offset="3264">
+          <caret line="182" column="126" selection-start-line="182" selection-start-column="126" selection-end-line="182" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9539" max-vertical-offset="95863">
+          <caret line="2971" column="58" selection-start-line="2971" selection-start-column="58" selection-end-line="2971" selection-end-column="58" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#11652#13087#0" expanded="false" />
+            <element signature="e#13111#25263#0" expanded="false" />
+            <element signature="e#25288#26504#0" expanded="false" />
+            <element signature="e#26528#33432#0" expanded="false" />
+            <element signature="e#33457#39500#0" expanded="false" />
+            <element signature="e#39524#43751#0" expanded="false" />
+            <element signature="e#43775#65234#0" expanded="false" />
+            <element signature="e#65257#68440#0" expanded="false" />
+            <element signature="e#68463#70375#0" expanded="false" />
+            <element signature="e#70402#74746#0" expanded="false" />
+            <element signature="e#76809#78516#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6680614" vertical-offset="17813" max-vertical-offset="20077">
+          <caret line="1076" column="41" selection-start-line="1076" selection-start-column="41" selection-end-line="1076" selection-end-column="41" />
           <folding />
         </state>
       </provider>
