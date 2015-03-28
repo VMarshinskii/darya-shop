@@ -1071,6 +1071,7 @@ label.popupBoxLoginFormZap {
 }
 
 .video_file:after {
+    content: '';
     width: 64px;
     height: 64px;
     margin: 30px auto;
