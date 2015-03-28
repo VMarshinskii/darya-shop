@@ -94,3 +94,10 @@ class Clients(models.Model):
     date_create = models.DateField(verbose_name="Дата", auto_now_add=True)
     phone = models.CharField("Телефон", max_length=200)
     mail = models.CharField("Имя", max_length=200)
+
+    class Meta:
+        verbose_name = 'Клиент'
+        verbose_name_plural = 'Клиенты'
+
+    def __unicode__(self):
+        return '(' + self.name + ' ' + self.surname + ')'
