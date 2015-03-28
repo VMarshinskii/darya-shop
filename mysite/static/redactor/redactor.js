@@ -2964,6 +2964,11 @@
 					if (linkmarker.size() !== 0) {
                         linkmarker.removeAttr('id');
                         linkmarker.addClass("video_file");
+                        linkmarker.css({
+                            'width': '200px',
+                            'height': '130px',
+                            'display': 'block'
+                        });
                         var link12 = linkmarker.attr("href");
                         var ext_mass = link12.split(".");
                         var ext = ext_mass[ext_mass.length-1];
