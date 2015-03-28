@@ -86,3 +86,11 @@ class Order(models.Model):
             phone = phone.replace("-", "")
             sms(phone, "Darya-Shop: Статус вашего заказа изменён - " + St[self.status])
         super(Order, self).save(*args, **kwargs)
+
+
+class Clients(models.Model):
+    name = models.CharField("Имя", max_length=200)
+    surname = models.CharField("Фамилия", max_length=200)
+    date_create = models.DateField(verbose_name="Дата", auto_now_add=True)
+    phone = models.CharField("Телефон", max_length=200)
+    mail = models.CharField("Имя", max_length=200)
