@@ -164,6 +164,5 @@ def cart_top_ajax(request):
 
 
 def admin_email(request):
-    send_mail('Subject here', 'Here is the message.', 'from@example.com', ['marshinskii@gmail.com'],
-              fail_silently=False)
+    send_mail('Subject here', 'Here is the message.', 'from@example.com', ['marshinskii@gmail.com'])
     return render_to_response("admin_email.html")
