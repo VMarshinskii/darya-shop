@@ -1070,6 +1070,13 @@ label.popupBoxLoginFormZap {
     height: 230px;
 }
 
+.video_file:before {
+    width: 64px;
+    height: 64px;
+    margin: 30px auto;
+    background: url("../images/play87.png");
+}
+
 
 @media screen and (max-width:1347px) {
     #center-block {
