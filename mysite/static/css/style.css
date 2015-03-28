@@ -1070,7 +1070,7 @@ label.popupBoxLoginFormZap {
     height: 230px;
 }
 
-.video_file:before {
+.video_file:after {
     width: 64px;
     height: 64px;
     margin: 30px auto;
