@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/static/js/uppod-0.5.15.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/js/common.js" afterPath="$PROJECT_DIR$/mysite/static/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/main.html" afterPath="$PROJECT_DIR$/mysite/templates/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="darya-shop.iws" />
@@ -46,16 +49,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order_not_registered.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1615">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redactor.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="redactor.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3215859" vertical-offset="9590" max-vertical-offset="95863">
+            <state vertical-scroll-proportion="0.0" vertical-offset="9539" max-vertical-offset="95863">
               <caret line="2965" column="58" selection-start-line="2965" selection-start-column="58" selection-end-line="2965" selection-end-column="58" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -99,22 +92,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2434" max-vertical-offset="3128">
-              <caret line="164" column="1" selection-start-line="164" selection-start-column="1" selection-end-line="164" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.9192364" vertical-offset="2536" max-vertical-offset="3264">
+              <caret line="186" column="3" selection-start-line="186" selection-start-column="3" selection-end-line="186" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="smsc_api.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/mysite/smsc_api.py">
+      <file leaf-file-name="uppod-0.5.15.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/static/js/uppod-0.5.15.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="3978">
-              <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/templates/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.115385" vertical-offset="930" max-vertical-offset="1649">
+              <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,7 +187,6 @@
         <option value="$PROJECT_DIR$/mysite/accounts/models.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/registration.html" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/registration_thank.html" />
-        <option value="$PROJECT_DIR$/mysite/templates/main.html" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/my_orders_not_registered.html" />
         <option value="$PROJECT_DIR$/mysite/pages/templates/templatetags/top_menu.html" />
         <option value="$PROJECT_DIR$/mysite/catalog/templates/category.html" />
@@ -202,6 +206,7 @@
         <option value="$PROJECT_DIR$/mysite/shop/additions.py" />
         <option value="$PROJECT_DIR$/mysite/shop/models.py" />
         <option value="$PROJECT_DIR$/mysite/static/redactor/redactor.js" />
+        <option value="$PROJECT_DIR$/mysite/templates/main.html" />
         <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
       </list>
     </option>
@@ -494,11 +499,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\darya-shop\mysite\static\js" />
       <recent name="C:\work\darya-shop\mysite\mysite" />
       <recent name="C:\Python34\project\github\darya-shop\mysite\static\js" />
       <recent name="C:\Python34\project\github\darya-shop\mysite\accounts\templates" />
       <recent name="C:\Python34\project\github\darya-shop\mysite\shop\templates" />
-      <recent name="C:\Python34\project\github\darya-shop\mysite\pages\templatetags" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Python34\project\github\darya-shop\mysite\shop\templates" />
@@ -3196,7 +3201,11 @@
       <created>1427535735068</created>
       <updated>1427535735068</updated>
     </task>
-    <option name="localTasksCounter" value="650" />
+    <task id="LOCAL-00650" summary="Update">
+      <created>1427536182875</created>
+      <updated>1427536182875</updated>
+    </task>
+    <option name="localTasksCounter" value="651" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3250,13 +3259,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysite/pages/templatetags/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/pages/templatetags/top_menu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
@@ -3401,13 +3403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="681">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.115385" vertical-offset="930" max-vertical-offset="1632">
-          <caret line="87" column="51" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -3601,17 +3596,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2434" max-vertical-offset="3128">
-          <caret line="164" column="1" selection-start-line="164" selection-start-column="1" selection-end-line="164" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3215859" vertical-offset="9590" max-vertical-offset="95863">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9539" max-vertical-offset="95863">
           <caret line="2965" column="58" selection-start-line="2965" selection-start-column="58" selection-end-line="2965" selection-end-column="58" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -3627,6 +3614,32 @@
             <element signature="e#70402#74746#0" expanded="false" />
             <element signature="e#76795#78502#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/js/uppod-0.5.15.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="681">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.115385" vertical-offset="930" max-vertical-offset="1649">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9192364" vertical-offset="2536" max-vertical-offset="3264">
+          <caret line="186" column="3" selection-start-line="186" selection-start-column="3" selection-end-line="186" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
