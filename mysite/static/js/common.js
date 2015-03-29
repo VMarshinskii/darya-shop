@@ -174,6 +174,14 @@ $(document).ready(function (){
     });
 
 
+    $(".video_file").each(function(indx, element){
+        $(element).append("<span></span>");
+        var left = $(element).children("img").offset().left;
+        var top = $(element).children("img").offset().left;
+        alert(left);
+        alert(top);
+    });
+
     $(".video_file").click(function(){
         var url = 'http://85.143.216.11' + $(this).attr("href");
         var str = '<div class="player" id="videoplayer"></div><script type="text/javascript">this.player = new Uppod({m:"video",uid:"videoplayer",file:"'+ url +'",poster:"'+ url +'"});</script>'

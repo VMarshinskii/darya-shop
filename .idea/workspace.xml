@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/js/common.js" afterPath="$PROJECT_DIR$/mysite/static/js/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/redactor/redactor.js" afterPath="$PROJECT_DIR$/mysite/static/redactor/redactor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="eef0c25d-1748-4253-889c-0c315df9db62" name="Failed commit: Default" comment="Update" />
@@ -51,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redactor.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="redactor.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.89442813" vertical-offset="9420" max-vertical-offset="97189">
-              <caret line="2978" column="26" selection-start-line="2978" selection-start-column="26" selection-end-line="2978" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9420" max-vertical-offset="97189">
+              <caret line="2978" column="85" selection-start-line="2978" selection-start-column="85" selection-end-line="2978" selection-end-column="85" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#11652#13087#0" expanded="false" />
@@ -69,6 +71,26 @@
                 <element signature="e#68463#70375#0" expanded="false" />
                 <element signature="e#70402#74746#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="17796" max-vertical-offset="20230">
+              <caret line="1083" column="1" selection-start-line="1083" selection-start-column="1" selection-end-line="1083" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.79441994" vertical-offset="2536" max-vertical-offset="3400">
+              <caret line="181" column="19" selection-start-line="181" selection-start-column="19" selection-end-line="181" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,26 +130,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="4403" max-vertical-offset="6375">
               <caret line="267" column="69" selection-start-line="267" selection-start-column="57" selection-end-line="267" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/registration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="867">
-              <caret line="16" column="85" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_email.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/shop/templates/admin_email.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3204" max-vertical-offset="4114">
-              <caret line="210" column="49" selection-start-line="210" selection-start-column="49" selection-end-line="210" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -195,8 +197,6 @@
         <option value="$PROJECT_DIR$/mysite/shop/templates/order_thanks.html" />
         <option value="$PROJECT_DIR$/mysite/shop/additions.py" />
         <option value="$PROJECT_DIR$/mysite/templates/main.html" />
-        <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
-        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
         <option value="$PROJECT_DIR$/mysite/shop/admin.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
@@ -207,6 +207,8 @@
         <option value="$PROJECT_DIR$/mysite/shop/views.py" />
         <option value="$PROJECT_DIR$/mysite/pages/models.py" />
         <option value="$PROJECT_DIR$/mysite/static/redactor/redactor.js" />
+        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
+        <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
       </list>
     </option>
   </component>
@@ -328,7 +330,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="redactor" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3338,19 +3362,24 @@
       <created>1427655296879</created>
       <updated>1427655296879</updated>
     </task>
-    <option name="localTasksCounter" value="710" />
+    <task id="LOCAL-00710" summary="Update">
+      <created>1427655819693</created>
+      <updated>1427655819693</updated>
+    </task>
+    <option name="localTasksCounter" value="711" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20296392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20296392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -3360,7 +3389,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3604,20 +3632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2536" max-vertical-offset="3264">
-          <caret line="182" column="126" selection-start-line="182" selection-start-column="126" selection-end-line="182" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17796" max-vertical-offset="20077">
-          <caret line="1074" column="1" selection-start-line="1074" selection-start-column="1" selection-end-line="1074" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="289">
@@ -3755,8 +3769,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89442813" vertical-offset="9420" max-vertical-offset="97189">
-          <caret line="2978" column="26" selection-start-line="2978" selection-start-column="26" selection-end-line="2978" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="9420" max-vertical-offset="97189">
+          <caret line="2978" column="85" selection-start-line="2978" selection-start-column="85" selection-end-line="2978" selection-end-column="85" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#11652#13087#0" expanded="false" />
@@ -3770,6 +3784,22 @@
             <element signature="e#68463#70375#0" expanded="false" />
             <element signature="e#70402#74746#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17796" max-vertical-offset="20230">
+          <caret line="1083" column="1" selection-start-line="1083" selection-start-column="1" selection-end-line="1083" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79441994" vertical-offset="2536" max-vertical-offset="3400">
+          <caret line="181" column="19" selection-start-line="181" selection-start-column="19" selection-end-line="181" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
