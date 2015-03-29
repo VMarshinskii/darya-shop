@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/redactor/redactor.js" afterPath="$PROJECT_DIR$/mysite/static/redactor/redactor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/views.py" afterPath="$PROJECT_DIR$/mysite/shop/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="eef0c25d-1748-4253-889c-0c315df9db62" name="Failed commit: Default" comment="Update" />
@@ -61,8 +59,8 @@
       <file leaf-file-name="redactor.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.845805" vertical-offset="9657" max-vertical-offset="97189">
-              <caret line="2978" column="110" selection-start-line="2978" selection-start-column="110" selection-end-line="2978" selection-end-column="110" />
+            <state vertical-scroll-proportion="0.88435376" vertical-offset="9657" max-vertical-offset="97189">
+              <caret line="2979" column="21" selection-start-line="2979" selection-start-column="21" selection-end-line="2979" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#11652#13087#0" expanded="false" />
@@ -3459,7 +3457,11 @@
       <created>1427649482603</created>
       <updated>1427649482603</updated>
     </task>
-    <option name="localTasksCounter" value="708" />
+    <task id="LOCAL-00708" summary="Update">
+      <created>1427655183891</created>
+      <updated>1427655183892</updated>
+    </task>
+    <option name="localTasksCounter" value="709" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3882,8 +3884,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.845805" vertical-offset="9657" max-vertical-offset="97189">
-          <caret line="2978" column="110" selection-start-line="2978" selection-start-column="110" selection-end-line="2978" selection-end-column="110" />
+        <state vertical-scroll-proportion="0.88435376" vertical-offset="9657" max-vertical-offset="97189">
+          <caret line="2979" column="21" selection-start-line="2979" selection-start-column="21" selection-end-line="2979" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#11652#13087#0" expanded="false" />
