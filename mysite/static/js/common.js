@@ -125,6 +125,7 @@ $(document).ready(function (){
         $(".background").css('display', 'none');
         $(".popupBox").css('display', 'none');
         $(".popupBox").html("");
+        $(".popupBox").attr("style", "");
     });
 
     $(".login_order").live('click', function(){
