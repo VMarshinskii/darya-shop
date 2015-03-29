@@ -2975,7 +2975,7 @@
                         var ext_mass = link12.split(".");
                         var ext = ext_mass[ext_mass.length-1];
                         var link_new = link12.replace(ext, "png");
-                        var ht = linkmarker.html();
+//                        var ht = linkmarker.html();
                         linkmarker.html('<img width="200px" src="' + link_new + '" /><span style="display:none"></spans>');
                     }
 					else linkmarker = false;
