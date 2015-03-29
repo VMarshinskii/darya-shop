@@ -176,8 +176,8 @@ $(document).ready(function (){
 
     $(".video_file").each(function(indx, element){
         $(element).append("<span></span>");
-        var left = $(element).children("img").position().left;
-        var top = $(element).children("img").position().top;
+        var left = $(element).children("img").position().left + (($(element).children("img").width() - 64) / 2);
+        var top = $(element).children("img").position().top + (($(element).children("img").height() - 64) / 2);
         alert(left);
         alert(top);
         $(element).children("span").css({'top': top, 'left': left});
