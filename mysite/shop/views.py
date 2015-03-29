@@ -192,7 +192,7 @@ def admin_email(request):
         cl = Clients()
         cl.name = row[1].encode('utf-8')
         cl.surname = row[2].encode('utf-8')
-        cl.phone = str(row[7]).encode('utf-8').replace(".0", "")
+        cl.phone = str(row[7]).replace(".0", "").encode('utf-8')
         cl.mail = row[3].encode('utf-8')
 
     return render_to_response("admin_email.html", args)
