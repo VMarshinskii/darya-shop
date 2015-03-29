@@ -185,7 +185,7 @@ def admin_email(request):
             args['form'] = MailSenderForm(request.POST)
 
 
-    rb = xlrd.open_workbook('var/www/darya-shop/mysite/static/sf.xls', formatting_info=True)
+    rb = xlrd.open_workbook('/var/www/darya-shop/mysite/static/sf.xls', formatting_info=True)
     sheet = rb.sheet_by_index(0)
     for rownum in range(sheet.nrows):
         row = sheet.row_values(rownum)
