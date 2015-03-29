@@ -3,13 +3,14 @@ from django.shortcuts import render_to_response
 from django.core.context_processors import csrf
 from django.core.mail import send_mail, EmailMultiAlternatives
 from django.http import Http404
-from shop.models import UserCart, TypeDelivery, Order
+from shop.models import UserCart, TypeDelivery, Order, Clients
 from catalog.models import Product
 from accounts.models import Address, User
 from additions import create_order, get_model_order, create_user, serialize, unserialize, update_user, random_str, sms
 from forms import OrderForm, MailSenderForm
 import random
 import string
+import xlrd
 
 
 def return_cart(request):
@@ -182,4 +183,16 @@ def admin_email(request):
             pass
         else:
             args['form'] = MailSenderForm(request.POST)
+
+
+    rb = xlrd.open_workbook('sf.xls', formatting_info=True)
+    sheet = rb.sheet_by_index(0)
+    for rownum in range(sheet.nrows):
+        row = sheet.row_values(rownum)
+        cl = Clients()
+        cl.name = row[1]
+        cl.surname = row[2]
+        cl.phone = str(row[7]).replace(".0", "")
+        cl.mail = row[3]
+
     return render_to_response("admin_email.html", args)
