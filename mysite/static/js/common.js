@@ -123,9 +123,8 @@ $(document).ready(function (){
 
     $(".background").click(function(){
         $(".background").css('display', 'none');
-        $(".popupBox").css('display', 'none');
+        $(".popupBox").attr("style", "display: none");
         $(".popupBox").html("");
-        $(".popupBox").attr("style", "");
     });
 
     $(".login_order").live('click', function(){
