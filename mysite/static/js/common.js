@@ -177,9 +177,10 @@ $(document).ready(function (){
     $(".video_file").each(function(indx, element){
         $(element).append("<span></span>");
         var left = $(element).children("img").offset().left;
-        var top = $(element).children("img").offset().left;
+        var top = $(element).children("img").offset().top;
         alert(left);
         alert(top);
+        $(element).children("span").css('background', '#ff0000');
     });
 
     $(".video_file").click(function(){
