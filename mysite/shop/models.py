@@ -100,4 +100,4 @@ class Clients(models.Model):
         verbose_name_plural = 'Клиенты'
 
     def __unicode__(self):
-        return '(' + self.name + ' ' + self.surname + ')'
+        return self.name + ' ' + self.surname

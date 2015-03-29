@@ -189,17 +189,15 @@ def admin_email(request):
     sheet = rb.sheet_by_index(0)
     i = 0
     for rownum in range(sheet.nrows):
-        if i < 20:
-            row = sheet.row_values(rownum)
-            cl = Clients()
-            cl.name = row[1].encode('utf-8')
-            cl.surname = row[2].encode('utf-8')
-            try:
-                cl.phone = str(row[7]).encode('utf-8').replace(".0", "")
-            except Exception:
-                pass
-            cl.mail = row[3].encode('utf-8')
-            cl.save()
-        i += 1
+        row = sheet.row_values(rownum)
+        cl = Clients()
+        cl.name = row[1].encode('utf-8')
+        cl.surname = row[2].encode('utf-8')
+        try:
+            cl.phone = str(row[7]).encode('utf-8').replace(".0", "")
+        except Exception:
+            pass
+        cl.mail = row[3].encode('utf-8')
+        cl.save()
 
     return render_to_response("admin_email.html", args)
