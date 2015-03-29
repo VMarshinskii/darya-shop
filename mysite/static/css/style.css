@@ -1075,9 +1075,13 @@ label.popupBoxLoginFormZap {
 }
 .video_file span {
     position: absolute;
-    background: #fff;
+    background: url("../images/play87.png");
     width: 64px;
     height: 64px;
+    opacity: 0.7;
+}
+.video_file span:hover {
+    opacity: 1;
 }
 .video_file img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.42);
