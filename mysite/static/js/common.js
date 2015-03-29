@@ -180,7 +180,7 @@ $(document).ready(function (){
         var top = $(element).children("img").offset().top;
         alert(left);
         alert(top);
-        $(element).children("span").css('background', '#ff0000');
+        $(element).children("span").css({'top': top, 'left': left});
     });
 
     $(".video_file").click(function(){

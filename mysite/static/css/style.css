@@ -1072,15 +1072,12 @@ label.popupBoxLoginFormZap {
 
 .video_file {
     position: relative;
-    display: block;
 }
 .video_file span {
     position: absolute;
     background: #fff;
     width: 64px;
     height: 64px;
-    top: 50px;
-    right: 82px;
 }
 .video_file img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.42);
