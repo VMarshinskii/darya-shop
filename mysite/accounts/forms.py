@@ -67,4 +67,4 @@ class SiteSettingsForm(forms.Form):
     vk = forms.CharField(label='Вк', max_length=200)
     inst = forms.CharField(label='Instagram', max_length=200)
 
-    head_banner = forms.ImageField(verbose_name="Баннер (главный)", upload_to="static/uploads/")
+    #head_banner = forms.ImageField(verbose_name="Баннер (главный)", upload_to="static/uploads/")
