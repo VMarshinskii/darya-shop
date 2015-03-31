@@ -1,0 +1,221 @@
+{% load static %}
+
+{% block extrahead %}{{ block.super }}
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/static/admin/js/jquery.js"></script>
+    <script src="{% static "ajaxuploader/js/fileuploader.js" %}" ></script>
+    <link href="{% static "ajaxuploader/css/fileuploader.css" %}" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/static/redactor/css/redactor.css" type="text/css" media="all" rel="stylesheet" />
+    <link href="/static/redactor/css/django_admin.css" type="text/css" media="all" rel="stylesheet" />
+
+    <link href="/static/redactor/css/redactor.css" type="text/css" media="all" rel="stylesheet" />
+    <link href="/static/redactor/css/django_admin.css" type="text/css" media="all" rel="stylesheet" />
+    <script type="text/javascript" src="/static/admin/js/core.js"></script>
+    <script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+    <script type="text/javascript" src="/static/admin/js/actions.js"></script>
+    <script type="text/javascript" src="/static/redactor/jquery.redactor.init.js"></script>
+    <script type="text/javascript" src="/static/redactor/redactor.js"></script>
+    <script type="text/javascript" src="/static/redactor/langs/ru.js"></script>
+    <script>
+        function randWD(n){  // [ 2 ] random words and digits
+            return Math.random().toString(36).slice(2, 2 + Math.max(1, Math.min(n, 10)) );
+        }
+        function set_cookie(name, value, expires)
+        {
+            if (!expires)
+            {
+                expires = new Date();
+            }
+            document.cookie = name + "=" + escape(value) + "; expires=" + expires.toGMTString() +  "; path=/";
+        }
+        function get_cookie(name)
+        {
+            var cookie_name = name + "=";
+            var cookie_length = document.cookie.length;
+            var cookie_begin = 0;
+            while (cookie_begin < cookie_length)
+            {
+                var value_begin = cookie_begin + cookie_name.length;
+                if (document.cookie.substring(cookie_begin, value_begin) == cookie_name)
+                {
+                    var value_end = document.cookie.indexOf (";", value_begin);
+                    if (value_end == -1)
+                    {
+                        value_end = cookie_length;
+                    }
+                    return unescape(document.cookie.substring(value_begin, value_end));
+                }
+                cookie_begin = document.cookie.indexOf(" ", cookie_begin) + 1;
+                if (cookie_begin == 0)
+                {
+                break;
+                }
+            }
+            return null;
+        }
+
+        var click_head_img = function(){
+            var parent = $(this).parent("div");
+            var img = parent.attr("data-image");
+            $("#hidden_image").val(img);
+            $(".hidden_image_active").css('opacity', '0.3');
+            $(".hidden_image_active").removeClass("hidden_image_active");
+            $(this).addClass("hidden_image_active");
+            $(this).css('opacity', '1');
+        }
+
+        var expires = new Date(); // получаем текущую дату
+        expires.setTime(expires.getTime() + (1000 * 86400 * 365));
+        set_cookie("filename", randWD(8), expires);
+
+        $(function(){
+            var uploader = new qq.FileUploader({
+                action: "/ajax-upload",
+                element: $('#file-uploader')[0],
+                multiple: true,
+                onComplete: function(id, fileName, responseJSON) {
+                    if(responseJSON.success) {
+                        var wer = get_cookie("filename") + '.' + fileName.split('.')[1];
+                        $(".adminBoxImgLast").before('<div class="adminBoxImg"><img src="/static/uploads/' + wer + '" alt=""/><div data-image="' + wer + '" class="adminBoxSettingsImages"><img class="adminBoxImgClose" src="/static/images/close_icon.png" alt="Удалить"/><img class="adminBoxImgHead" src="/static/images/icon_writing.png" alt="Главная"/></div></div>');
+                        var expires = new Date(); // получаем текущую дату
+                        expires.setTime(expires.getTime() + (1000 * 86400 * 365));
+                        set_cookie("filename", randWD(8), expires);
+                        var img = $('#hidden_images').val();
+                        var str = img + ';' + wer;
+                        $('#hidden_images').val(str);
+
+                        if($(".adminBoxImg").size() == 2)
+                        {
+                            var img2 = $(".adminBoxImg").eq(0).children(".adminBoxSettingsImages").attr("data-image");
+                            $("#hidden_image").val(img2);
+
+                            var icon = $(".adminBoxImg").children(".adminBoxSettingsImages").children(".adminBoxImgHead");
+                            icon.addClass("hidden_image_active");
+                            icon.css('opacity', '1');
+                        }
+                    } else {
+                        alert("upload failed!");
+                    }
+                },
+                params: {
+                    'csrf_token': '{{ csrf_token }}',
+                    'csrf_name': 'csrfmiddlewaretoken',
+                    'csrf_xname': 'X-CSRFToken'
+                }
+            });
+        });
+
+        $(document).ready(function(){
+            $(".adminCatalogSearchProduct").hide();
+            $("#id_search_products_ajax").keyup(function(){
+                var key = $("#id_search_products_ajax").val();
+                $(".adminCatalogSearchProduct").load("/admin/catalog/product/edit_ajax_related/?key=" + key);
+                $(".adminCatalogSearchProduct").show(400);
+
+                $(".controls").click(function(){
+                    $(".adminCatalogSearchProduct").hide(300);
+                });
+            });
+
+            $(".adminCatalogSearchProductItem").live("click", function(){
+                var val = $("#id_related_products").val();
+                val = val + ";" + $(this).attr("data-id");
+                $("#id_related_products").val(val);
+
+                $(".adminCatalogResearchProducts").append('<div class="adminCatalogResearchProductsItem"></div>');
+                $(".adminCatalogResearchProductsItem").last().hide();
+                $(".adminCatalogResearchProductsItem").last().load("/admin/catalog/product/edit_ajax_research/" + $(this).attr("data-id"));
+                $(".adminCatalogResearchProductsItem").last().show(300);
+            });
+
+            $(".adminBoxImgClose").live("click", function(){
+                var parent = $(this).parent("div");
+                var img = parent.attr("data-image");
+                var images = $("#hidden_images").val();
+                $("#hidden_images").val(images.replace(';' + img, ''));
+                parent.parent("div").remove();
+
+                var parent = $(".adminBoxImgClose").parent("div");
+                if(parent.children(".adminBoxImgHead"))
+                {
+                    var img2 = $(".adminBoxImg").eq(0).children(".adminBoxSettingsImages").attr("data-image");
+                    $("#hidden_image").val(img2);
+
+                    var icon = $(".adminBoxImg").eq(0).children(".adminBoxSettingsImages").children(".adminBoxImgHead");
+                    icon.addClass("hidden_image_active");
+                    icon.css('opacity', '1');
+                }
+            });
+
+            $(".adminBoxImgHead").live('click', click_head_img);
+
+            $(".adminBoxProductsClose").live("click", function(){
+                var current = $(this).parent("div").attr("data-id");
+                var val = $("#id_related_products").val();
+                $("#id_related_products").val(val.replace(';' + current, ''));
+                $(this).parents(".adminCatalogResearchProductsItem").hide(300);
+                $(this).remove();
+            });
+        });
+    </script>
+{% endblock %}
+{% block extrastyle %}{{ block.super }}
+{% endblock %}
+{% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
+
+{% block content %}
+
+    <div id="content" class="colM row-fluid">
+       <h2 class="content-title">Email рассылка</h2>
+       <div id="content-main" class="inner-two-columns">
+       <form enctype="multipart/form-data" action="" method="post" id="product_form" class="form-horizontal">
+             <div class="inner-right-column">
+                <div class="box save-box">
+                   <div class="submit-row clearfix">
+                      <button type="submit" class="btn btn-high btn-info" name="_save">Отправить</button>
+                   </div>
+                </div>
+             </div>
+             <div class="inner-center-column">
+                {% csrf_token %}
+                <div class="tab-content tab-content-main">
+                   <fieldset class="module aligned first ">
+                      <div class="control-group form-row field-name ">
+                         <div>
+                            <div class="control-label">
+                                <label class="required" for="id_name">Тема рассылки:</label>
+                            </div>
+                             <div class="controls">
+                                 {{ form.theme }}
+                                 <span class="help-inline">
+                                    {{ form.theme.errors }}
+                                </span>
+                             </div>
+                         </div>
+                      </div>
+
+                       <div class="control-group form-row field-price ">
+                         <div>
+                            <div class="control-label">
+                                <label class="required" for="id_price">Текст:</label>
+                            </div>
+                            <div class="controls">
+                                {{ form.text }}
+                                <span class="help-inline">
+                                    {{ form.text.errors }}
+                                </span>
+                            </div>
+                         </div>
+                      </div>
+                   </fieldset>
+
+
+                    {{ form }}
+
+                </div>
+             </div>
+          </form>
+       </div>
+    </div>
+{% endblock %}

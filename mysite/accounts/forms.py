@@ -54,3 +54,17 @@ class UserRegistrationForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ['first_name', 'last_name', 'email', 'phone']
+
+
+class SiteSettingsForm(forms.Form):
+    sine_name = forms.CharField(label='Название сайта', max_length=200)
+    description = forms.CharField(label='Description', max_length=200)
+    keywords = forms.CharField(label='Keywords', max_length=200)
+
+    phone = forms.CharField(label='Телефон', max_length=200)
+    email = forms.CharField(label='E-mail', max_length=200)
+
+    vk = forms.CharField(label='Вк', max_length=200)
+    inst = forms.CharField(label='Instagram', max_length=200)
+
+    head_banner = forms.ImageField(verbose_name="Баннер (главный)", upload_to="static/uploads/")

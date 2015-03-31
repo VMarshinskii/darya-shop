@@ -5,7 +5,7 @@ from django.http import Http404
 from django.contrib import auth
 from shop.additions import unserialize_get, translit, random_str
 from shop.models import Order
-from forms import LoginForm, UserRegistrationForm
+from forms import LoginForm, UserRegistrationForm, SiteSettingsForm
 from models import User
 from catalog.models import Product
 
@@ -109,3 +109,8 @@ def my_order(request, id=-1):
         except Order.DoesNotExist:
             pass
     raise Http404("Страница не найдена!")
+
+
+def admin_settings(request):
+    form = SiteSettingsForm()
+    return render_to_response("admin_settings.html", {'form': form})
