@@ -31,3 +31,17 @@ class Address(models.Model):
     index = models.CharField("Индекс", max_length=200, blank=True)
     address = models.CharField("Адрес", max_length=200, blank=True)
     user = models.ForeignKey(User, verbose_name="Пользователь", blank=True, null=True)
+
+
+class SiteSettings(models.Model):
+    sine_name = models.CharField(label='Название сайта', max_length=200)
+    description = models.CharField(label='Description', max_length=200)
+    keywords = models.CharField(label='Keywords', max_length=200)
+
+    phone = models.CharField(label='Телефон', max_length=200)
+    email = models.CharField(label='E-mail', max_length=200)
+
+    vk = models.CharField(label='Вк', max_length=200)
+    inst = models.CharField(label='Instagram', max_length=200)
+
+    head_banner = models.ImageField(verbose_name="Баннер (главный)", upload_to="static/uploads/")
