@@ -185,12 +185,12 @@
                       <div class="control-group form-row field-name ">
                          <div>
                             <div class="control-label">
-                                <label class="required" for="id_name">Тема рассылки:</label>
+                                <label class="required" for="id_name">Название сайта</label>
                             </div>
                              <div class="controls">
-                                 {{ form.theme }}
+                                 {{ form.site_name }}
                                  <span class="help-inline">
-                                    {{ form.theme.errors }}
+                                    {{ form.site_name.errors }}
                                 </span>
                              </div>
                          </div>
@@ -199,12 +199,26 @@
                        <div class="control-group form-row field-price ">
                          <div>
                             <div class="control-label">
-                                <label class="required" for="id_price">Текст:</label>
+                                <label class="required" for="id_price">Description:</label>
                             </div>
                             <div class="controls">
-                                {{ form.text }}
+                                {{ form.description }}
                                 <span class="help-inline">
-                                    {{ form.text.errors }}
+                                    {{ form.description.errors }}
+                                </span>
+                            </div>
+                         </div>
+                      </div>
+
+                       <div class="control-group form-row field-price ">
+                         <div>
+                            <div class="control-label">
+                                <label class="required" for="id_price">Keywords:</label>
+                            </div>
+                            <div class="controls">
+                                {{ form.keywords }}
+                                <span class="help-inline">
+                                    {{ form.keywords.errors }}
                                 </span>
                             </div>
                          </div>

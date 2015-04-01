@@ -34,7 +34,7 @@ class Address(models.Model):
 
 
 class SiteSettings(models.Model):
-    sine_name = models.CharField('Название сайта', max_length=200)
+    site_name = models.CharField('Название сайта', max_length=200)
     description = models.CharField('Description', max_length=200)
     keywords = models.CharField('Keywords', max_length=200)
 

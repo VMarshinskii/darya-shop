@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/accounts/forms.py" afterPath="$PROJECT_DIR$/mysite/accounts/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html" afterPath="$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/accounts/models.py" afterPath="$PROJECT_DIR$/mysite/accounts/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8477612" vertical-offset="486" max-vertical-offset="1156">
+            <state vertical-scroll-proportion="-22.72" vertical-offset="486" max-vertical-offset="1156">
               <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
               <folding>
                 <element signature="e#15#53#0" expanded="true" />
@@ -77,8 +77,8 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.44" vertical-offset="112" max-vertical-offset="850">
-              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state vertical-scroll-proportion="-19.96" vertical-offset="113" max-vertical-offset="850">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -104,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_settings.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="admin_settings.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-139.26923" vertical-offset="0" max-vertical-offset="3842">
-              <caret line="213" column="27" selection-start-line="213" selection-start-column="27" selection-end-line="213" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.7145038" vertical-offset="3187" max-vertical-offset="4097">
+              <caret line="215" column="72" selection-start-line="215" selection-start-column="72" selection-end-line="215" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -195,9 +195,9 @@
         <option value="$PROJECT_DIR$/mysite/shop/views.py" />
         <option value="$PROJECT_DIR$/mysite/shop/forms.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/models.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/forms.py" />
+        <option value="$PROJECT_DIR$/mysite/accounts/models.py" />
+        <option value="$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html" />
       </list>
     </option>
   </component>
@@ -3615,13 +3615,26 @@
       <created>1427831587522</created>
       <updated>1427831587522</updated>
     </task>
-    <option name="localTasksCounter" value="726" />
+    <task id="LOCAL-00726" summary="Update">
+      <created>1427913409569</created>
+      <updated>1427913409569</updated>
+    </task>
+    <task id="LOCAL-00727" summary="Update">
+      <created>1427913593803</created>
+      <updated>1427913593803</updated>
+    </task>
+    <task id="LOCAL-00728" summary="Update">
+      <created>1427914117785</created>
+      <updated>1427914117785</updated>
+    </task>
+    <option name="localTasksCounter" value="729" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3637,7 +3650,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3940,6 +3952,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-48.076923" vertical-offset="1827" max-vertical-offset="3808">
           <caret line="181" column="32" selection-start-line="181" selection-start-column="32" selection-end-line="181" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3999,14 +4012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.44" vertical-offset="112" max-vertical-offset="850">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.72" vertical-offset="1251" max-vertical-offset="1921">
@@ -4015,11 +4020,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html">
+    <entry file="file://$PROJECT_DIR$/mysite/accounts/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-139.26923" vertical-offset="0" max-vertical-offset="3842">
-          <caret line="213" column="27" selection-start-line="213" selection-start-column="27" selection-end-line="213" selection-end-column="27" />
-          <folding />
+        <state vertical-scroll-proportion="-22.72" vertical-offset="486" max-vertical-offset="1156">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding>
+            <element signature="e#15#53#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4031,13 +4038,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/accounts/forms.py">
+    <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8477612" vertical-offset="486" max-vertical-offset="1156">
-          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-          <folding>
-            <element signature="e#15#53#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-19.96" vertical-offset="113" max-vertical-offset="850">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7145038" vertical-offset="3187" max-vertical-offset="4097">
+          <caret line="215" column="72" selection-start-line="215" selection-start-column="72" selection-end-line="215" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
