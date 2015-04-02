@@ -438,6 +438,7 @@ a.append-icon i{margin-left:5px}
 .admin_order_list {
     border-collapse: collapse;
     background: #ffffff;
+    width: 520px;
 }
 .admin_order_list td {
     padding: 3px;
@@ -445,6 +446,6 @@ a.append-icon i{margin-left:5px}
     border: 1px solid #DFDFDF;
 }
 .admin_table_img {
-    height: 60px;
+    height: 45px;
     overflow: hidden;
 }

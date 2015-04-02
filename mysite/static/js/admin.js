@@ -14,9 +14,9 @@ var order_list = function(order_str){
             result += '<tr>';
             result += '<td><div class="admin_table_img"><img width="50" src="/static/uploads/' + product[0] + '"/></div></td>';
             result += '<td><a href="/catalog/product/' + product[5] + '">' + product[1] + '<a/></td>';
-            result += '<td>' + product[2] + '</td>';
-            result += '<td>' + product[3] + '</td>';
-            result += '<td>' + product[4] + '</td>';
+            result += '<td align="center">' + product[2] + '</td>';
+            result += '<td align="center">' + product[3] + '</td>';
+            result += '<td align="center">' + product[4] + '</td>';
             result += '</tr>';
         }
     }
