@@ -191,4 +191,12 @@ $(document).ready(function (){
         return false;
     });
 
+
+    $(".galeryBoxImg").click(function(){
+
+        $(".popupBox").html($(this).html());
+        $(".background").css('display', 'block');
+        $(".popupBox").css('display', 'block');
+    });
+
 });

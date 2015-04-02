@@ -139,7 +139,10 @@ def product_edit(request, id=-1):
 
         for pr in smart_str(model.related_products).split(';'):
             if pr != '':
-                related_products.append(Product.objects.get(id=int(pr)))
+                try:
+                    related_products.append(Product.objects.get(id=int(pr)))
+                except Product.DoesNotExist:
+                    pass
 
         csrf_token = get_token(request)
         return render_to_response('admin/product_form.html',
