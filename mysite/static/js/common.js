@@ -194,8 +194,8 @@ $(document).ready(function (){
 
     $(".galeryBoxImg").click(function(){
 
-        var doc_w = $(document).width();
-        var doc_h = $(document).height();
+        var doc_w = $(window).width();
+        var doc_h = $(window).height();
 
         var width = doc_w / 100 * 60;
         var height = doc_h / 100 * 50;
