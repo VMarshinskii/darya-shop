@@ -436,7 +436,7 @@ a.append-icon i{margin-left:5px}
     border-radius: 3px;
 }
 
-.order_form input[type="text"], .order_form textarea {
+#order_form input[type="text"], #order_form textarea {
     width: 520px;
 }
 .admin_order_list {
