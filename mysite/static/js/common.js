@@ -200,7 +200,7 @@ $(document).ready(function (){
         var width = doc_w / 100 * 60;
         var height = doc_h / 100 * 50;
 
-        $(".popupBox").html($(this).html());
+        $(".popupBox").html('<div class="popup_img_box">' + $(this).html() + '</div>');
         $(".background").css('display', 'block');
         $(".popupBox").css({'display':'block', 'width': width, 'height': height, 'margin-top': -(height / 2), 'margin-left': -(width / 2)});
     });

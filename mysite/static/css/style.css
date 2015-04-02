@@ -990,6 +990,11 @@ label.popupBoxLoginFormZap {
     opacity: 0.4;
     cursor: pointer;
 }
+.popup_img_box {
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;
+}
 
 
 .ContentBoxPage table {
