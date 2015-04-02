@@ -45,3 +45,9 @@ class SiteSettings(models.Model):
     inst = models.CharField('Instagram', max_length=200)
 
     head_banner = models.ImageField("Баннер (главный)", upload_to="static/uploads/", blank=True, max_length=1000)
+
+    def save(self, *args, **kwargs):
+        if self.head_banner == '':
+            model = SiteSettings.objects.get(id=self.id)
+            self.head_banner = model.head_banner
+        super(SiteSettings, self).save(*args, **kwargs)
