@@ -435,6 +435,10 @@ a.append-icon i{margin-left:5px}
     border: 1px solid #E7E7E7;
     border-radius: 3px;
 }
+
+.order_form input[type="text"], .order_form textarea {
+    width: 520px;
+}
 .admin_order_list {
     border-collapse: collapse;
     background: #ffffff;
