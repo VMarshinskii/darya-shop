@@ -194,9 +194,15 @@ $(document).ready(function (){
 
     $(".galeryBoxImg").click(function(){
 
+        var doc_w = $(document).width();
+        var doc_h = $(document).height();
+
+        var width = doc_w / 100 * 80;
+        var height = doc_h / 100 * 60;
+
         $(".popupBox").html($(this).html());
         $(".background").css('display', 'block');
-        $(".popupBox").css('display', 'block');
+        $(".popupBox").css({'display':'block', 'width': width, 'height': height});
     });
 
 });
