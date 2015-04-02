@@ -198,7 +198,7 @@ $(document).ready(function (){
         var doc_h = $(window).height();
 
         var width = doc_w / 100 * 60;
-        var height = doc_h / 100 * 50;
+        var height = doc_h / 100 * 70;
 
         $(".popupBox").html('<div class="popup_img_box">' + $(this).html() + '</div>');
         $(".background").css('display', 'block');
