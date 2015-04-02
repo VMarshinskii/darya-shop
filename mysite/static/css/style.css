@@ -1003,6 +1003,7 @@ label.popupBoxLoginFormZap {
     padding: 10px;
     background: #fff;
     box-shadow: 0 0 15px #000;
+    height: 100%;
 }
 
 .ContentBoxPage table {
