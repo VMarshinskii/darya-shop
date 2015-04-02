@@ -3,6 +3,7 @@
 {% load right_banners %}
 {% load main_slider %}
 {% load top_menu %}
+{% load header %}
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -23,20 +24,7 @@
 </div>
 <div id="all-content">
 
-    <div id="header">
-        <div class="logo">Darya-A-Shop</div>
-        <div class="cart"><p>Корзина: <a href="/cart/">пусто</a></p></div>
-        <div class="header-info">
-            <span class="header-info-one">Магазин модной, молодежной одежды, обуви и акссеусуаров.</span>
-            <span class="motto"><img src="{% static "images/motto.png" %}" alt="С нами быть модной легко!"/></span>
-        </div>
-        <div class="contact-info">
-            <p>Пишите, звоните. Мы рады Вам помочь!</p>
-            <div class="number">8(968)0137182</div>
-            <div class="mail"><a href="mailto:darya-a-shop@yandex.ru">darya-a-shop@yandex.ru</a></div>
-            <div class="button"><a href="#">Заказать звонок</a></div>
-        </div>
-    </div>
+    {% header_show %}
 
     {% top_menu %}
 
@@ -68,7 +56,7 @@
             <div class="block-instr">
                 <div class="r-header-block">Мы в инстаграм:</div>
                 <div class="instr">
-                    <a href="https://instagram.com/luxe_style_darya" target="_blank"><img src="{% static "images/instgr.png" %}" alt=""/><p>@lux_style_darya</p></a>
+                    <a href="https://instagram.com/luxe_style_darya" target="_blank"><img src="{% static "images/instgr.png" %}" alt=""/><p>@luxe_style_darya</p></a>
                 </div>
             </div>
             {% right_banners %}
