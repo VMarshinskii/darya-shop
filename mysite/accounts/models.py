@@ -44,4 +44,4 @@ class SiteSettings(models.Model):
     vk = models.CharField('Вк', max_length=200)
     inst = models.CharField('Instagram', max_length=200)
 
-    head_banner = models.ImageField("Баннер (главный)", upload_to="static/uploads/")
+    head_banner = models.ImageField("Баннер (главный)", upload_to="static/uploads/", blank=True, max_length=1000)
