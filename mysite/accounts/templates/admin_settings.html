@@ -242,7 +242,21 @@
                         <div class="control-group form-row field-head_banner ">
                             <div>
                                 <div class="control-label"><label for="id_head_banner">Баннер (главный):</label></div>
-                                <div class="controls"><input id="id_head_banner" name="head_banner" type="file" value="{{ model.head_banner }}"></div>
+
+                                {% if model.head_banner %}
+                                <p class="file-upload">
+                                    <a href="{{ model.head_banner }}">
+                                        <img width="260px" class="adminImageField" src="{{ model.head_banner }}">
+                                    </a>
+                                    <span class="clearable-file-input">
+                                        <input id="head_banner-clear_id" name="head_banner-clear" type="checkbox">
+                                        <label for="head_banner-clear_id">Очистить</label>
+                                    </span>
+                                    <br>Изменить: <input id="id_head_banner" name="head_banner" type="file">
+                                </p>
+                                {% else %}
+                                <div class="controls"><input id="id_head_banner" name="head_banner" type="file"></div>
+                                {% endif %}
                             </div>
                         </div>
                     </fieldset>
