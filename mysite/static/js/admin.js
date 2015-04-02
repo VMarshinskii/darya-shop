@@ -1,7 +1,8 @@
 var order_list = function(order_str){
     var result = "<table>";
     var products = order_str.split("==");
-    for (var i = 1; i < products.length -1; i++){
+    alert("fuct");
+    for (var i = 0; i < products.length -1; i++){
         if(products[i] !== '') {
             var product = products[i].split(";");
             result += '<tr>';
@@ -25,6 +26,7 @@ $(document).ready(function(){
     $(".file-upload").html(content);
 
     var order_str = $("#id_products").val();
+    alert("ok");
     alert(order_list(order_str));
 });
 
