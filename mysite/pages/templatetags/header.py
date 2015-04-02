@@ -6,3 +6,9 @@ register = template.Library()
 def header_show():
     model = SiteSettings.objects.get(id=1)
     return {'model': model}
+
+
+@register.inclusion_tag('templatetags/banner_head.html')
+def banner_head():
+    model = SiteSettings.objects.get(id=1)
+    return {'model': model}
