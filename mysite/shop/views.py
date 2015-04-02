@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from django.core.context_processors import csrf
 from django.core.mail import send_mail, EmailMultiAlternatives
 from django.http import Http404
@@ -167,39 +167,26 @@ def cart_top_ajax(request):
 
 
 def admin_email(request):
-    args = {}
-    args.update(csrf(request))
-    args['form'] = MailSenderForm()
-    if request.POST:
-        form = MailSenderForm(request.POST)
-        if form.is_valid():
-            clients = Clients.objects.all()
-            clients_mails = []
-            for client in clients:
-                clients_mails.append(client.mail)
-            subject, from_email, to = request.POST.get('theme'), 'from@example.com', ['marshinskii@gmail.com']
-            text_content = request.POST.get('text')
-            html_content = request.POST.get('text')
-            msg = EmailMultiAlternatives(subject, text_content, from_email, clients_mails)
-            msg.attach_alternative(html_content, "text/html")
-            msg.send()
-            pass
-        else:
-            args['form'] = MailSenderForm(request.POST)
-
-
-    # rb = xlrd.open_workbook('/var/www/darya-shop/mysite/static/sf.xls', formatting_info=True)
-    # sheet = rb.sheet_by_index(0)
-    # for rownum in range(sheet.nrows):
-    #     row = sheet.row_values(rownum)
-    #     cl = Clients()
-    #     cl.name = row[1].encode('utf-8')
-    #     cl.surname = row[2].encode('utf-8')
-    #     try:
-    #         cl.phone = str(row[7]).encode('utf-8').replace(".0", "")
-    #     except Exception:
-    #         pass
-    #     cl.mail = row[3].encode('utf-8')
-    #     cl.save()
-
-    return render_to_response("admin_email.html", args)
+    if request.user.is_authenticated():
+        args = {}
+        args.update(csrf(request))
+        args['form'] = MailSenderForm()
+        if request.POST:
+            form = MailSenderForm(request.POST)
+            if form.is_valid():
+                clients = Clients.objects.all()
+                clients_mails = []
+                for client in clients:
+                    clients_mails.append(client.mail)
+                subject, from_email, to = request.POST.get('theme'), 'from@example.com', ['marshinskii@gmail.com']
+                text_content = request.POST.get('text')
+                html_content = request.POST.get('text')
+                msg = EmailMultiAlternatives(subject, text_content, from_email, clients_mails)
+                msg.attach_alternative(html_content, "text/html")
+                msg.send()
+                pass
+            else:
+                args['form'] = MailSenderForm(request.POST)
+        return render_to_response("admin_email.html", args)
+    else:
+        return redirect('/admin/')
