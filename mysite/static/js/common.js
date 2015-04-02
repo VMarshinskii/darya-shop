@@ -121,6 +121,19 @@ $(document).ready(function (){
         $(".popupBox").css('display', 'none');
     });
 
+    $(".popup_img_box_close").live('click', function(){
+        $(".background").css('display', 'none');
+        $(".popupBox").css('display', 'none');
+    });
+
+    $('.background').hover(
+    function(){
+        $(".popup_img_box_close").css('opacity', '1');
+    },
+    function(){
+        $(".popup_img_box_close").css('opacity', '0.7');
+    });
+
     $(".background").click(function(){
         $(".background").css('display', 'none');
         $(".popupBox").attr("style", "display: none");
@@ -201,6 +214,7 @@ $(document).ready(function (){
         var height = doc_h / 100 * 70;
 
         $(".popupBox").html('<div class="popup_img_box">' + $(this).html() + '</div>');
+        $(".background").html('<span class="popup_img_box_close"></span>');
         $(".background").css('display', 'block');
         $(".popupBox").css({'display':'block', 'width': width, 'height': height, 'margin-top': -(height / 2), 'margin-left': -(width / 2), 'box-shadow': 'none', 'background': 'none'});
     });

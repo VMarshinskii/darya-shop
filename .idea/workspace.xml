@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/static/images/delete30.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/js/common.js" afterPath="$PROJECT_DIR$/mysite/static/js/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -77,8 +78,8 @@
       <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7753304" vertical-offset="2940" max-vertical-offset="3621">
-              <caret line="204" column="182" selection-start-line="204" selection-start-column="182" selection-end-line="204" selection-end-column="182" />
+            <state vertical-scroll-proportion="0.5007342" vertical-offset="1920" max-vertical-offset="3859">
+              <caret line="133" column="53" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -87,8 +88,8 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="16651" max-vertical-offset="20468">
-              <caret line="1004" column="4" selection-start-line="1004" selection-start-column="4" selection-end-line="1004" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="16651" max-vertical-offset="20655">
+              <caret line="1009" column="17" selection-start-line="1009" selection-start-column="17" selection-end-line="1009" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -362,6 +363,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -425,10 +448,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\darya-shop\mysite\static\images" />
       <recent name="C:\work\darya-shop\mysite\pages\templatetags" />
       <recent name="C:\work\darya-shop\mysite\shop\templates" />
       <recent name="C:\work\darya-shop\mysite\shop" />
-      <recent name="C:\work\darya-shop\mysite\static\images" />
       <recent name="C:\work\darya-shop\mysite\static\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -3710,7 +3733,15 @@
       <created>1427996290432</created>
       <updated>1427996290432</updated>
     </task>
-    <option name="localTasksCounter" value="789" />
+    <task id="LOCAL-00789" summary="Update">
+      <created>1428000373847</created>
+      <updated>1428000373847</updated>
+    </task>
+    <task id="LOCAL-00790" summary="Update">
+      <created>1428000487442</created>
+      <updated>1428000487443</updated>
+    </task>
+    <option name="localTasksCounter" value="791" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -4016,7 +4047,7 @@
         <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="323">
           <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4140,16 +4171,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="16651" max-vertical-offset="20468">
-          <caret line="1004" column="4" selection-start-line="1004" selection-start-column="4" selection-end-line="1004" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="16651" max-vertical-offset="20655">
+          <caret line="1009" column="17" selection-start-line="1009" selection-start-column="17" selection-end-line="1009" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7753304" vertical-offset="2940" max-vertical-offset="3621">
-          <caret line="204" column="182" selection-start-line="204" selection-start-column="182" selection-end-line="204" selection-end-column="182" />
+        <state vertical-scroll-proportion="0.5007342" vertical-offset="1920" max-vertical-offset="3859">
+          <caret line="133" column="53" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="53" />
           <folding />
         </state>
       </provider>
