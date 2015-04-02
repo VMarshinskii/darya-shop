@@ -991,11 +991,19 @@ label.popupBoxLoginFormZap {
     cursor: pointer;
 }
 .popup_img_box {
-    height: 400px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
-
+.popup_img_box img {
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 0 15px #000;
+}
 
 .ContentBoxPage table {
     font: 14px/14pt sans-serif;
