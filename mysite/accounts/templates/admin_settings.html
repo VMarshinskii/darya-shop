@@ -236,7 +236,7 @@
                         <div class="control-group form-row field-inst ">
                             <div>
                                 <div class="control-label"><label class="required" for="id_inst">Instagram:</label></div>
-                                <div class="controls"><input class="vTextField" id="id_inst" maxlength="200" name="inst" type="text" value="{{ model.inst }}"></div>
+                                <div class="controls">{{ form.inst }}</div>
                             </div>
                         </div>
                         <div class="control-group form-row field-head_banner ">
@@ -255,7 +255,7 @@
                                     <br>Изменить: <input id="id_head_banner" name="head_banner" type="file">
                                 </p>
                                 {% else %}
-                                <div class="controls"><input id="id_head_banner" name="head_banner" type="file"></div>
+                                <div class="controls">{{ form.head_banner }}</div>
                                 {% endif %}
                             </div>
                         </div>
