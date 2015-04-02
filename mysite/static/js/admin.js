@@ -40,5 +40,5 @@ $(document).ready(function(){
 
     var order_str = $("#id_products").val();
     $("#id_products").after(order_list(order_str));
-    $("#id_products").remove();
+    $("#id_products").css('display', 'none');
 });
