@@ -195,119 +195,57 @@
              <div class="inner-center-column">
                 {% csrf_token %}
                 <div class="tab-content tab-content-main">
-                   <fieldset class="module aligned first ">
-                      <div class="control-group form-row field-name ">
-                         <div>
-                            <div class="control-label">
-                                <label class="required" for="id_name">Название сайта</label>
-                            </div>
-                             <div class="controls">
-                                 {{ form.site_name }}
-                                 <span class="help-inline">
-                                    {{ form.site_name.errors }}
-                                </span>
-                             </div>
-                         </div>
-                      </div>
 
-                       <div class="control-group form-row field-price ">
-                         <div>
-                            <div class="control-label">
-                                <label class="required" for="id_price">Description:</label>
+                    <fieldset class="module aligned first ">
+                        <div class="control-group form-row field-site_name ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_site_name">Название сайта:</label></div>
+                                <div class="controls"><input class="vTextField" id="id_site_name" maxlength="200" name="site_name" type="text" value="{{ model.site_tile }}"></div>
                             </div>
-                            <div class="controls">
-                                {{ form.description }}
-                                <span class="help-inline">
-                                    {{ form.description.errors }}
-                                </span>
+                        </div>
+                        <div class="control-group form-row field-description ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_description">Description:</label></div>
+                                <div class="controls"><input class="vTextField" id="id_description" maxlength="200" name="description" type="text" value="{{ model.description }}"></div>
                             </div>
-                         </div>
-                      </div>
-
-                       <div class="control-group form-row field-price ">
-                         <div>
-                            <div class="control-label">
-                                <label class="required" for="id_price">Keywords:</label>
+                        </div>
+                        <div class="control-group form-row field-keywords ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_keywords">Keywords:</label></div>
+                                <div class="controls"><input class="vTextField" id="id_keywords" maxlength="200" name="keywords" type="text" value="{{ model.keywords }}"></div>
                             </div>
-                            <div class="controls">
-                                {{ form.keywords }}
-                                <span class="help-inline">
-                                    {{ form.keywords.errors }}
-                                </span>
+                        </div>
+                        <div class="control-group form-row field-phone ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_phone">Телефон:</label></div>
+                                <div class="controls"><input class="vTextField" id="id_phone" maxlength="200" name="phone" type="text" value="{{ model.phone }}"></div>
                             </div>
-                         </div>
-                       </div>
-
-                       <div class="control-group form-row field-price ">
-                         <div>
-                            <div class="control-label">
-                                <label class="required" for="id_price">Телефон:</label>
+                        </div>
+                        <div class="control-group form-row field-email ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_email">E-mail:</label></div>
+                                <div class="controls"><input class="vTextField" id="id_email" maxlength="200" name="email" type="text" value="{{ model.email }}"></div>
                             </div>
-                            <div class="controls">
-                                {{ form.phone }}
-                                <span class="help-inline">
-                                    {{ form.phone.errors }}
-                                </span>
+                        </div>
+                        <div class="control-group form-row field-vk ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_vk">Вк:</label></div>
+                                <div class="controls"><input class="vTextField" id="id_vk" maxlength="200" name="vk" type="text" value="{{ model.vk }}"></div>
                             </div>
-                         </div>
-                       </div>
-
-                       <div class="control-group form-row field-price ">
-                         <div>
-                            <div class="control-label">
-                                <label class="required" for="id_price">E-mail:</label>
+                        </div>
+                        <div class="control-group form-row field-inst ">
+                            <div>
+                                <div class="control-label"><label class="required" for="id_inst">Instagram:</label></div>
+                                <div class="controls"><input class="vTextField" id="id_inst" maxlength="200" name="inst" type="text" value="{{ model.inst }}"></div>
                             </div>
-                            <div class="controls">
-                                {{ form.email }}
-                                <span class="help-inline">
-                                    {{ form.email.errors }}
-                                </span>
+                        </div>
+                        <div class="control-group form-row field-head_banner ">
+                            <div>
+                                <div class="control-label"><label for="id_head_banner">Баннер (главный):</label></div>
+                                <div class="controls"><input id="id_head_banner" name="head_banner" type="file" value="{{ model.head_banner }}"></div>
                             </div>
-                         </div>
-                       </div>
-
-                       <div class="control-group form-row field-price ">
-                         <div>
-                            <div class="control-label">
-                                <label class="required" for="id_price">Баннер (главный):</label>
-                            </div>
-                            <div class="controls">
-                                {{ form.head_banner }}
-                                <span class="help-inline">
-                                    {{ form.head_banner.errors }}
-                                </span>
-                            </div>
-                         </div>
-                       </div>
-
-                       <div class="control-group form-row field-price ">
-                         <div>
-                            <div class="control-label">
-                                <label class="required" for="id_price">VK:</label>
-                            </div>
-                            <div class="controls">
-                                {{ form.vk }}
-                                <span class="help-inline">
-                                    {{ form.vk.errors }}
-                                </span>
-                            </div>
-                         </div>
-                       </div>
-
-                       <div class="control-group form-row field-price ">
-                         <div>
-                            <div class="control-label">
-                                <label class="required" for="id_price">Instagram:</label>
-                            </div>
-                            <div class="controls">
-                                {{ form.inst }}
-                                <span class="help-inline">
-                                    {{ form.inst.errors }}
-                                </span>
-                            </div>
-                         </div>
-                       </div>
-                   </fieldset>
+                        </div>
+                    </fieldset>
 
                 </div>
              </div>

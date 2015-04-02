@@ -117,17 +117,21 @@ def admin_settings(request):
         args.update(csrf(request))
         try:
             model = SiteSettings.objects.get(id=1)
-            args['form'] = SiteSettingsForm(instance=model)
         except SiteSettings.DoesNotExist:
-            args['form'] = SiteSettingsForm()
+            model = SiteSettings()
 
         if request.POST:
-            form = SiteSettingsForm(request.POST)
-            if form.is_valid():
-                form.save()
-                return redirect('/admin/')
-            else:
-                args['form'] = form
+            model.site_name = request.POST.get('site_name')
+            model.description = request.POST.get('description')
+            model.keywords = request.POST.get('keywords')
+            model.phone = request.POST.get('phone')
+            model.email = request.POST.get('email')
+            model.vk = request.POST.get('vk')
+            model.inst = request.POST.get('inst')
+            model.head_banner = request.POST.get('head_banner')
+            model.save()
+
+        args['model'] = model
 
         return render_to_response("admin_settings.html", args)
     else:
