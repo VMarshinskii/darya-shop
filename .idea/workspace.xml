@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/js/admin.js" afterPath="$PROJECT_DIR$/mysite/static/js/admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html" afterPath="$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/accounts/views.py" afterPath="$PROJECT_DIR$/mysite/accounts/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="eef0c25d-1748-4253-889c-0c315df9db62" name="Failed commit: Default" comment="Update" />
@@ -32,16 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/banners/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -76,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-15.92" vertical-offset="180" max-vertical-offset="850">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="46" selection-end-column="113" />
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -94,15 +84,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_settings.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin_settings.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36335877" vertical-offset="1411" max-vertical-offset="2261">
-              <caret line="238" column="66" selection-start-line="238" selection-start-column="66" selection-end-line="238" selection-end-column="66" />
+            <state vertical-scroll-proportion="-11.961538" vertical-offset="12" max-vertical-offset="2108">
+              <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
               <folding>
-                <element signature="tag#script#9" expanded="false" />
-                <element signature="e#8311#8333#0#HTML" expanded="true" />
+                <element signature="e#1740#1762#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/static/js/admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.024495678" vertical-offset="0" max-vertical-offset="694">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,8 +119,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.28" vertical-offset="1694" max-vertical-offset="2397">
-              <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+            <state vertical-scroll-proportion="-39.0" vertical-offset="1133" max-vertical-offset="2397">
+              <caret line="124" column="63" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
               <folding>
                 <element signature="e#24#103#0" expanded="true" />
               </folding>
@@ -160,7 +159,6 @@
         <option value="$PROJECT_DIR$/mysite/catalog/templates/category_root.html" />
         <option value="$PROJECT_DIR$/mysite/catalog/models.py" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/ajax_popup_cart.html" />
-        <option value="$PROJECT_DIR$/mysite/static/js/admin.js" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/cart_ajax.html" />
         <option value="$PROJECT_DIR$/mysite/shop/templates/add_in_cart.html" />
@@ -204,6 +202,7 @@
         <option value="$PROJECT_DIR$/mysite/accounts/admin.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/models.py" />
         <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
+        <option value="$PROJECT_DIR$/mysite/static/js/admin.js" />
         <option value="$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html" />
       </list>
     </option>
@@ -341,6 +340,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3686,7 +3725,43 @@
       <created>1427960206955</created>
       <updated>1427960206955</updated>
     </task>
-    <option name="localTasksCounter" value="742" />
+    <task id="LOCAL-00742" summary="Update">
+      <created>1427960863995</created>
+      <updated>1427960863995</updated>
+    </task>
+    <task id="LOCAL-00743" summary="Update">
+      <created>1427961380253</created>
+      <updated>1427961380253</updated>
+    </task>
+    <task id="LOCAL-00744" summary="Update">
+      <created>1427961417588</created>
+      <updated>1427961417588</updated>
+    </task>
+    <task id="LOCAL-00745" summary="Update">
+      <created>1427961484459</created>
+      <updated>1427961484459</updated>
+    </task>
+    <task id="LOCAL-00746" summary="Update">
+      <created>1427961636847</created>
+      <updated>1427961636848</updated>
+    </task>
+    <task id="LOCAL-00747" summary="Update">
+      <created>1427961806833</created>
+      <updated>1427961806833</updated>
+    </task>
+    <task id="LOCAL-00748" summary="Update">
+      <created>1427961878075</created>
+      <updated>1427961878075</updated>
+    </task>
+    <task id="LOCAL-00749" summary="Update">
+      <created>1427961936024</created>
+      <updated>1427961936024</updated>
+    </task>
+    <task id="LOCAL-00750" summary="Update">
+      <created>1427962055108</created>
+      <updated>1427962055108</updated>
+    </task>
+    <option name="localTasksCounter" value="751" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3740,13 +3815,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysite/catalog/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.96" vertical-offset="0" max-vertical-offset="918">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/pages/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="357">
@@ -4093,15 +4161,15 @@
     <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.92" vertical-offset="180" max-vertical-offset="850">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="46" selection-end-column="113" />
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.28" vertical-offset="1694" max-vertical-offset="2397">
-          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+        <state vertical-scroll-proportion="-39.0" vertical-offset="1133" max-vertical-offset="2397">
+          <caret line="124" column="63" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
           <folding>
             <element signature="e#24#103#0" expanded="true" />
           </folding>
@@ -4110,12 +4178,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36335877" vertical-offset="1411" max-vertical-offset="2261">
-          <caret line="238" column="66" selection-start-line="238" selection-start-column="66" selection-end-line="238" selection-end-column="66" />
+        <state vertical-scroll-proportion="-11.961538" vertical-offset="12" max-vertical-offset="2108">
+          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
           <folding>
-            <element signature="tag#script#9" expanded="false" />
-            <element signature="e#8311#8333#0#HTML" expanded="true" />
+            <element signature="e#1740#1762#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/static/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024495678" vertical-offset="0" max-vertical-offset="694">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
