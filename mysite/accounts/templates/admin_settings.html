@@ -166,6 +166,24 @@
 {% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
 
 {% block content %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="/admin/">Начало</a>
+            <span class="divider">»</span>
+        </li>
+        <li>
+            <a href="/admin/catalog/">Catalog</a>
+            <span class="divider">»</span>
+        </li>
+        <li>
+            <a href="/admin/catalog/product/">
+            Products</a>
+            <span class="divider">»</span>
+        </li>
+        <li class="active">
+            Добавить product
+        </li>
+    </ul>
 
     <div id="content" class="colM row-fluid">
        <h2 class="content-title">Email рассылка</h2>
