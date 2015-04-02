@@ -1007,8 +1007,8 @@ label.popupBoxLoginFormZap {
     height: 100%;
 }
 .popup_img_box_close {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     position: fixed;
     top: 15px;
     right: 15px;
