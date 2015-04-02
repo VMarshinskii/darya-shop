@@ -122,7 +122,7 @@ def admin_settings(request):
             args['form'] = SiteSettingsForm()
 
         if request.POST:
-            form = SiteSettingsForm(request.POST)
+            form = SiteSettingsForm(request.POST, request.FILES)
             if form.is_valid():
                 model = form.save(commit=False)
                 model.id = 1
