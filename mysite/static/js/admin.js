@@ -1,12 +1,18 @@
 var order_list = function(order_str){
     var result = '<table class="admin_order_list">';
+    result += '<tr>';
+    result += '<td width="56"></td>';
+    result += '<td>Название</td>';
+    result += '<td>Цена</td>';
+    result += '<td>Кол-во.</td>';
+    result += '<td>Сумма</td>';
+    result += '</tr>';
     var products = order_str.split("==");
-    alert("fuct");
     for (var i = 0; i < products.length -1; i++){
         if(products[i] !== '') {
             var product = products[i].split(";");
             result += '<tr>';
-            result += '<td><img width="50" src="/static/uploads/' + product[0] + '"/></td>';
+            result += '<td><div class="admin_table_img"><img width="50" src="/static/uploads/' + product[0] + '"/></div></td>';
             result += '<td><a href="/catalog/product/' + product[5] + '">' + product[1] + '<a/></td>';
             result += '<td>' + product[2] + '</td>';
             result += '<td>' + product[3] + '</td>';

@@ -437,8 +437,14 @@ a.append-icon i{margin-left:5px}
 }
 .admin_order_list {
     border-collapse: collapse;
+    background: #ffffff;
 }
 .admin_order_list td {
     padding: 3px;
     vertical-align: middle;
+    border: 1px solid #DFDFDF;
+}
+.admin_table_img {
+    height: 60px;
+    overflow: hidden;
 }
