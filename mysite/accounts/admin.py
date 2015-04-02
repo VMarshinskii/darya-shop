@@ -1,6 +1,6 @@
 # coding: utf8
 from .forms import AdminUserChangeForm, AdminUserAddForm
-from .models import User, Address, SiteSettingsForm
+from .models import User, Address, SiteSettings
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import ugettext_lazy as _
@@ -33,4 +33,4 @@ class UserAdmin(BaseUserAdmin):
 
 admin.site.register(User)
 admin.site.register(Address)
-admin.site.register(SiteSettingsForm)
+admin.site.register(SiteSettings)
