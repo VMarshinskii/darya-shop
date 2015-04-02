@@ -202,7 +202,7 @@ $(document).ready(function (){
 
         $(".popupBox").html($(this).html());
         $(".background").css('display', 'block');
-        $(".popupBox").css({'display':'block', 'width': width, 'height': height});
+        $(".popupBox").css({'display':'block', 'width': width, 'height': height, 'top': -width / 2, 'left': -height / 2});
     });
 
 });
