@@ -166,7 +166,86 @@
 {% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
 
 {% block my_left_menu %}
-dfsadfasdafaefd
+<div class="left-nav" id="left-nav">
+	<ul>
+		<li class="active">
+			<a href="/admin/"><i class="icon-home"></i>Начало
+			</a>
+		</li>
+		<li>
+			<a href="/admin/accounts/user/"><i class="icon-chevron-right"></i>Accounts
+			</a>
+			<ul>
+				<li>
+					<a href="/admin/accounts/user/">Пользователи</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="/admin/banners/rightbanner/"><i class="icon-chevron-right"></i>Banners
+			</a>
+			<ul>
+				<li>
+					<a href="/admin/banners/rightbanner/">Баннеры справа</a>
+				</li>
+				<li>
+					<a href="/admin/banners/slider/">Слайдер</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="/admin/catalog/category/"><i class="icon-chevron-right"></i>Catalog
+			</a>
+			<ul>
+				<li>
+					<a href="/admin/catalog/category/">Категории</a>
+				</li>
+				<li>
+					<a href="/admin/catalog/product/">Товары</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="/admin/pages/page/"><i class="icon-chevron-right"></i>Pages
+			</a>
+			<ul>
+				<li>
+					<a href="/admin/pages/page/">Страницы</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="/admin/shop/typedelivery/"><i class="icon-chevron-right"></i>Shop
+			</a>
+			<ul>
+				<li>
+					<a href="/admin/shop/typedelivery/">Варианты доставки</a>
+				</li>
+				<li>
+					<a href="/admin/shop/order/">Заказы</a>
+				</li>
+				<li>
+					<a href="/admin/shop/clients/">Клиенты</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="/admin/auth/group/"><i class="icon-lock"></i>Пользователи и группы
+			</a>
+			<ul>
+				<li>
+					<a href="/admin/auth/group/">Группы</a>
+				</li>
+			</ul>
+		</li>
+        <li>
+			<a href="/admin/settings/"><i class="icon-home"></i>Настройки</a>
+		</li>
+        <li class="active">
+			<a href="/admin/email/"><i class="icon-home"></i>Рассылка</a>
+		</li>
+	</ul>
+</div>
 {% endblock %}
 
 {% block content %}
