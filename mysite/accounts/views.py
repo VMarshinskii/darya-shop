@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render_to_response, HttpResponseRedirect
+from django.shortcuts import render_to_response, HttpResponseRedirect, redirect
 from django.core.context_processors import csrf
 from django.http import Http404
 from django.contrib import auth
@@ -112,5 +112,23 @@ def my_order(request, id=-1):
 
 
 def admin_settings(request):
-    form = SiteSettingsForm()
-    return render_to_response("admin_settings.html", {'form': form})
+    if request.user.is_authenticated():
+        args = {}
+        args.update(csrf(request))
+        try:
+            model = SiteSettings.objects.get(id=1)
+            args['form'] = SiteSettingsForm(instance=model)
+        except SiteSettings.DoesNotExist:
+            args['form'] = SiteSettingsForm()
+
+        if request.POST:
+            form = SiteSettingsForm(request.POST)
+            if form.is_valid():
+                form.save()
+                return redirect('/admin/')
+            else:
+                args['form'] = form
+
+        return render_to_response("admin_settings.html", args)
+    else:
+        return redirect('/admin/')
