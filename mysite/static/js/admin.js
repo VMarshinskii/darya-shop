@@ -1,12 +1,12 @@
 var order_list = function(order_str){
-    var result = "<table>";
+    var result = '<table class="admin_order_list">';
     var products = order_str.split("==");
     alert("fuct");
     for (var i = 0; i < products.length -1; i++){
         if(products[i] !== '') {
             var product = products[i].split(";");
             result += '<tr>';
-            result += '<td><img width="50" src="' + product[0] + '"/></td>';
+            result += '<td><img width="50" src="/static/uploads/' + product[0] + '"/></td>';
             result += '<td><a href="/catalog/product/' + product[5] + '">' + product[1] + '<a/></td>';
             result += '<td>' + product[2] + '</td>';
             result += '<td>' + product[3] + '</td>';
@@ -30,7 +30,6 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    alert("ok");
     var order_str = $("#id_products").val();
     $("#id_products").after(order_list(order_str));
     $("#id_products").remove();
