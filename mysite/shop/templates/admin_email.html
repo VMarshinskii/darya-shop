@@ -160,6 +160,14 @@
             });
         });
     </script>
+    <style>
+    .breadcrumb {
+        display: none;
+    }
+    #product_form input[type="text"] {
+        width: 450px;
+    }
+    </style>
 {% endblock %}
 {% block extrastyle %}{{ block.super }}
 {% endblock %}
@@ -249,6 +257,15 @@
 {% endblock %}
 
 {% block content %}
+    <ul class="breadcrumb" style="display: block">
+        <li>
+            <a href="/admin/">Начало</a>
+            <span class="divider">»</span>
+        </li>
+        <li class="active">
+            Рассылка
+        </li>
+    </ul>
 
     <div id="content" class="colM row-fluid">
        <h2 class="content-title">Email рассылка</h2>
