@@ -19,17 +19,16 @@ var order_list = function(order_str){
 };
 
 $(document).ready(function(){
-//    var path = $(".file-upload").children("a").attr("href");
-//    $(".file-upload").children("a").attr("href", '/' + path);
-//    $(".file-upload").children("a").html('<img width="260px" class="adminImageField" src="/' + path + '"/>');
-//    var content = $(".file-upload").html().replace("На данный момент: ", '');
-//    $(".file-upload").html(content);
-
-    var order_str = $("#id_products").val();
-    alert("ok");
-    alert(order_list(order_str));
+    var path = $(".file-upload").children("a").attr("href");
+    $(".file-upload").children("a").attr("href", '/' + path);
+    $(".file-upload").children("a").html('<img width="260px" class="adminImageField" src="/' + path + '"/>');
+    var content = $(".file-upload").html().replace("На данный момент: ", '');
+    $(".file-upload").html(content);
 });
 
 
-//fvpe8pai.jpg;Пальто Green Frash зеленое;1140;4;4560;1
-
+$(document).ready(function(){
+    var order_str = $("#id_products").val();
+    $("#id_products").after(order_list(order_str));
+    $("#id_products").remove();
+});
