@@ -131,7 +131,7 @@ $(document).ready(function (){
         $(".popup_img_box_close").css('opacity', '1');
     },
     function(){
-        $(".popup_img_box_close").css('opacity', '0.7');
+        $(".popup_img_box_close").css('opacity', '0.3');
     });
 
     $(".background").click(function(){
