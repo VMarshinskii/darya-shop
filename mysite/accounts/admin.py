@@ -32,5 +32,5 @@ class UserAdmin(BaseUserAdmin):
     )
 
 admin.site.register(User)
-admin.site.register(Address)
-admin.site.register(SiteSettings)
+# admin.site.register(Address)
+# admin.site.register(SiteSettings)
