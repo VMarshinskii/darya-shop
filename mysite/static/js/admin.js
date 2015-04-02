@@ -19,11 +19,11 @@ var order_list = function(order_str){
 };
 
 $(document).ready(function(){
-    var path = $(".file-upload").children("a").attr("href");
-    $(".file-upload").children("a").attr("href", '/' + path);
-    $(".file-upload").children("a").html('<img width="260px" class="adminImageField" src="/' + path + '"/>');
-    var content = $(".file-upload").html().replace("На данный момент: ", '');
-    $(".file-upload").html(content);
+//    var path = $(".file-upload").children("a").attr("href");
+//    $(".file-upload").children("a").attr("href", '/' + path);
+//    $(".file-upload").children("a").html('<img width="260px" class="adminImageField" src="/' + path + '"/>');
+//    var content = $(".file-upload").html().replace("На данный момент: ", '');
+//    $(".file-upload").html(content);
 
     var order_str = $("#id_products").val();
     alert("ok");
