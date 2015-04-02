@@ -28,8 +28,8 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+    alert("ok");
     var order_str = $("#id_products").val();
     $("#id_products").after(order_list(order_str));
-    alert("ok");
     $("#id_products").remove();
 });
