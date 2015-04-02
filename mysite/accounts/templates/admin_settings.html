@@ -160,15 +160,18 @@
             });
         });
     </script>
+    <style>
+    .breadcrumb {
+        display: none;
+    }
+    </style>
 {% endblock %}
 {% block extrastyle %}{{ block.super }}
 {% endblock %}
 {% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
 
-{% block breadcrumb %}{% endblock %}
-
 {% block content %}
-    <ul class="breadcrumb">
+    <ul class="breadcrumb" style="display: block">
         <li>
             <a href="/admin/">Начало</a>
             <span class="divider">»</span>
