@@ -36,6 +36,8 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+    $("#order_form #id_user").attr('disabled', true);
+
     var order_str = $("#id_products").val();
     $("#id_products").after(order_list(order_str));
     $("#id_products").remove();
