@@ -1,11 +1,11 @@
 var order_list = function(order_str){
     var result = '<table class="admin_order_list">';
     result += '<tr>';
-    result += '<td width="56"></td>';
+    result += '<td width="50"></td>';
     result += '<td>Название</td>';
     result += '<td>Цена</td>';
     result += '<td>Кол-во.</td>';
-    result += '<td>Сумма</td>';
+    result += '<td align="center">Сумма</td>';
     result += '</tr>';
     var products = order_str.split("==");
     for (var i = 0; i < products.length -1; i++){
