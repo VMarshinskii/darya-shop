@@ -10,7 +10,7 @@
 <div class="goodss">
     {% for product in products %}
     <div class="good">
-        {% if sticker != "нет" %}
+        {% if product.status != 0 %}
         <div class="action_sticker">{{ sticker }}</div>
         {% endif %}
         <a href="/catalog/product/{{ product.id }}/">

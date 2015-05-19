@@ -16,9 +16,10 @@ def home(request):
     for pr in products:
         if pr.sale_status == 1:
             pr.price_new = (pr.price / 100) * (100 - pr.sale)
+        if pr.status != 0:
+            pr.status = sticker[pr.status]
     return render_to_response("index.html", {
-        'products': products,
-        'sticker': sticker[int(pr.status)]
+        'products': products
     })
 
 
@@ -60,6 +61,8 @@ def category(request, url="none"):
         for pr in products:
             if pr.sale_status == 1:
                 pr.price_new = pr.price - (pr.price / 100 * pr.sale)
+            if pr.status != 0:
+                pr.status = sticker[pr.status]
         path = list(reversed(categ.get_path_categ()))
     except Category.DoesNotExist:
         return Http404
