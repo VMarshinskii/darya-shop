@@ -8,6 +8,7 @@ from ajaxuploader.views import AjaxFileUploader
 from django.utils.encoding import smart_str
 from catalog.admin import sort_list
 
+sticker = ['нет', 'Хит', 'Новинка', 'Акция', 'Хит', 'Распродажа', 'Товар дня', 'Товар недели', 'Товар месяца']
 
 # Create your views here.
 def home(request):
@@ -42,7 +43,8 @@ def product(request, id=-1):
         return render_to_response("product.html", {
             'product': product,
             'images': images,
-            'related_products': related_products
+            'related_products': related_products,
+            'sticker': sticker[int(product.status)]
         })
     else:
         return Http404

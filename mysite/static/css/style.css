@@ -252,6 +252,17 @@ body {
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
+    position: relative;
+}
+.action_sticker {
+    position: absolute;
+    padding: 5px;
+    background: #F72F71;
+    left: -15px;
+    top: -257px;
+    z-index: 100;
+    color: #fff;
+    border-radius: 0 2px 2px 0;
 }
 #center-block .goodss .good.mar0 {
     margin-right: 0;
