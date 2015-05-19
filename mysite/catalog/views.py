@@ -16,7 +16,10 @@ def home(request):
     for pr in products:
         if pr.sale_status == 1:
             pr.price_new = (pr.price / 100) * (100 - pr.sale)
-    return render_to_response("index.html", {'products': products})
+    return render_to_response("index.html", {
+        'products': products,
+        'sticker': sticker[int(pr.status)]
+    })
 
 
 def product(request, id=-1):
