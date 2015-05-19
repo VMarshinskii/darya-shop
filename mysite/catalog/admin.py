@@ -5,6 +5,13 @@ from django.shortcuts import render_to_response
 from django.utils.encoding import smart_str
 
 
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'get_nameCategory', 'get_prew', 'public')
+    list_filter = ('public',)
+    search_fields = ['title']
+    date_hierarchy = 'date'
+
+
 class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {"url": ("title",)}
 
@@ -48,5 +55,5 @@ def select_res(categoryes):
         str_res += smart_str(category.title) + ":" + smart_str(category.id) + ";"
     return str_res
 
-admin.site.register(Product)
+admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
