@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html" afterPath="$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/models.py" afterPath="$PROJECT_DIR$/mysite/catalog/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html" afterPath="$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/views.py" afterPath="$PROJECT_DIR$/mysite/catalog/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="eef0c25d-1748-4253-889c-0c315df9db62" name="Failed commit: Default" comment="Update" />
     <ignored path="darya-shop.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,110 +25,107 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="C:\Python34\project\github\darya-shop" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="darya-shop" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cart_top_ajax.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart_top_ajax.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order_not_registered.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.461538" vertical-offset="459" max-vertical-offset="1615">
-              <caret line="11" column="126" selection-start-line="11" selection-start-column="126" selection-end-line="11" selection-end-column="126" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order_registered.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_registered.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="37.26923" vertical-offset="969" max-vertical-offset="1632">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order_thanks.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="order_thanks.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_thanks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="391">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_order.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="my_order.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.692307" vertical-offset="36" max-vertical-offset="731">
+            <state vertical-scroll-proportion="0.0">
               <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_orders.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="my_orders.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_orders.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.653846" vertical-offset="70" max-vertical-offset="765">
+            <state vertical-scroll-proportion="0.0">
               <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_orders_not_registered.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="my_orders_not_registered.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_orders_not_registered.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="323">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="registration.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/registration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.730769" vertical-offset="19" max-vertical-offset="867">
+            <state vertical-scroll-proportion="0.0">
               <caret line="16" column="85" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration_thank.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="registration_thank.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/registration_thank.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="374">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yes.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="yes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/yes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="669">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.592592">
+              <caret line="56" column="13" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/catalog/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.962963">
+              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product_form.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.84794277">
+              <caret line="270" column="104" selection-start-line="270" selection-start-column="104" selection-end-line="270" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -142,70 +142,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mysite/shop/templates/cart.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/cart_ajax.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/add_in_cart.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order3.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order2.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/ajax_login.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/yes.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/registrations.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/registration.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/registration_thank.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/my_orders_not_registered.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order_registered.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/my_order.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/my_orders.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order_thanks.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/additions.py" />
-        <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/mysite/shop/parser.py" />
-        <option value="$PROJECT_DIR$/mysite/shop/models.py" />
-        <option value="$PROJECT_DIR$/mysite/pages/models.py" />
-        <option value="$PROJECT_DIR$/mysite/static/redactor/redactor.js" />
-        <option value="$PROJECT_DIR$/mysite/pages/templates/templatetags/top_menu.html" />
-        <option value="$PROJECT_DIR$/mysite/pages/templates/page.html" />
-        <option value="$PROJECT_DIR$/mysite/catalog/templates/product.html" />
-        <option value="$PROJECT_DIR$/mysite/catalog/templates/category.html" />
-        <option value="$PROJECT_DIR$/mysite/banners/models.py" />
-        <option value="$PROJECT_DIR$/mysite/catalog/templates/index.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/admin_settings.html" />
-        <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/mysite/shop/forms.py" />
-        <option value="$PROJECT_DIR$/mysite/accounts/forms.py" />
-        <option value="$PROJECT_DIR$/mysite/accounts/views.py" />
-        <option value="$PROJECT_DIR$/mysite/accounts/models.py" />
-        <option value="$PROJECT_DIR$/mysite/static/suit/css/suit.css" />
-        <option value="$PROJECT_DIR$/mysite/static/js/admin.js" />
-        <option value="$PROJECT_DIR$/mysite/pages/templates/templatetags/header.html" />
-        <option value="$PROJECT_DIR$/mysite/pages/templatetags/header.py" />
-        <option value="$PROJECT_DIR$/mysite/templates/main.html" />
-        <option value="$PROJECT_DIR$/mysite/pages/templates/templatetags/banner_head.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/admin.py" />
-        <option value="$PROJECT_DIR$/mysite/shop/admin.py" />
-        <option value="$PROJECT_DIR$/mysite/suit/templates/admin/base.html" />
-        <option value="$PROJECT_DIR$/mysite/suit/templates/suit/menu.html" />
-        <option value="$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/admin_email.html" />
-        <option value="$PROJECT_DIR$/mysite/shop/views.py" />
+        <option value="$PROJECT_DIR$/mysite/catalog/models.py" />
         <option value="$PROJECT_DIR$/mysite/catalog/views.py" />
-        <option value="$PROJECT_DIR$/mysite/static/js/common.js" />
-        <option value="$PROJECT_DIR$/mysite/static/css/style.css" />
-        <option value="$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html" />
+        <option value="$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -258,42 +214,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="darya-shop">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="mysite">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="darya-shop">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Changed Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -450,6 +370,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="darya-shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="accounts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -478,6 +464,43 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="darya-shop">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="mysite">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="darya-shop">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -527,6 +550,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysite/shop/parser.py" />
       <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -549,6 +573,143 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="darya-shop" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="darya-shop" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="darya-shop" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="darya-shop" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="darya-shop" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="darya-shop" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="darya-shop" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -576,111 +737,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="darya-shop" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="darya-shop" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="darya-shop" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="darya-shop" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="darya-shop" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Python.parser" />
     </list>
@@ -698,3140 +754,331 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="" />
       <created>1422505767039</created>
+      <option name="number" value="Default" />
       <updated>1422505767039</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Update">
-      <created>1423594635937</created>
-      <updated>1423594635937</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Update">
-      <created>1423594694359</created>
-      <updated>1423594694359</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Update">
-      <created>1423672291968</created>
-      <updated>1423672291968</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Update">
-      <created>1423673091538</created>
-      <updated>1423673091539</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Update">
-      <created>1423673234698</created>
-      <updated>1423673234698</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Update">
-      <created>1423673370092</created>
-      <updated>1423673370092</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Update">
-      <created>1423673420724</created>
-      <updated>1423673420724</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Update">
-      <created>1423673922889</created>
-      <updated>1423673922889</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Update">
-      <created>1423674026036</created>
-      <updated>1423674026036</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Update">
-      <created>1423675195196</created>
-      <updated>1423675195196</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Update">
-      <created>1423675374533</created>
-      <updated>1423675374533</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Update">
-      <created>1423675548573</created>
-      <updated>1423675548573</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Update">
-      <created>1423675648576</created>
-      <updated>1423675648576</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Update">
-      <created>1423675717513</created>
-      <updated>1423675717513</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Update">
-      <created>1423675998836</created>
-      <updated>1423675998836</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Update">
-      <created>1423676973070</created>
-      <updated>1423676973070</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Update">
-      <created>1423677198238</created>
-      <updated>1423677198238</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Update">
-      <created>1423677285352</created>
-      <updated>1423677285352</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Update">
-      <created>1423677504001</created>
-      <updated>1423677504001</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Update">
-      <created>1423740932820</created>
-      <updated>1423740932820</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Update">
-      <created>1423741005215</created>
-      <updated>1423741005215</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Update">
-      <created>1423741191189</created>
-      <updated>1423741191189</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Update">
-      <created>1423741591119</created>
-      <updated>1423741591119</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Update">
-      <created>1423741763782</created>
-      <updated>1423741763782</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Update">
-      <created>1423741838576</created>
-      <updated>1423741838576</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Update">
-      <created>1423742001036</created>
-      <updated>1423742001036</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Update">
-      <created>1423742073913</created>
-      <updated>1423742073913</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Update">
-      <created>1423742398140</created>
-      <updated>1423742398140</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Update">
-      <created>1423742465487</created>
-      <updated>1423742465487</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Update">
-      <created>1423742626114</created>
-      <updated>1423742626114</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Update">
-      <created>1423742665790</created>
-      <updated>1423742665790</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Update">
-      <created>1423743460919</created>
-      <updated>1423743460919</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Update">
-      <created>1423743632964</created>
-      <updated>1423743632968</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Update">
-      <created>1423743714018</created>
-      <updated>1423743714019</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Update">
-      <created>1423743763682</created>
-      <updated>1423743763684</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Update">
-      <created>1423743808613</created>
-      <updated>1423743808614</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Update">
-      <created>1423743864505</created>
-      <updated>1423743864505</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Update">
-      <created>1423743910546</created>
-      <updated>1423743910546</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Update">
-      <created>1423744155970</created>
-      <updated>1423744155970</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Update">
-      <created>1423744513141</created>
-      <updated>1423744513141</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Update">
-      <created>1423744593951</created>
-      <updated>1423744593952</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Update">
-      <created>1423744963642</created>
-      <updated>1423744963642</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Update">
-      <created>1423745081544</created>
-      <updated>1423745081544</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Update">
-      <created>1423745246457</created>
-      <updated>1423745246457</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Update">
-      <created>1423745876983</created>
-      <updated>1423745876983</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Update">
-      <created>1423746022021</created>
-      <updated>1423746022021</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Update">
-      <created>1423746425158</created>
-      <updated>1423746425158</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Update">
-      <created>1423746600941</created>
-      <updated>1423746600942</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Update">
-      <created>1423746800166</created>
-      <updated>1423746800170</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Update">
-      <created>1424196217783</created>
-      <updated>1424196217784</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Update">
-      <created>1424196338253</created>
-      <updated>1424196338253</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Update">
-      <created>1424196416419</created>
-      <updated>1424196416419</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Update">
-      <created>1424196539852</created>
-      <updated>1424196539852</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Update">
-      <created>1424196951364</created>
-      <updated>1424196951364</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Update">
-      <created>1424197025395</created>
-      <updated>1424197025395</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Update">
-      <created>1424198265661</created>
-      <updated>1424198265661</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Update">
-      <created>1424198345531</created>
-      <updated>1424198345531</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Update">
-      <created>1424199069465</created>
-      <updated>1424199069465</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Update">
-      <created>1424199707602</created>
-      <updated>1424199707602</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Update">
-      <created>1424200188757</created>
-      <updated>1424200188757</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Update">
-      <created>1424200273981</created>
-      <updated>1424200273981</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Update">
-      <created>1424200748466</created>
-      <updated>1424200748466</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Update">
-      <created>1424200786671</created>
-      <updated>1424200786671</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Update">
-      <created>1424200828849</created>
-      <updated>1424200828849</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Update">
-      <created>1424201028356</created>
-      <updated>1424201028356</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Update">
-      <created>1424203167861</created>
-      <updated>1424203167861</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Update">
-      <created>1424203466921</created>
-      <updated>1424203466921</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Update">
-      <created>1424204035271</created>
-      <updated>1424204035271</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Update">
-      <created>1424204065678</created>
-      <updated>1424204065678</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Update">
-      <created>1424204223980</created>
-      <updated>1424204223980</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Update">
-      <created>1424204267493</created>
-      <updated>1424204267493</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Update">
-      <created>1424204386178</created>
-      <updated>1424204386178</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Update">
-      <created>1424266852528</created>
-      <updated>1424266852528</updated>
-    </task>
-    <task id="LOCAL-00091" summary="Update">
-      <created>1424267015164</created>
-      <updated>1424267015164</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Update">
-      <created>1424267097785</created>
-      <updated>1424267097785</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Update">
-      <created>1424267306116</created>
-      <updated>1424267306116</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Update">
-      <created>1424267366191</created>
-      <updated>1424267366191</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Update">
-      <created>1424267546652</created>
-      <updated>1424267546652</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Update">
-      <created>1424268490259</created>
-      <updated>1424268490259</updated>
-    </task>
-    <task id="LOCAL-00097" summary="Update">
-      <created>1424268588670</created>
-      <updated>1424268588670</updated>
-    </task>
-    <task id="LOCAL-00098" summary="Update">
-      <created>1424268676730</created>
-      <updated>1424268676731</updated>
-    </task>
-    <task id="LOCAL-00099" summary="Update">
-      <created>1424280840790</created>
-      <updated>1424280840790</updated>
-    </task>
-    <task id="LOCAL-00100" summary="Update">
-      <created>1424281120880</created>
-      <updated>1424281120880</updated>
-    </task>
-    <task id="LOCAL-00101" summary="Update">
-      <created>1424281155013</created>
-      <updated>1424281155013</updated>
-    </task>
-    <task id="LOCAL-00102" summary="Update">
-      <created>1424281741485</created>
-      <updated>1424281741485</updated>
-    </task>
-    <task id="LOCAL-00103" summary="Update">
-      <created>1424282003264</created>
-      <updated>1424282003264</updated>
-    </task>
-    <task id="LOCAL-00104" summary="Update">
-      <created>1424282321389</created>
-      <updated>1424282321389</updated>
-    </task>
-    <task id="LOCAL-00105" summary="Update">
-      <created>1424283245171</created>
-      <updated>1424283245171</updated>
-    </task>
-    <task id="LOCAL-00106" summary="Update">
-      <created>1424283548468</created>
-      <updated>1424283548468</updated>
-    </task>
-    <task id="LOCAL-00107" summary="Update">
-      <created>1424283993391</created>
-      <updated>1424283993392</updated>
-    </task>
-    <task id="LOCAL-00108" summary="Update">
-      <created>1424284527765</created>
-      <updated>1424284527765</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Update">
-      <created>1424351310099</created>
-      <updated>1424351310099</updated>
-    </task>
-    <task id="LOCAL-00110" summary="Update">
-      <created>1424351970595</created>
-      <updated>1424351970595</updated>
-    </task>
-    <task id="LOCAL-00111" summary="Update">
-      <created>1424352105461</created>
-      <updated>1424352105461</updated>
-    </task>
-    <task id="LOCAL-00112" summary="Update">
-      <created>1424352729632</created>
-      <updated>1424352729632</updated>
-    </task>
-    <task id="LOCAL-00113" summary="Update">
-      <created>1424352801886</created>
-      <updated>1424352801886</updated>
-    </task>
-    <task id="LOCAL-00114" summary="Update">
-      <created>1424352910662</created>
-      <updated>1424352910662</updated>
-    </task>
-    <task id="LOCAL-00115" summary="Update">
-      <created>1424353042768</created>
-      <updated>1424353042768</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Update">
-      <created>1424355957137</created>
-      <updated>1424355957137</updated>
-    </task>
-    <task id="LOCAL-00117" summary="Update">
-      <created>1424356563992</created>
-      <updated>1424356563992</updated>
-    </task>
-    <task id="LOCAL-00118" summary="Update">
-      <created>1424356639114</created>
-      <updated>1424356639114</updated>
-    </task>
-    <task id="LOCAL-00119" summary="Update">
-      <created>1424357030541</created>
-      <updated>1424357030541</updated>
-    </task>
-    <task id="LOCAL-00120" summary="Update">
-      <created>1424357096827</created>
-      <updated>1424357096827</updated>
-    </task>
-    <task id="LOCAL-00121" summary="Update">
-      <created>1424357255002</created>
-      <updated>1424357255002</updated>
-    </task>
-    <task id="LOCAL-00122" summary="Update">
-      <created>1424357291821</created>
-      <updated>1424357291821</updated>
-    </task>
-    <task id="LOCAL-00123" summary="Update">
-      <created>1424357945298</created>
-      <updated>1424357945298</updated>
-    </task>
-    <task id="LOCAL-00124" summary="Update">
-      <created>1424358463844</created>
-      <updated>1424358463844</updated>
-    </task>
-    <task id="LOCAL-00125" summary="Update">
-      <created>1424358876117</created>
-      <updated>1424358876117</updated>
-    </task>
-    <task id="LOCAL-00126" summary="Update">
-      <created>1424358962465</created>
-      <updated>1424358962465</updated>
-    </task>
-    <task id="LOCAL-00127" summary="Update">
-      <created>1424359358455</created>
-      <updated>1424359358455</updated>
-    </task>
-    <task id="LOCAL-00128" summary="Update">
-      <created>1424359424331</created>
-      <updated>1424359424331</updated>
-    </task>
-    <task id="LOCAL-00129" summary="Update">
-      <created>1424359726618</created>
-      <updated>1424359726618</updated>
-    </task>
-    <task id="LOCAL-00130" summary="Update">
-      <created>1424360351854</created>
-      <updated>1424360351854</updated>
-    </task>
-    <task id="LOCAL-00131" summary="Update">
-      <created>1424360484190</created>
-      <updated>1424360484190</updated>
-    </task>
-    <task id="LOCAL-00132" summary="Update">
-      <created>1424360601065</created>
-      <updated>1424360601065</updated>
-    </task>
-    <task id="LOCAL-00133" summary="Update">
-      <created>1424360756606</created>
-      <updated>1424360756606</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Update">
-      <created>1424360816131</created>
-      <updated>1424360816131</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Update">
-      <created>1424361059716</created>
-      <updated>1424361059716</updated>
-    </task>
-    <task id="LOCAL-00136" summary="Update">
-      <created>1424361107737</created>
-      <updated>1424361107737</updated>
-    </task>
-    <task id="LOCAL-00137" summary="Update">
-      <created>1424361279291</created>
-      <updated>1424361279291</updated>
-    </task>
-    <task id="LOCAL-00138" summary="Update">
-      <created>1424361643510</created>
-      <updated>1424361643510</updated>
-    </task>
-    <task id="LOCAL-00139" summary="Update">
-      <created>1424361752577</created>
-      <updated>1424361752577</updated>
-    </task>
-    <task id="LOCAL-00140" summary="Update">
-      <created>1424362714356</created>
-      <updated>1424362714356</updated>
-    </task>
-    <task id="LOCAL-00141" summary="Update">
-      <created>1424362808909</created>
-      <updated>1424362808909</updated>
-    </task>
-    <task id="LOCAL-00142" summary="Update">
-      <created>1424362919901</created>
-      <updated>1424362919901</updated>
-    </task>
-    <task id="LOCAL-00143" summary="Update">
-      <created>1424363111637</created>
-      <updated>1424363111637</updated>
-    </task>
-    <task id="LOCAL-00144" summary="Update">
-      <created>1424364615655</created>
-      <updated>1424364615655</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Update">
-      <created>1424365099213</created>
-      <updated>1424365099213</updated>
-    </task>
-    <task id="LOCAL-00146" summary="Update">
-      <created>1424366401318</created>
-      <updated>1424366401318</updated>
-    </task>
-    <task id="LOCAL-00147" summary="Update">
-      <created>1424366474576</created>
-      <updated>1424366474576</updated>
-    </task>
-    <task id="LOCAL-00148" summary="Update">
-      <created>1424366609362</created>
-      <updated>1424366609362</updated>
-    </task>
-    <task id="LOCAL-00149" summary="Update">
-      <created>1424366728026</created>
-      <updated>1424366728026</updated>
-    </task>
-    <task id="LOCAL-00150" summary="Update">
-      <created>1424367226332</created>
-      <updated>1424367226332</updated>
-    </task>
-    <task id="LOCAL-00151" summary="Update">
-      <created>1424368560354</created>
-      <updated>1424368560354</updated>
-    </task>
-    <task id="LOCAL-00152" summary="Update">
-      <created>1424369532265</created>
-      <updated>1424369532265</updated>
-    </task>
-    <task id="LOCAL-00153" summary="Update">
-      <created>1424369577259</created>
-      <updated>1424369577259</updated>
-    </task>
-    <task id="LOCAL-00154" summary="Update">
-      <created>1424370201565</created>
-      <updated>1424370201565</updated>
-    </task>
-    <task id="LOCAL-00155" summary="Update">
-      <created>1424370280734</created>
-      <updated>1424370280734</updated>
-    </task>
-    <task id="LOCAL-00156" summary="Update">
-      <created>1424370361939</created>
-      <updated>1424370361939</updated>
-    </task>
-    <task id="LOCAL-00157" summary="Update">
-      <created>1424370469463</created>
-      <updated>1424370469463</updated>
-    </task>
-    <task id="LOCAL-00158" summary="Update">
-      <created>1424370544650</created>
-      <updated>1424370544650</updated>
-    </task>
-    <task id="LOCAL-00159" summary="Update">
-      <created>1424370589946</created>
-      <updated>1424370589946</updated>
-    </task>
-    <task id="LOCAL-00160" summary="Update">
-      <created>1424370829179</created>
-      <updated>1424370829179</updated>
-    </task>
-    <task id="LOCAL-00161" summary="Update">
-      <created>1424371118002</created>
-      <updated>1424371118002</updated>
-    </task>
-    <task id="LOCAL-00162" summary="Update">
-      <created>1424371196573</created>
-      <updated>1424371196573</updated>
-    </task>
-    <task id="LOCAL-00163" summary="Update">
-      <created>1424371264289</created>
-      <updated>1424371264289</updated>
-    </task>
-    <task id="LOCAL-00164" summary="Update">
-      <created>1424371373732</created>
-      <updated>1424371373732</updated>
-    </task>
-    <task id="LOCAL-00165" summary="Update">
-      <created>1424371625380</created>
-      <updated>1424371625380</updated>
-    </task>
-    <task id="LOCAL-00166" summary="Update">
-      <created>1424371848501</created>
-      <updated>1424371848501</updated>
-    </task>
-    <task id="LOCAL-00167" summary="Update">
-      <created>1424371857055</created>
-      <updated>1424371857055</updated>
-    </task>
-    <task id="LOCAL-00168" summary="Update">
-      <created>1424372330851</created>
-      <updated>1424372330851</updated>
-    </task>
-    <task id="LOCAL-00169" summary="Update">
-      <created>1424372411687</created>
-      <updated>1424372411687</updated>
-    </task>
-    <task id="LOCAL-00170" summary="Update">
-      <created>1424422439872</created>
-      <updated>1424422439872</updated>
-    </task>
-    <task id="LOCAL-00171" summary="Update">
-      <created>1424422597392</created>
-      <updated>1424422597392</updated>
-    </task>
-    <task id="LOCAL-00172" summary="Update">
-      <created>1424439504553</created>
-      <updated>1424439504553</updated>
-    </task>
-    <task id="LOCAL-00173" summary="Update">
-      <created>1424439624525</created>
-      <updated>1424439624525</updated>
-    </task>
-    <task id="LOCAL-00174" summary="Update">
-      <created>1424439835175</created>
-      <updated>1424439835175</updated>
-    </task>
-    <task id="LOCAL-00175" summary="Update">
-      <created>1424445491379</created>
-      <updated>1424445491379</updated>
-    </task>
-    <task id="LOCAL-00176" summary="Update">
-      <created>1424445563445</created>
-      <updated>1424445563445</updated>
-    </task>
-    <task id="LOCAL-00177" summary="Update">
-      <created>1424445643048</created>
-      <updated>1424445643048</updated>
-    </task>
-    <task id="LOCAL-00178" summary="Update">
-      <created>1424445747493</created>
-      <updated>1424445747493</updated>
-    </task>
-    <task id="LOCAL-00179" summary="Update">
-      <created>1424445847724</created>
-      <updated>1424445847724</updated>
-    </task>
-    <task id="LOCAL-00180" summary="Update">
-      <created>1424445919852</created>
-      <updated>1424445919852</updated>
-    </task>
-    <task id="LOCAL-00181" summary="Update">
-      <created>1424449001400</created>
-      <updated>1424449001400</updated>
-    </task>
-    <task id="LOCAL-00182" summary="Update">
-      <created>1424449070469</created>
-      <updated>1424449070469</updated>
-    </task>
-    <task id="LOCAL-00183" summary="Update">
-      <created>1424449406911</created>
-      <updated>1424449406911</updated>
-    </task>
-    <task id="LOCAL-00184" summary="Update">
-      <created>1424449446507</created>
-      <updated>1424449446507</updated>
-    </task>
-    <task id="LOCAL-00185" summary="Update">
-      <created>1424450854493</created>
-      <updated>1424450854493</updated>
-    </task>
-    <task id="LOCAL-00186" summary="Update">
-      <created>1424451081797</created>
-      <updated>1424451081798</updated>
-    </task>
-    <task id="LOCAL-00187" summary="Update">
-      <created>1424451120219</created>
-      <updated>1424451120219</updated>
-    </task>
-    <task id="LOCAL-00188" summary="Update">
-      <created>1424451247139</created>
-      <updated>1424451247139</updated>
-    </task>
-    <task id="LOCAL-00189" summary="Update">
-      <created>1424451773926</created>
-      <updated>1424451773926</updated>
-    </task>
-    <task id="LOCAL-00190" summary="Update">
-      <created>1424451848702</created>
-      <updated>1424451848702</updated>
-    </task>
-    <task id="LOCAL-00191" summary="Update">
-      <created>1424451930930</created>
-      <updated>1424451930930</updated>
-    </task>
-    <task id="LOCAL-00192" summary="Update">
-      <created>1424452143251</created>
-      <updated>1424452143251</updated>
-    </task>
-    <task id="LOCAL-00193" summary="Update">
-      <created>1424452207506</created>
-      <updated>1424452207506</updated>
-    </task>
-    <task id="LOCAL-00194" summary="Update">
-      <created>1424452394945</created>
-      <updated>1424452394945</updated>
-    </task>
-    <task id="LOCAL-00195" summary="Update">
-      <created>1424452835336</created>
-      <updated>1424452835336</updated>
-    </task>
-    <task id="LOCAL-00196" summary="Update">
-      <created>1424452851271</created>
-      <updated>1424452851271</updated>
-    </task>
-    <task id="LOCAL-00197" summary="Update">
-      <created>1424458398759</created>
-      <updated>1424458398759</updated>
-    </task>
-    <task id="LOCAL-00198" summary="Update">
-      <created>1424458482173</created>
-      <updated>1424458482173</updated>
-    </task>
-    <task id="LOCAL-00199" summary="Update">
-      <created>1424458727501</created>
-      <updated>1424458727501</updated>
-    </task>
-    <task id="LOCAL-00200" summary="Update">
-      <created>1424458890157</created>
-      <updated>1424458890157</updated>
-    </task>
-    <task id="LOCAL-00201" summary="Update">
-      <created>1424606759776</created>
-      <updated>1424606759776</updated>
-    </task>
-    <task id="LOCAL-00202" summary="Update">
-      <created>1424607206225</created>
-      <updated>1424607206225</updated>
-    </task>
-    <task id="LOCAL-00203" summary="Update">
-      <created>1424607636785</created>
-      <updated>1424607636785</updated>
-    </task>
-    <task id="LOCAL-00204" summary="Update">
-      <created>1424607917369</created>
-      <updated>1424607917369</updated>
-    </task>
-    <task id="LOCAL-00205" summary="Update">
-      <created>1424610510316</created>
-      <updated>1424610510316</updated>
-    </task>
-    <task id="LOCAL-00206" summary="Update">
-      <created>1424611246760</created>
-      <updated>1424611246760</updated>
-    </task>
-    <task id="LOCAL-00207" summary="Update">
-      <created>1424612150424</created>
-      <updated>1424612150424</updated>
-    </task>
-    <task id="LOCAL-00208" summary="Update">
-      <created>1424612223802</created>
-      <updated>1424612223802</updated>
-    </task>
-    <task id="LOCAL-00209" summary="Update">
-      <created>1424616469727</created>
-      <updated>1424616469727</updated>
-    </task>
-    <task id="LOCAL-00210" summary="Update">
-      <created>1424616505339</created>
-      <updated>1424616505339</updated>
-    </task>
-    <task id="LOCAL-00211" summary="Update">
-      <created>1424692897154</created>
-      <updated>1424692897154</updated>
-    </task>
-    <task id="LOCAL-00212" summary="Update">
-      <created>1424693936178</created>
-      <updated>1424693936178</updated>
-    </task>
-    <task id="LOCAL-00213" summary="Update">
-      <created>1424694281986</created>
-      <updated>1424694281986</updated>
-    </task>
-    <task id="LOCAL-00214" summary="Update">
-      <created>1424694454796</created>
-      <updated>1424694454796</updated>
-    </task>
-    <task id="LOCAL-00215" summary="Update">
-      <created>1424694572720</created>
-      <updated>1424694572720</updated>
-    </task>
-    <task id="LOCAL-00216" summary="Update">
-      <created>1424694660413</created>
-      <updated>1424694660413</updated>
-    </task>
-    <task id="LOCAL-00217" summary="Update">
-      <created>1424696069129</created>
-      <updated>1424696069129</updated>
-    </task>
-    <task id="LOCAL-00218" summary="Update">
-      <created>1424696342343</created>
-      <updated>1424696342343</updated>
-    </task>
-    <task id="LOCAL-00219" summary="Update">
-      <created>1424696457348</created>
-      <updated>1424696457348</updated>
-    </task>
-    <task id="LOCAL-00220" summary="Update">
-      <created>1424696494372</created>
-      <updated>1424696494372</updated>
-    </task>
-    <task id="LOCAL-00221" summary="Update">
-      <created>1424696602376</created>
-      <updated>1424696602376</updated>
-    </task>
-    <task id="LOCAL-00222" summary="Update">
-      <created>1424696655214</created>
-      <updated>1424696655214</updated>
-    </task>
-    <task id="LOCAL-00223" summary="Update">
-      <created>1424696748934</created>
-      <updated>1424696748934</updated>
-    </task>
-    <task id="LOCAL-00224" summary="Update">
-      <created>1424696838846</created>
-      <updated>1424696838846</updated>
-    </task>
-    <task id="LOCAL-00225" summary="Update">
-      <created>1424696963318</created>
-      <updated>1424696963318</updated>
-    </task>
-    <task id="LOCAL-00226" summary="Update">
-      <created>1424697055005</created>
-      <updated>1424697055005</updated>
-    </task>
-    <task id="LOCAL-00227" summary="Update">
-      <created>1424697257734</created>
-      <updated>1424697257734</updated>
-    </task>
-    <task id="LOCAL-00228" summary="Update">
-      <created>1424697264897</created>
-      <updated>1424697264897</updated>
-    </task>
-    <task id="LOCAL-00229" summary="Update">
-      <created>1424697383365</created>
-      <updated>1424697383365</updated>
-    </task>
-    <task id="LOCAL-00230" summary="Update">
-      <created>1424697465650</created>
-      <updated>1424697465650</updated>
-    </task>
-    <task id="LOCAL-00231" summary="Update">
-      <created>1424697935875</created>
-      <updated>1424697935875</updated>
-    </task>
-    <task id="LOCAL-00232" summary="Update">
-      <created>1424698447298</created>
-      <updated>1424698447298</updated>
-    </task>
-    <task id="LOCAL-00233" summary="Update">
-      <created>1424699707057</created>
-      <updated>1424699707057</updated>
-    </task>
-    <task id="LOCAL-00234" summary="Update">
-      <created>1424700233684</created>
-      <updated>1424700233684</updated>
-    </task>
-    <task id="LOCAL-00235" summary="Update">
-      <created>1424700401255</created>
-      <updated>1424700401256</updated>
-    </task>
-    <task id="LOCAL-00236" summary="Update">
-      <created>1424701583617</created>
-      <updated>1424701583617</updated>
-    </task>
-    <task id="LOCAL-00237" summary="Update">
-      <created>1424702528200</created>
-      <updated>1424702528200</updated>
-    </task>
-    <task id="LOCAL-00238" summary="Update">
-      <created>1424702717353</created>
-      <updated>1424702717354</updated>
-    </task>
-    <task id="LOCAL-00239" summary="Update">
-      <created>1424702862547</created>
-      <updated>1424702862547</updated>
-    </task>
-    <task id="LOCAL-00240" summary="Update">
-      <created>1424703834191</created>
-      <updated>1424703834192</updated>
-    </task>
-    <task id="LOCAL-00241" summary="Update">
-      <created>1424704103735</created>
-      <updated>1424704103735</updated>
-    </task>
-    <task id="LOCAL-00242" summary="Update">
-      <created>1424704318530</created>
-      <updated>1424704318530</updated>
-    </task>
-    <task id="LOCAL-00243" summary="Update">
-      <created>1424709511500</created>
-      <updated>1424709511500</updated>
-    </task>
-    <task id="LOCAL-00244" summary="Update">
-      <created>1424709597797</created>
-      <updated>1424709597797</updated>
-    </task>
-    <task id="LOCAL-00245" summary="Update">
-      <created>1424709672345</created>
-      <updated>1424709672345</updated>
-    </task>
-    <task id="LOCAL-00246" summary="Update">
-      <created>1424710871906</created>
-      <updated>1424710871906</updated>
-    </task>
-    <task id="LOCAL-00247" summary="Update">
-      <created>1424711093533</created>
-      <updated>1424711093534</updated>
-    </task>
-    <task id="LOCAL-00248" summary="Update">
-      <created>1424711595910</created>
-      <updated>1424711595910</updated>
-    </task>
-    <task id="LOCAL-00249" summary="Update">
-      <created>1424711671668</created>
-      <updated>1424711671668</updated>
-    </task>
-    <task id="LOCAL-00250" summary="Update">
-      <created>1424787278076</created>
-      <updated>1424787278076</updated>
-    </task>
-    <task id="LOCAL-00251" summary="Update">
-      <created>1424787622219</created>
-      <updated>1424787622219</updated>
-    </task>
-    <task id="LOCAL-00252" summary="Update">
-      <created>1424787890487</created>
-      <updated>1424787890487</updated>
-    </task>
-    <task id="LOCAL-00253" summary="Update">
-      <created>1424788024125</created>
-      <updated>1424788024125</updated>
-    </task>
-    <task id="LOCAL-00254" summary="Update">
-      <created>1424789107630</created>
-      <updated>1424789107630</updated>
-    </task>
-    <task id="LOCAL-00255" summary="Update">
-      <created>1424789347750</created>
-      <updated>1424789347750</updated>
-    </task>
-    <task id="LOCAL-00256" summary="Update">
-      <created>1424789390326</created>
-      <updated>1424789390327</updated>
-    </task>
-    <task id="LOCAL-00257" summary="Update">
-      <created>1424789986688</created>
-      <updated>1424789986688</updated>
-    </task>
-    <task id="LOCAL-00258" summary="Update">
-      <created>1424790512898</created>
-      <updated>1424790512898</updated>
-    </task>
-    <task id="LOCAL-00259" summary="Update">
-      <created>1424790997952</created>
-      <updated>1424790997952</updated>
-    </task>
-    <task id="LOCAL-00260" summary="Update">
-      <created>1424791164178</created>
-      <updated>1424791164178</updated>
-    </task>
-    <task id="LOCAL-00261" summary="Update">
-      <created>1424791381163</created>
-      <updated>1424791381163</updated>
-    </task>
-    <task id="LOCAL-00262" summary="Update">
-      <created>1424791873171</created>
-      <updated>1424791873171</updated>
-    </task>
-    <task id="LOCAL-00263" summary="Update">
-      <created>1424792155787</created>
-      <updated>1424792155787</updated>
-    </task>
-    <task id="LOCAL-00264" summary="Update">
-      <created>1424792202750</created>
-      <updated>1424792202750</updated>
-    </task>
-    <task id="LOCAL-00265" summary="Update">
-      <created>1424792295462</created>
-      <updated>1424792295462</updated>
-    </task>
-    <task id="LOCAL-00266" summary="Update">
-      <created>1424792330294</created>
-      <updated>1424792330294</updated>
-    </task>
-    <task id="LOCAL-00267" summary="Update">
-      <created>1424793333309</created>
-      <updated>1424793333310</updated>
-    </task>
-    <task id="LOCAL-00268" summary="Update">
-      <created>1424794258986</created>
-      <updated>1424794258986</updated>
-    </task>
-    <task id="LOCAL-00269" summary="Update">
-      <created>1424794407319</created>
-      <updated>1424794407319</updated>
-    </task>
-    <task id="LOCAL-00270" summary="Update">
-      <created>1424794876723</created>
-      <updated>1424794876723</updated>
-    </task>
-    <task id="LOCAL-00271" summary="Update">
-      <created>1424795308440</created>
-      <updated>1424795308440</updated>
-    </task>
-    <task id="LOCAL-00272" summary="Update">
-      <created>1424795563675</created>
-      <updated>1424795563675</updated>
-    </task>
-    <task id="LOCAL-00273" summary="Update">
-      <created>1424795841359</created>
-      <updated>1424795841359</updated>
-    </task>
-    <task id="LOCAL-00274" summary="Update">
-      <created>1424795909568</created>
-      <updated>1424795909568</updated>
-    </task>
-    <task id="LOCAL-00275" summary="Update">
-      <created>1424796058539</created>
-      <updated>1424796058539</updated>
-    </task>
-    <task id="LOCAL-00276" summary="Update">
-      <created>1424796153586</created>
-      <updated>1424796153586</updated>
-    </task>
-    <task id="LOCAL-00277" summary="Update">
-      <created>1424796701471</created>
-      <updated>1424796701471</updated>
-    </task>
-    <task id="LOCAL-00278" summary="Update">
-      <created>1424796777148</created>
-      <updated>1424796777148</updated>
-    </task>
-    <task id="LOCAL-00279" summary="Update">
-      <created>1424798261134</created>
-      <updated>1424798261134</updated>
-    </task>
-    <task id="LOCAL-00280" summary="Update">
-      <created>1424798326302</created>
-      <updated>1424798326302</updated>
-    </task>
-    <task id="LOCAL-00281" summary="Update">
-      <created>1424798388449</created>
-      <updated>1424798388449</updated>
-    </task>
-    <task id="LOCAL-00282" summary="Update">
-      <created>1424798689528</created>
-      <updated>1424798689528</updated>
-    </task>
-    <task id="LOCAL-00283" summary="Update">
-      <created>1424798776606</created>
-      <updated>1424798776606</updated>
-    </task>
-    <task id="LOCAL-00284" summary="Update">
-      <created>1424876559724</created>
-      <updated>1424876559724</updated>
-    </task>
-    <task id="LOCAL-00285" summary="Update">
-      <created>1424877361917</created>
-      <updated>1424877361917</updated>
-    </task>
-    <task id="LOCAL-00286" summary="Update">
-      <created>1424877515112</created>
-      <updated>1424877515112</updated>
-    </task>
-    <task id="LOCAL-00287" summary="Update">
-      <created>1424877703377</created>
-      <updated>1424877703377</updated>
-    </task>
-    <task id="LOCAL-00288" summary="Update">
-      <created>1424877983079</created>
-      <updated>1424877983079</updated>
-    </task>
-    <task id="LOCAL-00289" summary="Update">
-      <created>1424878014868</created>
-      <updated>1424878014868</updated>
-    </task>
-    <task id="LOCAL-00290" summary="Update">
-      <created>1424878065462</created>
-      <updated>1424878065462</updated>
-    </task>
-    <task id="LOCAL-00291" summary="Update">
-      <created>1424878109601</created>
-      <updated>1424878109601</updated>
-    </task>
-    <task id="LOCAL-00292" summary="Update">
-      <created>1424878175194</created>
-      <updated>1424878175194</updated>
-    </task>
-    <task id="LOCAL-00293" summary="Update">
-      <created>1424878643755</created>
-      <updated>1424878643755</updated>
-    </task>
-    <task id="LOCAL-00294" summary="Update">
-      <created>1424879525707</created>
-      <updated>1424879525707</updated>
-    </task>
-    <task id="LOCAL-00295" summary="Update">
-      <created>1424880418022</created>
-      <updated>1424880418022</updated>
-    </task>
-    <task id="LOCAL-00296" summary="Update">
-      <created>1424880510105</created>
-      <updated>1424880510105</updated>
-    </task>
-    <task id="LOCAL-00297" summary="Update">
-      <created>1424880863850</created>
-      <updated>1424880863850</updated>
-    </task>
-    <task id="LOCAL-00298" summary="Update">
-      <created>1424880961652</created>
-      <updated>1424880961652</updated>
-    </task>
-    <task id="LOCAL-00299" summary="Update">
-      <created>1424880998065</created>
-      <updated>1424880998065</updated>
-    </task>
-    <task id="LOCAL-00300" summary="Update">
-      <created>1424948682195</created>
-      <updated>1424948682195</updated>
-    </task>
-    <task id="LOCAL-00301" summary="Update">
-      <created>1424948770249</created>
-      <updated>1424948770249</updated>
-    </task>
-    <task id="LOCAL-00302" summary="Update">
-      <created>1424948825669</created>
-      <updated>1424948825669</updated>
-    </task>
-    <task id="LOCAL-00303" summary="Update">
-      <created>1424949138783</created>
-      <updated>1424949138783</updated>
-    </task>
-    <task id="LOCAL-00304" summary="Update">
-      <created>1424949682239</created>
-      <updated>1424949682239</updated>
-    </task>
-    <task id="LOCAL-00305" summary="Update">
-      <created>1424950723189</created>
-      <updated>1424950723189</updated>
-    </task>
-    <task id="LOCAL-00306" summary="Update">
-      <created>1424950790108</created>
-      <updated>1424950790108</updated>
-    </task>
-    <task id="LOCAL-00307" summary="Update">
-      <created>1424950863004</created>
-      <updated>1424950863004</updated>
-    </task>
-    <task id="LOCAL-00308" summary="Update">
-      <created>1424951419471</created>
-      <updated>1424951419471</updated>
-    </task>
-    <task id="LOCAL-00309" summary="Update">
-      <created>1424951557433</created>
-      <updated>1424951557433</updated>
-    </task>
-    <task id="LOCAL-00310" summary="Update">
-      <created>1424951806229</created>
-      <updated>1424951806229</updated>
-    </task>
-    <task id="LOCAL-00311" summary="Update">
-      <created>1424951923281</created>
-      <updated>1424951923281</updated>
-    </task>
-    <task id="LOCAL-00312" summary="Update">
-      <created>1424952311774</created>
-      <updated>1424952311774</updated>
-    </task>
-    <task id="LOCAL-00313" summary="Update">
-      <created>1424952910492</created>
-      <updated>1424952910492</updated>
-    </task>
-    <task id="LOCAL-00314" summary="Update">
-      <created>1424953311882</created>
-      <updated>1424953311882</updated>
-    </task>
-    <task id="LOCAL-00315" summary="Update">
-      <created>1424953421651</created>
-      <updated>1424953421651</updated>
-    </task>
-    <task id="LOCAL-00316" summary="Update">
-      <created>1424953635162</created>
-      <updated>1424953635162</updated>
-    </task>
-    <task id="LOCAL-00317" summary="Update">
-      <created>1424953807935</created>
-      <updated>1424953807935</updated>
-    </task>
-    <task id="LOCAL-00318" summary="Update">
-      <created>1424953847379</created>
-      <updated>1424953847379</updated>
-    </task>
-    <task id="LOCAL-00319" summary="Update">
-      <created>1424954306462</created>
-      <updated>1424954306462</updated>
-    </task>
-    <task id="LOCAL-00320" summary="Update">
-      <created>1424954504549</created>
-      <updated>1424954504549</updated>
-    </task>
-    <task id="LOCAL-00321" summary="Update">
-      <created>1424956610890</created>
-      <updated>1424956610890</updated>
-    </task>
-    <task id="LOCAL-00322" summary="Update">
-      <created>1424961089345</created>
-      <updated>1424961089346</updated>
-    </task>
-    <task id="LOCAL-00323" summary="Update">
-      <created>1424961280535</created>
-      <updated>1424961280535</updated>
-    </task>
-    <task id="LOCAL-00324" summary="Update">
-      <created>1424961368668</created>
-      <updated>1424961368669</updated>
-    </task>
-    <task id="LOCAL-00325" summary="Update">
-      <created>1424961475332</created>
-      <updated>1424961475332</updated>
-    </task>
-    <task id="LOCAL-00326" summary="Update">
-      <created>1424961658423</created>
-      <updated>1424961658423</updated>
-    </task>
-    <task id="LOCAL-00327" summary="Update">
-      <created>1424961771506</created>
-      <updated>1424961771506</updated>
-    </task>
-    <task id="LOCAL-00328" summary="Update">
-      <created>1424964319496</created>
-      <updated>1424964319496</updated>
-    </task>
-    <task id="LOCAL-00329" summary="Update">
-      <created>1424965603863</created>
-      <updated>1424965603863</updated>
-    </task>
-    <task id="LOCAL-00330" summary="Update">
-      <created>1424977373968</created>
-      <updated>1424977373968</updated>
-    </task>
-    <task id="LOCAL-00331" summary="Update">
-      <created>1424979012967</created>
-      <updated>1424979012967</updated>
-    </task>
-    <task id="LOCAL-00332" summary="Update">
-      <created>1424979114686</created>
-      <updated>1424979114686</updated>
-    </task>
-    <task id="LOCAL-00333" summary="Update">
-      <created>1424979163807</created>
-      <updated>1424979163807</updated>
-    </task>
-    <task id="LOCAL-00334" summary="Update">
-      <created>1425068380194</created>
-      <updated>1425068380194</updated>
-    </task>
-    <task id="LOCAL-00335" summary="Update">
-      <created>1425068862704</created>
-      <updated>1425068862704</updated>
-    </task>
-    <task id="LOCAL-00336" summary="Update">
-      <created>1425068975912</created>
-      <updated>1425068975912</updated>
-    </task>
-    <task id="LOCAL-00337" summary="Update">
-      <created>1425069107461</created>
-      <updated>1425069107461</updated>
-    </task>
-    <task id="LOCAL-00338" summary="Update">
-      <created>1425069145836</created>
-      <updated>1425069145836</updated>
-    </task>
-    <task id="LOCAL-00339" summary="Update">
-      <created>1425069281396</created>
-      <updated>1425069281396</updated>
-    </task>
-    <task id="LOCAL-00340" summary="Update">
-      <created>1425121595292</created>
-      <updated>1425121595292</updated>
-    </task>
-    <task id="LOCAL-00341" summary="Update">
-      <created>1425121834302</created>
-      <updated>1425121834302</updated>
-    </task>
-    <task id="LOCAL-00342" summary="Update">
-      <created>1425133758052</created>
-      <updated>1425133758052</updated>
-    </task>
-    <task id="LOCAL-00343" summary="Update">
-      <created>1425144889007</created>
-      <updated>1425144889008</updated>
-    </task>
-    <task id="LOCAL-00344" summary="Update">
-      <created>1425144976368</created>
-      <updated>1425144976368</updated>
-    </task>
-    <task id="LOCAL-00345" summary="Update">
-      <created>1425145239060</created>
-      <updated>1425145239060</updated>
-    </task>
-    <task id="LOCAL-00346" summary="Update">
-      <created>1425145358269</created>
-      <updated>1425145358269</updated>
-    </task>
-    <task id="LOCAL-00347" summary="Update">
-      <created>1425145412508</created>
-      <updated>1425145412508</updated>
-    </task>
-    <task id="LOCAL-00348" summary="Update">
-      <created>1425145529295</created>
-      <updated>1425145529295</updated>
-    </task>
-    <task id="LOCAL-00349" summary="Update">
-      <created>1425145774801</created>
-      <updated>1425145774801</updated>
-    </task>
-    <task id="LOCAL-00350" summary="Update">
-      <created>1425153146672</created>
-      <updated>1425153146672</updated>
-    </task>
-    <task id="LOCAL-00351" summary="Update">
-      <created>1425153297594</created>
-      <updated>1425153297594</updated>
-    </task>
-    <task id="LOCAL-00352" summary="Update">
-      <created>1425153886285</created>
-      <updated>1425153886285</updated>
-    </task>
-    <task id="LOCAL-00353" summary="Update">
-      <created>1425153996753</created>
-      <updated>1425153996753</updated>
-    </task>
-    <task id="LOCAL-00354" summary="Update">
-      <created>1425154242469</created>
-      <updated>1425154242469</updated>
-    </task>
-    <task id="LOCAL-00355" summary="Update">
-      <created>1425154312406</created>
-      <updated>1425154312407</updated>
-    </task>
-    <task id="LOCAL-00356" summary="Update">
-      <created>1425154415015</created>
-      <updated>1425154415015</updated>
-    </task>
-    <task id="LOCAL-00357" summary="Update">
-      <created>1425190651675</created>
-      <updated>1425190651675</updated>
-    </task>
-    <task id="LOCAL-00358" summary="Update">
-      <created>1425190846884</created>
-      <updated>1425190846884</updated>
-    </task>
-    <task id="LOCAL-00359" summary="Update">
-      <created>1425191457778</created>
-      <updated>1425191457778</updated>
-    </task>
-    <task id="LOCAL-00360" summary="Update">
-      <created>1425202645328</created>
-      <updated>1425202645328</updated>
-    </task>
-    <task id="LOCAL-00361" summary="Update">
-      <created>1425202860339</created>
-      <updated>1425202860339</updated>
-    </task>
-    <task id="LOCAL-00362" summary="Update">
-      <created>1425202998374</created>
-      <updated>1425202998374</updated>
-    </task>
-    <task id="LOCAL-00363" summary="Update">
-      <created>1425203878454</created>
-      <updated>1425203878454</updated>
-    </task>
-    <task id="LOCAL-00364" summary="Update">
-      <created>1425204083639</created>
-      <updated>1425204083639</updated>
-    </task>
-    <task id="LOCAL-00365" summary="Update">
-      <created>1425204453826</created>
-      <updated>1425204453826</updated>
-    </task>
-    <task id="LOCAL-00366" summary="Update">
-      <created>1425204789279</created>
-      <updated>1425204789279</updated>
-    </task>
-    <task id="LOCAL-00367" summary="Update">
-      <created>1425204921589</created>
-      <updated>1425204921589</updated>
-    </task>
-    <task id="LOCAL-00368" summary="Update">
-      <created>1425206186545</created>
-      <updated>1425206186545</updated>
-    </task>
-    <task id="LOCAL-00369" summary="Update">
-      <created>1425206274489</created>
-      <updated>1425206274489</updated>
-    </task>
-    <task id="LOCAL-00370" summary="Update">
-      <created>1425207459165</created>
-      <updated>1425207459165</updated>
-    </task>
-    <task id="LOCAL-00371" summary="Update">
-      <created>1425207676253</created>
-      <updated>1425207676253</updated>
-    </task>
-    <task id="LOCAL-00372" summary="Update">
-      <created>1425207849993</created>
-      <updated>1425207849993</updated>
-    </task>
-    <task id="LOCAL-00373" summary="Update">
-      <created>1425208406729</created>
-      <updated>1425208406729</updated>
-    </task>
-    <task id="LOCAL-00374" summary="Update">
-      <created>1425209135923</created>
-      <updated>1425209135923</updated>
-    </task>
-    <task id="LOCAL-00375" summary="Update">
-      <created>1425209340282</created>
-      <updated>1425209340282</updated>
-    </task>
-    <task id="LOCAL-00376" summary="Update">
-      <created>1425209569425</created>
-      <updated>1425209569425</updated>
-    </task>
-    <task id="LOCAL-00377" summary="Update">
-      <created>1425210072992</created>
-      <updated>1425210072992</updated>
-    </task>
-    <task id="LOCAL-00378" summary="Update">
-      <created>1425210118380</created>
-      <updated>1425210118380</updated>
-    </task>
-    <task id="LOCAL-00379" summary="Update">
-      <created>1425210423999</created>
-      <updated>1425210423999</updated>
-    </task>
-    <task id="LOCAL-00380" summary="Update">
-      <created>1425210474889</created>
-      <updated>1425210474889</updated>
-    </task>
-    <task id="LOCAL-00381" summary="Update">
-      <created>1425210835076</created>
-      <updated>1425210835076</updated>
-    </task>
-    <task id="LOCAL-00382" summary="Update">
-      <created>1425211298940</created>
-      <updated>1425211298940</updated>
-    </task>
-    <task id="LOCAL-00383" summary="Update">
-      <created>1425213479590</created>
-      <updated>1425213479590</updated>
-    </task>
-    <task id="LOCAL-00384" summary="Update">
-      <created>1425213707826</created>
-      <updated>1425213707826</updated>
-    </task>
-    <task id="LOCAL-00385" summary="Update">
-      <created>1425213811581</created>
-      <updated>1425213811581</updated>
-    </task>
-    <task id="LOCAL-00386" summary="Update">
-      <created>1425213895375</created>
-      <updated>1425213895375</updated>
-    </task>
-    <task id="LOCAL-00387" summary="Update">
-      <created>1425215784120</created>
-      <updated>1425215784120</updated>
-    </task>
-    <task id="LOCAL-00388" summary="Update">
-      <created>1425215935615</created>
-      <updated>1425215935615</updated>
-    </task>
-    <task id="LOCAL-00389" summary="Update">
-      <created>1425217722554</created>
-      <updated>1425217722554</updated>
-    </task>
-    <task id="LOCAL-00390" summary="Update">
-      <created>1425217797052</created>
-      <updated>1425217797052</updated>
-    </task>
-    <task id="LOCAL-00391" summary="Update">
-      <created>1425217836852</created>
-      <updated>1425217836852</updated>
-    </task>
-    <task id="LOCAL-00392" summary="Update">
-      <created>1425218074011</created>
-      <updated>1425218074011</updated>
-    </task>
-    <task id="LOCAL-00393" summary="Update">
-      <created>1425218104795</created>
-      <updated>1425218104795</updated>
-    </task>
-    <task id="LOCAL-00394" summary="Update">
-      <created>1425218486143</created>
-      <updated>1425218486143</updated>
-    </task>
-    <task id="LOCAL-00395" summary="Update">
-      <created>1425218889032</created>
-      <updated>1425218889032</updated>
-    </task>
-    <task id="LOCAL-00396" summary="Update">
-      <created>1425219564478</created>
-      <updated>1425219564478</updated>
-    </task>
-    <task id="LOCAL-00397" summary="Update">
-      <created>1425219717963</created>
-      <updated>1425219717963</updated>
-    </task>
-    <task id="LOCAL-00398" summary="Update">
-      <created>1425220023794</created>
-      <updated>1425220023794</updated>
-    </task>
-    <task id="LOCAL-00399" summary="Update">
-      <created>1425220166003</created>
-      <updated>1425220166003</updated>
-    </task>
-    <task id="LOCAL-00400" summary="Update">
-      <created>1425220288949</created>
-      <updated>1425220288949</updated>
-    </task>
-    <task id="LOCAL-00401" summary="Update">
-      <created>1425220369863</created>
-      <updated>1425220369863</updated>
-    </task>
-    <task id="LOCAL-00402" summary="Update">
-      <created>1425220443168</created>
-      <updated>1425220443168</updated>
-    </task>
-    <task id="LOCAL-00403" summary="Update">
-      <created>1425220516412</created>
-      <updated>1425220516412</updated>
-    </task>
-    <task id="LOCAL-00404" summary="Update">
-      <created>1425221266787</created>
-      <updated>1425221266787</updated>
-    </task>
-    <task id="LOCAL-00405" summary="Update">
-      <created>1425221369769</created>
-      <updated>1425221369769</updated>
-    </task>
-    <task id="LOCAL-00406" summary="Update">
-      <created>1425221474673</created>
-      <updated>1425221474673</updated>
-    </task>
-    <task id="LOCAL-00407" summary="Update">
-      <created>1425221600266</created>
-      <updated>1425221600266</updated>
-    </task>
-    <task id="LOCAL-00408" summary="Update">
-      <created>1425221670609</created>
-      <updated>1425221670609</updated>
-    </task>
-    <task id="LOCAL-00409" summary="Update">
-      <created>1425223433392</created>
-      <updated>1425223433392</updated>
-    </task>
-    <task id="LOCAL-00410" summary="Update">
-      <created>1425223492378</created>
-      <updated>1425223492379</updated>
-    </task>
-    <task id="LOCAL-00411" summary="Update">
-      <created>1425223565549</created>
-      <updated>1425223565549</updated>
-    </task>
-    <task id="LOCAL-00412" summary="Update">
-      <created>1425223603317</created>
-      <updated>1425223603317</updated>
-    </task>
-    <task id="LOCAL-00413" summary="Update">
-      <created>1425223691308</created>
-      <updated>1425223691308</updated>
-    </task>
-    <task id="LOCAL-00414" summary="Update">
-      <created>1425223897410</created>
-      <updated>1425223897411</updated>
-    </task>
-    <task id="LOCAL-00415" summary="Update">
-      <created>1426005143030</created>
-      <updated>1426005143030</updated>
-    </task>
-    <task id="LOCAL-00416" summary="Update">
-      <created>1426005328503</created>
-      <updated>1426005328504</updated>
-    </task>
-    <task id="LOCAL-00417" summary="Update">
-      <created>1426005439544</created>
-      <updated>1426005439544</updated>
-    </task>
-    <task id="LOCAL-00418" summary="Update">
-      <created>1426005666216</created>
-      <updated>1426005666216</updated>
-    </task>
-    <task id="LOCAL-00419" summary="Update">
-      <created>1426005851940</created>
-      <updated>1426005851940</updated>
-    </task>
-    <task id="LOCAL-00420" summary="Update">
-      <created>1426005960201</created>
-      <updated>1426005960202</updated>
-    </task>
-    <task id="LOCAL-00421" summary="Update">
-      <created>1426006201358</created>
-      <updated>1426006201358</updated>
-    </task>
-    <task id="LOCAL-00422" summary="Update">
-      <created>1426006616630</created>
-      <updated>1426006616630</updated>
-    </task>
-    <task id="LOCAL-00423" summary="Update">
-      <created>1426006674479</created>
-      <updated>1426006674479</updated>
-    </task>
-    <task id="LOCAL-00424" summary="Update">
-      <created>1426006722605</created>
-      <updated>1426006722605</updated>
-    </task>
-    <task id="LOCAL-00425" summary="Update">
-      <created>1426006776578</created>
-      <updated>1426006776578</updated>
-    </task>
-    <task id="LOCAL-00426" summary="Update">
-      <created>1426006803166</created>
-      <updated>1426006803166</updated>
-    </task>
-    <task id="LOCAL-00427" summary="Update">
-      <created>1426006906365</created>
-      <updated>1426006906365</updated>
-    </task>
-    <task id="LOCAL-00428" summary="Update">
-      <created>1426007617987</created>
-      <updated>1426007617987</updated>
-    </task>
-    <task id="LOCAL-00429" summary="Update">
-      <created>1426007658873</created>
-      <updated>1426007658873</updated>
-    </task>
-    <task id="LOCAL-00430" summary="Update">
-      <created>1426007758117</created>
-      <updated>1426007758117</updated>
-    </task>
-    <task id="LOCAL-00431" summary="Update">
-      <created>1426008845236</created>
-      <updated>1426008845237</updated>
-    </task>
-    <task id="LOCAL-00432" summary="Update">
-      <created>1426009047811</created>
-      <updated>1426009047811</updated>
-    </task>
-    <task id="LOCAL-00433" summary="Update">
-      <created>1426009244033</created>
-      <updated>1426009244033</updated>
-    </task>
-    <task id="LOCAL-00434" summary="Update">
-      <created>1426009330683</created>
-      <updated>1426009330683</updated>
-    </task>
-    <task id="LOCAL-00435" summary="Update">
-      <created>1426009424408</created>
-      <updated>1426009424408</updated>
-    </task>
-    <task id="LOCAL-00436" summary="Update">
-      <created>1426009455438</created>
-      <updated>1426009455438</updated>
-    </task>
-    <task id="LOCAL-00437" summary="Update">
-      <created>1426010434630</created>
-      <updated>1426010434630</updated>
-    </task>
-    <task id="LOCAL-00438" summary="Update">
-      <created>1426010753222</created>
-      <updated>1426010753222</updated>
-    </task>
-    <task id="LOCAL-00439" summary="Update">
-      <created>1426011095010</created>
-      <updated>1426011095010</updated>
-    </task>
-    <task id="LOCAL-00440" summary="Update">
-      <created>1426011225680</created>
-      <updated>1426011225680</updated>
-    </task>
-    <task id="LOCAL-00441" summary="Update">
-      <created>1426011262859</created>
-      <updated>1426011262859</updated>
-    </task>
-    <task id="LOCAL-00442" summary="Update">
-      <created>1426011368983</created>
-      <updated>1426011368983</updated>
-    </task>
-    <task id="LOCAL-00443" summary="Update">
-      <created>1426012122213</created>
-      <updated>1426012122213</updated>
-    </task>
-    <task id="LOCAL-00444" summary="Update">
-      <created>1426012344116</created>
-      <updated>1426012344116</updated>
-    </task>
-    <task id="LOCAL-00445" summary="Update">
-      <created>1426012439097</created>
-      <updated>1426012439097</updated>
-    </task>
-    <task id="LOCAL-00446" summary="Update">
-      <created>1426016611270</created>
-      <updated>1426016611271</updated>
-    </task>
-    <task id="LOCAL-00447" summary="Update">
-      <created>1426017119317</created>
-      <updated>1426017119317</updated>
-    </task>
-    <task id="LOCAL-00448" summary="Update">
-      <created>1426017278497</created>
-      <updated>1426017278497</updated>
-    </task>
-    <task id="LOCAL-00449" summary="Update">
-      <created>1426062773862</created>
-      <updated>1426062773862</updated>
-    </task>
-    <task id="LOCAL-00450" summary="Update">
-      <created>1426062864918</created>
-      <updated>1426062864918</updated>
-    </task>
-    <task id="LOCAL-00451" summary="Update">
-      <created>1426063482468</created>
-      <updated>1426063482468</updated>
-    </task>
-    <task id="LOCAL-00452" summary="Update">
-      <created>1426063618789</created>
-      <updated>1426063618789</updated>
-    </task>
-    <task id="LOCAL-00453" summary="Update">
-      <created>1426063676379</created>
-      <updated>1426063676379</updated>
-    </task>
-    <task id="LOCAL-00454" summary="Update">
-      <created>1426063960424</created>
-      <updated>1426063960424</updated>
-    </task>
-    <task id="LOCAL-00455" summary="Update">
-      <created>1426065274820</created>
-      <updated>1426065274820</updated>
-    </task>
-    <task id="LOCAL-00456" summary="Update">
-      <created>1426071196252</created>
-      <updated>1426071196253</updated>
-    </task>
-    <task id="LOCAL-00457" summary="Update">
-      <created>1426071377343</created>
-      <updated>1426071377344</updated>
-    </task>
-    <task id="LOCAL-00458" summary="Update">
-      <created>1426077666625</created>
-      <updated>1426077666625</updated>
-    </task>
-    <task id="LOCAL-00459" summary="Update">
-      <created>1426077832583</created>
-      <updated>1426077832583</updated>
-    </task>
-    <task id="LOCAL-00460" summary="Update">
-      <created>1426078069642</created>
-      <updated>1426078069642</updated>
-    </task>
-    <task id="LOCAL-00461" summary="Update">
-      <created>1426090377661</created>
-      <updated>1426090377661</updated>
-    </task>
-    <task id="LOCAL-00462" summary="Update">
-      <created>1426090652911</created>
-      <updated>1426090652911</updated>
-    </task>
-    <task id="LOCAL-00463" summary="Update">
-      <created>1426090788021</created>
-      <updated>1426090788022</updated>
-    </task>
-    <task id="LOCAL-00464" summary="Update">
-      <created>1426091012660</created>
-      <updated>1426091012660</updated>
-    </task>
-    <task id="LOCAL-00465" summary="Update">
-      <created>1426093566318</created>
-      <updated>1426093566318</updated>
-    </task>
-    <task id="LOCAL-00466" summary="Update">
-      <created>1426093680187</created>
-      <updated>1426093680187</updated>
-    </task>
-    <task id="LOCAL-00467" summary="Update">
-      <created>1426093917486</created>
-      <updated>1426093917486</updated>
-    </task>
-    <task id="LOCAL-00468" summary="Update">
-      <created>1426094045429</created>
-      <updated>1426094045430</updated>
-    </task>
-    <task id="LOCAL-00469" summary="Update">
-      <created>1426094373958</created>
-      <updated>1426094373958</updated>
-    </task>
-    <task id="LOCAL-00470" summary="Update">
-      <created>1426094574458</created>
-      <updated>1426094574458</updated>
-    </task>
-    <task id="LOCAL-00471" summary="Update">
-      <created>1426162684663</created>
-      <updated>1426162684663</updated>
-    </task>
-    <task id="LOCAL-00472" summary="Update">
-      <created>1426162964162</created>
-      <updated>1426162964162</updated>
-    </task>
-    <task id="LOCAL-00473" summary="Update">
-      <created>1426163018352</created>
-      <updated>1426163018352</updated>
-    </task>
-    <task id="LOCAL-00474" summary="Update">
-      <created>1426163493277</created>
-      <updated>1426163493277</updated>
-    </task>
-    <task id="LOCAL-00475" summary="Update">
-      <created>1426163637033</created>
-      <updated>1426163637033</updated>
-    </task>
-    <task id="LOCAL-00476" summary="Update">
-      <created>1426163715045</created>
-      <updated>1426163715045</updated>
-    </task>
-    <task id="LOCAL-00477" summary="Update">
-      <created>1426164277349</created>
-      <updated>1426164277349</updated>
-    </task>
-    <task id="LOCAL-00478" summary="Update">
-      <created>1426166421136</created>
-      <updated>1426166421136</updated>
-    </task>
-    <task id="LOCAL-00479" summary="Update">
-      <created>1426166592230</created>
-      <updated>1426166592230</updated>
-    </task>
-    <task id="LOCAL-00480" summary="Update">
-      <created>1426166805716</created>
-      <updated>1426166805716</updated>
-    </task>
-    <task id="LOCAL-00481" summary="Update">
-      <created>1426166976796</created>
-      <updated>1426166976796</updated>
-    </task>
-    <task id="LOCAL-00482" summary="Update">
-      <created>1426167145941</created>
-      <updated>1426167145941</updated>
-    </task>
-    <task id="LOCAL-00483" summary="Update">
-      <created>1426167261241</created>
-      <updated>1426167261241</updated>
-    </task>
-    <task id="LOCAL-00484" summary="Update">
-      <created>1426167458404</created>
-      <updated>1426167458404</updated>
-    </task>
-    <task id="LOCAL-00485" summary="Update">
-      <created>1426167519228</created>
-      <updated>1426167519229</updated>
-    </task>
-    <task id="LOCAL-00486" summary="Update">
-      <created>1426167594021</created>
-      <updated>1426167594021</updated>
-    </task>
-    <task id="LOCAL-00487" summary="Update">
-      <created>1426167723754</created>
-      <updated>1426167723754</updated>
-    </task>
-    <task id="LOCAL-00488" summary="Update">
-      <created>1426167841337</created>
-      <updated>1426167841337</updated>
-    </task>
-    <task id="LOCAL-00489" summary="Update">
-      <created>1426168239686</created>
-      <updated>1426168239686</updated>
-    </task>
-    <task id="LOCAL-00490" summary="Update">
-      <created>1426168408029</created>
-      <updated>1426168408029</updated>
-    </task>
-    <task id="LOCAL-00491" summary="Update">
-      <created>1426168749960</created>
-      <updated>1426168749960</updated>
-    </task>
-    <task id="LOCAL-00492" summary="Update">
-      <created>1426168977244</created>
-      <updated>1426168977244</updated>
-    </task>
-    <task id="LOCAL-00493" summary="Update">
-      <created>1426169154313</created>
-      <updated>1426169154313</updated>
-    </task>
-    <task id="LOCAL-00494" summary="Update">
-      <created>1426169220950</created>
-      <updated>1426169220950</updated>
-    </task>
-    <task id="LOCAL-00495" summary="Update">
-      <created>1426170346376</created>
-      <updated>1426170346376</updated>
-    </task>
-    <task id="LOCAL-00496" summary="Update">
-      <created>1426171235694</created>
-      <updated>1426171235694</updated>
-    </task>
-    <task id="LOCAL-00497" summary="Update">
-      <created>1426174759274</created>
-      <updated>1426174759274</updated>
-    </task>
-    <task id="LOCAL-00498" summary="Update">
-      <created>1426174954584</created>
-      <updated>1426174954584</updated>
-    </task>
-    <task id="LOCAL-00499" summary="Update">
-      <created>1426175328039</created>
-      <updated>1426175328039</updated>
-    </task>
-    <task id="LOCAL-00500" summary="Update">
-      <created>1426175403318</created>
-      <updated>1426175403318</updated>
-    </task>
-    <task id="LOCAL-00501" summary="Update">
-      <created>1426178154039</created>
-      <updated>1426178154039</updated>
-    </task>
-    <task id="LOCAL-00502" summary="Update">
-      <created>1426178346879</created>
-      <updated>1426178346879</updated>
-    </task>
-    <task id="LOCAL-00503" summary="Update">
-      <created>1426178450828</created>
-      <updated>1426178450828</updated>
-    </task>
-    <task id="LOCAL-00504" summary="Update">
-      <created>1426178598137</created>
-      <updated>1426178598137</updated>
-    </task>
-    <task id="LOCAL-00505" summary="Update">
-      <created>1426178667440</created>
-      <updated>1426178667440</updated>
-    </task>
-    <task id="LOCAL-00506" summary="Update">
-      <created>1426402748356</created>
-      <updated>1426402748356</updated>
-    </task>
-    <task id="LOCAL-00507" summary="Update">
-      <created>1426402844426</created>
-      <updated>1426402844426</updated>
-    </task>
-    <task id="LOCAL-00508" summary="Update">
-      <created>1426403054525</created>
-      <updated>1426403054525</updated>
-    </task>
-    <task id="LOCAL-00509" summary="Update">
-      <created>1426403119744</created>
-      <updated>1426403119744</updated>
-    </task>
-    <task id="LOCAL-00510" summary="Update">
-      <created>1426405944640</created>
-      <updated>1426405944640</updated>
-    </task>
-    <task id="LOCAL-00511" summary="Update">
-      <created>1426406028068</created>
-      <updated>1426406028068</updated>
-    </task>
-    <task id="LOCAL-00512" summary="Update">
-      <created>1426406103390</created>
-      <updated>1426406103390</updated>
-    </task>
-    <task id="LOCAL-00513" summary="Update">
-      <created>1426407225678</created>
-      <updated>1426407225678</updated>
-    </task>
-    <task id="LOCAL-00514" summary="Update">
-      <created>1426407541432</created>
-      <updated>1426407541432</updated>
-    </task>
-    <task id="LOCAL-00515" summary="Update">
-      <created>1426407931078</created>
-      <updated>1426407931078</updated>
-    </task>
-    <task id="LOCAL-00516" summary="Update">
-      <created>1426408540609</created>
-      <updated>1426408540610</updated>
-    </task>
-    <task id="LOCAL-00517" summary="Update">
-      <created>1426408585496</created>
-      <updated>1426408585496</updated>
-    </task>
-    <task id="LOCAL-00518" summary="Update">
-      <created>1426408694630</created>
-      <updated>1426408694630</updated>
-    </task>
-    <task id="LOCAL-00519" summary="Update">
-      <created>1426408828241</created>
-      <updated>1426408828241</updated>
-    </task>
-    <task id="LOCAL-00520" summary="Update">
-      <created>1426409640084</created>
-      <updated>1426409640084</updated>
-    </task>
-    <task id="LOCAL-00521" summary="Update">
-      <created>1426409702016</created>
-      <updated>1426409702016</updated>
-    </task>
-    <task id="LOCAL-00522" summary="Update">
-      <created>1426410060853</created>
-      <updated>1426410060853</updated>
-    </task>
-    <task id="LOCAL-00523" summary="Update">
-      <created>1426410193195</created>
-      <updated>1426410193196</updated>
-    </task>
-    <task id="LOCAL-00524" summary="Update">
-      <created>1426410341450</created>
-      <updated>1426410341450</updated>
-    </task>
-    <task id="LOCAL-00525" summary="Update">
-      <created>1426410389475</created>
-      <updated>1426410389475</updated>
-    </task>
-    <task id="LOCAL-00526" summary="Update">
-      <created>1426410428457</created>
-      <updated>1426410428457</updated>
-    </task>
-    <task id="LOCAL-00527" summary="Update">
-      <created>1426410577034</created>
-      <updated>1426410577034</updated>
-    </task>
-    <task id="LOCAL-00528" summary="Update">
-      <created>1426412485384</created>
-      <updated>1426412485384</updated>
-    </task>
-    <task id="LOCAL-00529" summary="Update">
-      <created>1426412907182</created>
-      <updated>1426412907182</updated>
-    </task>
-    <task id="LOCAL-00530" summary="Update">
-      <created>1426413106921</created>
-      <updated>1426413106921</updated>
-    </task>
-    <task id="LOCAL-00531" summary="Update">
-      <created>1426413699509</created>
-      <updated>1426413699509</updated>
-    </task>
-    <task id="LOCAL-00532" summary="Update">
-      <created>1426414196889</created>
-      <updated>1426414196889</updated>
-    </task>
-    <task id="LOCAL-00533" summary="Update">
-      <created>1426414427592</created>
-      <updated>1426414427592</updated>
-    </task>
-    <task id="LOCAL-00534" summary="Update">
-      <created>1426414479631</created>
-      <updated>1426414479631</updated>
-    </task>
-    <task id="LOCAL-00535" summary="Update">
-      <created>1426414519378</created>
-      <updated>1426414519379</updated>
-    </task>
-    <task id="LOCAL-00536" summary="Update">
-      <created>1426415796516</created>
-      <updated>1426415796516</updated>
-    </task>
-    <task id="LOCAL-00537" summary="Update">
-      <created>1426415889522</created>
-      <updated>1426415889522</updated>
-    </task>
-    <task id="LOCAL-00538" summary="Update">
-      <created>1426417345544</created>
-      <updated>1426417345544</updated>
-    </task>
-    <task id="LOCAL-00539" summary="Update">
-      <created>1426417413845</created>
-      <updated>1426417413845</updated>
-    </task>
-    <task id="LOCAL-00540" summary="Update">
-      <created>1426417577502</created>
-      <updated>1426417577503</updated>
-    </task>
-    <task id="LOCAL-00541" summary="Update">
-      <created>1426417983435</created>
-      <updated>1426417983435</updated>
-    </task>
-    <task id="LOCAL-00542" summary="Update">
-      <created>1426418090911</created>
-      <updated>1426418090911</updated>
-    </task>
-    <task id="LOCAL-00543" summary="Update">
-      <created>1426418269613</created>
-      <updated>1426418269613</updated>
-    </task>
-    <task id="LOCAL-00544" summary="Update">
-      <created>1426419191884</created>
-      <updated>1426419191884</updated>
-    </task>
-    <task id="LOCAL-00545" summary="Update">
-      <created>1426419304238</created>
-      <updated>1426419304238</updated>
-    </task>
-    <task id="LOCAL-00546" summary="Update">
-      <created>1426419315763</created>
-      <updated>1426419315763</updated>
-    </task>
-    <task id="LOCAL-00547" summary="Update">
-      <created>1426428833847</created>
-      <updated>1426428833847</updated>
-    </task>
-    <task id="LOCAL-00548" summary="Update">
-      <created>1426429086224</created>
-      <updated>1426429086225</updated>
-    </task>
-    <task id="LOCAL-00549" summary="Update">
-      <created>1426429258082</created>
-      <updated>1426429258082</updated>
-    </task>
-    <task id="LOCAL-00550" summary="Update">
-      <created>1426430329357</created>
-      <updated>1426430329357</updated>
-    </task>
-    <task id="LOCAL-00551" summary="Update">
-      <created>1426430480382</created>
-      <updated>1426430480382</updated>
-    </task>
-    <task id="LOCAL-00552" summary="Update">
-      <created>1426430579952</created>
-      <updated>1426430579952</updated>
-    </task>
-    <task id="LOCAL-00553" summary="Update">
-      <created>1426430706096</created>
-      <updated>1426430706096</updated>
-    </task>
-    <task id="LOCAL-00554" summary="Update">
-      <created>1426431941879</created>
-      <updated>1426431941879</updated>
-    </task>
-    <task id="LOCAL-00555" summary="Update">
-      <created>1426432058856</created>
-      <updated>1426432058856</updated>
-    </task>
-    <task id="LOCAL-00556" summary="Update">
-      <created>1426432215779</created>
-      <updated>1426432215779</updated>
-    </task>
-    <task id="LOCAL-00557" summary="Update">
-      <created>1426432366401</created>
-      <updated>1426432366401</updated>
-    </task>
-    <task id="LOCAL-00558" summary="Update">
-      <created>1426432482314</created>
-      <updated>1426432482314</updated>
-    </task>
-    <task id="LOCAL-00559" summary="Update">
-      <created>1426436314962</created>
-      <updated>1426436314963</updated>
-    </task>
-    <task id="LOCAL-00560" summary="Update">
-      <created>1426436617344</created>
-      <updated>1426436617344</updated>
-    </task>
-    <task id="LOCAL-00561" summary="Update">
-      <created>1426436914440</created>
-      <updated>1426436914440</updated>
-    </task>
-    <task id="LOCAL-00562" summary="Update">
-      <created>1426437044316</created>
-      <updated>1426437044316</updated>
-    </task>
-    <task id="LOCAL-00563" summary="Update">
-      <created>1426437089431</created>
-      <updated>1426437089431</updated>
-    </task>
-    <task id="LOCAL-00564" summary="Update">
-      <created>1426437199206</created>
-      <updated>1426437199206</updated>
-    </task>
-    <task id="LOCAL-00565" summary="Update">
-      <created>1426439416862</created>
-      <updated>1426439416862</updated>
-    </task>
-    <task id="LOCAL-00566" summary="Update">
-      <created>1426439516599</created>
-      <updated>1426439516600</updated>
-    </task>
-    <task id="LOCAL-00567" summary="Update">
-      <created>1426439600191</created>
-      <updated>1426439600192</updated>
-    </task>
-    <task id="LOCAL-00568" summary="Update">
-      <created>1426439641310</created>
-      <updated>1426439641310</updated>
-    </task>
-    <task id="LOCAL-00569" summary="Update">
-      <created>1426439684223</created>
-      <updated>1426439684224</updated>
-    </task>
-    <task id="LOCAL-00570" summary="Update">
-      <created>1426439718871</created>
-      <updated>1426439718871</updated>
-    </task>
-    <task id="LOCAL-00571" summary="Update">
-      <created>1426440043657</created>
-      <updated>1426440043657</updated>
-    </task>
-    <task id="LOCAL-00572" summary="Update">
-      <created>1426440217597</created>
-      <updated>1426440217597</updated>
-    </task>
-    <task id="LOCAL-00573" summary="Update">
-      <created>1426440267049</created>
-      <updated>1426440267049</updated>
-    </task>
-    <task id="LOCAL-00574" summary="Update">
-      <created>1426440485029</created>
-      <updated>1426440485030</updated>
-    </task>
-    <task id="LOCAL-00575" summary="Update">
-      <created>1426951414692</created>
-      <updated>1426951414692</updated>
-    </task>
-    <task id="LOCAL-00576" summary="Update">
-      <created>1426951540896</created>
-      <updated>1426951540896</updated>
-    </task>
-    <task id="LOCAL-00577" summary="Update">
-      <created>1426951602138</created>
-      <updated>1426951602138</updated>
-    </task>
-    <task id="LOCAL-00578" summary="Update">
-      <created>1426951706168</created>
-      <updated>1426951706168</updated>
-    </task>
-    <task id="LOCAL-00579" summary="Update">
-      <created>1426952212740</created>
-      <updated>1426952212740</updated>
-    </task>
-    <task id="LOCAL-00580" summary="Update">
-      <created>1426952274070</created>
-      <updated>1426952274070</updated>
-    </task>
-    <task id="LOCAL-00581" summary="Update">
-      <created>1426952500321</created>
-      <updated>1426952500321</updated>
-    </task>
-    <task id="LOCAL-00582" summary="Update">
-      <created>1426952722386</created>
-      <updated>1426952722387</updated>
-    </task>
-    <task id="LOCAL-00583" summary="Update">
-      <created>1426952756383</created>
-      <updated>1426952756383</updated>
-    </task>
-    <task id="LOCAL-00584" summary="Update">
-      <created>1426952923284</created>
-      <updated>1426952923284</updated>
-    </task>
-    <task id="LOCAL-00585" summary="Update">
-      <created>1426952985602</created>
-      <updated>1426952985602</updated>
-    </task>
-    <task id="LOCAL-00586" summary="Update">
-      <created>1426953163446</created>
-      <updated>1426953163446</updated>
-    </task>
-    <task id="LOCAL-00587" summary="Update">
-      <created>1426953320635</created>
-      <updated>1426953320635</updated>
-    </task>
-    <task id="LOCAL-00588" summary="Update">
-      <created>1426953444413</created>
-      <updated>1426953444414</updated>
-    </task>
-    <task id="LOCAL-00589" summary="Update">
-      <created>1426953471225</created>
-      <updated>1426953471225</updated>
-    </task>
-    <task id="LOCAL-00590" summary="Update">
-      <created>1426953546397</created>
-      <updated>1426953546398</updated>
-    </task>
-    <task id="LOCAL-00591" summary="Update">
-      <created>1426953680444</created>
-      <updated>1426953680445</updated>
-    </task>
-    <task id="LOCAL-00592" summary="Update">
-      <created>1426957188075</created>
-      <updated>1426957188075</updated>
-    </task>
-    <task id="LOCAL-00593" summary="Update">
-      <created>1426957296544</created>
-      <updated>1426957296544</updated>
-    </task>
-    <task id="LOCAL-00594" summary="Update">
-      <created>1426957886654</created>
-      <updated>1426957886654</updated>
-    </task>
-    <task id="LOCAL-00595" summary="Update">
-      <created>1426958176165</created>
-      <updated>1426958176165</updated>
-    </task>
-    <task id="LOCAL-00596" summary="Update">
-      <created>1426958569740</created>
-      <updated>1426958569740</updated>
-    </task>
-    <task id="LOCAL-00597" summary="Update">
-      <created>1426958653785</created>
-      <updated>1426958653786</updated>
-    </task>
-    <task id="LOCAL-00598" summary="Update">
-      <created>1426958715900</created>
-      <updated>1426958715900</updated>
-    </task>
-    <task id="LOCAL-00599" summary="Update">
-      <created>1426958803552</created>
-      <updated>1426958803552</updated>
-    </task>
-    <task id="LOCAL-00600" summary="Update">
-      <created>1426958978672</created>
-      <updated>1426958978673</updated>
-    </task>
-    <task id="LOCAL-00601" summary="Update">
-      <created>1426959778608</created>
-      <updated>1426959778608</updated>
-    </task>
-    <task id="LOCAL-00602" summary="Update">
-      <created>1426959848926</created>
-      <updated>1426959848926</updated>
-    </task>
-    <task id="LOCAL-00603" summary="Update">
-      <created>1426960099592</created>
-      <updated>1426960099592</updated>
-    </task>
-    <task id="LOCAL-00604" summary="Update">
-      <created>1426960227917</created>
-      <updated>1426960227917</updated>
-    </task>
-    <task id="LOCAL-00605" summary="Update">
-      <created>1426960482742</created>
-      <updated>1426960482742</updated>
-    </task>
-    <task id="LOCAL-00606" summary="Update">
-      <created>1426960579421</created>
-      <updated>1426960579421</updated>
-    </task>
-    <task id="LOCAL-00607" summary="Update">
-      <created>1426961042665</created>
-      <updated>1426961042665</updated>
-    </task>
-    <task id="LOCAL-00608" summary="Update">
-      <created>1426961326844</created>
-      <updated>1426961326844</updated>
-    </task>
-    <task id="LOCAL-00609" summary="Update">
-      <created>1426961423349</created>
-      <updated>1426961423349</updated>
-    </task>
-    <task id="LOCAL-00610" summary="Update">
-      <created>1426961495451</created>
-      <updated>1426961495451</updated>
-    </task>
-    <task id="LOCAL-00611" summary="Update">
-      <created>1426961553685</created>
-      <updated>1426961553685</updated>
-    </task>
-    <task id="LOCAL-00612" summary="Update">
-      <created>1426961668461</created>
-      <updated>1426961668462</updated>
-    </task>
-    <task id="LOCAL-00613" summary="Update">
-      <created>1426963137604</created>
-      <updated>1426963137604</updated>
-    </task>
-    <task id="LOCAL-00614" summary="Update">
-      <created>1426963286461</created>
-      <updated>1426963286461</updated>
-    </task>
-    <task id="LOCAL-00615" summary="Update">
-      <created>1426963338304</created>
-      <updated>1426963338304</updated>
-    </task>
-    <task id="LOCAL-00616" summary="Update">
-      <created>1426964529622</created>
-      <updated>1426964529622</updated>
-    </task>
-    <task id="LOCAL-00617" summary="Update">
-      <created>1426964618949</created>
-      <updated>1426964618949</updated>
-    </task>
-    <task id="LOCAL-00618" summary="Update">
-      <created>1426964671751</created>
-      <updated>1426964671751</updated>
-    </task>
-    <task id="LOCAL-00619" summary="Update">
-      <created>1427366821357</created>
-      <updated>1427366821357</updated>
-    </task>
-    <task id="LOCAL-00620" summary="Update">
-      <created>1427366925590</created>
-      <updated>1427366925590</updated>
-    </task>
-    <task id="LOCAL-00621" summary="Update">
-      <created>1427369856041</created>
-      <updated>1427369856041</updated>
-    </task>
-    <task id="LOCAL-00622" summary="Update">
-      <created>1427370174000</created>
-      <updated>1427370174000</updated>
-    </task>
-    <task id="LOCAL-00623" summary="Update">
-      <created>1427370342271</created>
-      <updated>1427370342271</updated>
-    </task>
-    <task id="LOCAL-00624" summary="Update">
-      <created>1427370460053</created>
-      <updated>1427370460053</updated>
-    </task>
-    <task id="LOCAL-00625" summary="Update">
-      <created>1427371062082</created>
-      <updated>1427371062082</updated>
-    </task>
-    <task id="LOCAL-00626" summary="Update">
-      <created>1427371200450</created>
-      <updated>1427371200450</updated>
-    </task>
-    <task id="LOCAL-00627" summary="Update">
-      <created>1427372019830</created>
-      <updated>1427372019830</updated>
-    </task>
-    <task id="LOCAL-00628" summary="Update">
-      <created>1427380649498</created>
-      <updated>1427380649498</updated>
-    </task>
-    <task id="LOCAL-00629" summary="Update">
-      <created>1427380913473</created>
-      <updated>1427380913473</updated>
-    </task>
-    <task id="LOCAL-00630" summary="Update">
-      <created>1427381437278</created>
-      <updated>1427381437278</updated>
-    </task>
-    <task id="LOCAL-00631" summary="Update">
-      <created>1427382021300</created>
-      <updated>1427382021300</updated>
-    </task>
-    <task id="LOCAL-00632" summary="Update">
-      <created>1427382418518</created>
-      <updated>1427382418518</updated>
-    </task>
-    <task id="LOCAL-00633" summary="Update">
-      <created>1427382757593</created>
-      <updated>1427382757594</updated>
-    </task>
-    <task id="LOCAL-00634" summary="Update">
-      <created>1427383014271</created>
-      <updated>1427383014271</updated>
-    </task>
-    <task id="LOCAL-00635" summary="Update">
-      <created>1427384015549</created>
-      <updated>1427384015549</updated>
-    </task>
-    <task id="LOCAL-00636" summary="Update">
-      <created>1427385020533</created>
-      <updated>1427385020533</updated>
-    </task>
-    <task id="LOCAL-00637" summary="Update">
-      <created>1427385116780</created>
-      <updated>1427385116780</updated>
-    </task>
-    <task id="LOCAL-00638" summary="Update">
-      <created>1427385166892</created>
-      <updated>1427385166892</updated>
-    </task>
-    <task id="LOCAL-00639" summary="Update">
-      <created>1427385257695</created>
-      <updated>1427385257695</updated>
-    </task>
-    <task id="LOCAL-00640" summary="Update">
-      <created>1427385386594</created>
-      <updated>1427385386595</updated>
-    </task>
-    <task id="LOCAL-00641" summary="Update">
-      <created>1427385461540</created>
-      <updated>1427385461540</updated>
-    </task>
-    <task id="LOCAL-00642" summary="Update">
-      <created>1427385541008</created>
-      <updated>1427385541008</updated>
-    </task>
-    <task id="LOCAL-00643" summary="Update">
-      <created>1427385633384</created>
-      <updated>1427385633384</updated>
-    </task>
-    <task id="LOCAL-00644" summary="Update">
-      <created>1427385867763</created>
-      <updated>1427385867763</updated>
-    </task>
-    <task id="LOCAL-00645" summary="Update">
-      <created>1427385941983</created>
-      <updated>1427385941983</updated>
-    </task>
-    <task id="LOCAL-00646" summary="Update">
-      <created>1427478826266</created>
-      <updated>1427478826266</updated>
-    </task>
-    <task id="LOCAL-00647" summary="Update">
-      <created>1427535372903</created>
-      <updated>1427535372903</updated>
-    </task>
-    <task id="LOCAL-00648" summary="Update">
-      <created>1427535711832</created>
-      <updated>1427535711832</updated>
-    </task>
-    <task id="LOCAL-00649" summary="Update">
-      <created>1427535735068</created>
-      <updated>1427535735068</updated>
-    </task>
-    <task id="LOCAL-00650" summary="Update">
-      <created>1427536182875</created>
-      <updated>1427536182875</updated>
-    </task>
-    <task id="LOCAL-00651" summary="Update">
-      <created>1427539601771</created>
-      <updated>1427539601771</updated>
-    </task>
-    <task id="LOCAL-00652" summary="Update">
-      <created>1427539654731</created>
-      <updated>1427539654732</updated>
-    </task>
-    <task id="LOCAL-00653" summary="Update">
-      <created>1427539758864</created>
-      <updated>1427539758864</updated>
-    </task>
-    <task id="LOCAL-00654" summary="Update">
-      <created>1427539806021</created>
-      <updated>1427539806021</updated>
-    </task>
-    <task id="LOCAL-00655" summary="Update">
-      <created>1427540160967</created>
-      <updated>1427540160967</updated>
-    </task>
-    <task id="LOCAL-00656" summary="Update">
-      <created>1427540349897</created>
-      <updated>1427540349897</updated>
-    </task>
-    <task id="LOCAL-00657" summary="Update">
-      <created>1427540484801</created>
-      <updated>1427540484801</updated>
-    </task>
-    <task id="LOCAL-00658" summary="Update">
-      <created>1427540760113</created>
-      <updated>1427540760114</updated>
-    </task>
-    <task id="LOCAL-00659" summary="Update">
-      <created>1427540813358</created>
-      <updated>1427540813358</updated>
-    </task>
-    <task id="LOCAL-00660" summary="Update">
-      <created>1427540868928</created>
-      <updated>1427540868928</updated>
-    </task>
-    <task id="LOCAL-00661" summary="Update">
-      <created>1427541345555</created>
-      <updated>1427541345555</updated>
-    </task>
-    <task id="LOCAL-00662" summary="Update">
-      <created>1427542022243</created>
-      <updated>1427542022244</updated>
-    </task>
-    <task id="LOCAL-00663" summary="Update">
-      <created>1427543084808</created>
-      <updated>1427543084808</updated>
-    </task>
-    <task id="LOCAL-00664" summary="Update">
-      <created>1427543274079</created>
-      <updated>1427543274080</updated>
-    </task>
-    <task id="LOCAL-00665" summary="Update">
-      <created>1427543532302</created>
-      <updated>1427543532302</updated>
-    </task>
-    <task id="LOCAL-00666" summary="Update">
-      <created>1427543648244</created>
-      <updated>1427543648245</updated>
-    </task>
-    <task id="LOCAL-00667" summary="Update">
-      <created>1427543891987</created>
-      <updated>1427543891987</updated>
-    </task>
-    <task id="LOCAL-00668" summary="Update">
-      <created>1427551911013</created>
-      <updated>1427551911013</updated>
-    </task>
-    <task id="LOCAL-00669" summary="Update">
-      <created>1427552098500</created>
-      <updated>1427552098500</updated>
-    </task>
-    <task id="LOCAL-00670" summary="Update">
-      <created>1427552216870</created>
-      <updated>1427552216870</updated>
-    </task>
-    <task id="LOCAL-00671" summary="Update">
-      <created>1427554071259</created>
-      <updated>1427554071259</updated>
-    </task>
-    <task id="LOCAL-00672" summary="Update">
-      <created>1427554212477</created>
-      <updated>1427554212477</updated>
-    </task>
-    <task id="LOCAL-00673" summary="Update">
-      <created>1427554332089</created>
-      <updated>1427554332089</updated>
-    </task>
-    <task id="LOCAL-00674" summary="Update">
-      <created>1427554957371</created>
-      <updated>1427554957371</updated>
-    </task>
-    <task id="LOCAL-00675" summary="Update">
-      <created>1427555017805</created>
-      <updated>1427555017805</updated>
-    </task>
-    <task id="LOCAL-00676" summary="Update">
-      <created>1427555184532</created>
-      <updated>1427555184532</updated>
-    </task>
-    <task id="LOCAL-00677" summary="Update">
-      <created>1427555251522</created>
-      <updated>1427555251522</updated>
-    </task>
-    <task id="LOCAL-00678" summary="Update">
-      <created>1427555598752</created>
-      <updated>1427555598752</updated>
-    </task>
-    <task id="LOCAL-00679" summary="Update">
-      <created>1427555908558</created>
-      <updated>1427555908558</updated>
-    </task>
-    <task id="LOCAL-00680" summary="Update">
-      <created>1427555990834</created>
-      <updated>1427555990834</updated>
-    </task>
-    <task id="LOCAL-00681" summary="Update">
-      <created>1427556078829</created>
-      <updated>1427556078829</updated>
-    </task>
-    <task id="LOCAL-00682" summary="Update">
-      <created>1427557386291</created>
-      <updated>1427557386291</updated>
-    </task>
-    <task id="LOCAL-00683" summary="Update">
-      <created>1427570686930</created>
-      <updated>1427570686930</updated>
-    </task>
-    <task id="LOCAL-00684" summary="Update">
-      <created>1427570976677</created>
-      <updated>1427570976677</updated>
-    </task>
-    <task id="LOCAL-00685" summary="Update">
-      <created>1427571298661</created>
-      <updated>1427571298661</updated>
-    </task>
-    <task id="LOCAL-00686" summary="Update">
-      <created>1427571347026</created>
-      <updated>1427571347026</updated>
-    </task>
-    <task id="LOCAL-00687" summary="Update">
-      <created>1427571412641</created>
-      <updated>1427571412641</updated>
-    </task>
-    <task id="LOCAL-00688" summary="Update">
-      <created>1427571547657</created>
-      <updated>1427571547657</updated>
-    </task>
-    <task id="LOCAL-00689" summary="Update">
-      <created>1427571580037</created>
-      <updated>1427571580037</updated>
-    </task>
-    <task id="LOCAL-00690" summary="Update">
-      <created>1427571668738</created>
-      <updated>1427571668738</updated>
-    </task>
-    <task id="LOCAL-00691" summary="Update">
-      <created>1427571730602</created>
-      <updated>1427571730602</updated>
-    </task>
-    <task id="LOCAL-00692" summary="Update">
-      <created>1427571796313</created>
-      <updated>1427571796313</updated>
-    </task>
-    <task id="LOCAL-00693" summary="Update">
-      <created>1427571915408</created>
-      <updated>1427571915408</updated>
-    </task>
-    <task id="LOCAL-00694" summary="Update">
-      <created>1427572622103</created>
-      <updated>1427572622103</updated>
-    </task>
-    <task id="LOCAL-00695" summary="Update">
-      <created>1427572668764</created>
-      <updated>1427572668764</updated>
-    </task>
-    <task id="LOCAL-00696" summary="Update">
-      <created>1427647049629</created>
-      <updated>1427647049629</updated>
-    </task>
-    <task id="LOCAL-00697" summary="Update">
-      <created>1427647175966</created>
-      <updated>1427647175966</updated>
-    </task>
-    <task id="LOCAL-00698" summary="Update">
-      <created>1427647363781</created>
-      <updated>1427647363782</updated>
-    </task>
-    <task id="LOCAL-00699" summary="Update">
-      <created>1427647468450</created>
-      <updated>1427647468450</updated>
-    </task>
-    <task id="LOCAL-00700" summary="Update">
-      <created>1427647774890</created>
-      <updated>1427647774890</updated>
-    </task>
-    <task id="LOCAL-00701" summary="Update">
-      <created>1427647918369</created>
-      <updated>1427647918370</updated>
-    </task>
-    <task id="LOCAL-00702" summary="Update">
-      <created>1427648018406</created>
-      <updated>1427648018406</updated>
-    </task>
-    <task id="LOCAL-00703" summary="Update">
-      <created>1427648098419</created>
-      <updated>1427648098419</updated>
-    </task>
-    <task id="LOCAL-00704" summary="Update">
-      <created>1427648157186</created>
-      <updated>1427648157186</updated>
-    </task>
-    <task id="LOCAL-00705" summary="Update">
-      <created>1427648500695</created>
-      <updated>1427648500695</updated>
-    </task>
-    <task id="LOCAL-00706" summary="Update">
-      <created>1427648613339</created>
-      <updated>1427648613339</updated>
-    </task>
-    <task id="LOCAL-00707" summary="Update">
-      <created>1427649482603</created>
-      <updated>1427649482603</updated>
-    </task>
-    <task id="LOCAL-00708" summary="Update">
-      <created>1427655183891</created>
-      <updated>1427655183892</updated>
-    </task>
-    <task id="LOCAL-00709" summary="Update">
-      <created>1427655296879</created>
-      <updated>1427655296879</updated>
-    </task>
-    <task id="LOCAL-00710" summary="Update">
-      <created>1427655819693</created>
-      <updated>1427655819693</updated>
-    </task>
-    <task id="LOCAL-00711" summary="Update">
-      <created>1427656952758</created>
-      <updated>1427656952758</updated>
-    </task>
-    <task id="LOCAL-00712" summary="Update">
-      <created>1427657078884</created>
-      <updated>1427657078884</updated>
-    </task>
-    <task id="LOCAL-00713" summary="Update">
-      <created>1427657253316</created>
-      <updated>1427657253316</updated>
-    </task>
-    <task id="LOCAL-00714" summary="Update">
-      <created>1427657459854</created>
-      <updated>1427657459854</updated>
-    </task>
-    <task id="LOCAL-00715" summary="Update">
-      <created>1427657631251</created>
-      <updated>1427657631251</updated>
-    </task>
-    <task id="LOCAL-00716" summary="Update">
-      <created>1427657903363</created>
-      <updated>1427657903364</updated>
-    </task>
-    <task id="LOCAL-00717" summary="Update">
-      <created>1427658136825</created>
-      <updated>1427658136825</updated>
-    </task>
-    <task id="LOCAL-00718" summary="Update">
-      <created>1427658435368</created>
-      <updated>1427658435369</updated>
-    </task>
-    <task id="LOCAL-00719" summary="Update">
-      <created>1427658555380</created>
-      <updated>1427658555380</updated>
-    </task>
-    <task id="LOCAL-00720" summary="Update">
-      <created>1427658878734</created>
-      <updated>1427658878734</updated>
-    </task>
-    <task id="LOCAL-00721" summary="Update">
-      <created>1427659814963</created>
-      <updated>1427659814963</updated>
-    </task>
-    <task id="LOCAL-00722" summary="Update">
-      <created>1427659920590</created>
-      <updated>1427659920590</updated>
-    </task>
-    <task id="LOCAL-00723" summary="Update">
-      <created>1427830090629</created>
-      <updated>1427830090629</updated>
-    </task>
-    <task id="LOCAL-00724" summary="Update">
-      <created>1427831419145</created>
-      <updated>1427831419145</updated>
-    </task>
-    <task id="LOCAL-00725" summary="Update">
-      <created>1427831587522</created>
-      <updated>1427831587522</updated>
-    </task>
-    <task id="LOCAL-00726" summary="Update">
-      <created>1427913409569</created>
-      <updated>1427913409569</updated>
-    </task>
-    <task id="LOCAL-00727" summary="Update">
-      <created>1427913593803</created>
-      <updated>1427913593803</updated>
-    </task>
-    <task id="LOCAL-00728" summary="Update">
-      <created>1427914117785</created>
-      <updated>1427914117785</updated>
-    </task>
-    <task id="LOCAL-00729" summary="Update">
-      <created>1427914591461</created>
-      <updated>1427914591461</updated>
-    </task>
-    <task id="LOCAL-00730" summary="Update">
-      <created>1427956651967</created>
-      <updated>1427956651968</updated>
-    </task>
-    <task id="LOCAL-00731" summary="Update">
-      <created>1427956698143</created>
-      <updated>1427956698143</updated>
-    </task>
-    <task id="LOCAL-00732" summary="Update">
-      <created>1427956952985</created>
-      <updated>1427956952985</updated>
-    </task>
-    <task id="LOCAL-00733" summary="Update">
-      <created>1427957014260</created>
-      <updated>1427957014260</updated>
-    </task>
-    <task id="LOCAL-00734" summary="Update">
-      <created>1427957197949</created>
-      <updated>1427957197949</updated>
-    </task>
-    <task id="LOCAL-00735" summary="Update">
-      <created>1427958261432</created>
-      <updated>1427958261432</updated>
-    </task>
-    <task id="LOCAL-00736" summary="Update">
-      <created>1427958290581</created>
-      <updated>1427958290581</updated>
-    </task>
-    <task id="LOCAL-00737" summary="Update">
-      <created>1427958340763</created>
-      <updated>1427958340763</updated>
-    </task>
-    <task id="LOCAL-00738" summary="Update">
-      <created>1427958398175</created>
-      <updated>1427958398175</updated>
-    </task>
-    <task id="LOCAL-00739" summary="Update">
-      <created>1427958802383</created>
-      <updated>1427958802383</updated>
-    </task>
-    <task id="LOCAL-00740" summary="Update">
-      <created>1427959974420</created>
-      <updated>1427959974420</updated>
-    </task>
-    <task id="LOCAL-00741" summary="Update">
-      <created>1427960206955</created>
-      <updated>1427960206955</updated>
-    </task>
-    <task id="LOCAL-00742" summary="Update">
-      <created>1427960863995</created>
-      <updated>1427960863995</updated>
-    </task>
-    <task id="LOCAL-00743" summary="Update">
-      <created>1427961380253</created>
-      <updated>1427961380253</updated>
-    </task>
-    <task id="LOCAL-00744" summary="Update">
-      <created>1427961417588</created>
-      <updated>1427961417588</updated>
     </task>
     <task id="LOCAL-00745" summary="Update">
       <created>1427961484459</created>
+      <option name="number" value="00745" />
+      <option name="project" value="LOCAL" />
       <updated>1427961484459</updated>
     </task>
     <task id="LOCAL-00746" summary="Update">
       <created>1427961636847</created>
+      <option name="number" value="00746" />
+      <option name="project" value="LOCAL" />
       <updated>1427961636848</updated>
     </task>
     <task id="LOCAL-00747" summary="Update">
       <created>1427961806833</created>
+      <option name="number" value="00747" />
+      <option name="project" value="LOCAL" />
       <updated>1427961806833</updated>
     </task>
     <task id="LOCAL-00748" summary="Update">
       <created>1427961878075</created>
+      <option name="number" value="00748" />
+      <option name="project" value="LOCAL" />
       <updated>1427961878075</updated>
     </task>
     <task id="LOCAL-00749" summary="Update">
       <created>1427961936024</created>
+      <option name="number" value="00749" />
+      <option name="project" value="LOCAL" />
       <updated>1427961936024</updated>
     </task>
     <task id="LOCAL-00750" summary="Update">
       <created>1427962055108</created>
+      <option name="number" value="00750" />
+      <option name="project" value="LOCAL" />
       <updated>1427962055108</updated>
     </task>
     <task id="LOCAL-00751" summary="Update">
       <created>1427962158096</created>
+      <option name="number" value="00751" />
+      <option name="project" value="LOCAL" />
       <updated>1427962158096</updated>
     </task>
     <task id="LOCAL-00752" summary="Update">
       <created>1427962272493</created>
+      <option name="number" value="00752" />
+      <option name="project" value="LOCAL" />
       <updated>1427962272494</updated>
     </task>
     <task id="LOCAL-00753" summary="Update">
       <created>1427962467054</created>
+      <option name="number" value="00753" />
+      <option name="project" value="LOCAL" />
       <updated>1427962467054</updated>
     </task>
     <task id="LOCAL-00754" summary="Update">
       <created>1427969229617</created>
+      <option name="number" value="00754" />
+      <option name="project" value="LOCAL" />
       <updated>1427969229617</updated>
     </task>
     <task id="LOCAL-00755" summary="Update">
       <created>1427969342829</created>
+      <option name="number" value="00755" />
+      <option name="project" value="LOCAL" />
       <updated>1427969342829</updated>
     </task>
     <task id="LOCAL-00756" summary="Update">
       <created>1427969420603</created>
+      <option name="number" value="00756" />
+      <option name="project" value="LOCAL" />
       <updated>1427969420603</updated>
     </task>
     <task id="LOCAL-00757" summary="Update">
       <created>1427972957705</created>
+      <option name="number" value="00757" />
+      <option name="project" value="LOCAL" />
       <updated>1427972957705</updated>
     </task>
     <task id="LOCAL-00758" summary="Update">
       <created>1427973250735</created>
+      <option name="number" value="00758" />
+      <option name="project" value="LOCAL" />
       <updated>1427973250735</updated>
     </task>
     <task id="LOCAL-00759" summary="Update">
       <created>1427973323509</created>
+      <option name="number" value="00759" />
+      <option name="project" value="LOCAL" />
       <updated>1427973323509</updated>
     </task>
     <task id="LOCAL-00760" summary="Update">
       <created>1427973367103</created>
+      <option name="number" value="00760" />
+      <option name="project" value="LOCAL" />
       <updated>1427973367103</updated>
     </task>
     <task id="LOCAL-00761" summary="Update">
       <created>1427973453067</created>
+      <option name="number" value="00761" />
+      <option name="project" value="LOCAL" />
       <updated>1427973453067</updated>
     </task>
     <task id="LOCAL-00762" summary="Update">
       <created>1427973747132</created>
+      <option name="number" value="00762" />
+      <option name="project" value="LOCAL" />
       <updated>1427973747132</updated>
     </task>
     <task id="LOCAL-00763" summary="Update">
       <created>1427974110648</created>
+      <option name="number" value="00763" />
+      <option name="project" value="LOCAL" />
       <updated>1427974110648</updated>
     </task>
     <task id="LOCAL-00764" summary="Update">
       <created>1427974303989</created>
+      <option name="number" value="00764" />
+      <option name="project" value="LOCAL" />
       <updated>1427974303989</updated>
     </task>
     <task id="LOCAL-00765" summary="Update">
       <created>1427974360987</created>
+      <option name="number" value="00765" />
+      <option name="project" value="LOCAL" />
       <updated>1427974360987</updated>
     </task>
     <task id="LOCAL-00766" summary="Update">
       <created>1427974477239</created>
+      <option name="number" value="00766" />
+      <option name="project" value="LOCAL" />
       <updated>1427974477239</updated>
     </task>
     <task id="LOCAL-00767" summary="Update">
       <created>1427974513447</created>
+      <option name="number" value="00767" />
+      <option name="project" value="LOCAL" />
       <updated>1427974513447</updated>
     </task>
     <task id="LOCAL-00768" summary="Update">
       <created>1427974690552</created>
+      <option name="number" value="00768" />
+      <option name="project" value="LOCAL" />
       <updated>1427974690552</updated>
     </task>
     <task id="LOCAL-00769" summary="Update">
       <created>1427974794208</created>
+      <option name="number" value="00769" />
+      <option name="project" value="LOCAL" />
       <updated>1427974794208</updated>
     </task>
     <task id="LOCAL-00770" summary="Update">
       <created>1427974889741</created>
+      <option name="number" value="00770" />
+      <option name="project" value="LOCAL" />
       <updated>1427974889741</updated>
     </task>
     <task id="LOCAL-00771" summary="Update">
       <created>1427975331556</created>
+      <option name="number" value="00771" />
+      <option name="project" value="LOCAL" />
       <updated>1427975331556</updated>
     </task>
     <task id="LOCAL-00772" summary="Update">
       <created>1427975373305</created>
+      <option name="number" value="00772" />
+      <option name="project" value="LOCAL" />
       <updated>1427975373305</updated>
     </task>
     <task id="LOCAL-00773" summary="Update">
       <created>1427975419946</created>
+      <option name="number" value="00773" />
+      <option name="project" value="LOCAL" />
       <updated>1427975419946</updated>
     </task>
     <task id="LOCAL-00774" summary="Update">
       <created>1427975620942</created>
+      <option name="number" value="00774" />
+      <option name="project" value="LOCAL" />
       <updated>1427975620942</updated>
     </task>
     <task id="LOCAL-00775" summary="Update">
       <created>1427976235871</created>
+      <option name="number" value="00775" />
+      <option name="project" value="LOCAL" />
       <updated>1427976235871</updated>
     </task>
     <task id="LOCAL-00776" summary="Update">
       <created>1427976597223</created>
+      <option name="number" value="00776" />
+      <option name="project" value="LOCAL" />
       <updated>1427976597223</updated>
     </task>
     <task id="LOCAL-00777" summary="Update">
       <created>1427976645670</created>
+      <option name="number" value="00777" />
+      <option name="project" value="LOCAL" />
       <updated>1427976645670</updated>
     </task>
     <task id="LOCAL-00778" summary="Update">
       <created>1427976752845</created>
+      <option name="number" value="00778" />
+      <option name="project" value="LOCAL" />
       <updated>1427976752845</updated>
     </task>
     <task id="LOCAL-00779" summary="Update">
       <created>1427976875775</created>
+      <option name="number" value="00779" />
+      <option name="project" value="LOCAL" />
       <updated>1427976875775</updated>
     </task>
     <task id="LOCAL-00780" summary="Update">
       <created>1427993573587</created>
+      <option name="number" value="00780" />
+      <option name="project" value="LOCAL" />
       <updated>1427993573587</updated>
     </task>
     <task id="LOCAL-00781" summary="Update">
       <created>1427993868468</created>
+      <option name="number" value="00781" />
+      <option name="project" value="LOCAL" />
       <updated>1427993868468</updated>
     </task>
     <task id="LOCAL-00782" summary="Update">
       <created>1427993943149</created>
+      <option name="number" value="00782" />
+      <option name="project" value="LOCAL" />
       <updated>1427993943149</updated>
     </task>
     <task id="LOCAL-00783" summary="Update">
       <created>1427994089361</created>
+      <option name="number" value="00783" />
+      <option name="project" value="LOCAL" />
       <updated>1427994089361</updated>
     </task>
     <task id="LOCAL-00784" summary="Update">
       <created>1427994190161</created>
+      <option name="number" value="00784" />
+      <option name="project" value="LOCAL" />
       <updated>1427994190161</updated>
     </task>
     <task id="LOCAL-00785" summary="Update">
       <created>1427994243113</created>
+      <option name="number" value="00785" />
+      <option name="project" value="LOCAL" />
       <updated>1427994243113</updated>
     </task>
     <task id="LOCAL-00786" summary="Update">
       <created>1427994429500</created>
+      <option name="number" value="00786" />
+      <option name="project" value="LOCAL" />
       <updated>1427994429501</updated>
     </task>
     <task id="LOCAL-00787" summary="Update">
       <created>1427996253341</created>
+      <option name="number" value="00787" />
+      <option name="project" value="LOCAL" />
       <updated>1427996253341</updated>
     </task>
     <task id="LOCAL-00788" summary="Update">
       <created>1427996290432</created>
+      <option name="number" value="00788" />
+      <option name="project" value="LOCAL" />
       <updated>1427996290432</updated>
     </task>
     <task id="LOCAL-00789" summary="Update">
       <created>1428000373847</created>
+      <option name="number" value="00789" />
+      <option name="project" value="LOCAL" />
       <updated>1428000373847</updated>
     </task>
     <task id="LOCAL-00790" summary="Update">
       <created>1428000487442</created>
+      <option name="number" value="00790" />
+      <option name="project" value="LOCAL" />
       <updated>1428000487443</updated>
     </task>
     <task id="LOCAL-00791" summary="Update">
       <created>1428001226082</created>
+      <option name="number" value="00791" />
+      <option name="project" value="LOCAL" />
       <updated>1428001226083</updated>
     </task>
     <task id="LOCAL-00792" summary="Update">
       <created>1428001482973</created>
+      <option name="number" value="00792" />
+      <option name="project" value="LOCAL" />
       <updated>1428001482973</updated>
     </task>
     <task id="LOCAL-00793" summary="Update">
       <created>1428001518678</created>
+      <option name="number" value="00793" />
+      <option name="project" value="LOCAL" />
       <updated>1428001518678</updated>
     </task>
     <option name="localTasksCounter" value="794" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2246596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22100516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32214764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994638" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32214764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994638" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -3846,9 +1093,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
     <MESSAGE value="Update" />
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
@@ -3856,109 +1100,103 @@
     <breakpoint-manager>
       <option name="time" value="3" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2510" max-vertical-offset="3179">
+        <state vertical-scroll-proportion="0.0">
           <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/ajaxuploader/js/fileuploader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5049" max-vertical-offset="22576">
+        <state vertical-scroll-proportion="0.0">
           <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/pages/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="714">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="92" selection-start-line="28" selection-start-column="92" selection-end-line="28" selection-end-column="92" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/pages/templates/templatetags/top_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="255">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/redactor/redactor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14069" max-vertical-offset="97189">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3230" column="40" selection-start-line="3230" selection-start-column="40" selection-end-line="3230" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/pages/templates/page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="391">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1717">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="765">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="612">
+        <state vertical-scroll-proportion="-16.346153">
           <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="1836">
+        <state vertical-scroll-proportion="0.0">
           <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="1224">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/banners/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="578">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding />
         </state>
@@ -3966,121 +1204,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1156">
+        <state vertical-scroll-proportion="0.0">
           <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2652" max-vertical-offset="6375">
-          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="185" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/suit/css/suit.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7054" max-vertical-offset="7820">
+        <state vertical-scroll-proportion="0.0">
           <caret line="438" column="11" selection-start-line="438" selection-start-column="1" selection-end-line="438" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="850">
+        <state vertical-scroll-proportion="0.0">
           <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/pages/templates/templatetags/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="340">
+        <state vertical-scroll-proportion="-7.1923075">
           <caret line="11" column="83" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/pages/templatetags/header.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="323">
+        <state vertical-scroll-proportion="-6.8">
           <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="255" max-vertical-offset="1547">
+        <state vertical-scroll-proportion="-11.115385">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/pages/templates/templatetags/banner_head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
+        <state vertical-scroll-proportion="-0.65384614">
           <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.92" vertical-offset="300" max-vertical-offset="969">
+        <state vertical-scroll-proportion="-17.92">
           <caret line="46" column="15" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.08" vertical-offset="0" max-vertical-offset="629">
+        <state vertical-scroll-proportion="-21.08">
           <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="272">
+        <state vertical-scroll-proportion="-5.44">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/suit/templates/admin/base_site.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/suit/templates/admin/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.26923" vertical-offset="2194" max-vertical-offset="3706">
+        <state vertical-scroll-proportion="-18.26923">
           <caret line="157" column="14" selection-start-line="157" selection-start-column="14" selection-end-line="159" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/suit/templates/suit/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="833">
+        <state vertical-scroll-proportion="0.0">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/admin_settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="3519">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="27" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="2397">
+        <state vertical-scroll-proportion="0.0">
           <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="135" selection-end-column="34" />
           <folding />
         </state>
@@ -4088,39 +1317,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="3349">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/banners/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/catalog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2431" max-vertical-offset="3009">
-          <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="3859">
+        <state vertical-scroll-proportion="0.0">
           <caret line="128" column="18" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="16804" max-vertical-offset="20672">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1009" column="13" selection-start-line="1009" selection-start-column="13" selection-end-line="1009" selection-end-column="13" />
           <folding />
         </state>
@@ -4128,15 +1346,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/add_in_cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/admin_email.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="4471" max-vertical-offset="5508">
+        <state vertical-scroll-proportion="-5.8846154">
           <caret line="272" column="83" selection-start-line="272" selection-start-column="71" selection-end-line="272" selection-end-column="83" />
           <folding />
         </state>
@@ -4144,23 +1361,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9230769" vertical-offset="24" max-vertical-offset="782">
+        <state vertical-scroll-proportion="0.9230769">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart_ajax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="682">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/cart_top_ajax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="42" />
           <folding />
         </state>
@@ -4168,7 +1383,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_not_registered.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.461538" vertical-offset="459" max-vertical-offset="1615">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="126" selection-start-line="11" selection-start-column="126" selection-end-line="11" selection-end-column="126" />
           <folding />
         </state>
@@ -4176,7 +1391,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_registered.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="37.26923" vertical-offset="969" max-vertical-offset="1632">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -4184,7 +1399,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/shop/templates/order_thanks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -4192,7 +1407,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.692307" vertical-offset="36" max-vertical-offset="731">
+        <state vertical-scroll-proportion="0.0">
           <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding />
         </state>
@@ -4200,7 +1415,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_orders.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.653846" vertical-offset="70" max-vertical-offset="765">
+        <state vertical-scroll-proportion="0.0">
           <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding />
         </state>
@@ -4208,7 +1423,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/my_orders_not_registered.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -4216,7 +1431,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/registration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.730769" vertical-offset="19" max-vertical-offset="867">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="85" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="85" />
           <folding />
         </state>
@@ -4224,7 +1439,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/registration_thank.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -4232,12 +1447,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/accounts/templates/yes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="669">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/catalog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.962963">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/catalog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.592592">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/admin/product_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84794277">
+          <caret line="270" column="104" selection-start-line="270" selection-start-column="104" selection-end-line="270" selection-end-column="104" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
