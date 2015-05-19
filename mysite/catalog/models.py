@@ -38,6 +38,7 @@ class Category(models.Model):
             if obj is not None:
                 mass_pass.append(obj)
                 rec_path(obj.parent)
+
         rec_path(self)
         return mass_pass
 
@@ -68,3 +69,8 @@ class Product(models.Model):
 
     def __unicode__(self):
         return self.name
+
+    def is_home(self):
+        if self.home_status == 0:
+            return False
+        return True

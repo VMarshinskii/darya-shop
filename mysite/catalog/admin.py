@@ -6,10 +6,8 @@ from django.utils.encoding import smart_str
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'get_nameCategory', 'get_prew', 'public')
-    list_filter = ('public',)
-    search_fields = ['title']
-    date_hierarchy = 'date'
+    list_display = ('id', 'title', 'category', 'is_home')
+    search_fields = ['title', 'category']
 
 
 class CategoryAdmin(admin.ModelAdmin):
