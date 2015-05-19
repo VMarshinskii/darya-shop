@@ -181,6 +181,9 @@ body {
     display: inline-block;
     float: left;
 }
+.banner_head img {
+    width: 100%;
+}
 #left-block .categories {
     margin-top: -2px;
 }

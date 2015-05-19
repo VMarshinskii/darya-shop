@@ -18,6 +18,7 @@
 <div class="goodss">
     {% for product in products %}
     <div class="good">
+        <div class="action_sticker">{{ sticker }}</div>
         <a href="/catalog/product/{{ product.id }}/">
             <div class="goods-img">
                 <img src="/static/uploads/{{ product.image }}" alt="img"/>
