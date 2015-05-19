@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/admin.py" afterPath="$PROJECT_DIR$/mysite/catalog/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/models.py" afterPath="$PROJECT_DIR$/mysite/catalog/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="eef0c25d-1748-4253-889c-0c315df9db62" name="Failed commit: Default" comment="Update" />
@@ -741,12 +739,6 @@
       <option name="number" value="Default" />
       <updated>1422505767039</updated>
     </task>
-    <task id="LOCAL-00762" summary="Update">
-      <created>1427973747132</created>
-      <option name="number" value="00762" />
-      <option name="project" value="LOCAL" />
-      <updated>1427973747132</updated>
-    </task>
     <task id="LOCAL-00763" summary="Update">
       <created>1427974110648</created>
       <option name="number" value="00763" />
@@ -1035,7 +1027,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432054679709</updated>
     </task>
-    <option name="localTasksCounter" value="811" />
+    <task id="LOCAL-00811" summary="Update">
+      <created>1432054920364</created>
+      <option name="number" value="00811" />
+      <option name="project" value="LOCAL" />
+      <updated>1432054920364</updated>
+    </task>
+    <option name="localTasksCounter" value="812" />
     <servers />
   </component>
   <component name="ToolWindowManager">
