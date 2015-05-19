@@ -219,4 +219,11 @@ $(document).ready(function (){
         $(".popupBox").css({'display':'block', 'width': width, 'height': height, 'margin-top': -(height / 2), 'margin-left': -(width / 2), 'box-shadow': 'none', 'background': 'none'});
     });
 
+    $(".goods-img img").each(function(index, element){
+        if ($(element).width() > $(element).height())
+        {
+            $(element).css({'width': 'auto', 'height': '100%'});
+        }
+    });
+
 });
