@@ -18,7 +18,9 @@
 <div class="goodss">
     {% for product in products %}
     <div class="good">
+        {% if sticker != "нет" %}
         <div class="action_sticker">{{ sticker }}</div>
+        {% endif %}
         <a href="/catalog/product/{{ product.id }}/">
             <div class="goods-img">
                 <img src="/static/uploads/{{ product.image }}" alt="img"/>
