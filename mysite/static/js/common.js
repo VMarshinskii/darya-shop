@@ -222,6 +222,7 @@ $(document).ready(function (){
     $(".goods-img img").each(function(index, element){
         if ($(element).width() > $(element).height())
         {
+            alert($(element).width() + " : " + $(element).height());
             $(element).css({'width': 'auto', 'height': '100%'});
         }
     });

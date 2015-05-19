@@ -101,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7089041">
-              <caret line="224" column="64" selection-start-line="224" selection-start-column="64" selection-end-line="224" selection-end-column="64" />
+              <caret line="224" column="68" selection-start-line="224" selection-start-column="68" selection-end-line="224" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -747,12 +747,6 @@
       <option name="number" value="Default" />
       <updated>1422505767039</updated>
     </task>
-    <task id="LOCAL-00758" summary="Update">
-      <created>1427973250735</created>
-      <option name="number" value="00758" />
-      <option name="project" value="LOCAL" />
-      <updated>1427973250735</updated>
-    </task>
     <task id="LOCAL-00759" summary="Update">
       <created>1427973323509</created>
       <option name="number" value="00759" />
@@ -1041,7 +1035,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432053767765</updated>
     </task>
-    <option name="localTasksCounter" value="807" />
+    <task id="LOCAL-00807" summary="Update">
+      <created>1432054065540</created>
+      <option name="number" value="00807" />
+      <option name="project" value="LOCAL" />
+      <updated>1432054065540</updated>
+    </task>
+    <option name="localTasksCounter" value="808" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1245,6 +1245,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,6 +1276,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,6 +1292,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9230769">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,6 +1300,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1479,7 +1483,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/static/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7089041">
-          <caret line="224" column="64" selection-start-line="224" selection-start-column="64" selection-end-line="224" selection-end-column="64" />
+          <caret line="224" column="68" selection-start-line="224" selection-start-column="68" selection-end-line="224" selection-end-column="68" />
           <folding />
         </state>
       </provider>
