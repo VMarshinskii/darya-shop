@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="52c89baf-93cb-4c33-b9d2-185e01e9cfcc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/templates/category.html" afterPath="$PROJECT_DIR$/mysite/catalog/templates/category.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/templates/index.html" afterPath="$PROJECT_DIR$/mysite/catalog/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/catalog/views.py" afterPath="$PROJECT_DIR$/mysite/catalog/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="eef0c25d-1748-4253-889c-0c315df9db62" name="Failed commit: Default" comment="Update" />
@@ -92,8 +90,8 @@
       <file leaf-file-name="category.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3655914">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.33512545">
+              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -748,12 +746,6 @@
       <option name="number" value="Default" />
       <updated>1422505767039</updated>
     </task>
-    <task id="LOCAL-00755" summary="Update">
-      <created>1427969342829</created>
-      <option name="number" value="00755" />
-      <option name="project" value="LOCAL" />
-      <updated>1427969342829</updated>
-    </task>
     <task id="LOCAL-00756" summary="Update">
       <created>1427969420603</created>
       <option name="number" value="00756" />
@@ -1042,7 +1034,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432053273956</updated>
     </task>
-    <option name="localTasksCounter" value="804" />
+    <task id="LOCAL-00804" summary="Update">
+      <created>1432053610326</created>
+      <option name="number" value="00804" />
+      <option name="project" value="LOCAL" />
+      <updated>1432053610326</updated>
+    </task>
+    <option name="localTasksCounter" value="805" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1477,8 +1475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/catalog/templates/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3655914">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.33512545">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding />
         </state>
       </provider>
