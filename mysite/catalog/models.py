@@ -54,7 +54,7 @@ class Product(models.Model):
     text = models.TextField("Описание")
     color = models.CharField("Цвет", max_length=200, blank=True)
     size = models.CharField("Размер", max_length=200, blank=True)
-    structure = models.CharField("Состав", max_length=200, blank=True)
+    #structure = models.CharField("Состав", max_length=200, blank=True)
     keywords = models.CharField("Ключевые слова", max_length=200)
     description = models.CharField("Description", max_length=200)
     images = models.TextField(blank=True)
