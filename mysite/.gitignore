@@ -1,0 +1,9 @@
+/.idea
+/mysite/local_settings.py
+
+migrations
+db.sqlite3
+
+static/uploads
+
+*.pyc
